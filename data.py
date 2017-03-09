@@ -29,8 +29,7 @@ def load_missions(all_items):
                     continue
                 reward_items = {}
                 for i in range(2, 7, 2):
-                    reward_items[all_items[row[i]]] = float(row[i + 1])
-                global all_missions
+                    reward_items[all_items[row[i]]] = float(row[i + 1])                
                 all_missions.append(Mission(Reward(reward_items), ENERGY_COST, int(row[8])))
     return all_missions
 
