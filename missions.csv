@@ -1,0 +1,11 @@
+HEADER,NUMBER,ITEM 1,CHANCE,ITEM 2,CHANCE,ITEM 3,CHANCE,KEYS_COST
+,1,Pillow,0.3,Candle,0.3,Camera,0.3,0
+,2,Vulcan ears,0.3,Thread,0.3,Battery,0.25,0
+,3,Chocolate,0.25,Bottle,0.3,Needle,0.1,0
+,4,Iphone pin,0.3,Barbeque sauce,0.25,Bowtie,0.1,1
+,5,Pot,0.3,Collar,0.1,Flash,0.25,1
+,6,Sombrero,0.3,Sheets fragment,0.25,Coffee,0.3,1
+,7,Vegetable basket fragment,0.25,Mexican sign,0.3,Dog food,0.3,6
+,8,Jeans,0.3,Bandage,0.25,Baguette,0.3,6
+,9,Pills,0.3,Dishes fragment,0.1,Suitcase,0.25,6
+,10,Eiffel tower,0.3,Gondola,0.25,French sign,0.3,9
