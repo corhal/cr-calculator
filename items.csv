@@ -1,38 +1,38 @@
-HEADER,ITEM,COMPONENT 1,AMOUNT,COMPONENT 2,AMOUNT,COMPONENT 3,AMOUNT
-,Recipe,,,,,,
-,Pillow,,,,,,
-,Candle,,,,,,
-,Chocolate,,,,,,
-,Vulcan ears,,,,,,
-,Pot,,,,,,
-,Bottle,,,,,,
-,Dog food,,,,,,
-,Sombrero,,,,,,
-,Eiffel tower,,,,,,
-,Gondola,,,,,,
-,Baguette,,,,,,
-,French sign,,,,,,
-,Coffee,,,,,,
-,Needle,,,,,,
-,Thread,,,,,,
-,Collar,,,,,,
-,Bowtie,,,,,,
-,Flash,,,,,,
-,Camera,,,,,,
-,Battery,,,,,,
-,Bandage,,,,,,
-,Pills,,,,,,
-,Vegetable basket fragment,,,,,,
-,Dishes fragment,,,,,,
-,Sheets fragment,,,,,,
-,Suitcase,,,,,,
-,Jeans,,,,,,
-SECONDARY ITEMS,Vegetable basket,Vegetable basket fragment,5,,,,
-,Sheets,Sheets fragment,3,,,,
-,Dishes,Dishes fragment,5,,,,
-,Sewing kit,Thread,1,Needle,1,,
-,Medkit,Pills,10,Bandage,5,,
-,Camera with flash,Flash,1,Camera,1,Battery,5
-TERTIARY ITEMS,Collar with bowtie,Collar,1,Bowtie,1,Sewing kit,2
-,Belongings,Camera with flash,1,Medkit,1,Jeans,2
-QUARTERY ITEMS,Full suitcase,Suitcase,1,Belongings,3,,
+HEADER,ITEM,COMPONENT 1,AMOUNT,COMPONENT 2,AMOUNT,COMPONENT 3,AMOUNT,GOLD_COST
+,Recipe,,,,,,,
+,Pillow,,,,,,,
+,Candle,,,,,,,
+,Chocolate,,,,,,,
+,Vulcan ears,,,,,,,
+,Pot,,,,,,,
+,Bottle,,,,,,,
+,Dog food,,,,,,,
+,Sombrero,,,,,,,
+,Eiffel tower,,,,,,,
+,Gondola,,,,,,,
+,Baguette,,,,,,,
+,French sign,,,,,,,
+,Coffee,,,,,,,
+,Needle,,,,,,,
+,Thread,,,,,,,
+,Collar,,,,,,,
+,Bowtie,,,,,,,
+,Flash,,,,,,,
+,Camera,,,,,,,
+,Battery,,,,,,,
+,Bandage,,,,,,,
+,Pills,,,,,,,
+,Vegetable basket fragment,,,,,,,
+,Dishes fragment,,,,,,,
+,Sheets fragment,,,,,,,
+,Suitcase,,,,,,,
+,Jeans,,,,,,,
+SECONDARY ITEMS,Vegetable basket,Vegetable basket fragment,5,,,,,2000
+,Sheets,Sheets fragment,3,,,,,3000
+,Dishes,Dishes fragment,5,,,,,7000
+,Sewing kit,Thread,1,Needle,1,,,500
+,Medkit,Pills,10,Bandage,5,,,5000
+,Camera with flash,Flash,1,Camera,1,Battery,5,4000
+TERTIARY ITEMS,Collar with bowtie,Collar,1,Bowtie,1,Sewing kit,2,1000
+,Belongings,Camera with flash,1,Medkit,1,Jeans,2,8000
+QUARTERY ITEMS,Full suitcase,Suitcase,1,Belongings,3,,,10000
