@@ -36,11 +36,26 @@ class Item(object):
                 
 
 class Quest(object):
-    def __init__(self, name, item_conditions, reward):
+    def __init__(self, name, item_conditions, reward, required_quests):
         self.name = name
         self.item_conditions = item_conditions # dict
         self.completed = False
         self.reward = reward
+        self.required_quests = required_quests # list
+        self.locked = True
+
+    def __str__(self):
+        tostring = self.name + " ["
+        count = 0
+        for item in self.item_conditions.keys():
+            tostring += item.get_name() + ": " + str(self.item_conditions[item])
+            count += 1
+            if count != len(self.item_conditions.keys()):
+                tostring += ", "            
+        tostring += "]"
+        if self.reward.keys != 0:
+            tostring += " gives keys: " + str(self.reward.keys)
+        return tostring
 
     def get_full_conditions(self):
         full_conditions = {}
@@ -62,16 +77,26 @@ class Reward(object):
         self.keys = keys
 
 class Mission(object):
-    ident = 0
-    def __init__(self, reward, energy_cost, keys_cost):
-        self.ident = Mission.ident
-        Mission.ident += 1        
+    def __init__(self, ident, reward, energy_cost, keys_cost):
+        self.ident = ident
         self.reward = reward
         self.energy_cost = energy_cost
         self.keys_cost = keys_cost
         self.locked = True
         if self.keys_cost == 0:
             self.locked = False
+
+    def __str__(self):
+        tostring = str(self.ident) + " ["
+        count = 0
+        for item in self.reward.item_chances.keys():
+            tostring += item.get_name() + ": " + str(self.reward.item_chances[item])
+            count += 1
+            if count != 3:
+                tostring += ", "
+        tostring += "]"
+        tostring += " , keys cost: " + str(self.keys_cost)
+        return tostring
 
     def unlock(self):
         self.locked = False
@@ -91,8 +116,13 @@ class Player(object):
         self.max_daily_energy = max_daily_energy
         self.energy = self.max_daily_energy
         self.missions = missions
+        self.completed_quests = []
 
     def is_quest_farmable(self, quest):
+        for r_quest in quest.required_quests:
+            if r_quest not in self.completed_quests:
+                return False
+        quest.locked = False
         full_conditions = quest.get_full_conditions()
         for item in full_conditions.keys():
             for mission in self.missions:
@@ -100,21 +130,44 @@ class Player(object):
                     return False
         return True
 
-    def choose_quest(self, quests):        
+    def get_available_quests(self, quests):
+        available_quests = []        
+        for quest in quests:
+            if quest.completed:                
+                continue               
+            if self.is_quest_farmable(quest):
+                available_quests.append(quest)        
+        return available_quests
+
+    def choose_quest(self, quests):
+        loop_count = 0
         while True:
+            loop_count += 1
             count = 0
             for quest in quests:
                 if quest.completed:
                     count += 1
                     if count == len(quests):
-                        return
-                    continue
-                if self.is_quest_farmable(quest):
-                    self.play_quest(quest)                
+                        return True
+            available_quests = self.get_available_quests(quests)            
+            if len(available_quests) > 0:
+                quest = random.choice(available_quests)
+                self.play_quest(quest)                
 
             for mission in self.missions:
                 if mission.locked:
-                    self.unlock_mission(mission)            
+                    self.unlock_mission(mission)
+            if loop_count == 1000:
+                print("Looks like you have a dead end")
+                print("Currently open missions:")
+                for mission in self.missions:
+                    if not mission.locked:
+                        print(mission)
+                print("Currently available quests:")
+                for quest in quests:
+                    if not quest.completed and not quest.locked:
+                        print(quest)                
+                return False
 
     def play_quest(self, quest):
         item_conditions = quest.get_item_conditions()
@@ -126,6 +179,7 @@ class Player(object):
                 self.craft(item)
         self.receive_reward(quest.reward)
         quest.complete()
+        self.completed_quests.append(quest)
 
     def farm_item(self, item, amount):
         for mission in self.missions:           

@@ -1,31 +1,31 @@
-HEADER,QUEST,ITEM 1,AMOUNT,ITEM 2,AMOUNT,ITEM 3,AMOUNT,KEYS
-,30101,Pillow,1,,,,,0
-,30102,Candle,2,Camera,2,,,1
-,30201,Vulcan ears,2,,,,,0
-,30202,Bottle,2,Battery,2,,,1
-,30301,Chocolate,1,,,,,0
-,30302,Sewing kit,2,,,,,1
-,30401,Iphone pin,2,,,,,0
-,30402,Collar with bowtie,1,Pillow,3,,,2
-,30501,Pot,1,Barbeque sauce,1,,,0
-,30502,Camera with flash,1,,,,,2
-,30601,Vegetable basket,1,,,,,0
-,30602,Sheets,1,Coffee,1,,,2
-,30701,Sombrero,3,Mexican sign,3,,,0
-,30702,Camera with flash,1,Candle,2,,,0
-,30703,Dog food,5,Pillow,2,,,7
-,30801,Collar with bowtie,1,Vulcan ears,2,Bottle,1,0
-,30802,Medkit,1,,,,,0
-,30803,Coffee,2,Vegetable basket,1,Baguette,2,7
-,30901,Camera,1,Sewing kit,2,Jeans,2,0
-,30902,Camera with flash,1,Candle,1,,,0
-,30903,Dishes,2,Vegetable basket,2,,,7
-,31001,Candle,3,French sign,3,Gondola,3,0
-,31002,Baguette,5,Coffee,5,Chocolate,5,0
-,31003,Jeans,3,Sewing kit,3,Sheets,3,1
-,31101,Medkit,2,,,,,0
-,31102,Vegetable basket,3,Chocolate,3,,,0
-,31103,Collar with bowtie,5,Dog food,5,,,1
-,31201,Medkit,2,Sewing kit,2,,,0
-,31202,Coffee,5,Pills,5,Dishes,1,0
-,31203,Full suitcase,1,,,,,1
+HEADER,QUEST,ITEM 1,AMOUNT,ITEM 2,AMOUNT,ITEM 3,AMOUNT,KEYS,REQUIRED_QUESTS
+,30101,Pillow,1,,,,,0,
+,30102,Candle,2,Camera,2,,,1,30101
+,30201,Vulcan ears,2,,,,,0,30101
+,30202,Bottle,2,Battery,2,,,1,30201
+,30301,Chocolate,1,,,,,0,30201
+,30302,Sewing kit,2,,,,,1,30301
+,30401,Iphone pin,2,,,,,0,30102
+,30402,Collar with bowtie,1,Pillow,3,,,2,30401
+,30501,Pot,1,Barbeque sauce,1,,,0,30202
+,30502,Camera with flash,1,,,,,2,30501
+,30601,Vegetable basket,1,,,,,0,30302
+,30602,Sheets,1,Coffee,1,,,2,30601
+,30701,Sombrero,3,Mexican sign,3,,,0,30402
+,30702,Camera with flash,1,Candle,2,,,0,30701
+,30703,Dog food,5,Pillow,2,,,7,30702
+,30801,Collar with bowtie,1,Vulcan ears,2,Bottle,1,0,30502
+,30802,Medkit,1,,,,,0,30801
+,30803,Coffee,2,Vegetable basket,1,Baguette,2,7,30802
+,30901,Camera,1,Sewing kit,2,Jeans,2,0,30602
+,30902,Camera with flash,1,Candle,1,,,0,30901
+,30903,Dishes,2,Vegetable basket,2,,,7,30902
+,31001,Candle,3,French sign,3,Gondola,3,0,30703
+,31002,Baguette,5,Coffee,5,Chocolate,5,0,31001
+,31003,Jeans,3,Sewing kit,3,Sheets,3,1,31002
+,31101,Medkit,2,,,,,0,30903
+,31102,Vegetable basket,3,Chocolate,3,,,0,31101
+,31103,Collar with bowtie,5,Dog food,5,,,1,31102
+,31201,Medkit,2,Sewing kit,2,,,0,31003
+,31202,Coffee,5,Pills,5,Dishes,1,0,31201
+,31203,Full suitcase,1,,,,,1,31202
