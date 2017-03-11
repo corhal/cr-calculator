@@ -90,9 +90,10 @@ class Quest(object):
         return self.reward
 
 class Reward(object):
-    def __init__(self, item_chances, gold_reward=0, keys=0):
+    def __init__(self, item_chances, gold_reward=0, energy_reward=0, keys=0):
         self.item_chances = item_chances # dict
         self.gold_reward = gold_reward
+        self.energy_reward = energy_reward
         self.keys = keys
 
 class Mission(object):
@@ -235,6 +236,9 @@ class Player(object):
         else:
             self.skip_day()
 
+    def receive_energy(self, amount):
+        self.energy += amount
+
     def skip_day(self):
         self.energy = self.max_daily_energy
         self.day += 1
@@ -242,6 +246,7 @@ class Player(object):
     def receive_reward(self, reward):
         self.receive_keys(reward.keys)
         self.receive_gold(reward.gold_reward)
+        self.receive_energy(reward.energy_reward)
         for item in reward.item_chances.keys():
             if random.randrange(0, 100) * 0.01 < reward.item_chances[item]:
                 self.take_item(item, 1)

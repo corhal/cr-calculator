@@ -33,7 +33,7 @@ def load_missions(all_items):
                 reward_items = {}
                 for i in range(2, 7, 2):
                     reward_items[all_items[row[i]]] = float(row[i + 1])                
-                all_missions.append(Mission(int(row[1]), Reward(reward_items, int(row[8])), ENERGY_COST, int(row[9])))
+                all_missions.append(Mission(int(row[1]), Reward(reward_items, gold_reward=int(row[8])), ENERGY_COST, int(row[9])))
     return all_missions
 
 def load_quests(all_items):
@@ -54,7 +54,7 @@ def load_quests(all_items):
                     for quest_string in quest_strings:
                         if quest.name == quest_string:
                             required_quests.append(quest)
-                all_quests.append(Quest(row[1], item_conditions, Reward({}, int(row[8]), int(row[9])), required_quests))
+                all_quests.append(Quest(row[1], item_conditions, Reward({}, gold_reward=int(row[8]), energy_reward=int(row[9]), keys=int(row[10])), required_quests))
     return all_quests
 
 def load_player():
