@@ -22,8 +22,6 @@ def load_items():
                 all_items[row[1]] = Item(row[1], recipe, gold_cost)
     return all_items
 
-
-
 def load_missions(all_items):
     all_missions = []
 
@@ -37,8 +35,6 @@ def load_missions(all_items):
                     reward_items[all_items[row[i]]] = float(row[i + 1])                
                 all_missions.append(Mission(int(row[1]), Reward(reward_items, int(row[8])), ENERGY_COST, int(row[9])))
     return all_missions
-
-missions = load_missions(load_items())
 
 def load_quests(all_items):
     all_quests = []
@@ -60,5 +56,22 @@ def load_quests(all_items):
                             required_quests.append(quest)
                 all_quests.append(Quest(row[1], item_conditions, Reward({}, int(row[8]), int(row[9])), required_quests))
     return all_quests
+
+def load_player():
+    items = load_items()
+    missions = load_missions(items)
+    quests = load_quests(items)
+    
+    with open('player.csv', 'rt', encoding="utf8") as csvfile:
+            reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+            for row in reader:
+                if row[0] == "HEADER":
+                    continue
+                if row[0] == "MAX_DAILY_ENERGY":
+                    max_daily_energy = int(row[1])
+                if row[0] == "STARTING_GOLD":
+                    gold = int(row[1])                
+            player = Player(max_daily_energy, gold, missions, quests)
+    return player
 
 
