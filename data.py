@@ -33,7 +33,7 @@ def load_missions(all_items):
                 reward_items = {}
                 for i in range(2, 7, 2):
                     reward_items[all_items[row[i]]] = float(row[i + 1])                
-                all_missions.append(Mission(int(row[1]), Reward(reward_items, gold_reward=int(row[8])), ENERGY_COST, int(row[9])))
+                all_missions.append(Mission(row[1], Reward(reward_items, gold_reward=int(row[8])), ENERGY_COST, int(row[9])))
     return all_missions
 
 def load_quests(all_items):
@@ -58,10 +58,6 @@ def load_quests(all_items):
     return all_quests
 
 def load_player():
-    items = load_items()
-    missions = load_missions(items)
-    quests = load_quests(items)
-    
     with open('player.csv', 'rt', encoding="utf8") as csvfile:
             reader = csv.reader(csvfile, delimiter=',', quotechar='"')
             for row in reader:
@@ -71,7 +67,14 @@ def load_player():
                     max_daily_energy = int(row[1])
                 if row[0] == "STARTING_GOLD":
                     gold = int(row[1])                
-            player = Player(max_daily_energy, gold, missions, quests)
+            player = Player(max_daily_energy, gold)
     return player
+
+def load_game():
+    items = load_items()
+    missions = load_missions(items)
+    quests = load_quests(items)
+    game = Game(items, missions, quests)
+    return game
 
 

@@ -9,6 +9,7 @@ def play(plays_count):
 
     print("-" * 30)
     for i in range(0, plays_count):        
+        game = load_game()
         player = load_player()
         if not player.choose_quest():
             break
