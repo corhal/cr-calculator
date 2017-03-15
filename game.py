@@ -1,6 +1,8 @@
 from classes import *
 from data import *
 import copy
+import traceback
+import sys
 
 def play(plays_count):
 
@@ -20,10 +22,15 @@ def play(plays_count):
         print("Days, on average: " + str(sum(day_results)/float(len(day_results))))
 
 while True:
-    choice = input("Play again? y/n ")
-    if choice == "n":
-        break
-    plays_count = int(input("How many times? "))
-    play(plays_count)
+    try:
+        choice = input("Play again? y/n ")
+        if choice == "n":
+            break
+        plays_count = int(input("How many times? "))
+        play(plays_count)
+    except Exception:
+        s = traceback.format_exc()
+        serr = "there were errors:\n%s\n" % (s)
+        sys.stderr.write(serr) 
 
-
+input("Press Enter to close")
