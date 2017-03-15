@@ -24,8 +24,9 @@ class Item(object):
                     self.full_recipe[secondary_item] = self.full_recipe.get(secondary_item, 0) + item_recipe[secondary_item] * self.recipe[item]    
         
 class Quest(object):
-    def __init__(self, name, item_conditions, reward, required_quests):
+    def __init__(self, name, chapter, item_conditions, reward, required_quests):
         self.name = name
+        self.chapter = chapter
         self.item_conditions = item_conditions # dict
         self.completed = False
         self.reward = reward
@@ -91,8 +92,9 @@ class Reward(object):
         self.keys = keys
 
 class Mission(object):
-    def __init__(self, ident, reward, energy_cost, keys_cost):
-        self.ident = ident
+    def __init__(self, name, chapter, reward, energy_cost, keys_cost):
+        self.name = name
+        self.chapter = chapter
         self.reward = reward
         self.energy_cost = energy_cost
         self.keys_cost = keys_cost
@@ -101,7 +103,7 @@ class Mission(object):
             self.locked = False
 
     def __str__(self):
-        tostring = str(self.ident) + " ["
+        tostring = str(self.name) + " ["
         count = 0
         for item in self.reward.item_chances.keys():
             tostring += item.name + ": " + str(self.reward.item_chances[item])
@@ -146,7 +148,7 @@ class Player(object):
                 if quest.completed:
                     count += 1
                     if count == len(Game.quests):
-                        return True
+                        return
             available_quests = self.get_available_quests()            
             if len(available_quests) > 0:
                 quest = random.choice(available_quests)
@@ -165,10 +167,10 @@ class Player(object):
                     if not mission.locked:
                         print(mission)
                 print("Currently available quests:")
-                for quest in quests:
+                for quest in Game.quests:
                     if not quest.completed and not quest.locked:
                         print(quest)                
-                return False
+                raise ValueError("Dead end!")
 
     def play_quest(self, quest):
         item_conditions = quest.item_conditions
@@ -292,10 +294,19 @@ class Player(object):
                 print(item.name + ": " + str(self.inventory[item]))
 
 class Chapter(object):
-    def __init__(self, items, missions, quests):
+    def __init__(self, name, items, missions, quests):
+        self.name = name
         self.items = items
-        self.missions = missions
-        self.quests = quests
+        self.missions = []
+        for mission in missions:
+            if mission.chapter == self.name:
+                self.missions.append(mission)
+        self.quests = []
+        for quest in quests:
+            if quest.chapter == self.name:
+                self.quests.append(quest)
+        self.mission_result = 0
+        self.days_result = 0
 
 class Game(object):
     def __init__(self, items, missions, quests):

@@ -1,11 +1,11 @@
-HEADER,NUMBER,ITEM 1,CHANCE,ITEM 2,CHANCE,ITEM 3,CHANCE,GOLD_REWARD,KEYS_COST
-,1,Recipe,0.3,Pillow,0.5,Vulcan ears,0.3,5,0
-,2,Candle,0.3,Needle,0.3,Battery,0.2,5,0
-,3,Camera,0.3,Bottle,0.3,Chocolate,0.3,5,0
-,4,Collar,0.3,Thread,0.3,Bowtie,0.3,10,1
-,5,Recipe,0.3,Pot,0.3,Flash,0.3,10,1
-,6,Vegetable basket fragment,0.25,Sheets fragment,0.3,Coffee,0.3,10,1
-,7,Sombrero,0.3,Dog food,0.3,Eiffel tower,0.3,10,6
-,8,Bandage,0.3,Pills,0.3,Baguette,0.3,10,6
-,9,Recipe,0.3,Jeans,0.3,Dishes fragment,0.3,10,6
-,10,Gondola,0.3,French sign,0.3,Suitcase,0.3,25,9
+HEADER,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWARD,KEYS_COST
+,1,1,Recipe,0.3,Pillow,0.5,Vulcan ears,0.3,5,0
+,2,1,Candle,0.3,Needle,0.3,Battery,0.2,5,0
+,3,1,Camera,0.3,Bottle,0.3,Chocolate,0.3,5,0
+,4,1,Collar,0.3,Thread,0.3,Bowtie,0.3,10,1
+,5,1,Recipe,0.3,Pot,0.3,Flash,0.3,10,1
+,6,1,Vegetable basket fragment,0.25,Sheets fragment,0.3,Coffee,0.3,10,1
+,7,1,Sombrero,0.3,Dog food,0.3,Eiffel tower,0.3,10,6
+,8,1,Bandage,0.3,Pills,0.3,Baguette,0.3,10,6
+,9,1,Recipe,0.3,Jeans,0.3,Dishes fragment,0.3,10,6
+,10,1,Gondola,0.3,French sign,0.3,Suitcase,0.3,25,9

@@ -11,8 +11,7 @@ def play(plays_count):
     for i in range(0, plays_count):        
         game = load_game()
         player = load_player()
-        if not player.choose_quest():
-            break
+        player.choose_quest()
         mission_results.append(player.missions_completed)
         day_results.append(player.day)
 
@@ -26,3 +25,5 @@ while True:
         break
     plays_count = int(input("How many times? "))
     play(plays_count)
+
+
