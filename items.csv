@@ -1,33 +1,33 @@
-HEADER,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
-,a,,,,,,,
-,b,,,,,,,
-,c,,,,,,,
-,d,,,,,,,
-,e,,,,,,,
-,f,,,,,,,
-,g,,,,,,,
-,h,,,,,,,
-,i,,,,,,,
-,j,,,,,,,
-,k,,,,,,,
-,l,,,,,,,
-,m,,,,,,,
-,n,,,,,,,
-,o,,,,,,,
-,p,,,,,,,
-,q,,,,,,,
-,r,,,,,,,
-,s,,,,,,,
-,t,,,,,,,
-,u,,,,,,,
-,Recipe,,,,,,,
-SECONDARY ITEMS,aa,j,3,,,,,2000
-,bb,q,5,,,,,3000
-,cc,k,5,,,,,7000
-TERTIARY ITEMS,aaa,l,1,m,2,,,1000
-,bbb,s,1,b,1,,,8000
-,ccc,l,2,m,1,,,8000
-,ddd,r,1,h,5,,,8000
-QUARTERY ITEMS,aaaa,n,3,o,3,p,3,8000
-,bbbb,aaaa,1,a,1,i,1,8000
-,cccc,c,1,d,1,e,1,8000
+,ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
+,666,Basket,,,,,,,
+,667,Saw,,,,,,,
+,668,Camera,,,,,,,
+,669,Lens,,,,,,,
+,670,Tripod,,,,,,,
+,671,Pills,,,,,,,
+,672,Fruits,,,,,,,
+,673,Cable,,,,,,,
+,674,Blanket,,,,,,,
+,675,Medicine fragment,,,,,,,
+,676,Lavender,,,,,,,
+,677,Cloth,,,,,,,
+,678,Thread,,,,,,,
+,679,Spoon,,,,,,,
+,680,Fork,,,,,,,
+,681,Knife,,,,,,,
+,682,Plate,,,,,,,
+,683,Microphone,,,,,,,
+,684,Chair,,,,,,,
+,685,Wine,,,,,,,
+,686,Shovel,,,,,,,
+,687,Recipe,,,,,,,
+,688,Medicine,Medicine fragment,3,,,,,2000
+,689,Plates,Plate,5,,,,,3000
+,690,Flower wreath,Lavender,5,,,,,7000
+,691,Pig costume,Cloth,1,Thread,2,,,1000
+,692,Special chair,Chair,1,Saw,1,,,8000
+,693,Sheets,Cloth,2,Thread,1,,,8000
+,694,Scene microphone,Microphone,1,Cable,5,,,8000
+,695,Cutlery,Spoon,3,Fork,3,Knife,3,8000
+,696,Picnic basket,Cutlery,1,Basket,1,Blanket,1,8000
+,697,Camera on tripod,Camera,1,Lens,1,Tripod,1,8000

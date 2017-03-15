@@ -1,23 +1,23 @@
-HEADER,NAME,CHAPTER,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT 3,GOLD_REWARD,ENERGY_REWARD,KEYS,REQUIRED_QUESTS
-,Organiser-1,1,t,1,,,,,0,50,0,
-,Organiser-2,1,g,1,,,,,0,50,1,Organiser-1
-,Supplier-1,1,i,1,,,,,0,50,0,
-,Supplier-2,1,aa,1,,,,,0,50,1,Supplier-1
-,ShadyGuy-1,1,a,1,,,,,0,50,0,
-,ShadyGuy-2,1,b,1,,,,,0,50,1,ShadyGuy-1
-,Organiser-3,1,ccc,1,,,,,0,50,0,
-,Organiser-4,1,t,1,g,1,,,0,50,2,Organiser-3
-,Supplier-3,1,g,1,f,1,k,1,0,50,0,
-,Supplier-4,1,a,1,,,,,0,50,2,Supplier-3
-,ShadyGuy-3,1,h,5,p,1,,,0,50,0,
-,ShadyGuy-4,1,g,2,,,,,0,50,2,ShadyGuy-3
-,Organiser-5,1,bb,1,,,,,0,50,0,
-,Organiser-6,1,cc,1,,,,,0,50,7,Organiser-5
-,Supplier-5,1,aaa,1,,,,,0,50,0,
-,Supplier-6,1,bbbb,1,,,,,0,50,7,Supplier-5
-,ShadyGuy-5,1,cccc,1,,,,,0,50,0,
-,ShadyGuy-6,1,f,1,,,,,0,50,7,ShadyGuy-5
-,Organiser-7,1,ddd,1,,,,,0,50,0,
-,Organiser-8,1,aaaa,2,,,,,0,50,0,Organiser-7
-,Organiser-9,1,bbb,1,,,,,0,50,0,Organiser-8
-,ShadyGuy-7,1,u,1,,,,,0,50,0,Organiser-9
+HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT 3,GOLD_REWARD,ENERGY_REWARD,KEYS,REQUIRED_QUESTS
+,2001,Organiser-1,1,500,Wine,1,,,,,0,10,0,
+,2002,Organiser-2,1,500,Fruits,1,,,,,0,10,1,Organiser-1
+,2003,Supplier-1,1,500,Blanket,1,,,,,0,10,0,
+,2004,Supplier-2,1,500,Medicine,1,,,,,0,10,1,Supplier-1
+,2005,ShadyGuy-1,1,500,Basket,1,,,,,0,10,0,
+,2006,ShadyGuy-2,1,500,Saw,1,,,,,0,10,1,ShadyGuy-1
+,2007,Organiser-3,1,500,Sheets,1,,,,,0,10,0,
+,2008,Organiser-4,1,500,Wine,1,Fruits,1,,,0,10,2,Organiser-3
+,2009,Supplier-3,1,500,Fruits,1,Pills,1,Lavender,1,0,10,0,
+,2010,Supplier-4,1,500,Basket,1,,,,,0,10,2,Supplier-3
+,2011,ShadyGuy-3,1,500,Cable,5,Knife,1,,,0,10,0,
+,2012,ShadyGuy-4,1,500,Fruits,2,,,,,0,10,2,ShadyGuy-3
+,2013,Organiser-5,1,500,Plates,1,,,,,0,10,0,
+,2014,Organiser-6,1,500,Flower wreath,1,,,,,0,10,7,Organiser-5
+,2015,Supplier-5,1,500,Pig costume,1,,,,,0,10,0,
+,2016,Supplier-6,1,500,Picnic basket,1,,,,,0,10,7,Supplier-5
+,2017,ShadyGuy-5,1,500,Camera on tripod,1,,,,,0,10,0,
+,2018,ShadyGuy-6,1,500,Pills,1,,,,,0,10,7,ShadyGuy-5
+,2019,Organiser-7,1,500,Scene microphone,1,,,,,0,10,0,
+,2020,Organiser-8,1,500,Cutlery,2,,,,,0,10,0,Organiser-7
+,2021,Organiser-9,1,500,Special chair,1,,,,,0,10,0,Organiser-8
+,2022,ShadyGuy-7,1,500,Shovel,1,,,,,0,10,0,Organiser-9

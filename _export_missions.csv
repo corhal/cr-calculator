@@ -1,0 +1,11 @@
+id,chapterId,main,requirements,recipes,fixedReward,garbageCoeff,possibleReward,cost,config,_comment
+201,1,,,,"{""gold"": 5}",0.5,"[{""item"": 675, ""prob"": 0.3}, {""item"": 687, ""prob"": 0.1}, {""item"": 685, ""prob"": 0.5}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,1
+202,1,,,,"{""gold"": 5}",0.5,"[{""item"": 666, ""prob"": 0.3}, {""item"": 672, ""prob"": 0.5}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,2
+203,1,,,,"{""gold"": 5}",0.5,"[{""item"": 667, ""prob"": 0.3}, {""item"": 674, ""prob"": 0.5}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,3
+204,1,,"{""region"": [{""id"": 204, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 677, ""prob"": 0.5}, {""item"": 678, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,4
+205,1,,"{""region"": [{""id"": 205, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 671, ""prob"": 0.3}, {""item"": 687, ""prob"": 0.1}, {""item"": 676, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,5
+206,1,,"{""region"": [{""id"": 206, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 681, ""prob"": 0.3}, {""item"": 673, ""prob"": 0.5}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,6
+207,1,,"{""region"": [{""id"": 207, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 670, ""prob"": 0.3}, {""item"": 682, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,7
+208,1,,"{""region"": [{""id"": 208, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 680, ""prob"": 0.3}, {""item"": 679, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,8
+209,1,,"{""region"": [{""id"": 209, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 687, ""prob"": 0.1}, {""item"": 669, ""prob"": 0.3}, {""item"": 668, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,9
+210,1,,"{""region"": [{""id"": 210, ""status"": 1}]}",,"{""gold"": 25}",0.5,"[{""item"": 684, ""prob"": 0.3}, {""item"": 683, ""prob"": 0.3}, {""item"": 686, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,10

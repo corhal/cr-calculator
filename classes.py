@@ -1,7 +1,8 @@
 import random
 
 class Item(object):
-    def __init__(self, name, recipe=None, gold_cost=0):
+    def __init__(self, ident, name, recipe=None, gold_cost=0):
+        self.ident = ident
         self.name = name
         self.recipe = recipe # dict of items and counts
         self.gold_cost = gold_cost
@@ -24,9 +25,11 @@ class Item(object):
                     self.full_recipe[secondary_item] = self.full_recipe.get(secondary_item, 0) + item_recipe[secondary_item] * self.recipe[item]    
         
 class Quest(object):
-    def __init__(self, name, chapter, item_conditions, reward, required_quests):
+    def __init__(self, ident, name, chapter, quest_chain, item_conditions, reward, required_quests):
+        self.ident = ident
         self.name = name
         self.chapter = chapter
+        self.quest_chain = quest_chain
         self.item_conditions = item_conditions # dict
         self.completed = False
         self.reward = reward
@@ -92,7 +95,8 @@ class Reward(object):
         self.keys = keys
 
 class Mission(object):
-    def __init__(self, name, chapter, reward, energy_cost, keys_cost):
+    def __init__(self, ident, name, chapter, reward, energy_cost, keys_cost):
+        self.ident = ident
         self.name = name
         self.chapter = chapter
         self.reward = reward

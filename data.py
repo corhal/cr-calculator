@@ -19,7 +19,8 @@ def load_items():
             gold_cost = 0
             if row["GOLD_COST"] != "":
                 gold_cost = int(row["GOLD_COST"])
-            all_items[row["NAME"]] = Item(name=row["NAME"],
+            all_items[row["NAME"]] = Item(ident=row["ID"],
+                                          name=row["NAME"],
                                           recipe=recipe,
                                           gold_cost=gold_cost)
     return all_items      
@@ -37,7 +38,8 @@ def load_missions(all_items):
                     chance = float(row["CHANCE " + str(i)])
                     item_chances[item] = chance                
             all_missions.append(
-                Mission(name=row["NAME"],
+                Mission(ident=row["ID"],
+                        name=row["NAME"],
                         chapter=row["CHAPTER"],
                         reward=Reward(item_chances=item_chances,
                                 gold_reward=int(row["GOLD_REWARD"])),
@@ -66,8 +68,10 @@ def load_quests(all_items):
                     if quest.name == quest_name:
                         required_quests.append(quest)
             all_quests.append(
-                Quest(name=row["NAME"],
+                Quest(ident=row["ID"],
+                      name=row["NAME"],
                       chapter=row["CHAPTER"],
+                      quest_chain=row["QUEST_CHAIN"],
                       item_conditions=item_conditions,
                       reward=Reward({},
                                   gold_reward=int(row["GOLD_REWARD"]),
