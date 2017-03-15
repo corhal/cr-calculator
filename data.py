@@ -59,6 +59,8 @@ def load_quests(all_items):
                     item_conditions[item] = amount
             required_quests = []
             quest_names = row["REQUIRED_QUESTS"].split(",")
+            if row["NAME"] in quest_names:
+                raise ValueError(row["NAME"] + " is locked on itself")
             for quest in all_quests:
                 for quest_name in quest_names:
                     if quest.name == quest_name:

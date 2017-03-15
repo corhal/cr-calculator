@@ -31,7 +31,7 @@ class Quest(object):
         self.completed = False
         self.reward = reward
         self.required_quests = required_quests # list
-        self.locked = True
+        self.locked = True        
 
     def __str__(self):
         tostring = self.name + " ["
@@ -191,10 +191,13 @@ class Player(object):
         self.receive_reward(quest.complete())
 
     def farm_item(self, item, amount):
-        for mission in Game.missions:           
+        farm_mission = None
+        for mission in Game.missions:
             if item in mission.reward.item_chances.keys():
                 farm_mission = mission
                 break
+        if farm_mission == None:
+            raise ValueError("Can't find " + item.name + " in mission drop")
         while self.inventory.get(item, 0) < amount:
             self.play_mission(farm_mission)
 
