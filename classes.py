@@ -31,7 +31,7 @@ class Quest(object):
         self.completed = False
         self.reward = reward
         self.required_quests = required_quests # list
-        self.locked = True
+        self.locked = True        
 
     def __str__(self):
         tostring = self.name + " ["
