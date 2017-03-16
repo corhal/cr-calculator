@@ -223,6 +223,7 @@ def export_translation(last_id):
                 ord_list = orders[quest.name]
 
             if 0 in orders[quest.name]:
+                d_id += 1
                 ident = 'QUEST_' + str(quest.ident) + '_DIALOG_000'
                 translations[ident] = "briefing"
                 dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
@@ -243,7 +244,7 @@ def export_translation(last_id):
                 str_count = str(abs_count)
                 if abs_count < 10:
                     str_count = '0' + str(abs_count)
-                ident = 'QUEST_' + str(quest.ident) + '_DIALOG_' + str_count
+                ident = 'QUEST_' + str(quest.ident) + '_DIALOG_' + str_count                
                 translations[ident] = row[text_col]
                 dialogues[d_id].append(ident)
                 dialogues[d_id].append(str(order_count))
@@ -281,8 +282,8 @@ def export_translation(last_id):
 
         keys = sorted(dialogues.keys())
         
-        for d_id in keys: # ident: [q_id, char, message, order, orientation, responces]
-            questId = dialogues[d_id][0]
+        for d_id in keys: # ident: [q_id, char, message, order, orientation, responces]            
+            questId = dialogues[d_id][0]            
             character = dialogues[d_id][1]
             message = dialogues[d_id][2]
             order = dialogues[d_id][3]
