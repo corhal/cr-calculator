@@ -156,11 +156,161 @@ def export_quests():
                              'reward': reward,
                              '_comment': comment})
 
+def find_quest(quest_name, quests):
+    for quest in quests:
+        if quest_name == quest.name:
+            return quest
+
+def export_translation(last_id):
+    quests = load_quests(load_items())
+
+    name_col = 0
+    order_col = 0
+    person_col = 0
+    text_col = 0
+    resp_col = 0
+
+    translations = {} # ident : text
+    orders = {} # name : [ord, ord, ord]    
+    dialogues = {} # ident: [q_id, char, message, order, orientation, responces]
+    
+    with open('_validator_dialogues.csv', 'rt', encoding="utf8") as csvfile:        
+        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        
+        for row in reader:
+            if row[0] == "HEADER":
+                name_col = row.index("QUEST")
+                order_col = row.index("ORDER")
+                person_col = row.index("PERSON")
+                text_col = row.index("TEXT")
+                resp_col = row.index("RESPONSES")                
+                continue
+            
+            if row[name_col] != "":
+                text_count = 0
+                quest = find_quest(row[name_col], quests)
+                orders[quest.name] = [0]
+                
+            if row[order_col] == "before":
+                order = "before"
+
+            if row[order_col] == "after":
+                order = "after"               
+                text_count = 0
+
+            if row[person_col] != "":
+                if order == "before":
+                    text_count -= 1
+                if order == "after":
+                    text_count += 1
+                orders[quest.name].append(text_count)
+    
+        csvfile.seek(0)                
+        for key in orders.keys():
+            orders[key].sort()
+        
+        for row in reader:  
+            if row[0] == "HEADER":
+                d_id = last_id
+                continue
+            
+            if row[resp_col] == "":
+                continue
+
+            if row[name_col] != "":
+                abs_count = 0
+                quest = find_quest(row[name_col], quests)
+                ord_list = orders[quest.name]
+
+            if 0 in orders[quest.name]:
+                ident = 'QUEST_' + str(quest.ident) + '_DIALOG_000'
+                translations[ident] = "briefing"
+                dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
+                del(orders[quest.name][orders[quest.name].index(0)])
+            
+            if len(orders[quest.name]) > 0 and row[text_col] != "":
+                order_count = orders[quest.name][0]
+                del(orders[quest.name][0]) 
+
+            if row[person_col] != "": # ident: [q_id, char, message, order, orientation, responces]
+                d_id += 1
+                pers = row[person_col]
+                dialogues[d_id] = [str(quest.ident), row[person_col]]
+            
+            if row[text_col] != "":
+                resp_count = 0
+                abs_count += 1
+                str_count = str(abs_count)
+                if abs_count < 10:
+                    str_count = '0' + str(abs_count)
+                ident = 'QUEST_' + str(quest.ident) + '_DIALOG_' + str_count
+                translations[ident] = row[text_col]
+                dialogues[d_id].append(ident)
+                dialogues[d_id].append(str(order_count))
+                dialogues[d_id].append('left')
+                dialogues[d_id].append([])
+
+            if row[resp_col] != "":
+                resp_count += 1
+                resp_ident = ident + '_A' + str(resp_count)
+                translations[resp_ident] = row[resp_col]
+                dialogues[d_id][-1].append(resp_ident)
+
+    with open('_export_translations.csv', 'wt', encoding="utf8", newline='') as csvfile:
+        fieldnames = ['ident', 'lang', 'text',
+                      'lastUpdateDate', 'description']
+        writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
+
+        writer.writeheader()
+        
+        keys = sorted(translations.keys())
+        
+        for ident in keys:                           
+            writer.writerow({'ident': ident,
+                             'lang': 'ru',                             
+                             'text': translations[ident],
+                             'lastUpdateDate': '2017-02-07 12:04:05',
+                             'description': ''})
+    
+    with open('_export_dialogues.csv', 'wt', encoding="utf8", newline='') as csvfile:
+        fieldnames = ['id', 'questId', 'character', 'message',
+                      'order', 'orientation', 'responces']
+        writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
+
+        writer.writeheader()
+
+        keys = sorted(dialogues.keys())
+        
+        for d_id in keys: # ident: [q_id, char, message, order, orientation, responces]
+            questId = dialogues[d_id][0]
+            character = dialogues[d_id][1]
+            message = dialogues[d_id][2]
+            order = dialogues[d_id][3]
+            orientation = dialogues[d_id][4]
+            responces = '['
+            responces_ls = dialogues[d_id][5]
+            for i in range(len(responces_ls)):
+                responces += '"' + responces_ls[i] + '"'
+                if i != len(responces_ls) - 1:
+                    responces += ', '
+            responces += ']'
+                
+            writer.writerow({'id': str(d_id),
+                             'questId': questId,                             
+                             'character': character,
+                             'message': message,
+                             'order': order,
+                             'orientation': orientation,
+                             'responces': responces})
+                
+
 def export_data():
+    last_id = int(input("enter current last dialogue id, pls "))
     export_items()
     export_quests()
     export_missions()
-
+    export_translation(last_id)
+    
 export_data()
 
 print("Ok! look at _export files.")
