@@ -1,33 +1,35 @@
-,ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
-,666,Basket,,,,,,,
-,667,Saw,,,,,,,
-,668,Camera,,,,,,,
-,669,Lens,,,,,,,
-,670,Tripod,,,,,,,
-,671,Pills,,,,,,,
-,672,Fruits,,,,,,,
-,673,Cable,,,,,,,
-,674,Blanket,,,,,,,
-,675,Medicine fragment,,,,,,,
-,676,Lavender,,,,,,,
-,677,Cloth,,,,,,,
-,678,Thread,,,,,,,
-,679,Spoon,,,,,,,
-,680,Fork,,,,,,,
-,681,Knife,,,,,,,
-,682,Plate,,,,,,,
-,683,Microphone,,,,,,,
-,684,Chair,,,,,,,
-,685,Wine,,,,,,,
-,686,Shovel,,,,,,,
-,687,Recipe,,,,,,,
-,688,Medicine,Medicine fragment,3,,,,,2000
-,689,Plates,Plate,5,,,,,3000
-,690,Flower wreath,Lavender,5,,,,,7000
-,691,Pig costume,Cloth,1,Thread,2,,,1000
-,692,Special chair,Chair,1,Saw,1,,,8000
-,693,Sheets,Cloth,2,Thread,1,,,8000
-,694,Scene microphone,Microphone,1,Cable,5,,,8000
-,695,Cutlery,Spoon,3,Fork,3,Knife,3,8000
-,696,Picnic basket,Cutlery,1,Basket,1,Blanket,1,8000
-,697,Camera on tripod,Camera,1,Lens,1,Tripod,1,8000
+ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
+1045,Camera,,,,,,,
+1042,Pills,,,,,,,
+1054,Basket,,,,,,,
+1055,Saw,,,,,,,
+1056,Lens,,,,,,,
+1057,Tripod,,,,,,,
+1058,Fruits,,,,,,,
+1059,Cable,,,,,,,
+1060,Blanket,,,,,,,
+1061,Medicine fragment,,,,,,,
+1062,Lavender,,,,,,,
+1063,Cloth,,,,,,,
+1036,Thread,,,,,,,
+1064,Spoon,,,,,,,
+1065,Fork,,,,,,,
+1066,Knife,,,,,,,
+1067,Plate,,,,,,,
+1068,Microphone,,,,,,,
+1069,Chair,,,,,,,
+1070,Wine,,,,,,,
+1071,Shovel,,,,,,,
+10003,Sandwich,,,,,,,
+10004,Ribs,,,,,,,
+10005,Mushrooms,,,,,,,
+122,Medicine,Medicine fragment,3,,,,,2000
+123,Plates,Plate,5,,,,,3000
+124,Flower wreath,Lavender,5,,,,,7000
+125,Pig costume,Cloth,1,Thread,2,,,1000
+126,Special chair,Chair,1,Saw,1,,,8000
+127,Sheets,Cloth,2,Thread,1,,,8000
+128,Scene microphone,Microphone,1,Cable,5,,,8000
+129,Cutlery,Spoon,3,Fork,3,Knife,3,8000
+130,Picnic basket,Cutlery,1,Basket,1,Blanket,1,8000
+131,Camera on tripod,Camera,1,Lens,1,Tripod,1,8000

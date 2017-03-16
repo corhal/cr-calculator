@@ -1,23 +1,23 @@
 HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT 3,GOLD_REWARD,ENERGY_REWARD,KEYS,REQUIRED_QUESTS
-,2001,Organiser-1,1,500,Wine,1,,,,,0,10,0,
-,2002,Organiser-2,1,500,Fruits,1,,,,,0,10,1,Organiser-1
-,2003,Supplier-1,1,500,Blanket,1,,,,,0,10,0,
-,2004,Supplier-2,1,500,Medicine,1,,,,,0,10,1,Supplier-1
-,2005,ShadyGuy-1,1,500,Basket,1,,,,,0,10,0,
-,2006,ShadyGuy-2,1,500,Saw,1,,,,,0,10,1,ShadyGuy-1
-,2007,Organiser-3,1,500,Sheets,1,,,,,0,10,0,
-,2008,Organiser-4,1,500,Wine,1,Fruits,1,,,0,10,2,Organiser-3
-,2009,Supplier-3,1,500,Fruits,1,Pills,1,Lavender,1,0,10,0,
-,2010,Supplier-4,1,500,Basket,1,,,,,0,10,2,Supplier-3
-,2011,ShadyGuy-3,1,500,Cable,5,Knife,1,,,0,10,0,
-,2012,ShadyGuy-4,1,500,Fruits,2,,,,,0,10,2,ShadyGuy-3
-,2013,Organiser-5,1,500,Plates,1,,,,,0,10,0,
-,2014,Organiser-6,1,500,Flower wreath,1,,,,,0,10,7,Organiser-5
-,2015,Supplier-5,1,500,Pig costume,1,,,,,0,10,0,
-,2016,Supplier-6,1,500,Picnic basket,1,,,,,0,10,7,Supplier-5
-,2017,ShadyGuy-5,1,500,Camera on tripod,1,,,,,0,10,0,
-,2018,ShadyGuy-6,1,500,Pills,1,,,,,0,10,7,ShadyGuy-5
-,2019,Organiser-7,1,500,Scene microphone,1,,,,,0,10,0,
-,2020,Organiser-8,1,500,Cutlery,2,,,,,0,10,0,Organiser-7
-,2021,Organiser-9,1,500,Special chair,1,,,,,0,10,0,Organiser-8
-,2022,ShadyGuy-7,1,500,Shovel,1,,,,,0,10,0,Organiser-9
+,20101,Organiser-1,1,201,Wine,1,,,,,0,10,0,
+,20102,Organiser-2,1,201,Fruits,1,,,,,0,10,1,Organiser-1
+,20201,Supplier-1,1,202,Blanket,1,,,,,0,10,0,Organiser-2
+,20202,Supplier-2,1,202,Medicine,1,,,,,0,10,1,Supplier-1
+,20301,ShadyGuy-1,1,203,Basket,1,,,,,0,10,0,Organiser-2
+,20302,ShadyGuy-2,1,203,Saw,1,,,,,0,10,1,ShadyGuy-1
+,20401,Organiser-3,1,204,Sheets,1,,,,,0,10,0,Organiser-2
+,20402,Organiser-4,1,204,Wine,1,Fruits,1,,,0,10,2,Organiser-3
+,20501,Supplier-3,1,205,Fruits,1,Pills,1,Lavender,1,0,10,0,Supplier-2
+,20502,Supplier-4,1,205,Basket,1,,,,,0,10,2,Supplier-3
+,20601,ShadyGuy-3,1,206,Cable,5,Knife,1,,,0,10,0,ShadyGuy-2
+,20602,ShadyGuy-4,1,206,Fruits,2,,,,,0,10,2,ShadyGuy-3
+,20701,Organiser-5,1,207,Plates,1,,,,,0,10,0,Organiser-4
+,20702,Organiser-6,1,207,Flower wreath,1,,,,,0,10,7,Organiser-5
+,20801,Supplier-5,1,208,Pig costume,1,,,,,0,10,0,Supplier-4
+,20802,Supplier-6,1,208,Picnic basket,1,,,,,0,10,7,Supplier-5
+,20901,ShadyGuy-5,1,209,Camera on tripod,1,,,,,0,10,0,ShadyGuy-4
+,20902,ShadyGuy-6,1,209,Pills,1,,,,,0,10,7,ShadyGuy-5
+,21001,Organiser-7,1,210,Scene microphone,1,,,,,0,10,0,Organiser-6
+,21002,Organiser-8,1,210,Cutlery,2,,,,,0,10,0,Organiser-7
+,21003,Organiser-9,1,210,Special chair,1,,,,,0,10,0,Organiser-8
+,21101,ShadyGuy-7,1,211,Shovel,1,,,,,0,10,0,Organiser-9

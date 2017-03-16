@@ -1,23 +1,23 @@
 id,chapterId,questChain,requirements,cost,reward,_comment
-2001,1,500,{},"{""item"" : [{""id"" : 685, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-1
-2002,1,500,"{""quest"": [{""id"": 2001, ""status"": 3}]}","{""item"" : [{""id"" : 672, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 1}]}",Organiser-2
-2003,1,500,{},"{""item"" : [{""id"" : 674, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-1
-2004,1,500,"{""quest"": [{""id"": 2003, ""status"": 3}]}","{""item"" : [{""id"" : 688, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 1}]}",Supplier-2
-2005,1,500,{},"{""item"" : [{""id"" : 666, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-1
-2006,1,500,"{""quest"": [{""id"": 2005, ""status"": 3}]}","{""item"" : [{""id"" : 667, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 1}]}",ShadyGuy-2
-2007,1,500,{},"{""item"" : [{""id"" : 693, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-3
-2008,1,500,"{""quest"": [{""id"": 2007, ""status"": 3}]}","{""item"" : [{""id"" : 685, ""amount"" : 1}, {""id"" : 672, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 2}]}",Organiser-4
-2009,1,500,{},"{""item"" : [{""id"" : 676, ""amount"" : 1}, {""id"" : 672, ""amount"" : 1}, {""id"" : 671, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-3
-2010,1,500,"{""quest"": [{""id"": 2009, ""status"": 3}]}","{""item"" : [{""id"" : 666, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 2}]}",Supplier-4
-2011,1,500,{},"{""item"" : [{""id"" : 673, ""amount"" : 5}, {""id"" : 681, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-3
-2012,1,500,"{""quest"": [{""id"": 2011, ""status"": 3}]}","{""item"" : [{""id"" : 672, ""amount"" : 2}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 2}]}",ShadyGuy-4
-2013,1,500,{},"{""item"" : [{""id"" : 689, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-5
-2014,1,500,"{""quest"": [{""id"": 2013, ""status"": 3}]}","{""item"" : [{""id"" : 690, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 7}]}",Organiser-6
-2015,1,500,{},"{""item"" : [{""id"" : 691, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-5
-2016,1,500,"{""quest"": [{""id"": 2015, ""status"": 3}]}","{""item"" : [{""id"" : 696, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 7}]}",Supplier-6
-2017,1,500,{},"{""item"" : [{""id"" : 697, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-5
-2018,1,500,"{""quest"": [{""id"": 2017, ""status"": 3}]}","{""item"" : [{""id"" : 671, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 7}]}",ShadyGuy-6
-2019,1,500,{},"{""item"" : [{""id"" : 694, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-7
-2020,1,500,"{""quest"": [{""id"": 2019, ""status"": 3}]}","{""item"" : [{""id"" : 695, ""amount"" : 2}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-8
-2021,1,500,"{""quest"": [{""id"": 2020, ""status"": 3}]}","{""item"" : [{""id"" : 692, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-9
-2022,1,500,"{""quest"": [{""id"": 2021, ""status"": 3}]}","{""item"" : [{""id"" : 686, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-7
+20101,1,201,{},"{""item"" : [{""id"" : 1070, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-1
+20102,1,201,"{""quest"": [{""id"": 20101, ""status"": 3}]}","{""item"" : [{""id"" : 1058, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 1}]}",Organiser-2
+20201,1,202,"{""quest"": [{""id"": 20102, ""status"": 3}]}","{""item"" : [{""id"" : 1060, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-1
+20202,1,202,"{""quest"": [{""id"": 20201, ""status"": 3}]}","{""item"" : [{""id"" : 122, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 1}]}",Supplier-2
+20301,1,203,"{""quest"": [{""id"": 20102, ""status"": 3}]}","{""item"" : [{""id"" : 1054, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-1
+20302,1,203,"{""quest"": [{""id"": 20301, ""status"": 3}]}","{""item"" : [{""id"" : 1055, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 1}]}",ShadyGuy-2
+20401,1,204,"{""quest"": [{""id"": 20102, ""status"": 3}]}","{""item"" : [{""id"" : 127, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-3
+20402,1,204,"{""quest"": [{""id"": 20401, ""status"": 3}]}","{""item"" : [{""id"" : 1070, ""amount"" : 1}, {""id"" : 1058, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 2}]}",Organiser-4
+20501,1,205,"{""quest"": [{""id"": 20202, ""status"": 3}]}","{""item"" : [{""id"" : 1058, ""amount"" : 1}, {""id"" : 1042, ""amount"" : 1}, {""id"" : 1062, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-3
+20502,1,205,"{""quest"": [{""id"": 20501, ""status"": 3}]}","{""item"" : [{""id"" : 1054, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 2}]}",Supplier-4
+20601,1,206,"{""quest"": [{""id"": 20302, ""status"": 3}]}","{""item"" : [{""id"" : 1059, ""amount"" : 5}, {""id"" : 1066, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-3
+20602,1,206,"{""quest"": [{""id"": 20601, ""status"": 3}]}","{""item"" : [{""id"" : 1058, ""amount"" : 2}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 2}]}",ShadyGuy-4
+20701,1,207,"{""quest"": [{""id"": 20402, ""status"": 3}]}","{""item"" : [{""id"" : 123, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-5
+20702,1,207,"{""quest"": [{""id"": 20701, ""status"": 3}]}","{""item"" : [{""id"" : 124, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 7}]}",Organiser-6
+20801,1,208,"{""quest"": [{""id"": 20502, ""status"": 3}]}","{""item"" : [{""id"" : 125, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-5
+20802,1,208,"{""quest"": [{""id"": 20801, ""status"": 3}]}","{""item"" : [{""id"" : 130, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 7}]}",Supplier-6
+20901,1,209,"{""quest"": [{""id"": 20602, ""status"": 3}]}","{""item"" : [{""id"" : 131, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-5
+20902,1,209,"{""quest"": [{""id"": 20901, ""status"": 3}]}","{""item"" : [{""id"" : 1042, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}], ""item"": [{""id"": 4, ""amount"": 7}]}",ShadyGuy-6
+21001,1,210,"{""quest"": [{""id"": 20702, ""status"": 3}]}","{""item"" : [{""id"" : 128, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-7
+21002,1,210,"{""quest"": [{""id"": 21001, ""status"": 3}]}","{""item"" : [{""id"" : 129, ""amount"" : 2}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-8
+21003,1,210,"{""quest"": [{""id"": 21002, ""status"": 3}]}","{""item"" : [{""id"" : 126, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-9
+21101,1,211,"{""quest"": [{""id"": 21003, ""status"": 3}]}","{""item"" : [{""id"" : 1071, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-7

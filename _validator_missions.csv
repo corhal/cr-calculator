@@ -1,11 +1,11 @@
 HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWARD,KEYS_COST
-,201,1,1,Recipe,0.1,Wine,0.5,Medicine fragment,0.3,5,0
-,202,2,1,Fruits,0.5,Basket,0.3,,,5,0
-,203,3,1,Blanket,0.5,Saw,0.3,,,5,0
-,204,4,1,Cloth,0.5,Thread,0.3,,,10,1
-,205,5,1,Recipe,0.1,Pills,0.3,Lavender,0.3,10,1
-,206,6,1,Cable,0.5,Knife,0.3,,,10,1
-,207,7,1,Plate,0.3,Tripod,0.3,,,10,6
-,208,8,1,Spoon,0.3,Fork,0.3,,,10,6
-,209,9,1,Recipe,0.1,Camera,0.3,Lens,0.3,10,6
-,210,10,1,Microphone,0.3,Chair,0.3,Shovel,0.3,25,9
+,21,1,1,Sandwich,0.1,Wine,0.5,Medicine fragment,0.3,5,0
+,22,2,1,Fruits,0.5,Basket,0.3,,,5,0
+,23,3,1,Blanket,0.5,Saw,0.3,,,5,0
+,24,4,1,Cloth,0.5,Thread,0.3,,,10,1
+,25,5,1,Ribs,0.1,Pills,0.3,Lavender,0.3,10,1
+,26,6,1,Cable,0.5,Knife,0.3,,,10,1
+,27,7,1,Plate,0.3,Tripod,0.3,,,10,6
+,28,8,1,Spoon,0.3,Fork,0.3,,,10,6
+,29,9,1,Mushrooms,0.1,Camera,0.3,Lens,0.3,10,6
+,30,10,1,Microphone,0.3,Chair,0.3,Shovel,0.3,25,9

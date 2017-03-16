@@ -1,11 +1,11 @@
 id,chapterId,main,requirements,recipes,fixedReward,garbageCoeff,possibleReward,cost,config,_comment
-201,1,,,,"{""gold"": 5}",0.5,"[{""item"": 687, ""prob"": 0.1}, {""item"": 675, ""prob"": 0.3}, {""item"": 685, ""prob"": 0.5}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,1
-202,1,,,,"{""gold"": 5}",0.5,"[{""item"": 672, ""prob"": 0.5}, {""item"": 666, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,2
-203,1,,,,"{""gold"": 5}",0.5,"[{""item"": 667, ""prob"": 0.3}, {""item"": 674, ""prob"": 0.5}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,3
-204,1,,"{""region"": [{""id"": 204, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 677, ""prob"": 0.5}, {""item"": 678, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,4
-205,1,,"{""region"": [{""id"": 205, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 687, ""prob"": 0.1}, {""item"": 671, ""prob"": 0.3}, {""item"": 676, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,5
-206,1,,"{""region"": [{""id"": 206, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 673, ""prob"": 0.5}, {""item"": 681, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,6
-207,1,,"{""region"": [{""id"": 207, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 670, ""prob"": 0.3}, {""item"": 682, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,7
-208,1,,"{""region"": [{""id"": 208, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 680, ""prob"": 0.3}, {""item"": 679, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,8
-209,1,,"{""region"": [{""id"": 209, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 687, ""prob"": 0.1}, {""item"": 668, ""prob"": 0.3}, {""item"": 669, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,9
-210,1,,"{""region"": [{""id"": 210, ""status"": 1}]}",,"{""gold"": 25}",0.5,"[{""item"": 683, ""prob"": 0.3}, {""item"": 684, ""prob"": 0.3}, {""item"": 686, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,10
+21,1,,,,"{""gold"": 5}",0.5,"[{""item"": 10003, ""prob"": 0.1}, {""item"": 1070, ""prob"": 0.5}, {""item"": 1061, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,1
+22,1,,,,"{""gold"": 5}",0.5,"[{""item"": 1058, ""prob"": 0.5}, {""item"": 1054, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,2
+23,1,,,,"{""gold"": 5}",0.5,"[{""item"": 1060, ""prob"": 0.5}, {""item"": 1055, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,3
+24,1,,"{""region"": [{""id"": 24, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 1063, ""prob"": 0.5}, {""item"": 1036, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,4
+25,1,,"{""region"": [{""id"": 25, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 10004, ""prob"": 0.1}, {""item"": 1042, ""prob"": 0.3}, {""item"": 1062, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,5
+26,1,,"{""region"": [{""id"": 26, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 1059, ""prob"": 0.5}, {""item"": 1066, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,6
+27,1,,"{""region"": [{""id"": 27, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 1067, ""prob"": 0.3}, {""item"": 1057, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,7
+28,1,,"{""region"": [{""id"": 28, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 1064, ""prob"": 0.3}, {""item"": 1065, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,8
+29,1,,"{""region"": [{""id"": 29, ""status"": 1}]}",,"{""gold"": 10}",0.5,"[{""item"": 10005, ""prob"": 0.1}, {""item"": 1045, ""prob"": 0.3}, {""item"": 1056, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,9
+30,1,,"{""region"": [{""id"": 30, ""status"": 1}]}",,"{""gold"": 25}",0.5,"[{""item"": 1068, ""prob"": 0.3}, {""item"": 1069, ""prob"": 0.3}, {""item"": 1071, ""prob"": 0.3}]","{""refillable"": [{""id"" : 1, ""amount"" :6}]}",,10
