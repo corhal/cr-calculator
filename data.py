@@ -5,7 +5,7 @@ ENERGY_COST = 6
 
 def load_items():
     all_items = {}
-    with open('items.csv', 'rt', encoding="utf8") as csvfile:
+    with open('_validator_items.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
             recipe = {}
@@ -28,7 +28,7 @@ def load_items():
 def load_missions(all_items):
     all_missions = []
 
-    with open('missions.csv', 'rt', encoding="utf8") as csvfile:
+    with open('_validator_missions.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
         for row in reader:                
             item_chances = {}
@@ -50,7 +50,7 @@ def load_missions(all_items):
 def load_quests(all_items):
     all_quests = []
 
-    with open('quests.csv', 'rt', encoding="utf8") as csvfile:
+    with open('_validator_quests.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
         for row in reader:                
             item_conditions = {}
@@ -82,7 +82,7 @@ def load_quests(all_items):
 
 def load_chapters(items, missions, quests):
     all_chapters = []
-    with open('chapters.csv', 'rt', encoding="utf8") as csvfile:
+    with open('_validator_chapters.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
             if row["NAME"] != "":
@@ -94,7 +94,7 @@ def load_chapters(items, missions, quests):
     return all_chapters            
 
 def load_player():
-    with open('player.csv', 'rt', encoding="utf8") as csvfile:
+    with open('_validator_player.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
             if row[0] == "HEADER":

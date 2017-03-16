@@ -1,7 +1,7 @@
 from data import *
 import csv
 
-def write_items():
+def export_items():
     items = load_items()
     with open('_export_items.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'asset', 'readOnly', 'cost', 'config', '_comment']
@@ -34,7 +34,7 @@ def write_items():
                              'config': config,
                              '_comment': comment})
 
-def write_missions():
+def export_missions():
     missions = load_missions(load_items())
     with open('_export_missions.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'chapterId', 'main', 'requirements', 'recipes',
@@ -95,7 +95,7 @@ def write_missions():
                                  'cost': cost,
                                  'missionId': missionId})
 
-def write_quests():     
+def export_quests():     
     quests = load_quests(load_items())
     with open('_export_quests.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'chapterId', 'questChain',
@@ -156,4 +156,12 @@ def write_quests():
                              'reward': reward,
                              '_comment': comment})
 
-write_quests()
+def export_data():
+    export_items()
+    export_quests()
+    export_missions()
+
+export_data()
+
+print("Ok! look at _export files.")
+input("Press Enter to close.")
