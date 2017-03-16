@@ -1,1 +1,35 @@
-
+id,asset,readOnly,cost,config,_comment
+1045,,0,,,Camera
+1042,,0,,,Pills
+1054,,0,,,Basket
+1055,,0,,,Saw
+1056,,0,,,Lens
+1057,,0,,,Tripod
+1058,,0,,,Fruits
+1059,,0,,,Cable
+1060,,0,,,Blanket
+1061,,0,,,Medicine fragment
+1062,,0,,,Lavender
+1063,,0,,,Cloth
+1036,,0,,,Thread
+1064,,0,,,Spoon
+1065,,0,,,Fork
+1066,,0,,,Knife
+1067,,0,,,Plate
+1068,,0,,,Microphone
+1069,,0,,,Chair
+1070,,0,,,Wine
+1071,,0,,,Shovel
+10003,,0,,,Sandwich
+10004,,0,,,Ribs
+10005,,0,,,Mushrooms
+122,,0,"{""item"":[{""id"": 1061, ""amount"": 3}], ""gold"": 2000}",,Medicine
+123,,0,"{""item"":[{""id"": 1067, ""amount"": 5}], ""gold"": 3000}",,Plates
+124,,0,"{""item"":[{""id"": 1062, ""amount"": 5}], ""gold"": 7000}",,Flower wreath
+125,,0,"{""item"":[{""id"": 1063, ""amount"": 1}, {""id"": 1036, ""amount"": 2}], ""gold"": 1000}",,Pig costume
+126,,0,"{""item"":[{""id"": 1069, ""amount"": 1}, {""id"": 1055, ""amount"": 1}], ""gold"": 8000}",,Special chair
+127,,0,"{""item"":[{""id"": 1063, ""amount"": 2}, {""id"": 1036, ""amount"": 1}], ""gold"": 8000}",,Sheets
+128,,0,"{""item"":[{""id"": 1068, ""amount"": 1}, {""id"": 1059, ""amount"": 5}], ""gold"": 8000}",,Scene microphone
+129,,0,"{""item"":[{""id"": 1064, ""amount"": 3}, {""id"": 1065, ""amount"": 3}, {""id"": 1066, ""amount"": 3}], ""gold"": 8000}",,Cutlery
+130,,0,"{""item"":[{""id"": 129, ""amount"": 1}, {""id"": 1054, ""amount"": 1}, {""id"": 1060, ""amount"": 1}], ""gold"": 8000}",,Picnic basket
+131,,0,"{""item"":[{""id"": 1045, ""amount"": 1}, {""id"": 1056, ""amount"": 1}, {""id"": 1057, ""amount"": 1}], ""gold"": 8000}",,Camera on tripod
