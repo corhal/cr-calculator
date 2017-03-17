@@ -139,6 +139,10 @@ class Recipe(object):
         self.gold_reward = 0
         self.mission = None
 
+    #def __lt__(self, other):
+        #if self.level < other.level:
+            #return True
+
     def upgrade(self):
         self.level += 1
         # print(self.name + " upgraded to level " + str(self.level))

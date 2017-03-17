@@ -1,35 +1,39 @@
 id,asset,readOnly,cost,config,_comment
-122,,0,"{""item"":[{""id"": 1061, ""amount"": 3}], ""gold"": 100}",,Medicine
-1058,,0,,,Fruits
+129,,0,"{""item"":[{""id"": 1066, ""amount"": 3}, {""id"": 1065, ""amount"": 3}, {""id"": 1064, ""amount"": 3}], ""gold"": 400}",,Cutlery
 1069,,0,,,Chair
-10005,,0,,,Mushrooms recipe
-128,,0,"{""item"":[{""id"": 1068, ""amount"": 1}, {""id"": 1059, ""amount"": 5}], ""gold"": 400}",,Scene microphone
-1055,,0,,,Saw
+10002,,0,,,Pizza recipe
+122,,0,"{""item"":[{""id"": 1061, ""amount"": 3}], ""gold"": 100}",,Medicine
 127,,0,"{""item"":[{""id"": 1036, ""amount"": 1}, {""id"": 1063, ""amount"": 2}], ""gold"": 400}",,Sheets
-125,,0,"{""item"":[{""id"": 1036, ""amount"": 2}, {""id"": 1063, ""amount"": 1}], ""gold"": 50}",,Pig costume
-1045,,0,,,Camera
-1056,,0,,,Lens
-131,,0,"{""item"":[{""id"": 1056, ""amount"": 1}, {""id"": 1057, ""amount"": 1}, {""id"": 1045, ""amount"": 1}], ""gold"": 400}",,Camera on tripod
-1066,,0,,,Knife
-126,,0,"{""item"":[{""id"": 1055, ""amount"": 1}, {""id"": 1069, ""amount"": 1}], ""gold"": 400}",,Special chair
-10003,,0,,,Sandwich recipe
-10004,,0,,,Ribs recipe
-1060,,0,,,Blanket
+1055,,0,,,Saw
 1062,,0,,,Lavender
-1067,,0,,,Plate
 124,,0,"{""item"":[{""id"": 1062, ""amount"": 5}], ""gold"": 350}",,Flower wreath
 1071,,0,,,Shovel
-130,,0,"{""item"":[{""id"": 1054, ""amount"": 1}, {""id"": 1060, ""amount"": 1}, {""id"": 129, ""amount"": 1}], ""gold"": 400}",,Picnic basket
+125,,0,"{""item"":[{""id"": 1036, ""amount"": 2}, {""id"": 1063, ""amount"": 1}], ""gold"": 50}",,Pig costume
+10001,,0,,,Grilled chicken recipe
 123,,0,"{""item"":[{""id"": 1067, ""amount"": 5}], ""gold"": 150}",,Plates
-1036,,0,,,Thread
-1064,,0,,,Spoon
-1070,,0,,,Wine
-1054,,0,,,Basket
-1042,,0,,,Pills
-1063,,0,,,Cloth
-129,,0,"{""item"":[{""id"": 1064, ""amount"": 3}, {""id"": 1066, ""amount"": 3}, {""id"": 1065, ""amount"": 3}], ""gold"": 400}",,Cutlery
-1057,,0,,,Tripod
 1059,,0,,,Cable
+10004,,0,,,Ribs recipe
+126,,0,"{""item"":[{""id"": 1069, ""amount"": 1}, {""id"": 1055, ""amount"": 1}], ""gold"": 400}",,Special chair
+1067,,0,,,Plate
 1068,,0,,,Microphone
-1065,,0,,,Fork
+1070,,0,,,Wine
+1060,,0,,,Blanket
 1061,,0,,,Medicine fragment
+1036,,0,,,Thread
+1056,,0,,,Lens
+10000,,0,,,Burrito recipe
+10006,,0,,,Chili recipe
+1057,,0,,,Tripod
+128,,0,"{""item"":[{""id"": 1059, ""amount"": 5}, {""id"": 1068, ""amount"": 1}], ""gold"": 400}",,Scene microphone
+1066,,0,,,Knife
+1065,,0,,,Fork
+1054,,0,,,Basket
+1045,,0,,,Camera
+131,,0,"{""item"":[{""id"": 1057, ""amount"": 1}, {""id"": 1045, ""amount"": 1}, {""id"": 1056, ""amount"": 1}], ""gold"": 400}",,Camera on tripod
+1064,,0,,,Spoon
+1042,,0,,,Pills
+130,,0,"{""item"":[{""id"": 1054, ""amount"": 1}, {""id"": 129, ""amount"": 1}, {""id"": 1060, ""amount"": 1}], ""gold"": 400}",,Picnic basket
+1063,,0,,,Cloth
+10005,,0,,,Mushrooms recipe
+1058,,0,,,Fruits
+10003,,0,,,Sandwich recipe

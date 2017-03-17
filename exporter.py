@@ -50,7 +50,7 @@ def export_missions():
             requirements = ''
             if mission.keys_cost != 0:
                 requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
-
+                
             recipes = '['
             count = 0
             goal_count = len(mission.recipe_levels.keys())
@@ -58,8 +58,7 @@ def export_missions():
                 count += 1
                 recipes += '{"recipe": ' + str(recipe.recipe_id) + ', "level": ' + str(mission.recipe_levels[recipe]) + '}'
                 if count != goal_count:
-                    recipes += ', '
-                
+                    recipes += ', '                
             recipes += ']'
             
             fixedReward = '{"gold": ' + str(mission.reward.gold_reward) + '}'
