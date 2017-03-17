@@ -10,9 +10,9 @@ def play(plays_count):
     day_results = []
 
     print("-" * 30)
-    for i in range(0, plays_count):        
+    for i in range(0, plays_count):
         game = load_game()
-        player = load_player()
+        player = load_player(Game.recipes)
         player.choose_quest()
         mission_results.append(player.missions_completed)
         day_results.append(player.day)

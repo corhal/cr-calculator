@@ -20,16 +20,16 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 1069,Chair,,,,,,,
 1070,Wine,,,,,,,
 1071,Shovel,,,,,,,
-10003,Sandwich,,,,,,,
-10004,Ribs,,,,,,,
-10005,Mushrooms,,,,,,,
-122,Medicine,Medicine fragment,3,,,,,2000
-123,Plates,Plate,5,,,,,3000
-124,Flower wreath,Lavender,5,,,,,7000
-125,Pig costume,Cloth,1,Thread,2,,,1000
-126,Special chair,Chair,1,Saw,1,,,8000
-127,Sheets,Cloth,2,Thread,1,,,8000
-128,Scene microphone,Microphone,1,Cable,5,,,8000
-129,Cutlery,Spoon,3,Fork,3,Knife,3,8000
-130,Picnic basket,Cutlery,1,Basket,1,Blanket,1,8000
-131,Camera on tripod,Camera,1,Lens,1,Tripod,1,8000
+10003,Sandwich recipe,,,,,,,
+10004,Ribs recipe,,,,,,,
+10005,Mushrooms recipe,,,,,,,
+122,Medicine,Medicine fragment,3,,,,,100
+123,Plates,Plate,5,,,,,150
+124,Flower wreath,Lavender,5,,,,,350
+125,Pig costume,Cloth,1,Thread,2,,,50
+126,Special chair,Chair,1,Saw,1,,,400
+127,Sheets,Cloth,2,Thread,1,,,400
+128,Scene microphone,Microphone,1,Cable,5,,,400
+129,Cutlery,Spoon,3,Fork,3,Knife,3,400
+130,Picnic basket,Cutlery,1,Basket,1,Blanket,1,400
+131,Camera on tripod,Camera,1,Lens,1,Tripod,1,400

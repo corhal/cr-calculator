@@ -1,11 +1,11 @@
-HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWARD,KEYS_COST
-,21,1,1,Sandwich,0.1,Wine,0.5,Medicine fragment,0.3,5,0
-,22,2,1,Fruits,0.5,Basket,0.3,,,5,0
-,23,3,1,Blanket,0.5,Saw,0.3,,,5,0
-,24,4,1,Cloth,0.5,Thread,0.3,,,10,1
-,25,5,1,Ribs,0.1,Pills,0.3,Lavender,0.3,10,1
-,26,6,1,Cable,0.5,Knife,0.3,,,10,1
-,27,7,1,Plate,0.3,Tripod,0.3,,,10,6
-,28,8,1,Spoon,0.3,Fork,0.3,,,10,6
-,29,9,1,Mushrooms,0.1,Camera,0.3,Lens,0.3,10,6
-,30,10,1,Microphone,0.3,Chair,0.3,Shovel,0.3,25,9
+HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWARD,KEYS_COST,RECIPE 1,RLEVEL 1,RECIPE 2,RLEVEL 2,RECIPE 3,RLEVEL 3
+,21,1,1,Sandwich recipe,1,Wine,0.5,Medicine fragment,0.3,5,0,Sandwich,1,Ribs,1,Mushrooms,1
+,22,2,1,Fruits,0.5,Basket,0.3,,,5,0,Ribs,1,Sandwich,1,Mushrooms,1
+,23,3,1,Blanket,0.5,Saw,0.3,,,5,0,Mushrooms,1,Ribs,1,Sandwich,1
+,24,4,1,Cloth,0.5,Thread,0.3,,,10,1,Mushrooms,1,Sandwich,1,Ribs,1
+,25,5,1,Ribs recipe,1,Pills,0.3,Lavender,0.3,10,1,Sandwich,1,Ribs,1,Mushrooms,1
+,26,6,1,Cable,0.5,Knife,0.3,,,10,1,Ribs,1,Sandwich,1,Mushrooms,1
+,27,7,1,Plate,0.3,Mushrooms recipe,1,,,10,6,Mushrooms,1,Ribs,1,Sandwich,1
+,28,8,1,Spoon,0.3,Fork,0.3,,,10,6,Mushrooms,1,Sandwich,1,Ribs,1
+,29,9,1,Camera,0.3,Lens,0.3,Tripod,0.3,10,6,Sandwich,1,Ribs,1,Mushrooms,1
+,30,10,1,Microphone,0.3,Chair,0.3,Shovel,0.3,25,9,Ribs,1,Mushrooms,1,Sandwich,1

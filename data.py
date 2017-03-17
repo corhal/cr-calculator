@@ -25,8 +25,12 @@ def load_items():
                                           gold_cost=gold_cost)
     return all_items      
 
-def load_missions(all_items):
+def load_missions(all_items, all_recipes):
     all_missions = []
+    def find_recipe(name, recipes):
+        for recipe in recipes:
+            if recipe.name == name:
+                return recipe
 
     with open('_validator_missions.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -36,7 +40,13 @@ def load_missions(all_items):
                 if row["ITEM " + str(i)] != "":
                     item = all_items[row["ITEM " + str(i)]]
                     chance = float(row["CHANCE " + str(i)])
-                    item_chances[item] = chance                
+                    item_chances[item] = chance
+            recipe_levels = {}
+            for i in range(1, 4):
+                if row["RECIPE " + str(i)] != "":
+                    recipe = find_recipe(row["RECIPE " + str(i)], all_recipes)
+                    level = int(row["RLEVEL " + str(i)])
+                    recipe_levels[recipe] = level
             all_missions.append(
                 Mission(ident=row["ID"],
                         name=row["NAME"],
@@ -44,7 +54,8 @@ def load_missions(all_items):
                         reward=Reward(item_chances=item_chances,
                                 gold_reward=int(row["GOLD_REWARD"])),
                         energy_cost=ENERGY_COST,
-                        keys_cost=int(row["KEYS_COST"])))
+                        keys_cost=int(row["KEYS_COST"]),
+                        recipe_levels=recipe_levels))
     return all_missions
 
 def load_quests(all_items):
@@ -93,26 +104,73 @@ def load_chapters(items, missions, quests):
                             quests=quests))
     return all_chapters            
 
-def load_player():
+def load_recipes(all_items):
+    all_recipes = []
+    recipes_by_names = {}
+    with open('_validator_recipes.csv', 'rt', encoding="utf8") as csvfile:
+        reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+        for row in reader:
+            if row["NAME"] not in recipes_by_names:
+                recipes_by_names[row["NAME"]] = [[int(row["LEVEL"]),
+                                                  int(row["GOLD_REWARD"]),
+                                                  int(row["UPGRADE_FRAGMENTS"]),
+                                                  int(row["UPGRADE_GOLD"]),
+                                                  int(row["RECIPE_ID"])]]
+            else:
+                recipes_by_names[row["NAME"]].append([int(row["LEVEL"]),
+                                                      int(row["GOLD_REWARD"]),
+                                                      int(row["UPGRADE_FRAGMENTS"]),
+                                                      int(row["UPGRADE_GOLD"]),
+                                                      int(row["RECIPE_ID"])])
+        for name in recipes_by_names.keys():
+            gold_by_levels = {}
+            frag_item = all_items[name + " recipe"]
+            up_frags_by_levels = {}
+            up_gold_by_levels = {}
+            
+            for level_array in recipes_by_names[name]:
+                level = level_array[0]
+                gold_by_levels[level] = level_array[1]
+                up_frags_by_levels[level] = level_array[2]
+                up_gold_by_levels[level] = level_array[3]
+                recipe_id = level_array[4]
+            
+            all_recipes.append(Recipe(recipe_id, name, gold_by_levels, frag_item,
+                                      up_frags_by_levels, up_gold_by_levels))
+    return all_recipes            
+
+
+def load_player(recipes):
     with open('_validator_player.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
             if row[0] == "HEADER":
                 continue
-            if row[0] == "MAX_DAILY_ENERGY":
-                max_daily_energy = int(row[1])
+            if row[0] == "ENERGY_CAP":
+                energy_cap = int(row[1])
             if row[0] == "STARTING_GOLD":
-                gold = int(row[1])                
-        player = Player(max_daily_energy=max_daily_energy,
-                        gold=gold)
+                gold = int(row[1])
+            if row[0] == "DAILY_SESSIONS":
+                daily_sessions = int(row[1])
+            if row[0] == "MINUTES_PER_ENERGY":
+                mins_per_en = int(row[1])
+            if row[0] == "TIME_BETWEEN_SESSIONS":
+                time_between_sessions = int(row[1])
+        player = Player(energy_cap=energy_cap,
+                        daily_sessions=daily_sessions,
+                        mins_per_en=mins_per_en,
+                        time_between_sessions=time_between_sessions,
+                        gold=gold,
+                        recipes=recipes)
     return player
 
 def load_game():
     items = load_items()
-    missions = load_missions(items)
+    recipes = load_recipes(items)
+    missions = load_missions(items, recipes)
     quests = load_quests(items)
     chapters = load_chapters(items, missions, quests)
-    game = Game(items, missions, quests)
+    game = Game(items, recipes, missions, quests)
     return game
 
 

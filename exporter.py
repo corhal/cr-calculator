@@ -35,7 +35,7 @@ def export_items():
                              '_comment': comment})
 
 def export_missions():
-    missions = load_missions(load_items())
+    missions = load_missions(load_items(), load_recipes(load_items()))
     with open('_export_missions.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'chapterId', 'main', 'requirements', 'recipes',
                       'fixedReward', 'garbageCoeff', 'possibleReward',
@@ -50,7 +50,18 @@ def export_missions():
             requirements = ''
             if mission.keys_cost != 0:
                 requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
-            recipes = ''
+
+            recipes = '['
+            count = 0
+            goal_count = len(mission.recipe_levels.keys())
+            for recipe in mission.recipe_levels.keys():
+                count += 1
+                recipes += '{"recipe": ' + str(recipe.recipe_id) + ', "level": ' + str(mission.recipe_levels[recipe]) + '}'
+                if count != goal_count:
+                    recipes += ', '
+                
+            recipes += ']'
+            
             fixedReward = '{"gold": ' + str(mission.reward.gold_reward) + '}'
             garbageCoeff = '0.5'
             possibleReward = '['  
