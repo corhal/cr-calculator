@@ -1,11 +1,11 @@
 HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWARD,KEYS_COST,RECIPE 1,RLEVEL 1,RECIPE 2,RLEVEL 2,RECIPE 3,RLEVEL 3
-,21,1,1,Sandwich recipe,1,Wine,0.5,Medicine fragment,0.3,5,0,Burrito,3,Grilled chicken,4,Pizza,5
-,22,2,1,Fruits,0.5,Basket,0.3,,,5,0,Sandwich,3,Ribs,4,Mushrooms,5
-,23,3,1,Blanket,0.5,Saw,0.3,,,5,0,Chili,3,Burrito,4,Grilled chicken,5
-,24,4,1,Cloth,0.5,Thread,0.3,,,10,1,Pizza,3,Sandwich,4,Ribs,5
-,25,5,1,Ribs recipe,1,Pills,0.3,Lavender,0.3,10,1,Mushrooms,3,Chili,4,Burrito,5
-,26,6,1,Cable,0.5,Knife,0.3,,,10,1,Grilled chicken,3,Pizza,4,Sandwich,5
-,27,7,1,Plate,0.3,Mushrooms recipe,1,,,10,6,Ribs,3,Mushrooms,4,Chili,5
-,28,8,1,Spoon,0.3,Fork,0.3,,,10,6,Grilled chicken,3,Sandwich,4,Mushrooms,5
-,29,9,1,Camera,0.3,Lens,0.3,Tripod,0.3,10,6,Burrito,3,Pizza,4,Ribs,5
-,30,10,1,Microphone,0.3,Chair,0.3,Shovel,0.3,25,9,Mushrooms,3,Grilled chicken,4,Sandwich,5
+,31,1,1,Sandwich recipe,0.3,Moustache comb,0.3,Battery,0.3,5,0,Burrito,3,Grilled chicken,4,Pizza,5
+,32,2,1,Soup kit,0.4,Toque,0.3,Wax and brush,0.25,5,0,Sandwich,3,Ribs,4,Mushrooms,5
+,33,3,1,Cardboard,0.2,Ring,0.4,Small scissors,0.3,5,0,Chili,3,Burrito,4,Grilled chicken,5
+,34,4,1,Flowers,0.25,Puff,0.3,Broom,0.4,10,2,Pizza,3,Sandwich,4,Ribs,5
+,35,5,1,Ribs recipe,0.3,Headphones,0.5,Spices fragment,0.25,10,2,Mushrooms,3,Chili,4,Burrito,5
+,36,6,1,Golden thread,0.25,Phone,0.3,Skillet,0.3,10,2,Grilled chicken,3,Pizza,4,Sandwich,5
+,37,7,1,Napkin,0.3,Mushrooms recipe,0.3,Tailcoat,0.3,10,6,Ribs,3,Mushrooms,4,Chili,5
+,38,8,1,Pot,0.3,Gift,0.3,Saute pan,0.25,10,6,Grilled chicken,3,Sandwich,4,Mushrooms,5
+,39,9,1,Apron,0.3,Bowtie,0.4,Champagne,0.25,10,6,Burrito,3,Pizza,4,Ribs,5
+,40,10,1,Coffee from Starbucks,0.3,French bread,0.3,Pen,0.3,25,15,Mushrooms,3,Grilled chicken,4,Sandwich,5

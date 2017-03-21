@@ -156,6 +156,7 @@ def load_player(recipes):
                 mins_per_en = int(row[1])
             if row[0] == "TIME_BETWEEN_SESSIONS":
                 time_between_sessions = int(row[1])
+            
         player = Player(energy_cap=energy_cap,
                         daily_sessions=daily_sessions,
                         mins_per_en=mins_per_en,
@@ -170,7 +171,16 @@ def load_game():
     missions = load_missions(items, recipes)
     quests = load_quests(items)
     chapters = load_chapters(items, missions, quests)
-    game = Game(items, recipes, missions, quests)
+    with open('_validator_player.csv', 'rt', encoding="utf8") as csvfile:
+        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        for row in reader:
+            if row[0] == "FIRST_MISSION_100_CHANCE":
+                first_mission_100_chance = row[1].lower() == "true"
+    game = Game(items=items,
+                recipes=recipes,
+                missions=missions,
+                quests=quests,
+                first_mission_100_chance=first_mission_100_chance)
     return game
 
 
