@@ -77,12 +77,12 @@ class Quest(object):
         self.locked = False
         return True
 
-    def is_farmable(self):
+    def is_farmable(self, chapter):
         if not self.is_available():
             return False
         full_conditions = self.full_conditions
         for item in full_conditions.keys():
-            for mission in Game.missions:
+            for mission in chapter.missions:
                 if item in mission.reward.item_chances.keys() and mission.locked:
                     return False
         return True
@@ -232,31 +232,39 @@ class Player(object):
             if count == len(self.order_board.orders):
                  break               
 
-    def get_available_quests(self):
+    def get_available_quests(self, chapter):
         available_quests = []        
-        for quest in Game.quests:
+        for quest in chapter.quests:
             if quest.completed:                
                 continue               
-            if quest.is_farmable():
+            if quest.is_farmable(chapter):
                 available_quests.append(quest)        
         return available_quests
 
-    def choose_quest(self):
+    def play_chapter(self, chapter_index):
+        self.day = 1
+        self.session = 0 # ?..
+        self.missions_completed = 0
+        self.keys = 0 # ?..
+        chapter = Game.chapters[chapter_index]
+        return self.choose_quest(chapter)
+
+    def choose_quest(self, chapter): # returns tuple (missions_completed, day
         loop_count = 0
         while True:
             loop_count += 1
             count = 0
-            for quest in Game.quests:
+            for quest in chapter.quests:
                 if quest.completed:
                     count += 1
-                    if count == len(Game.quests):
-                        return
-            available_quests = self.get_available_quests()            
+                    if count == len(chapter.quests):
+                        return (self.missions_completed, self.day)
+            available_quests = self.get_available_quests(chapter)            
             if len(available_quests) > 0:
                 quest = random.choice(available_quests)
-                self.play_quest(quest)                
-            random.shuffle(Game.missions)
-            for mission in Game.missions:
+                self.play_quest(quest, chapter)                
+            random.shuffle(chapter.missions)
+            for mission in chapter.missions:
                 if mission.locked and self.keys >= mission.keys_cost:
                     self.unlock_mission(mission)
                     
@@ -266,21 +274,21 @@ class Player(object):
                 self.show_stats()
                 print("-" * 30)
                 print("Currently open missions:")
-                for mission in Game.missions:
+                for mission in chapter.missions:
                     if not mission.locked:
                         print(mission)
                 print("Currently available quests:")
-                for quest in Game.quests:
+                for quest in chapter.quests:
                     if not quest.completed and not quest.locked:
                         print(quest)                
                 raise ValueError("Dead end!")
 
-    def play_quest(self, quest):
+    def play_quest(self, quest, chapter):
         item_conditions = quest.item_conditions
         full_conditions = quest.full_conditions
         for item in full_conditions.keys():
-            self.farm_item(item, full_conditions[item])        
-        self.farm_gold(quest.full_gold_cost)
+            self.farm_item(item, full_conditions[item], chapter)        
+        self.farm_gold(quest.full_gold_cost, chapter)
         
         for item in item_conditions.keys():           
             while self.inventory.get(item, 0) < item_conditions[item]:                
@@ -293,9 +301,9 @@ class Player(object):
             self.give_item(item, item_conditions[item])
         self.receive_reward(quest.complete())
 
-    def farm_item(self, item, amount):
+    def farm_item(self, item, amount, chapter):
         farm_mission = None
-        for mission in Game.missions:
+        for mission in chapter.missions:
             if item in mission.reward.item_chances.keys():
                 farm_mission = mission
                 break
@@ -304,9 +312,9 @@ class Player(object):
         while self.inventory.get(item, 0) < amount:
             self.play_mission(farm_mission)
 
-    def farm_gold(self, amount):
+    def farm_gold(self, amount, chapter):
         max_reward = 0
-        for mission in Game.missions:
+        for mission in chapter.missions:
             if mission.locked:
                 continue
             if mission.reward.gold_reward > max_reward:
@@ -441,10 +449,11 @@ class Chapter(object):
         self.days_result = 0
 
 class Game(object):
-    def __init__(self, items, recipes, missions, quests, first_mission_100_chance):
+    def __init__(self, items, recipes, missions, quests, chapters, first_mission_100_chance):
         Game.items = items
         Game.recipes = recipes
         Game.missions = missions
         Game.quests = quests
+        Game.chapters = chapters
         Game.first_mission_100_chance = first_mission_100_chance
         

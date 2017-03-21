@@ -6,20 +6,27 @@ import sys
 
 def play(plays_count):
 
-    mission_results = []
-    day_results = []
+    mission_results = {} # chapter_index: [missions, missions]
+    day_results = {} # chapter_index: [day, day]
 
     print("-" * 30)
     for i in range(0, plays_count):
         game = load_game()
         player = load_player(Game.recipes)
-        player.choose_quest()
-        mission_results.append(player.missions_completed)
-        day_results.append(player.day)
+        for chapter_index in game.chapters.keys():
+            chapter_results = player.play_chapter(chapter_index)
+            if chapter_index not in mission_results.keys():
+                mission_results[chapter_index] = []
+            mission_results[chapter_index].append(chapter_results[0])
+            if chapter_index not in day_results.keys():
+                day_results[chapter_index] = []
+            day_results[chapter_index].append(chapter_results[1])
 
     if len(mission_results) > 0 and len(day_results) > 0:
-        print("Missions, on average: " + str(sum(mission_results)/float(len(mission_results))))
-        print("Days, on average: " + str(sum(day_results)/float(len(day_results))))
+        for chapter_index in mission_results.keys():
+            print("Chapter " + str(chapter_index) + ":")
+            print("Missions, on average: " + str(sum(mission_results[chapter_index])/float(len(mission_results[chapter_index]))))
+            print("Days, on average: " + str(sum(day_results[chapter_index])/float(len(day_results[chapter_index]))))
 
 while True:
     try:
