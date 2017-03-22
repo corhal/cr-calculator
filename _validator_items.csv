@@ -55,20 +55,20 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 10005,Mushrooms recipe,,,,,,,
 10006,Chili recipe,,,,,,,
 122,Medicine,Medicine fragment,3,,,,,100
-123,Plates,Plate,5,,,,,150
-124,Flower wreath,Lavender,5,,,,,350
-125,Pig costume,Cloth,1,Thread,4,,,50
-126,Special chair,Chair,1,Saw,1,,,400
-127,Sheets,Cloth,2,Thread,1,,,400
-128,Scene microphone,Microphone,1,Cable,5,,,400
-129,Cutlery,Spoon,3,Fork,3,Knife,3,400
-130,Picnic basket,Cutlery,1,Basket,1,Blanket,1,400
-131,Camera on tripod,Camera,1,Lens,1,Tripod,1,400
-132,Origami,Cardboard,5,,,,,200
-133,Fancy napkin,Napkin,2,Golden thread,5,,,200
-134,New phone,Phone,1,Battery,1,Headphones,1,300
-135,Moustache kit,Moustache comb,1,Small scissors,2,,,300
-136,Cooking kit,Skillet,2,Pot,2,Saute pan,2,400
-137,Gift card,Small scissors,1,Cardboard,3,Golden thread,5,400
-138,Spices,Spices fragment,5,,,,,500
-139,Box,Cardboard,4,Small scissors,1,,,500
+123,Plates,Plate,5,,,,,100
+124,Flower wreath,Lavender,5,,,,,100
+125,Pig costume,Cloth,1,Thread,4,,,150
+126,Special chair,Chair,1,Saw,1,,,150
+127,Sheets,Cloth,2,Thread,1,,,180
+128,Scene microphone,Microphone,1,Cable,5,,,200
+129,Cutlery,Spoon,3,Fork,3,Knife,3,200
+130,Picnic basket,Cutlery,1,Basket,1,Blanket,1,200
+131,Camera on tripod,Camera,1,Lens,1,Tripod,1,200
+132,Origami,Cardboard,5,,,,,300
+133,Fancy napkin,Napkin,2,Golden thread,5,,,300
+134,New phone,Phone,1,Battery,1,Headphones,1,400
+135,Moustache kit,Moustache comb,1,Small scissors,2,,,400
+136,Cooking kit,Skillet,2,Pot,2,Saute pan,2,800
+137,Gift card,Small scissors,1,Cardboard,3,Golden thread,5,800
+138,Spices,Spices fragment,5,,,,,1000
+139,Box,Cardboard,4,Small scissors,1,,,1000

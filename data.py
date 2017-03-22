@@ -91,7 +91,7 @@ def load_quests(all_items):
                       required_quests=required_quests))
     return all_quests
 
-def load_chapters(items, missions, quests):
+def load_chapters(items, missions, quests, recipes):
     all_chapters = {}
     with open('_validator_chapters.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -100,7 +100,8 @@ def load_chapters(items, missions, quests):
                 all_chapters[int(row["NAME"])] = Chapter(name=row["NAME"],
                                                         items=items,
                                                         missions=missions,
-                                                        quests=quests)
+                                                        quests=quests,
+                                                        recipes=recipes)
     return all_chapters            
 
 def load_recipes(all_items):
@@ -169,7 +170,7 @@ def load_game():
     recipes = load_recipes(items)
     missions = load_missions(items, recipes)
     quests = load_quests(items)
-    chapters = load_chapters(items, missions, quests)
+    chapters = load_chapters(items, missions, quests, recipes)
     with open('_validator_player.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in reader:

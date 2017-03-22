@@ -148,7 +148,8 @@ class Recipe(object):
         self.mission = None  
 
     def upgrade(self):
-        self.level += 1        
+        self.level += 1
+        #print(self.name + " upgraded to " + str(self.level))
         self.gold_reward = self.gold_by_levels[self.level]
         self.generate_mission()
 
@@ -192,7 +193,7 @@ class OrderBoard(object):
             return
         order.in_cooldown = True
 
-    def generate_board(self):        
+    def generate_board(self):
         for order in self.orders:
             order.recipe = random.choice(self.recipes)
             order.in_cooldown = False
@@ -212,14 +213,18 @@ class Player(object):
         self.recipes = recipes
         self.order_board = OrderBoard(self.recipes)
         self.mins_per_en = mins_per_en
-        self.time_between_sessions = time_between_sessions        
+        self.time_between_sessions = time_between_sessions
+        recipe_items = []
+        for recipe in recipes:
+            recipe_items.append(recipe.frag_item)
+        self.chest = Chest(recipe_items)
 
     def farm_orders(self):
         if self.order_board.plays_today == self.order_board.max_plays_daily:
             return
         self.order_board.plays_today += 1
         self.order_board.generate_board()
-            
+        #print("Gold before farming orders: " + str(self.gold))
         while True:
             count = 0
             for order in self.order_board.orders:
@@ -230,6 +235,7 @@ class Player(object):
                 order.in_cooldown = True
                 self.missions_completed -= 1 # :(
             if count == len(self.order_board.orders):
+                 #print("Gold after farming orders: " + str(self.gold))
                  break               
 
     def get_available_quests(self, chapter):
@@ -247,6 +253,11 @@ class Player(object):
         self.missions_completed = 0
         self.keys = 0 # ?..
         chapter = Game.chapters[chapter_index]
+        self.recipes.extend(chapter.recipes)        
+        for recipe in self.recipes:                    
+            if not recipe.frag_item in self.chest.items:
+                self.chest.items.append(recipe.frag_item)
+        
         return self.choose_quest(chapter)
 
     def choose_quest(self, chapter): # returns tuple (missions_completed, day
@@ -288,11 +299,11 @@ class Player(object):
         full_conditions = quest.full_conditions
         for item in full_conditions.keys():
             self.farm_item(item, full_conditions[item], chapter)        
-        self.farm_gold(quest.full_gold_cost, chapter)
-        
         for item in item_conditions.keys():           
-            while self.inventory.get(item, 0) < item_conditions[item]:                
-                self.craft(item)            
+            while self.inventory.get(item, 0) < item_conditions[item]:
+                if self.gold < quest.full_gold_cost:
+                    self.farm_gold(quest.full_gold_cost, chapter)
+                self.craft(item, chapter)            
         self.complete_quest(quest)
 
     def complete_quest(self, quest):
@@ -341,10 +352,15 @@ class Player(object):
         else:
             self.energy = min(self.energy_cap, self.energy + (1 / self.mins_per_en) * 60 * self.time_between_sessions)
 
+    def open_chest(self):
+        received_item = self.chest.open()
+        self.take_item(received_item[0], received_item[1])
+    
     def skip_day(self):
         self.energy = self.energy_cap
         self.session = 0
-        self.day += 1        
+        self.day += 1
+        self.open_chest()
         self.order_board.generate_board()
         self.order_board.plays_today = 0
         self.farm_orders()
@@ -370,23 +386,24 @@ class Player(object):
         self.receive_reward(mission.complete())
         self.missions_completed += 1
 
-    def craft(self, item):
+    def craft(self, item, chapter):
         if item.recipe == None:
             return
         for item_component in item.recipe:
             if self.inventory.get(item_component, 0) < item.recipe.get(item_component, 0):
                 if item_component.recipe != None:
                     while self.inventory.get(item_component, 0) < item.recipe[item_component]:
-                        self.craft(item_component)
+                        self.craft(item_component, chapter)
                 else:
                     return
             elif item.recipe[item_component] <= self.inventory[item_component]:                
-                self.craft(item_component)                
+                self.craft(item_component, chapter)                
             
         for item_component in item.recipe:
-            self.give_item(item_component, item.recipe[item_component])            
-                   
-        self.spend_gold(item.gold_cost)      
+            self.give_item(item_component, item.recipe[item_component])
+        if self.gold < item.gold_cost:
+            self.farm_gold(item.gold_cost, chapter)
+        self.spend_gold(item.gold_cost)
         self.take_item(item, 1)
 
     def receive_keys(self, amount):
@@ -433,8 +450,17 @@ class Player(object):
             if self.inventory[item] > 0:
                 print(item.name + ": " + str(self.inventory[item]))
 
+class Chest(object):
+    def __init__(self, items):
+        self.items = items
+
+    def open(self):
+        item = random.choice(self.items)
+        amount = random.randint(1, 7)
+        return (item, amount)
+
 class Chapter(object):
-    def __init__(self, name, items, missions, quests):
+    def __init__(self, name, items, missions, quests, recipes):
         self.name = name
         self.items = items
         self.missions = []
@@ -445,6 +471,11 @@ class Chapter(object):
         for quest in quests:
             if quest.chapter == self.name:
                 self.quests.append(quest)
+        self.recipes = []        
+        for mission in self.missions:
+            for recipe in recipes:
+                if recipe.frag_item in mission.reward.item_chances.keys():
+                    self.recipes.append(recipe)                    
         self.mission_result = 0
         self.days_result = 0
 

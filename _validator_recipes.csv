@@ -1,22 +1,22 @@
 ,RECIPE_ID,NAME,LEVEL,GOLD_REWARD,UPGRADE_FRAGMENTS,UPGRADE_GOLD
-,1,Burrito,1,100,5,50
-,1,Burrito,2,300,10,100
-,1,Burrito,3,500,1000,5000
-,2,Grilled chicken,1,100,5,50
-,2,Grilled chicken,2,300,10,100
-,2,Grilled chicken,3,500,1000,5000
-,3,Pizza,1,100,5,50
-,3,Pizza,2,300,10,100
-,3,Pizza,3,500,1000,5000
-,4,Sandwich,1,100,5,50
-,4,Sandwich,2,300,10,100
-,4,Sandwich,3,500,1000,5000
-,5,Ribs,1,100,5,50
-,5,Ribs,2,300,10,100
-,5,Ribs,3,500,1000,5000
-,6,Mushrooms,1,100,5,50
-,6,Mushrooms,2,300,10,100
-,6,Mushrooms,3,500,1000,5000
-,7,Chili,1,100,5,50
-,7,Chili,2,300,10,100
-,7,Chili,3,500,1000,5000
+,1,Burrito,1,20,1,100
+,1,Burrito,2,50,5,300
+,1,Burrito,3,100,20,500
+,2,Grilled chicken,1,20,1,100
+,2,Grilled chicken,2,50,5,300
+,2,Grilled chicken,3,100,20,500
+,3,Pizza,1,20,1,100
+,3,Pizza,2,50,5,300
+,3,Pizza,3,100,20,500
+,4,Sandwich,1,200,5,300
+,4,Sandwich,2,300,20,500
+,4,Sandwich,3,400,50,1000
+,5,Ribs,1,200,5,300
+,5,Ribs,2,300,20,500
+,5,Ribs,3,400,50,1000
+,6,Mushrooms,1,200,5,300
+,6,Mushrooms,2,300,20,500
+,6,Mushrooms,3,400,50,1000
+,7,Chili,1,200,5,300
+,7,Chili,2,300,20,500
+,7,Chili,3,400,50,1000
