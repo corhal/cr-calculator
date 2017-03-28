@@ -47,6 +47,33 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 1096,Coffee from Starbucks,,,,,,,
 1097,Champagne,,,,,,,
 1098,Tailcoat,,,,,,,
+1099,Paper,,,,,,,
+1100,Lemon,,,,,,,
+1101,Pen,,,,,,,
+1102,Plush,,,,,,,
+1103,Book,,,,,,,
+1104,Looking glass,,,,,,,
+1105,Fast-food,,,,,,,
+1106,Bottle,,,,,,,
+1107,Jeans,,,,,,,
+1108,Perfume,,,,,,,
+1109,Watch,,,,,,,
+1110,Pattern,,,,,,,
+1111,Filling,,,,,,,
+1112,Tank top,,,,,,,
+1113,Lamp,,,,,,,
+1114,Statuette,,,,,,,
+1115,Magazine,,,,,,,
+1116,Suitcase,,,,,,,
+1117,Dinner,,,,,,,
+1118,Glasses,,,,,,,
+1119,Microcamera,,,,,,,
+1120,White wine,,,,,,,
+1121,Recorder,,,,,,,
+1122,Folder,,,,,,,
+1123,Candles,,,,,,,
+1124,Diary,,,,,,,
+1125,Envelope,,,,,,,
 10000,Burrito recipe,,,,,,,
 10001,Grilled chicken recipe,,,,,,,
 10002,Pizza recipe,,,,,,,
@@ -72,3 +99,13 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 137,Gift card,Small scissors,1,Cardboard,3,Golden thread,5,800
 138,Spices,Spices fragment,5,,,,,1000
 139,Box,Cardboard,4,Small scissors,1,,,1000
+140,Invisible pen,Lemon,1,Pen,1,,,0
+141,Detox drink,Lemon,3,Bottle,1,,,0
+142,Paper flowers,Paper,5,,,,,0
+143,Stuffed toy,Plush,3,Filling,3,Pattern,1,0
+144,Wrist pillow,Plush,2,Filling,2,,,0
+145,Spy glasses,Microcamera,1,Glasses,1,Looking glass,1,0
+146,Fancy dinner,White wine,5,Dinner,5,,,0
+147,Royal dinner,Fancy dinner,2,Candles,10,,,
+148,Contract,Envelope,1,Paper,5,Pen,1,0
+149,Baggage,Jeans,3,Tank top,3,Suitcase,1,0
