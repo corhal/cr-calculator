@@ -3,7 +3,7 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,22,2,1,Fruits,0.25,Basket,0.3,,,5,0,Sandwich,3,Ribs,4,Mushrooms,5
 ,23,3,1,Blanket,0.3,Saw,0.3,,,5,0,Chili,3,Burrito,4,Grilled chicken,5
 ,24,4,1,Cloth,0.3,Thread,0.25,,,10,1,Pizza,3,Sandwich,4,Ribs,5
-,25,5,1,Grilled chicken recipe,0.3,Pills,0.25,Lavender,0.3,10,1,Mushrooms,3,Chili,4,Burrito,5
+,25,5,1,Grilled chicken recipe,0.3,Lavender,0.3,,,10,1,Mushrooms,3,Chili,4,Burrito,5
 ,26,6,1,Cable,0.3,Knife,0.3,,,10,1,Grilled chicken,3,Pizza,4,Sandwich,5
 ,27,7,1,Plate,0.3,Pizza recipe,0.3,,,10,6,Ribs,3,Mushrooms,4,Chili,5
 ,28,8,1,Spoon,0.3,Fork,0.3,,,10,6,Grilled chicken,3,Sandwich,4,Mushrooms,5

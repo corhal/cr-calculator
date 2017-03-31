@@ -7,7 +7,7 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,20302,ShadyGuy-2,1,203,Saw,1,,,,,0,10,1,ShadyGuy-1,
 ,20401,Organiser-3,1,204,Sheets,1,,,,,0,10,0,Organiser-2,
 ,20402,Organiser-4,1,204,Wine,1,Fruits,1,,,0,10,2,Organiser-3,
-,20501,Supplier-3,1,205,Fruits,1,Pills,1,Lavender,1,0,10,0,Supplier-2,
+,20501,Supplier-3,1,205,Fruits,1,Medicine,1,Lavender,1,0,10,0,Supplier-2,
 ,20502,Supplier-4,1,205,Basket,1,,,,,0,10,2,Supplier-3,
 ,20601,ShadyGuy-3,1,206,Cable,5,Knife,1,,,0,10,0,ShadyGuy-2,
 ,20602,ShadyGuy-4,1,206,Fruits,2,,,,,0,10,2,ShadyGuy-3,
@@ -16,7 +16,7 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,20801,Supplier-5,1,208,Pig costume,1,,,,,0,10,0,Supplier-4,
 ,20802,Supplier-6,1,208,Picnic basket,1,,,,,0,10,7,Supplier-5,
 ,20901,ShadyGuy-5,1,209,Camera on tripod,1,,,,,0,10,0,ShadyGuy-4,
-,20902,ShadyGuy-6,1,209,Pills,1,,,,,0,10,7,ShadyGuy-5,
+,20902,ShadyGuy-6,1,209,Medicine,1,,,,,0,10,7,ShadyGuy-5,
 ,21001,Organiser-7,1,210,Scene microphone,1,,,,,0,10,0,Organiser-6,
 ,21002,Organiser-8,1,210,Cutlery,2,,,,,0,10,0,Organiser-7,
 ,21003,Organiser-9,1,210,Special chair,1,,,,,0,10,0,Organiser-8,
@@ -78,22 +78,22 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,40128,Don-11,3,244,Diary,1,Fast-food,2,,,0,10,0,Don-10,
 ,40129,Don-12,3,245,Royal dinner,1,,,,,0,10,0,Don-11,
 ,40130,Business-8,3,246,Fancy dinner,1,Pen,1,Contract,1,0,10,0,Business-7,
-,50101,Gao-1,5,1,Dragon,1,,,,,0,10,0,,1-3
-,50102,Gao-2,5,1,Tome,2,,,,,0,10,0,,1-3
-,50103,Gao-3,5,1,Dictionary,1,,,,,0,10,1,,1-3
-,50201,Historian-1,5,2,Tome,1,,,,,0,10,0,Gao-3,1-3
-,50202,Historian-2,5,2,Scroll,3,,,,,0,10,0,,1-3
-,50203,Historian-3,5,2,Dictionary,1,,,,,0,10,0,,1-3
-,50204,Historian-4,5,2,Scribe kit,1,,,,,0,10,1,,1-3
-,50301,Jones-1,5,3,Dragon,1,,,,,0,10,0,Gao-3,1-3
-,50302,Jones-2,5,3,Scroll,3,Tome,1,,,0,10,0,,1-3
-,50303,Jones-3,5,3,Tome,1,,,,,0,10,0,,1-3
-,50304,Jones-4,5,3,Nephritis ring,1,,,,,0,10,0,,1-3
-,50305,Jones-5,5,3,Rose,9,,,,,0,10,1,,1-3
-,50401,Gao-4,5,4,Nephritis ring,1,,,,,0,10,0,"Jones-2,Historian-2",1-3
-,50402,Gao-5,5,4,Scribe kit,1,Scroll,1,,,0,10,0,,1-3
-,50403,Gao-6,5,4,Dragon,10,,,,,0,10,1,,1-3
-,50501,Historian-5,5,5,Scroll,1,Tome,1,,,0,10,1,"Jones-5,Historian-4,Gao-6",1-3
+,50101,Gao-1,5,1,Dragon,1,,,,,0,10,0,,01.לאנ
+,50102,Gao-2,5,1,Tome,2,,,,,0,10,0,,01.לאנ
+,50103,Gao-3,5,1,Dictionary,1,,,,,0,10,1,,01.לאנ
+,50201,Historian-1,5,2,Tome,1,,,,,0,10,0,Gao-3,01.לאנ
+,50202,Historian-2,5,2,Scroll,3,,,,,0,10,0,,01.לאנ
+,50203,Historian-3,5,2,Dictionary,1,,,,,0,10,0,,01.לאנ
+,50204,Historian-4,5,2,Scribe kit,1,,,,,0,10,1,,01.לאנ
+,50301,Jones-1,5,3,Dragon,1,,,,,0,10,0,Gao-3,01.לאנ
+,50302,Jones-2,5,3,Scroll,3,Tome,1,,,0,10,0,,01.לאנ
+,50303,Jones-3,5,3,Tome,1,,,,,0,10,0,,01.לאנ
+,50304,Jones-4,5,3,Nephritis ring,1,,,,,0,10,0,,01.לאנ
+,50305,Jones-5,5,3,Rose,9,,,,,0,10,1,,01.לאנ
+,50401,Gao-4,5,4,Nephritis ring,1,,,,,0,10,0,"Jones-2,Historian-2",01.לאנ
+,50402,Gao-5,5,4,Scribe kit,1,Scroll,1,,,0,10,0,,01.לאנ
+,50403,Gao-6,5,4,Dragon,10,,,,,0,10,1,,01.לאנ
+,50501,Historian-5,5,5,Scroll,1,Tome,1,,,0,10,1,"Jones-5,Historian-4,Gao-6",01.לאנ
 ,50601,Historian-6,5,6,Lotus,1,Ink,2,,,0,10,0,Historian-5,4
 ,50602,Historian-7,5,6,Chip,1,Dictionary,2,,,0,10,0,,4
 ,50603,Historian-8,5,6,Computer upgrade,1,,,,,0,10,0,,4
@@ -104,15 +104,15 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,50801,Gao-7,5,8,Chip figurine,1,,,,,0,10,0,Historian-5,6
 ,50801,Gao-8,5,8,Jammer,1,,,,,0,10,0,,6
 ,50801,Gao-9,5,8,Computer,1,,,,,0,10,5,,6
-,50901,Historian-10(11),5,9,Upgraded computer,1,,,,,0,10,0,"Historian-9,Jones-8,Gao-9",4-6
-,50901,Historian-11(10),5,9,Scribe kit,1,Scroll,1,Lotus,1,0,10,5,,4-6
-,51001,Jones-9,5,10,Decoder,1,Old map,3,,,0,10,0,Historian-11(10),4-6
-,51002,Jones-10,5,10,Upgraded decoder,1,,,,,0,10,0,,4-6
-,51003,Jones-11,5,10,Lotus,30,,,,,0,10,5,,4-6
-,51101,Historian-12,5,11,Heart dragon,1,,,,,0,10,0,Jones-11,4-6
-,51102,Historian-13,5,11,Decoder,1,Tome,3,Scroll,3,0,10,5,,4-6
-,51201,Jones-12,5,12,Upgraded computer,1,Old map,1,Nephritis ring,1,0,10,0,Historian-13,4-6
-,51202,Jones-13,5,12,Upgraded tools,1,Lantern,1,,,0,10,5,,4-6
+,50901,Historian-10(11),5,9,Upgraded computer,1,,,,,0,10,0,"Historian-9,Jones-8,Gao-9",04.ט‏ם
+,50901,Historian-11(10),5,9,Scribe kit,1,Scroll,1,Lotus,1,0,10,5,,04.ט‏ם
+,51001,Jones-9,5,10,Decoder,1,Old map,3,,,0,10,0,Historian-11(10),04.ט‏ם
+,51002,Jones-10,5,10,Upgraded decoder,1,,,,,0,10,0,,04.ט‏ם
+,51003,Jones-11,5,10,Lotus,30,,,,,0,10,5,,04.ט‏ם
+,51101,Historian-12,5,11,Heart dragon,1,,,,,0,10,0,Jones-11,04.ט‏ם
+,51102,Historian-13,5,11,Decoder,1,Tome,3,Scroll,3,0,10,5,,04.ט‏ם
+,51201,Jones-12,5,12,Upgraded computer,1,Old map,1,Nephritis ring,1,0,10,0,Historian-13,04.ט‏ם
+,51202,Jones-13,5,12,Upgraded tools,1,Lantern,1,,,0,10,5,,04.ט‏ם
 ,51301,Gao-10,5,13,Nephritis ring with diamond,1,Plum wine,1,,,0,10,0,,7
 ,51302,Gao-11,5,13,Lantern,1,Ink,3,Latex gloves,1,0,10,0,,7
 ,51303,Gao-12,5,13,Ultracomputer,1,,,,,0,10,0,,7
@@ -123,18 +123,18 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,51501,Grandma-1,5,15,Chinese herbs,3,,,,,0,10,0,,9
 ,51502,Grandma-2,5,15,Brush,1,,,,,0,10,0,,9
 ,51503,Grandma-3,5,15,Dictionary,1,,,,,0,10,30,,9
-,51601,Jones-14,5,16,Special dragon figurine,1,,,,,0,10,30,"Gao-14,Historian-15,Grandma-3",7-9
-,51701,Historian-16,5,17,Scribe kit,1,Scroll,1,Plum wine,1,0,10,0,Jones-14,7-9
-,51702,Historian-17,5,17,Upgraded decoder,1,Latex gloves,1,,,0,10,30,,7-9
-,51801,Gao-15,5,18,Diamond dust,3,Truth serum,1,,,0,10,0,Jones-14,7-9
-,51802,Gao-16,5,18,Tracking device,2,,,,,0,10,0,,7-9
-,51803,Gao-17,5,18,Computer with antenna,1,,,,,0,10,0,,7-9
-,51804,Gao-18,5,18,Upgraded decoder,1,Dictionary,5,,,0,10,30,,7-9
-,51902,Jones-15,5,19,Perfect tools,1,,,,,0,10,0,Jones-14,7-9
-,51903,Jones-16,5,19,Nephritis ring with diamond,1,,,,,0,10,0,,7-9
-,51904,Jones-17,5,19,Tracking device,1,,,,,0,10,0,,7-9
-,51905,Jones-18,5,19,Nephritis ring with many diamonds,1,,,,,0,10,0,,7-9
-,51906,Jones-19,5,19,Flower bouquet,1,,,,,0,10,30,,7-9
+,51601,Jones-14,5,16,Special dragon figurine,1,,,,,0,10,30,"Gao-14,Historian-15,Grandma-3",07.סום
+,51701,Historian-16,5,17,Scribe kit,1,Scroll,1,Plum wine,1,0,10,0,Jones-14,07.סום
+,51702,Historian-17,5,17,Upgraded decoder,1,Latex gloves,1,,,0,10,30,,07.סום
+,51801,Gao-15,5,18,Diamond dust,3,Truth serum,1,,,0,10,0,Jones-14,07.סום
+,51802,Gao-16,5,18,Tracking device,2,,,,,0,10,0,,07.סום
+,51803,Gao-17,5,18,Computer with antenna,1,,,,,0,10,0,,07.סום
+,51804,Gao-18,5,18,Upgraded decoder,1,Dictionary,5,,,0,10,30,,07.סום
+,51902,Jones-15,5,19,Perfect tools,1,,,,,0,10,0,Jones-14,07.סום
+,51903,Jones-16,5,19,Nephritis ring with diamond,1,,,,,0,10,0,,07.סום
+,51904,Jones-17,5,19,Tracking device,1,,,,,0,10,0,,07.סום
+,51905,Jones-18,5,19,Nephritis ring with many diamonds,1,,,,,0,10,0,,07.סום
+,51906,Jones-19,5,19,Flower bouquet,1,,,,,0,10,30,,07.סום
 ,52301,Grandma-4(1),5,23,Chinese herbs,5,Rose,10,,,0,10,30,,10
 ,52401,Gao-19,5,24,Encryptor,1,Antenna,2,,,0,10,0,Jones-19,10
 ,52402,Gao-20,5,24,Erhu,5,,,,,0,10,30,,10
