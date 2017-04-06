@@ -78,66 +78,125 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,40128,Don-11,3,244,Diary,1,Fast-food,2,,,0,10,0,Don-10,
 ,40129,Don-12,3,245,Royal dinner,1,,,,,0,10,0,Don-11,
 ,40130,Business-8,3,246,Fancy dinner,1,Pen,1,Contract,1,0,10,0,Business-7,
-,50101,Gao-1,5,1,Dragon,1,,,,,0,10,0,,01.мар
-,50102,Gao-2,5,1,Tome,2,,,,,0,10,0,,01.мар
-,50103,Gao-3,5,1,Dictionary,1,,,,,0,10,1,,01.мар
-,50201,Historian-1,5,2,Tome,1,,,,,0,10,0,Gao-3,01.мар
-,50202,Historian-2,5,2,Scroll,3,,,,,0,10,0,,01.мар
-,50203,Historian-3,5,2,Dictionary,1,,,,,0,10,0,,01.мар
-,50204,Historian-4,5,2,Scribe kit,1,,,,,0,10,1,,01.мар
-,50301,Jones-1,5,3,Dragon,1,,,,,0,10,0,Gao-3,01.мар
-,50302,Jones-2,5,3,Scroll,3,Tome,1,,,0,10,0,,01.мар
-,50303,Jones-3,5,3,Tome,1,,,,,0,10,0,,01.мар
-,50304,Jones-4,5,3,Nephritis ring,1,,,,,0,10,0,,01.мар
-,50305,Jones-5,5,3,Rose,9,,,,,0,10,1,,01.мар
-,50401,Gao-4,5,4,Nephritis ring,1,,,,,0,10,0,"Jones-2,Historian-2",01.мар
-,50402,Gao-5,5,4,Scribe kit,1,Scroll,1,,,0,10,0,,01.мар
-,50403,Gao-6,5,4,Dragon,10,,,,,0,10,1,,01.мар
-,50501,Historian-5,5,5,Scroll,1,Tome,1,,,0,10,1,"Jones-5,Historian-4,Gao-6",01.мар
-,50601,Historian-6,5,6,Lotus,1,Ink,2,,,0,10,0,Historian-5,4
-,50602,Historian-7,5,6,Chip,1,Dictionary,2,,,0,10,0,,4
-,50603,Historian-8,5,6,Computer upgrade,1,,,,,0,10,0,,4
-,50604,Historian-9,5,6,Dragon,5,Tools,1,,,0,10,5,,4
-,50701,Jones-6,5,7,Old map,5,,,,,0,10,0,Historian-5,5
-,50702,Jones-7,5,7,Lantern,1,Tools,1,,,0,10,0,,5
-,50703,Jones-8,5,7,Metal,1,Wrapping paper,1,Rose,15,0,10,5,,5
-,50801,Gao-7,5,8,Chip figurine,1,,,,,0,10,0,Historian-5,6
-,50801,Gao-8,5,8,Jammer,1,,,,,0,10,0,,6
-,50801,Gao-9,5,8,Computer,1,,,,,0,10,5,,6
-,50901,Historian-10(11),5,9,Upgraded computer,1,,,,,0,10,0,"Historian-9,Jones-8,Gao-9",04.июн
-,50901,Historian-11(10),5,9,Scribe kit,1,Scroll,1,Lotus,1,0,10,5,,04.июн
-,51001,Jones-9,5,10,Decoder,1,Old map,3,,,0,10,0,Historian-11(10),04.июн
-,51002,Jones-10,5,10,Upgraded decoder,1,,,,,0,10,0,,04.июн
-,51003,Jones-11,5,10,Lotus,30,,,,,0,10,5,,04.июн
-,51101,Historian-12,5,11,Heart dragon,1,,,,,0,10,0,Jones-11,04.июн
-,51102,Historian-13,5,11,Decoder,1,Tome,3,Scroll,3,0,10,5,,04.июн
-,51201,Jones-12,5,12,Upgraded computer,1,Old map,1,Nephritis ring,1,0,10,0,Historian-13,04.июн
-,51202,Jones-13,5,12,Upgraded tools,1,Lantern,1,,,0,10,5,,04.июн
-,51301,Gao-10,5,13,Nephritis ring with diamond,1,Plum wine,1,,,0,10,0,,7
-,51302,Gao-11,5,13,Lantern,1,Ink,3,Latex gloves,1,0,10,0,,7
-,51303,Gao-12,5,13,Ultracomputer,1,,,,,0,10,0,,7
-,51304,Gao-13,5,13,Tracking device,1,,,,,0,10,0,,7
-,51305,Gao-14,5,13,Handcuffs,2,,,,,0,10,30,,7
-,51401,Historian-14,5,14,Chinese herbs,1,Incense,2,Tome,1,0,10,0,,8
-,51401,Historian-15,5,14,Ultracomputer,1,,,,,0,10,30,,8
-,51501,Grandma-1,5,15,Chinese herbs,3,,,,,0,10,0,,9
-,51502,Grandma-2,5,15,Brush,1,,,,,0,10,0,,9
-,51503,Grandma-3,5,15,Dictionary,1,,,,,0,10,30,,9
-,51601,Jones-14,5,16,Special dragon figurine,1,,,,,0,10,30,"Gao-14,Historian-15,Grandma-3",07.сен
-,51701,Historian-16,5,17,Scribe kit,1,Scroll,1,Plum wine,1,0,10,0,Jones-14,07.сен
-,51702,Historian-17,5,17,Upgraded decoder,1,Latex gloves,1,,,0,10,30,,07.сен
-,51801,Gao-15,5,18,Diamond dust,3,Truth serum,1,,,0,10,0,Jones-14,07.сен
-,51802,Gao-16,5,18,Tracking device,2,,,,,0,10,0,,07.сен
-,51803,Gao-17,5,18,Computer with antenna,1,,,,,0,10,0,,07.сен
-,51804,Gao-18,5,18,Upgraded decoder,1,Dictionary,5,,,0,10,30,,07.сен
-,51902,Jones-15,5,19,Perfect tools,1,,,,,0,10,0,Jones-14,07.сен
-,51903,Jones-16,5,19,Nephritis ring with diamond,1,,,,,0,10,0,,07.сен
-,51904,Jones-17,5,19,Tracking device,1,,,,,0,10,0,,07.сен
-,51905,Jones-18,5,19,Nephritis ring with many diamonds,1,,,,,0,10,0,,07.сен
-,51906,Jones-19,5,19,Flower bouquet,1,,,,,0,10,30,,07.сен
-,52301,Grandma-4(1),5,23,Chinese herbs,5,Rose,10,,,0,10,30,,10
-,52401,Gao-19,5,24,Encryptor,1,Antenna,2,,,0,10,0,Jones-19,10
-,52402,Gao-20,5,24,Erhu,5,,,,,0,10,30,,10
-,52501,Historian-18,5,25,Perfect tools,1,Wrapping paper,3,,,0,10,30,Jones-19,10
-,52601,Jones-20,5,26,Erhu,1,,,,,0,10,30,Historian-18,10
-,52701,Shadyguy-1,5,27,Chinese lantern,1,Baoding balls,1,,,0,10,30,Gao-19,10
+,50101,Gao-1,5,1,Dragon,1,,,,,0,10,0,,
+,50102,Gao-2,5,1,Tome,2,,,,,0,10,0,,
+,50103,Gao-3,5,1,Dictionary,1,,,,,0,10,1,,
+,50201,Historian-1,5,2,Tome,1,,,,,0,10,0,Gao-3,
+,50202,Historian-2,5,2,Scroll,3,,,,,0,10,0,,
+,50203,Historian-3,5,2,Dictionary,1,,,,,0,10,0,,
+,50204,Historian-4,5,2,Scribe kit,1,,,,,0,10,1,,
+,50301,Jones-1,5,3,Dragon,1,,,,,0,10,0,Gao-3,
+,50302,Jones-2,5,3,Scroll,3,Tome,1,,,0,10,0,,
+,50303,Jones-3,5,3,Tome,1,,,,,0,10,0,,
+,50304,Jones-4,5,3,Nephritis ring,1,,,,,0,10,0,,
+,50305,Jones-5,5,3,Rose,9,,,,,0,10,1,,
+,50401,Gao-4,5,4,Nephritis ring,1,,,,,0,10,0,"Jones-2,Historian-2",
+,50402,Gao-5,5,4,Scribe kit,1,Scroll,1,,,0,10,0,,
+,50403,Gao-6,5,4,Dragon,10,,,,,0,10,1,,
+,50501,Historian-5,5,5,Scroll,1,Tome,1,,,0,10,1,"Jones-5,Historian-4,Gao-6",
+,50601,Historian-6,5,6,Lotus,1,Ink,2,,,0,10,0,Historian-5,
+,50602,Historian-7,5,6,Chip,1,Dictionary,2,,,0,10,0,,
+,50603,Historian-8,5,6,Computer upgrade,1,,,,,0,10,0,,
+,50604,Historian-9,5,6,Dragon,5,Tools,1,,,0,10,5,,
+,50701,Jones-6,5,7,Old map,5,,,,,0,10,0,Historian-5,
+,50702,Jones-7,5,7,Lantern,1,Tools,1,,,0,10,0,,
+,50703,Jones-8,5,7,Metal,1,Wrapping paper,1,Rose,15,0,10,5,,
+,50801,Gao-7,5,8,Chip figurine,1,,,,,0,10,0,Historian-5,
+,50801,Gao-8,5,8,Jammer,1,,,,,0,10,0,,
+,50801,Gao-9,5,8,Computer,1,,,,,0,10,5,,
+,50901,Historian-10(11),5,9,Upgraded computer,1,,,,,0,10,0,"Historian-9,Jones-8,Gao-9",
+,50901,Historian-11(10),5,9,Scribe kit,1,Scroll,1,Lotus,1,0,10,5,,
+,51001,Jones-9,5,10,Decoder,1,Old map,3,,,0,10,0,Historian-11(10),
+,51002,Jones-10,5,10,Upgraded decoder,1,,,,,0,10,0,,
+,51003,Jones-11,5,10,Lotus,30,,,,,0,10,5,,
+,51101,Historian-12,5,11,Heart dragon,1,,,,,0,10,0,Jones-11,
+,51102,Historian-13,5,11,Decoder,1,Tome,3,Scroll,3,0,10,5,,
+,51201,Jones-12,5,12,Upgraded computer,1,Old map,1,Nephritis ring,1,0,10,0,Historian-13,
+,51202,Jones-13,5,12,Upgraded tools,1,Lantern,1,,,0,10,5,,
+,51301,Gao-10,5,13,Nephritis ring with diamond,1,Plum wine,1,,,0,10,0,,
+,51302,Gao-11,5,13,Lantern,1,Ink,3,Latex gloves,1,0,10,0,,
+,51303,Gao-12,5,13,Ultracomputer,1,,,,,0,10,0,,
+,51304,Gao-13,5,13,Tracking device,1,,,,,0,10,0,,
+,51305,Gao-14,5,13,Handcuffs,2,,,,,0,10,30,,
+,51401,Historian-14,5,14,Chinese herbs,1,Incense,2,Tome,1,0,10,0,,
+,51401,Historian-15,5,14,Ultracomputer,1,,,,,0,10,30,,
+,51501,Grandma-1,5,15,Chinese herbs,3,,,,,0,10,0,,
+,51502,Grandma-2,5,15,Brush,1,,,,,0,10,0,,
+,51503,Grandma-3,5,15,Dictionary,1,,,,,0,10,30,,
+,51601,Jones-14,5,16,Special dragon figurine,1,,,,,0,10,30,"Gao-14,Historian-15,Grandma-3",
+,51701,Historian-16,5,17,Scribe kit,1,Scroll,1,Plum wine,1,0,10,0,Jones-14,
+,51702,Historian-17,5,17,Upgraded decoder,1,Latex gloves,1,,,0,10,30,,
+,51801,Gao-15,5,18,Diamond dust,3,Truth serum,1,,,0,10,0,Jones-14,
+,51802,Gao-16,5,18,Tracking device,2,,,,,0,10,0,,
+,51803,Gao-17,5,18,Computer with antenna,1,,,,,0,10,0,,
+,51804,Gao-18,5,18,Upgraded decoder,1,Dictionary,5,,,0,10,30,,
+,51902,Jones-15,5,19,Perfect tools,1,,,,,0,10,0,Jones-14,
+,51903,Jones-16,5,19,Nephritis ring with diamond,1,,,,,0,10,0,,
+,51904,Jones-17,5,19,Tracking device,1,,,,,0,10,0,,
+,51905,Jones-18,5,19,Nephritis ring with many diamonds,1,,,,,0,10,0,,
+,51906,Jones-19,5,19,Flower bouquet,1,,,,,0,10,30,,
+,52301,Grandma-4(1),5,23,Chinese herbs,5,Rose,10,,,0,10,30,,
+,52401,Gao-19,5,24,Encryptor,1,Antenna,2,,,0,10,0,Jones-19,
+,52402,Gao-20,5,24,Erhu,5,,,,,0,10,30,,
+,52501,Historian-18,5,25,Perfect tools,1,Wrapping paper,3,,,0,10,30,Jones-19,
+,52601,Jones-20,5,26,Erhu,1,,,,,0,10,30,Historian-18,
+,52701,Shadyguy-1,5,27,Chinese lantern,1,Baoding balls,1,,,0,10,30,Gao-19,
+,60101,Souschef-1,6,27,Coffee bag,1,,,,,0,10,0,,
+,60102,Souschef-2,6,27,Gold ingot,1,,,,,0,10,0,,
+,60103,Souschef-3,6,27,Shredder,1,,,,,0,10,1,,
+,60201,Souschef-4,6,27,Locator,1,,,,,0,10,0,Souschef-3,
+,60202,Souschef-5,6,27,Oil,2,,,,,0,10,0,,
+,60203,Souschef-6,6,27,Electric razor,1,,,,,0,10,1,,
+,60301,Grandma-1,6,27,Cup,1,,,,,0,10,0,,
+,60302,Grandma-2,6,27,Coffee bag,2,,,,,0,10,1,,
+,60401,Grandma-3,6,27,Oil,3,,,,,0,10,1,"Souschef-2,Grandma-2",
+,60501,Grandma-4,6,27,Coffee grinder,1,,,,,0,10,0,,
+,60502,Grandma-5,6,27,Cup,10,,,,,0,10,0,,
+,60503,Grandma-6,6,27,Сoffee machine,1,,,,,0,10,0,,
+,60504,Grandma-7,6,27,Gold,2,Motor,1,,,0,10,1,,
+,60601,Agent-1,6,27,Oil,10,,,,,0,10,0,Grandma-3,
+,60602,Agent-2,6,27,Gold ingot,1,,,,,0,10,0,,
+,60603,Agent-3,6,27,Gold ingot,1,Coffee bag,3,,,0,10,0,,
+,60604,Agent-4,6,27,Coffee bag,5,,,,,0,10,1,,
+,60701,Souschef-7,6,27,Big cog,1,Motor,1,,,0,10,0,,
+,60702,Souschef-8,6,27,Cable,1,Cog,5,Magnet,2,0,10,0,,
+,60703,Souschef-9,6,27,Transformer,1,,,,,0,10,6,,
+,60801,Grandma-8,6,27,Magnifying glass,1,Coffee cup,1,,,0,10,0,,
+,60802,Grandma-9,6,27,Professional binoculars,1,,,,,0,10,3,,
+,60901,Grandma-10,6,27,Boiling water,1,Cup,1,,,0,10,0,Grandma-9,
+,60902,Grandma-11,6,27,Microscope,1,Blade,1,,,0,10,3,,
+,61001,Agent-5,6,27,Plastic cup,10,,,,,0,10,0,,
+,61002,Agent-6,6,27,Water tank,5,,,,,0,10,0,,
+,61003,Agent-7,6,27,Coffee scrub,1,Pin,5,,,0,10,6,,
+,61101,Souschef-10,6,27,Professional binoculars,1,Locator,1,,,0,10,0,"Souschef-9,Grandma-11,Agent-7",
+,61102,Souschef-11,6,27,Climbing rope,1,,,,,0,10,10,,
+,61201,Grandma-12,6,27,Plastic cup,5,Boiling water,2,Coffee,3,0,10,0,"Souschef-9,Grandma-11,Agent-7",
+,61202,Grandma-13,6,27,Drone with cable,1,,,,,0,10,10,,
+,61301,Agent-8,6,27,Locator,1,Binoculars,1,,,0,10,0,"Souschef-9,Grandma-11,Agent-7",
+,61302,Agent-9,6,27,Climbing rope,1,Magnet,2,,,0,10,0,,
+,61303,Agent-10,6,27,Lockpick,3,,,,,0,10,10,,
+,61401,Agent-11,6,27,Feather,10,Gold shavings,5,,,0,10,0,,
+,61402,Agent-12,6,27,Feather crown,1,Gold shavings,1,Glitter,5,0,10,0,,
+,61403,Agent-13,6,27,Oil,2,Glitter,5,,,0,10,30,,
+,61501,Souschef-12,6,27,Credit card,1,Gold ingot,1,,,0,10,0,,
+,61502,Souschef-13,6,27,Lockpick,1,Blade,1,,,0,10,0,,
+,61503,Souschef-14,6,27,Satellite phone,1,Locator,1,,,0,10,0,,
+,61504,Souschef-15,6,27,Woolen sweater,1,,,,,0,10,30,,
+,61601,Grandma-14,6,27,Boiling water,1,Steamer,1,Cup,5,0,10,0,,
+,61602,Grandma-15,6,27,Gilded mirror,1,,,,,0,10,30,,
+,61701,Grandma-16,6,27,Special coffee machine,1,,,,,0,10,0,"Agent-13,Souschef-15,Grandma-15",
+,61702,Grandma-17,6,27,Woolen thread,5,,,,,0,10,30,,
+,61801,Agent-14,6,27,Drone,1,,,,,0,10,0,"Agent-13,Souschef-15,Grandma-15",
+,61802,Agent-15,6,27,Surveillance drone,1,,,,,0,10,30,,
+,61901,Agent-16,6,27,Flag,10,Feather,10,,,0,10,0,,
+,61902,Agent-17,6,27,Drone,1,,,,,0,10,0,,
+,61903,Agent-18,6,27,Glitter cannon,1,,,,,0,10,30,,
+,62001,Grandma-18,6,27,Net,1,Cable,1,,,0,10,0,"Agent-16,Grandma-17",
+,62002,Grandma-19,6,27,Feather boa,1,,,,,0,10,30,,
+,62101,Souschef-16,6,27,Car engine,1,,,,,0,10,0,,
+,62102,Souschef-17,6,27,Tempered mirror,3,,,,,0,10,0,,
+,62103,Souschef-18,6,27,Polish,5,,,,,0,10,30,,
+,62201,Souschef-19,6,27,Book box,1,,,,,0,10,0,,
+,62301,Grandma-19,6,27,Satellite phone,2,Locator,2,Pepper spray,2,0,10,0,Souschef-19,
+,62302,Grandma-20,6,27,Irish coffee,1,,,,,0,10,0,,
+,62303,Grandma-21,6,27,Net drone,1,,,,,0,10,0,,
