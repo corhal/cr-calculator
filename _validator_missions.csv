@@ -39,13 +39,13 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,58,8,5,Keyboard,0.3,Mouse,0.3,Antenna,0.3,5,30,Grilled chicken,3,Sandwich,4,Mushrooms,5
 ,59,9,5,Chinese herbs,0.3,Incense,0.3,Latex gloves,0.3,5,30,Burrito,3,Pizza,4,Ribs,5
 ,60,10,5,Cipher,0.3,Baoding balls,0.3,Erhu,0.3,5,150,Mushrooms,3,Grilled chicken,4,Sandwich,5
-,61,1,5,Sandwich recipe,0.5,Cup,0.3,Blade,0.3,5,0,Burrito,3,Grilled chicken,4,Pizza,5
-,62,2,5,Coffee bag,0.3,Gold ingot,0.3,Gas-burner,0.3,5,0,Sandwich,3,Ribs,4,Mushrooms,5
-,63,3,5,Water tank,0.3,Motor,0.3,Oil,0.3,5,0,Chili,3,Burrito,4,Grilled chicken,5
-,64,4,5,Cog,0.3,Magnet,0.3,Cable,0.3,5,5,Pizza,3,Sandwich,4,Ribs,5
-,65,5,5,Ribs recipe,0.5,Plastic cup,0.3,Pin,0.3,5,5,Mushrooms,3,Chili,4,Burrito,5
-,66,6,5,Magnifying glass,0.3,Binoculars,0.3,Glitter,0.3,5,5,Grilled chicken,3,Pizza,4,Sandwich,5
-,67,7,5,Feather,0.3,Mushrooms recipe,0.5,Flag,0.3,5,30,Ribs,3,Mushrooms,4,Chili,5
-,68,8,5,Llama wool,0.3,Credit card,0.3,Satellite phone,0.3,5,30,Grilled chicken,3,Sandwich,4,Mushrooms,5
-,69,9,5,Mirror,0.3,Steamer,0.3,Remote,0.3,5,30,Burrito,3,Pizza,4,Ribs,5
-,70,10,5,Wooden box,0.3,Pepper spray,0.3,Whiskey,0.3,5,150,Mushrooms,3,Grilled chicken,4,Sandwich,5
+,61,1,6,Sandwich recipe,0.5,Cup,0.3,Blade,0.3,5,0,Burrito,3,Grilled chicken,4,Pizza,5
+,62,2,6,Coffee bag,0.3,Gold ingot,0.3,Gas-burner,0.3,5,0,Sandwich,3,Ribs,4,Mushrooms,5
+,63,3,6,Water tank,0.3,Motor,0.3,Oil,0.3,5,0,Chili,3,Burrito,4,Grilled chicken,5
+,64,4,6,Cog,0.3,Magnet,0.3,Cable,0.3,5,6,Pizza,3,Sandwich,4,Ribs,5
+,65,5,6,Ribs recipe,0.5,Plastic cup,0.3,Pin,0.3,5,6,Mushrooms,3,Chili,4,Burrito,5
+,66,6,6,Magnifying glass,0.3,Binoculars,0.3,Glitter,0.3,5,6,Grilled chicken,3,Pizza,4,Sandwich,5
+,67,7,6,Feather,0.3,Mushrooms recipe,0.5,Flag,0.3,5,30,Ribs,3,Mushrooms,4,Chili,5
+,68,8,6,Llama wool,0.3,Credit card,0.3,Satellite phone,0.3,5,30,Grilled chicken,3,Sandwich,4,Mushrooms,5
+,69,9,6,Mirror,0.3,Steamer,0.3,Remote,0.3,5,30,Burrito,3,Pizza,4,Ribs,5
+,70,10,6,Wooden box,0.3,Pepper spray,0.3,Whiskey,0.3,5,150,Mushrooms,3,Grilled chicken,4,Sandwich,5
