@@ -80,7 +80,7 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 1129,Ink,,,,,,,
 1130,Brush,,,,,,,
 1131,Tome,,,,,,,
-1132,Nephritis ring,,,,,,,
+1132,Nephrite ring,,,,,,,
 1133,Dictionary,,,,,,,
 1134,Tools,,,,,,,
 1135,Wrapping paper,,,,,,,
@@ -182,8 +182,8 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 166,Computer with antenna,Ultracomputer,1,Antenna,1,,,0
 167,Special dragon figurine,Dragon,1,Diamond,5,Incense,2,0
 168,Perfect tools,Upgraded tools,1,Diamond dust,2,,,0
-169,Nephritis ring with diamond,Nephritis ring,1,Diamond,1,,,0
-170,Nephritis ring with many diamonds,Nephritis ring,1,Tools,1,Diamond,3,0
+169,Nephrite ring with diamond,Nephrite ring,1,Diamond,1,,,0
+170,Nephrite ring with many diamonds,Nephrite ring,1,Tools,1,Diamond,3,0
 171,Flower bouquet,Lotus,3,Rose,12,Wrapping paper,1,0
 172,Encryptor,Cipher,1,Chip,1,Accumulator,2,0
 172,Chinese lantern,Lantern,1,Wrapping paper,3,,,0
