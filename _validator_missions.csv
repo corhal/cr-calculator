@@ -21,7 +21,7 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,40,10,2,Coffee from Starbucks,0.3,French bread,0.3,Pen,0.3,20,15,Mushrooms,3,Grilled chicken,4,Sandwich,5
 ,41,1,3,Sandwich recipe,0.5,Paper,0.2,Lemon,0.3,5,0,Burrito,3,Grilled chicken,4,Pizza,5
 ,42,2,3,Plush,0.25,Pen,0.3,Book,0.3,5,0,Sandwich,3,Ribs,4,Mushrooms,5
-,43,3,3,Looking glass,0.3,Fast-food,0.25,Bottle,0.3,5,0,Chili,3,Burrito,4,Grilled chicken,5
+,43,3,3,Looking glass,0.3,Fastfood,0.25,Bottle,0.3,5,0,Chili,3,Burrito,4,Grilled chicken,5
 ,44,4,3,Jeans,0.25,Perfume,0.3,Watch,0.3,5,3,Pizza,3,Sandwich,4,Ribs,5
 ,45,5,3,Pattern,0.25,Filling,0.3,Tank top,0.3,5,5,Mushrooms,3,Chili,4,Burrito,5
 ,46,6,3,Ribs recipe,0.5,Lamp,0.25,Statuette,0.3,5,5,Grilled chicken,3,Pizza,4,Sandwich,5
@@ -31,14 +31,14 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,50,10,3,Envelope,0.3,Diary,0.3,Candles,0.2,5,16,Mushrooms,3,Grilled chicken,4,Sandwich,5
 ,51,1,5,Sandwich recipe,0.5,Scroll,0.3,Dragon,0.3,5,0,Burrito,3,Grilled chicken,4,Pizza,5
 ,52,2,5,Rose,0.3,Ink,0.3,Tome,0.3,5,0,Sandwich,3,Ribs,4,Mushrooms,5
-,53,3,5,Brush,0.3,Nephritis ring,0.3,Dictionary,0.3,5,0,Chili,3,Burrito,4,Grilled chicken,5
-,54,4,5,Tools,0.3,Wrapping paper,0.3,Lotus,0.3,5,5,Pizza,3,Sandwich,4,Ribs,5
-,55,5,5,Accumulator,0.3,Chip,0.3,Lightbulb,0.3,5,5,Mushrooms,3,Chili,4,Burrito,5
-,56,6,5,Ribs recipe,0.5,Metal,0.3,Old map,0.3,5,5,Grilled chicken,3,Pizza,4,Sandwich,5
-,57,7,5,Plum wine,0.3,Mushrooms recipe,0.5,Diamond,0.3,5,25,Ribs,3,Mushrooms,4,Chili,5
-,58,8,5,Keyboard,0.3,Mouse,0.3,Antenna,0.3,5,25,Grilled chicken,3,Sandwich,4,Mushrooms,5
-,59,9,5,Chinese herbs,0.3,Incense,0.3,Latex gloves,0.3,5,25,Burrito,3,Pizza,4,Ribs,5
-,60,10,5,Cipher,0.3,Baoding balls,0.3,Erhu,0.3,5,125,Mushrooms,3,Grilled chicken,4,Sandwich,5
+,53,3,5,Brush,0.3,Nephrite ring,0.3,Dictionary,0.3,5,0,Chili,3,Burrito,4,Grilled chicken,5
+,54,4,5,Chip,0.3,Accumulator,0.3,Metal,0.3,5,5,Pizza,3,Sandwich,4,Ribs,5
+,55,5,5,Ribs recipe,0.5,Lotus,0.3,Tools,0.3,5,6,Mushrooms,3,Chili,4,Burrito,5
+,56,6,5,Old map,0.3,Wrapping paper,0.3,Lightbulb,0.3,5,6,Grilled chicken,3,Pizza,4,Sandwich,5
+,57,7,5,Plum wine,0.3,Latex gloves,0.3,Diamond,0.3,5,30,Ribs,3,Mushrooms,4,Chili,5
+,58,8,5,Mushrooms recipe,0.5,Keyboard,0.3,Incense,0.3,5,30,Grilled chicken,3,Sandwich,4,Mushrooms,5
+,59,9,5,Chinese herbs,0.3,Mouse,0.3,Antenna,0.3,5,30,Burrito,3,Pizza,4,Ribs,5
+,60,10,5,Cipher,0.3,Baoding balls,0.3,Erhu,0.3,5,180,Mushrooms,3,Grilled chicken,4,Sandwich,5
 ,61,1,6,Sandwich recipe,0.5,Cup,0.3,Blade,0.3,5,0,Burrito,3,Grilled chicken,4,Pizza,5
 ,62,2,6,Coffee bag,0.3,Gold ingot,0.3,Gas-burner,0.3,5,0,Sandwich,3,Ribs,4,Mushrooms,5
 ,63,3,6,Water tank,0.3,Motor,0.3,Oil,0.3,5,0,Chili,3,Burrito,4,Grilled chicken,5

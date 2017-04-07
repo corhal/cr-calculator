@@ -53,7 +53,7 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 1102,Plush,,,,,,,
 1103,Book,,,,,,,
 1104,Looking glass,,,,,,,
-1105,Fast-food,,,,,,,
+1105,Fastfood,,,,,,,
 1106,Bottle,,,,,,,
 1107,Jeans,,,,,,,
 1108,Perfume,,,,,,,
@@ -187,39 +187,39 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 171,Flower bouquet,Lotus,3,Rose,12,Wrapping paper,1,0
 172,Encryptor,Cipher,1,Chip,1,Accumulator,2,0
 172,Chinese lantern,Lantern,1,Wrapping paper,3,,,0
-173,Shredder,Motor,1,Blade,2,,,
-174,Gold shavings,Gold ingot,1,Blade,1,,,
-175,Locator,Gold shavings,1,Motor,1,,,
-176,Electric razor,Blade,1,Motor,1,,,
-177,Coffee grinder,Blade,2,Motor,1,,,
-178,Coffee machine,Coffee grinder,1,Water tank,1,,,
-179,Big cog,Cog,10,,,,,
-180,Gold,Gold ingot,1,Gas-burner,1,,,
-181,Transformer,Motor,1,Gold,1,Magnet,2,
-182,Professional binoculars,Binoculars,1,Magnifying glass,1,,,
-183,Climbing rope,Cable,1,Cog,2,,,
-184,Coffee cup,Cup,1,Coffee machine,1,,,
-185,Boiling water,Water tank,1,Gas-burner,1,,,
-186,Microscope,Professional binoculars,1,Gold,1,Magnifying glass,2,
-187,Coffee,Coffee machine,1,Coffee bag,1,,,
-188,Drone,Motor,1,Cog,5,Gold,3,
-189,Drone with cable,Drone,1,Cable,1,Magnet,2,
-190,Coffee scrub,Coffee grinder,1,Oil,2,Coffee bag,1,
-191,Lockpick,Gas-burner,1,Pin,5,,,
-192,Woolen thread,Llama wool,5,,,,,
-193,Woolen sweater,Woolen thread,2,,,,,
-194,Net,Woolen thread,5,,,,,
-195,Car engine,Motor,1,Cable,1,Cog,2,
-196,Tempered mirror,Mirror,2,Gas-burner,1,,,
-197,Polish,Gas-burner,2,Oil,2,Boiling water,1,
-198,Gilded mirror,Gold,2,Mirror,1,,,
-199,Special coffee machine,Coffee machine,1,Steamer,1,Remote,1,
-200,Feather boa,Feather,10,,,,,
-201,Feather crown,Feather,10,,,,,
-202,Body oil,Oil,1,Glitter,2,,,
-203,Surveillance drone,Drone,1,Locator,1,Remote,1,
-204,Glitter cannon,Glitter,5,Motor,1,Water tank,1,
-205,Woolen fabric,Woolen thread,5,,,,,
-206,Book box,Wooden box,1,Woolen fabric,1,,,
-207,Net drone,Surveillance drone,1,Net,1,,,
-208,Irish coffee,Whiskey,1,Coffee cup,1,,,
+173,Shredder,Motor,1,Blade,2,,,0
+174,Gold shavings,Gold ingot,1,Blade,1,,,0
+175,Locator,Gold shavings,1,Motor,1,,,0
+176,Electric razor,Blade,1,Motor,1,,,0
+177,Coffee grinder,Blade,2,Motor,1,,,0
+178,Coffee machine,Coffee grinder,1,Water tank,1,,,0
+179,Big cog,Cog,10,,,,,0
+180,Gold,Gold ingot,1,Gas-burner,1,,,0
+181,Transformer,Motor,1,Gold,1,Magnet,2,0
+182,Professional binoculars,Binoculars,1,Magnifying glass,1,,,0
+183,Climbing rope,Cable,1,Cog,2,,,0
+184,Coffee cup,Cup,1,Coffee machine,1,,,0
+185,Boiling water,Water tank,1,Gas-burner,1,,,0
+186,Microscope,Professional binoculars,1,Gold,1,Magnifying glass,2,0
+187,Coffee,Coffee machine,1,Coffee bag,1,,,0
+188,Drone,Motor,1,Cog,5,Gold,3,0
+189,Drone with cable,Drone,1,Cable,1,Magnet,2,0
+190,Coffee scrub,Coffee grinder,1,Oil,2,Coffee bag,1,0
+191,Lockpick,Gas-burner,1,Pin,5,,,0
+192,Woolen thread,Llama wool,5,,,,,0
+193,Woolen sweater,Woolen thread,2,,,,,0
+194,Net,Woolen thread,5,,,,,0
+195,Car engine,Motor,1,Cable,1,Cog,2,0
+196,Tempered mirror,Mirror,2,Gas-burner,1,,,0
+197,Polish,Gas-burner,2,Oil,2,Boiling water,1,0
+198,Gilded mirror,Gold,2,Mirror,1,,,0
+199,Special coffee machine,Coffee machine,1,Steamer,1,Remote,1,0
+200,Feather boa,Feather,10,,,,,0
+201,Feather crown,Feather,10,,,,,0
+202,Body oil,Oil,1,Glitter,2,,,0
+203,Surveillance drone,Drone,1,Locator,1,Remote,1,0
+204,Glitter cannon,Glitter,5,Motor,1,Water tank,1,0
+205,Woolen fabric,Woolen thread,5,,,,,0
+206,Book box,Wooden box,1,Woolen fabric,1,,,0
+207,Net drone,Surveillance drone,1,Net,1,,,0
+208,Irish coffee,Whiskey,1,Coffee cup,1,,,0
