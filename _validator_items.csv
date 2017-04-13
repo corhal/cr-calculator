@@ -135,6 +135,12 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 10004,Ribs recipe,,,,,,,
 10005,Mushrooms recipe,,,,,,,
 10006,Chili recipe,,,,,,,
+10007,Pasta with truffels recipe,,,,,,,
+10008,Lamb leg recipe,,,,,,,
+10009,Potato gratin recipe,,,,,,,
+10010,Onion soup recipe,,,,,,,
+10011,Snails recipe,,,,,,,
+10012,Crepes recipe,,,,,,,
 122,Medicine,Medicine fragment,3,,,,,100
 123,Plates,Plate,5,,,,,100
 124,Flower wreath,Lavender,5,,,,,100
