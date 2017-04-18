@@ -103,15 +103,16 @@ class Reward(object):
         else:            
             self.played = True
         
-        reward_items = []
-        for item in reward.item_chances.keys():
+        reward_items = {} # item: amount
+        for item in self.item_chances.keys():
             amount = 1
-            if reward.item_amounts != None:
-                amount = reward.item_amounts[item]
+            if self.item_amounts != None:
+                amount = self.item_amounts[item]
             if always_chance:
-                self.take_item(item, amount)
+                reward_items[item] = amount
             elif random.randrange(0, 100) * 0.01 < reward.item_chances[item]:
-                self.take_item(item, amount)
+                reward_items[item] = amount
+        return reward_items
         
 
 class Mission(object):
