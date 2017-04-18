@@ -48,9 +48,9 @@ def export_missions():
             ident = mission.ident
             chapterId = mission.chapter
             main = ''
-            requirements = ''            
-            if len(mission.requirement.quests) > 0:
-                requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
+            requirements = ''
+            #if mission.keys_cost != 0:
+                #requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
                 
             recipes = '['
             count = 0
