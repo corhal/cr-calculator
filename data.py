@@ -39,12 +39,17 @@ def load_chest(all_items):
             full_drop_list[reward] = (chapter_id, weight)
     return Chest(full_drop_list)         
 
-def load_missions(all_items, all_recipes):
+def load_missions(all_items, all_recipes, all_quests):
     all_missions = []
     def find_recipe(name, recipes):
         for recipe in recipes:
             if recipe.name == name:
                 return recipe
+
+    def find_quest(name, quests):
+        for quest in quests:
+            if quest.name == name:
+                return quest
 
     with open('_validator_missions.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -61,6 +66,13 @@ def load_missions(all_items, all_recipes):
                     recipe = find_recipe(row["RECIPE " + str(i)], all_recipes)
                     level = int(row["RLEVEL " + str(i)])
                     recipe_levels[recipe] = level
+
+            quest_names = row["REQUIREMENT"].split(',')
+            quests = []
+            for quest_name in quest_names:
+                if quest_name != "":
+                    quests.append(find_quest(quest_name, all_quests))
+            
             all_missions.append(
                 Mission(ident=row["ID"],
                         name=row["NAME"],
@@ -68,7 +80,7 @@ def load_missions(all_items, all_recipes):
                         reward=Reward(item_chances=item_chances,
                                 gold_reward=int(row["GOLD_REWARD"])),
                         energy_cost=ENERGY_COST,
-                        keys_cost=int(row["KEYS_COST"]),
+                        requirement=Requirement(quests=quests),
                         recipe_levels=recipe_levels))
     return all_missions
 
@@ -100,8 +112,7 @@ def load_quests(all_items):
                       item_conditions=item_conditions,
                       reward=Reward({},
                                   gold_reward=int(row["GOLD_REWARD"]),
-                                  energy_reward=int(row["ENERGY_REWARD"]),
-                                  keys=int(row["KEYS"])),
+                                  energy_reward=int(row["ENERGY_REWARD"])),                                  
                       required_quests=required_quests))
     return all_quests
 
@@ -182,8 +193,8 @@ def load_player(recipes, all_items):
 def load_game():
     items = load_items()
     recipes = load_recipes(items)
-    missions = load_missions(items, recipes)
     quests = load_quests(items)
+    missions = load_missions(items, recipes, quests)    
     chapters = load_chapters(items, missions, quests, recipes)
     with open('_validator_player.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
