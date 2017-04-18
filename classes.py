@@ -360,8 +360,7 @@ class Player(object):
             self.energy = min(self.energy_cap, self.energy + (1 / self.mins_per_en) * 60 * self.time_between_sessions)
 
     def open_chest(self):
-        reward = self.chest.open()
-        print(reward[0])
+        reward = self.chest.open()        
         self.receive_reward(reward)
     
     def skip_day(self):
@@ -481,8 +480,7 @@ class Chest(object):
     def open(self):        
         if self.max_weight == 0:
             return None
-        roll_weight = random.randrange(0, self.max_weight)
-        print("Roll: " + str(roll_weight))
+        roll_weight = random.randrange(0, self.max_weight)        
         for weight in sorted(self.drop_list.keys()):            
             if roll_weight < weight:                
                 return (self.drop_list[weight], 1)        
