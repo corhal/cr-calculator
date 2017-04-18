@@ -20,3 +20,21 @@ RECIPE_ID,NAME,LEVEL,GOLD_REWARD,UPGRADE_FRAGMENTS,UPGRADE_GOLD
 7,Chili,1,200,5,300
 7,Chili,2,300,20,500
 7,Chili,3,400,50,1000
+8,Graten,1,200,5,300
+8,Graten,2,300,20,500
+8,Graten,3,400,50,1000
+9,Lamb leg,1,200,5,300
+9,Lamb leg,2,300,20,500
+9,Lamb leg,3,400,50,1000
+10,Truffles pasta,1,200,5,300
+10,Truffles pasta,2,300,20,500
+10,Truffles pasta,3,400,50,1000
+11,Strawberry crepe,1,200,5,300
+11,Strawberry crepe,2,300,20,500
+11,Strawberry crepe,3,400,50,1000
+12,Onion soup,1,200,5,300
+12,Onion soup,2,300,20,500
+12,Onion soup,3,400,50,1000
+13,Snail,1,200,5,300
+13,Snail,2,300,20,500
+13,Snail,3,400,50,1000
