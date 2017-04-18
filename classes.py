@@ -88,11 +88,21 @@ class Quest(object):
         return True
 
 class Reward(object):
-    def __init__(self, item_chances, gold_reward=0, energy_reward=0, keys=0):
+    def __init__(self, item_chances, item_amounts=None, gold_reward=0, energy_reward=0, keys=0):
         self.item_chances = item_chances # dict
+        self.item_amounts = item_amounts
         self.gold_reward = gold_reward
         self.energy_reward = energy_reward
         self.keys = keys
+
+    def __str__(self):
+        string = "Items:"
+        for item in self.item_chances:
+            string += ("\n" + item.name + ": " + str(self.item_chances[item]) + ": " + str(self.item_amounts[item]))
+        string += "\nGold: " + str(self.gold_reward)
+        string += "\nEnergy: " + str(self.energy_reward)
+        string += "\nKeys: " + str(self.keys)
+        return string
 
 class Mission(object):
     def __init__(self, ident, name, chapter, reward, energy_cost, keys_cost, recipe_levels):
@@ -200,7 +210,7 @@ class OrderBoard(object):
 
 class Player(object):
     def __init__(self, energy_cap, daily_sessions, mins_per_en,
-                 time_between_sessions, gold, recipes):
+                 time_between_sessions, gold, recipes, chest):
         self.day = 1
         self.session = 0
         self.daily_sessions = daily_sessions
@@ -215,9 +225,9 @@ class Player(object):
         self.mins_per_en = mins_per_en
         self.time_between_sessions = time_between_sessions
         recipe_items = []
-        for recipe in recipes:
-            recipe_items.append(recipe.frag_item)
-        self.chest = Chest(recipe_items)
+        #for recipe in recipes:
+            #recipe_items.append(recipe.frag_item)
+        self.chest = chest
 
     def farm_orders(self):
         if self.order_board.plays_today == self.order_board.max_plays_daily:
@@ -253,11 +263,8 @@ class Player(object):
         self.missions_completed = 0
         self.keys = 0 # ?..
         chapter = Game.chapters[chapter_index]
+        self.chest.update_drop_list(chapter_index)
         self.recipes.extend(chapter.recipes)        
-        for recipe in self.recipes:                    
-            if not recipe.frag_item in self.chest.items:
-                self.chest.items.append(recipe.frag_item)
-        
         return self.choose_quest(chapter)
 
     def choose_quest(self, chapter): # returns tuple (missions_completed, day
@@ -353,8 +360,9 @@ class Player(object):
             self.energy = min(self.energy_cap, self.energy + (1 / self.mins_per_en) * 60 * self.time_between_sessions)
 
     def open_chest(self):
-        received_item = self.chest.open()
-        self.take_item(received_item[0], received_item[1])
+        reward = self.chest.open()
+        print(reward[0])
+        self.receive_reward(reward)
     
     def skip_day(self):
         self.energy = self.energy_cap
@@ -366,16 +374,21 @@ class Player(object):
         self.farm_orders()
 
     def receive_reward(self, reward_tuple):
+        if reward_tuple == None:
+            return
         reward = reward_tuple[0]
         always_chance = reward_tuple[1]
         self.receive_keys(reward.keys)
         self.receive_gold(reward.gold_reward)
         self.receive_energy(reward.energy_reward)
         for item in reward.item_chances.keys():
+            amount = 1
+            if reward.item_amounts != None:
+                amount = reward.item_amounts[item]
             if always_chance:
-                self.take_item(item, 1)
+                self.take_item(item, amount)
             elif random.randrange(0, 100) * 0.01 < reward.item_chances[item]:
-                self.take_item(item, 1)
+                self.take_item(item, amount)
                 
     def unlock_mission(self, mission):
         self.spend_keys(mission.keys_cost)
@@ -451,13 +464,28 @@ class Player(object):
                 print(item.name + ": " + str(self.inventory[item]))
 
 class Chest(object):
-    def __init__(self, items):
-        self.items = items
+    def __init__(self, full_drop_list):
+        self.full_drop_list = full_drop_list # {Reward: (chapter, weight)}
+        self.drop_list = None # {abs_weight: Reward}        
+        self.max_weight = 0
 
-    def open(self):
-        item = random.choice(self.items)
-        amount = random.randint(1, 7)
-        return (item, amount)
+    def update_drop_list(self, chapter_id):
+        self.drop_list = {}
+        total_weight = 0
+        for reward in self.full_drop_list.keys():
+            if self.full_drop_list[reward][0] <= chapter_id:
+                total_weight += self.full_drop_list[reward][1]
+                self.drop_list[total_weight] = reward
+        self.max_weight = total_weight
+
+    def open(self):        
+        if self.max_weight == 0:
+            return None
+        roll_weight = random.randrange(0, self.max_weight)
+        print("Roll: " + str(roll_weight))
+        for weight in sorted(self.drop_list.keys()):            
+            if roll_weight < weight:                
+                return (self.drop_list[weight], 1)        
 
 class Chapter(object):
     def __init__(self, name, items, missions, quests, recipes):

@@ -23,7 +23,21 @@ def load_items():
                                           name=row["NAME"],
                                           recipe=recipe,
                                           gold_cost=gold_cost)
-    return all_items      
+    return all_items
+
+def load_chest(all_items):
+    full_drop_list = {} # Reward: (chapter, weight)
+    with open('_validator_chest.csv', 'rt', encoding="utf8") as csvfile:
+        reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')        
+        for row in reader:
+            reward = Reward({all_items[row["ITEM"]]: 1},
+                            item_amounts = {all_items[row["ITEM"]]: int(row["AMOUNT"])},
+                            gold_reward=int(row["GOLD_REWARD"]),
+                            energy_reward=int(row["ENERGY_REWARD"]))
+            chapter_id = int(row["CHAPTER"])
+            weight = int(row["WEIGHT"])
+            full_drop_list[reward] = (chapter_id, weight)
+    return Chest(full_drop_list)         
 
 def load_missions(all_items, all_recipes):
     all_missions = []
@@ -137,10 +151,9 @@ def load_recipes(all_items):
             
             all_recipes.append(Recipe(recipe_id, name, gold_by_levels, frag_item,
                                       up_frags_by_levels, up_gold_by_levels))
-    return all_recipes            
+    return all_recipes 
 
-
-def load_player(recipes):
+def load_player(recipes, all_items):
     with open('_validator_player.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
@@ -162,7 +175,8 @@ def load_player(recipes):
                         mins_per_en=mins_per_en,
                         time_between_sessions=time_between_sessions,
                         gold=gold,
-                        recipes=recipes)
+                        recipes=recipes,
+                        chest=load_chest(all_items))
     return player
 
 def load_game():

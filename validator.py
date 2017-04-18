@@ -13,7 +13,7 @@ def play(plays_count):
     print("-" * 30)
     for i in range(0, plays_count):
         game = load_game()
-        player = load_player(game.chapters[1].recipes)
+        player = load_player(game.chapters[1].recipes, game.items)
         for chapter_index in game.chapters.keys():
             chapter_results = player.play_chapter(chapter_index)
             if chapter_index not in mission_results.keys():
