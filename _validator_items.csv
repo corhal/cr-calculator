@@ -1,6 +1,7 @@
 ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 1,Soft currency,,,,,,,
 2,Hard currency,,,,,,,
+3,Energy,,,,,,,
 1045,Camera,,,,,,,
 1042,Pills,,,,,,,
 1054,Basket,,,,,,,
