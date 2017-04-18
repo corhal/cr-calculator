@@ -1,83 +1,83 @@
 HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT 3,GOLD_REWARD,ENERGY_REWARD,KEYS,REQUIRED_QUESTS
-,20101,Organiser1,1,201,Wine,1,,,,,0,10,0,
-,20102,Organiser2,1,201,Fruits,1,,,,,0,10,1,Organiser1
-,20201,Supplier1,1,202,Blanket,1,,,,,0,10,0,Organiser2
-,20202,Supplier2,1,202,Medicine,1,,,,,0,10,1,Supplier1
-,20301,ShadyGuy1,1,203,Basket,1,,,,,0,10,0,Organiser2
-,20302,ShadyGuy2,1,203,Saw,1,,,,,0,10,1,ShadyGuy1
-,20401,Organiser3,1,204,Sheets,1,,,,,0,10,0,Organiser2
-,20402,Organiser4,1,204,Wine,1,Fruits,1,,,0,10,2,Organiser3
-,20501,Supplier3,1,205,Fruits,1,Medicine,1,Lavender,1,0,10,0,Supplier2
-,20502,Supplier4,1,205,Basket,1,,,,,0,10,2,Supplier3
-,20601,ShadyGuy3,1,206,Cable,5,Knife,1,,,0,10,0,ShadyGuy2
-,20602,ShadyGuy4,1,206,Fruits,2,,,,,0,10,2,ShadyGuy3
-,20701,Organiser5,1,207,Plates,1,,,,,0,10,0,Organiser4
-,20702,Organiser6,1,207,Flower wreath,1,,,,,0,10,7,Organiser5
-,20801,Supplier5,1,208,Pig costume,1,,,,,0,10,0,Supplier4
-,20802,Supplier6,1,208,Picnic basket,1,,,,,0,10,7,Supplier5
-,20901,ShadyGuy5,1,209,Camera on tripod,1,,,,,0,10,0,ShadyGuy4
-,20902,ShadyGuy6,1,209,Medicine,1,,,,,0,10,7,ShadyGuy5
-,21001,Organiser7,1,210,Scene microphone,1,,,,,0,10,0,Organiser6
-,21002,Organiser8,1,210,Cutlery,2,,,,,0,10,0,Organiser7
-,21003,Organiser9,1,210,Special chair,1,,,,,0,10,0,Organiser8
-,21101,ShadyGuy7,1,211,Shovel,1,,,,,0,10,0,Organiser9
-,30101,Manager1,2,201,Moustache comb,1,,,,,0,10,1,
-,30102,Chef1,2,201,Toque,1,,,,,0,10,1,Manager1
-,30103,SousChef1,2,202,Ring,1,,,,,0,10,1,Chef1
-,30104,Manager2,2,202,Box,1,,,,,0,10,0,Manager1
-,30105,Manager3,2,203,Flowers,5,,,,,0,10,3,Manager2
-,30106,Chef2,2,203,Headphones,1,,,,,0,10,0,Chef1
-,30107,Chef3,2,204,Soup kit,1,,,,,0,10,3,Chef2
-,30108,SousChef2,2,204,Skillet,1,,,,,0,10,0,SousChef1
-,30109,SousChef3,2,205,Wax and brush,1,,,,,0,10,3,SousChef2
-,30110,Manager4,2,205,Fancy napkin,2,,,,,0,10,0,Manager3
-,30111,Manager5,2,206,Broom,1,Puff,1,,,0,10,0,Manager4
-,30112,Manager6,2,206,New phone,1,,,,,0,10,0,Manager5
-,30113,Manager7,2,207,Tailcoat,1,,,,,0,10,0,Manager6
-,30114,Manager8,2,207,Wax and brush,1,Moustache kit,1,,,0,10,9,Manager7
-,30115,Chef4,2,208,Cooking kit,1,,,,,0,10,0,Chef3
-,30116,Chef5,2,208,Gift card,1,,,,,0,10,0,Chef4
-,30117,Chef6,2,209,Gift,1,,,,,0,10,0,Chef5
-,30118,Chef7,2,209,Spices,1,,,,,0,10,0,Chef6
-,30119,Chef8,2,210,Origami,1,,,,,0,10,9,Chef7
-,30120,SousChef4,2,210,Toque,1,Apron,1,,,0,10,0,SousChef3
-,30121,SousChef5,2,210,Spices,1,Soup kit,1,,,0,10,0,SousChef4
-,30122,SousChef6,2,211,Champagne,5,,,,,0,10,0,SousChef5
-,30123,SousChef7,2,212,Ring,1,Wax and brush,1,Bowtie,1,0,10,0,SousChef6
-,30124,SousChef8,2,213,Flowers,3,,,,,0,10,9,SousChef7
-,30125,Chef9,2,214,Spices,1,Cooking kit,1,Coffee from Starbucks,1,0,10,0,Chef8
-,30126,Manager9,2,215,French bread,5,Pen,1,,,0,10,0,Manager8
-,30127,SousChef9,2,216,Tailcoat,1,Flowers,5,Gift card,1,0,10,0,SousChef8
-,40101,Don1,3,217,Looking glass,1,Pen,1,Paper,1,0,10,0,
-,40102,Don2,3,218,Fastfood,1,,,,,0,10,0,Don1
-,40103,Don3,3,219,Paper,1,Invisible pen,1,Book,1,0,10,2,Don2
-,40104,BB1,3,220,Paper flowers,3,,,,,0,10,0,Don3
-,40105,BB2,3,221,Detox drink,1,,,,,0,10,0,BB1
-,40106,BB3,3,222,Fastfood,3,,,,,0,10,2,BB2
-,40107,Business1,3,223,Detox drink,1,Fastfood,1,,,0,10,0,Don3
-,40108,Business2,3,224,Jeans,1,Perfume,1,Pen,1,0,10,4,Business1
-,40109,Business3,3,225,Bottle,1,Perfume,1,Lemon,1,0,10,0,Business2
-,40110,Business4,3,226,Watch,1,Perfume,1,,,0,10,3,Business3
-,40111,Business5,3,227,Statuette,1,Bottle,1,Paper,1,0,10,6,Business4
-,40112,BB4,3,228,Looking glass,1,Paper,1,Jeans,1,0,10,0,BB3
-,40113,BB5,3,229,Stuffed toy,1,,,,,0,10,0,BB4
-,40114,BB6,3,230,Jeans,1,Tank top,1,,,0,10,2,BB5
-,40115,BB7,3,231,Lamp,1,Fastfood,2,,,0,10,2,BB6
-,40116,Don4,3,232,Watch,1,Book,5,,,0,10,0,Don3
-,40117,Don5,3,233,Lamp,1,Fastfood,2,,,0,10,0,Don4
-,40118,Don6,3,234,Invisible pen,1,Perfume,2,,,0,10,5,Don5
-,40119,Don7,3,235,Looking glass,1,Magazine,1,,,0,10,0,Don6
-,40120,Don8,3,236,Wrist pillow,1,Dinner,1,,,0,10,2,Don7
-,40121,Business6,3,237,Dinner,1,Detox drink,2,,,0,10,5,Business5
-,40122,Business7,3,238,White wine,2,Book,5,,,0,10,9,Business6
-,40123,ShadyGuy1,3,239,Statuette,1,Suitcase,1,,,0,10,5,BB7
-,40124,ShadyGuy2,3,240,Magazine,1,Dinner,1,,,0,10,1,ShadyGuy1
-,40125,BB8,3,241,Baggage,1,,,,,0,10,4,BB7
-,40126,Don9,3,242,Suitcase,1,Folder,1,Book,3,0,10,0,Don8
-,40127,Don10,3,243,Spy glasses,1,Recorder,1,,,0,10,7,Don9
-,40128,Don11,3,244,Diary,1,Fastfood,2,,,0,10,0,Don10
-,40129,Don12,3,245,Royal dinner,1,,,,,0,10,0,Don11
-,40130,Business8,3,246,Fancy dinner,1,Pen,1,Contract,1,0,10,0,Business7
+,20101,Organiser1,2,,Wine,1,,,,,0,10,0,
+,20102,Organiser2,2,,Fruits,1,,,,,0,10,1,Organiser1
+,20201,Supplier1,2,,Blanket,1,,,,,0,10,0,Organiser2
+,20202,Supplier2,2,,Medicine,1,,,,,0,10,1,Supplier1
+,20301,ShadyGuy1,2,,Basket,1,,,,,0,10,0,Organiser2
+,20302,ShadyGuy2,2,,Saw,1,,,,,0,10,1,ShadyGuy1
+,20401,Organiser3,2,,Sheets,1,,,,,0,10,0,Organiser2
+,20402,Organiser4,2,,Wine,1,Fruits,1,,,0,10,2,Organiser3
+,20501,Supplier3,2,,Fruits,1,Medicine,1,Lavender,1,0,10,0,Supplier2
+,20502,Supplier4,2,,Basket,1,,,,,0,10,2,Supplier3
+,20601,ShadyGuy3,2,,Cable,5,Knife,1,,,0,10,0,ShadyGuy2
+,20602,ShadyGuy4,2,,Fruits,2,,,,,0,10,2,ShadyGuy3
+,20701,Organiser5,2,,Plates,1,,,,,0,10,0,Organiser4
+,20702,Organiser6,2,,Flower wreath,1,,,,,0,10,7,Organiser5
+,20801,Supplier5,2,,Pig costume,1,,,,,0,10,0,Supplier4
+,20802,Supplier6,2,,Picnic basket,1,,,,,0,10,7,Supplier5
+,20901,ShadyGuy5,2,,Camera on tripod,1,,,,,0,10,0,ShadyGuy4
+,20902,ShadyGuy6,2,,Medicine,1,,,,,0,10,7,ShadyGuy5
+,21001,Organiser7,2,,Scene microphone,1,,,,,0,10,0,Organiser6
+,21002,Organiser8,2,,Cutlery,2,,,,,0,10,0,Organiser7
+,21003,Organiser9,2,,Special chair,1,,,,,0,10,0,Organiser8
+,21101,ShadyGuy7,2,,Shovel,1,,,,,0,10,0,Organiser9
+,30101,Manager1,3,,Moustache comb,1,,,,,0,10,1,
+,30102,Chef1,3,,Toque,1,,,,,0,10,1,Manager1
+,30103,SousChef1,3,,Ring,1,,,,,0,10,1,Chef1
+,30104,Manager2,3,,Box,1,,,,,0,10,0,Manager1
+,30105,Manager3,3,,Flowers,5,,,,,0,10,3,Manager2
+,30106,Chef2,3,,Headphones,1,,,,,0,10,0,Chef1
+,30107,Chef3,3,,Soup kit,1,,,,,0,10,3,Chef2
+,30108,SousChef2,3,,Skillet,1,,,,,0,10,0,SousChef1
+,30109,SousChef3,3,,Wax and brush,1,,,,,0,10,3,SousChef2
+,30110,Manager4,3,,Fancy napkin,2,,,,,0,10,0,Manager3
+,30111,Manager5,3,,Broom,1,Puff,1,,,0,10,0,Manager4
+,30112,Manager6,3,,New phone,1,,,,,0,10,0,Manager5
+,30113,Manager7,3,,Tailcoat,1,,,,,0,10,0,Manager6
+,30114,Manager8,3,,Wax and brush,1,Moustache kit,1,,,0,10,9,Manager7
+,30115,Chef4,3,,Cooking kit,1,,,,,0,10,0,Chef3
+,30116,Chef5,3,,Gift card,1,,,,,0,10,0,Chef4
+,30117,Chef6,3,,Gift,1,,,,,0,10,0,Chef5
+,30118,Chef7,3,,Spices,1,,,,,0,10,0,Chef6
+,30119,Chef8,3,,Origami,1,,,,,0,10,9,Chef7
+,30120,SousChef4,3,,Toque,1,Apron,1,,,0,10,0,SousChef3
+,30121,SousChef5,3,,Spices,1,Soup kit,1,,,0,10,0,SousChef4
+,30122,SousChef6,3,,Champagne,5,,,,,0,10,0,SousChef5
+,30123,SousChef7,3,,Ring,1,Wax and brush,1,Bowtie,1,0,10,0,SousChef6
+,30124,SousChef8,3,,Flowers,3,,,,,0,10,9,SousChef7
+,30125,Chef9,3,,Spices,1,Cooking kit,1,Coffee from Starbucks,1,0,10,0,Chef8
+,30126,Manager9,3,,French bread,5,Pen,1,,,0,10,0,Manager8
+,30127,SousChef9,3,,Tailcoat,1,Flowers,5,Gift card,1,0,10,0,SousChef8
+,40101,Don1,4,217,Looking glass,1,Pen,1,Paper,1,0,10,0,
+,40102,Don2,4,218,Fastfood,1,,,,,0,10,0,Don1
+,40103,Don3,4,219,Paper,1,Invisible pen,1,Book,1,0,10,2,Don2
+,40104,BB1,4,220,Paper flowers,3,,,,,0,10,0,Don3
+,40105,BB2,4,221,Detox drink,1,,,,,0,10,0,BB1
+,40106,BB3,4,222,Fastfood,3,,,,,0,10,2,BB2
+,40107,Business1,4,223,Detox drink,1,Fastfood,1,,,0,10,0,Don3
+,40108,Business2,4,224,Jeans,1,Perfume,1,Pen,1,0,10,4,Business1
+,40109,Business3,4,225,Bottle,1,Perfume,1,Lemon,1,0,10,0,Business2
+,40110,Business4,4,226,Watch,1,Perfume,1,,,0,10,3,Business3
+,40111,Business5,4,227,Statuette,1,Bottle,1,Paper,1,0,10,6,Business4
+,40112,BB4,4,228,Looking glass,1,Paper,1,Jeans,1,0,10,0,BB3
+,40113,BB5,4,229,Stuffed toy,1,,,,,0,10,0,BB4
+,40114,BB6,4,230,Jeans,1,Tank top,1,,,0,10,2,BB5
+,40115,BB7,4,231,Lamp,1,Fastfood,2,,,0,10,2,BB6
+,40116,Don4,4,232,Watch,1,Book,5,,,0,10,0,Don3
+,40117,Don5,4,233,Lamp,1,Fastfood,2,,,0,10,0,Don4
+,40118,Don6,4,234,Invisible pen,1,Perfume,2,,,0,10,5,Don5
+,40119,Don7,4,235,Looking glass,1,Magazine,1,,,0,10,0,Don6
+,40120,Don8,4,236,Wrist pillow,1,Dinner,1,,,0,10,2,Don7
+,40121,Business6,4,237,Dinner,1,Detox drink,2,,,0,10,5,Business5
+,40122,Business7,4,238,White wine,2,Book,5,,,0,10,9,Business6
+,40123,ShadyGuy1,4,239,Statuette,1,Suitcase,1,,,0,10,5,BB7
+,40124,ShadyGuy2,4,240,Magazine,1,Dinner,1,,,0,10,1,ShadyGuy1
+,40125,BB8,4,241,Baggage,1,,,,,0,10,4,BB7
+,40126,Don9,4,242,Suitcase,1,Folder,1,Book,3,0,10,0,Don8
+,40127,Don10,4,243,Spy glasses,1,Recorder,1,,,0,10,7,Don9
+,40128,Don11,4,244,Diary,1,Fastfood,2,,,0,10,0,Don10
+,40129,Don12,4,245,Royal dinner,1,,,,,0,10,0,Don11
+,40130,Business8,4,246,Fancy dinner,1,Pen,1,Contract,1,0,10,0,Business7
 ,50101,Gao-1,5,1,Dragon,1,,,,,0,10,0,
 ,50102,Gao-2,5,1,Tome,2,,,,,0,10,0,Gao-1
 ,50103,Gao-3,5,1,Dictionary,1,,,,,0,10,1,Gao-2
