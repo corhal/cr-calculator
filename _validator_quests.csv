@@ -1,83 +1,83 @@
 HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT 3,GOLD_REWARD,ENERGY_REWARD,REQUIRED_QUESTS
-,20101,Organiser1,2,,Wine,1,,,,,0,10,
-,20102,Organiser2,2,,Fruits,1,,,,,0,10,Organiser1
-,20201,Supplier1,2,,Blanket,1,,,,,0,10,Organiser2
-,20202,Supplier2,2,,Medicine,1,,,,,0,10,Supplier1
-,20301,ShadyGuy1,2,,Basket,1,,,,,0,10,Organiser2
-,20302,ShadyGuy2,2,,Saw,1,,,,,0,10,ShadyGuy1
-,20401,Organiser3,2,,Sheets,1,,,,,0,10,Organiser2
-,20402,Organiser4,2,,Wine,1,Fruits,1,,,0,10,Organiser3
-,20501,Supplier3,2,,Fruits,1,Medicine,1,Lavender,1,0,10,Supplier2
-,20502,Supplier4,2,,Basket,1,,,,,0,10,Supplier3
-,20601,ShadyGuy3,2,,Cable,5,Knife,1,,,0,10,ShadyGuy2
-,20602,ShadyGuy4,2,,Fruits,2,,,,,0,10,ShadyGuy3
-,20701,Organiser5,2,,Plates,1,,,,,0,10,Organiser4
-,20702,Organiser6,2,,Flower wreath,1,,,,,0,10,Organiser5
-,20801,Supplier5,2,,Pig costume,1,,,,,0,10,Supplier4
-,20802,Supplier6,2,,Picnic basket,1,,,,,0,10,Supplier5
-,20901,ShadyGuy5,2,,Camera on tripod,1,,,,,0,10,ShadyGuy4
-,20902,ShadyGuy6,2,,Medicine,1,,,,,0,10,ShadyGuy5
-,21001,Organiser7,2,,Scene microphone,1,,,,,0,10,Organiser6
-,21002,Organiser8,2,,Cutlery,2,,,,,0,10,Organiser7
-,21003,Organiser9,2,,Special chair,1,,,,,0,10,Organiser8
-,21101,ShadyGuy7,2,,Shovel,1,,,,,0,10,Organiser9
-,30101,Manager1,3,,Moustache comb,1,,,,,0,10,
-,30102,Chef1,3,,Toque,1,,,,,0,10,Manager1
-,30103,SousChef1,3,,Ring,1,,,,,0,10,Chef1
-,30104,Manager2,3,,Box,1,,,,,0,10,Manager1
-,30105,Manager3,3,,Flowers,5,,,,,0,10,Manager2
-,30106,Chef2,3,,Headphones,1,,,,,0,10,Chef1
-,30107,Chef3,3,,Soup kit,1,,,,,0,10,Chef2
-,30108,SousChef2,3,,Skillet,1,,,,,0,10,SousChef1
-,30109,SousChef3,3,,Wax and brush,1,,,,,0,10,SousChef2
-,30110,Manager4,3,,Fancy napkin,2,,,,,0,10,Manager3
-,30111,Manager5,3,,Broom,1,Puff,1,,,0,10,Manager4
-,30112,Manager6,3,,New phone,1,,,,,0,10,Manager5
-,30113,Manager7,3,,Tailcoat,1,,,,,0,10,Manager6
-,30114,Manager8,3,,Wax and brush,1,Moustache kit,1,,,0,10,Manager7
-,30115,Chef4,3,,Cooking kit,1,,,,,0,10,Chef3
-,30116,Chef5,3,,Gift card,1,,,,,0,10,Chef4
-,30117,Chef6,3,,Gift,1,,,,,0,10,Chef5
-,30118,Chef7,3,,Spices,1,,,,,0,10,Chef6
-,30119,Chef8,3,,Origami,1,,,,,0,10,Chef7
-,30120,SousChef4,3,,Toque,1,Apron,1,,,0,10,SousChef3
-,30121,SousChef5,3,,Spices,1,Soup kit,1,,,0,10,SousChef4
-,30122,SousChef6,3,,Champagne,5,,,,,0,10,SousChef5
-,30123,SousChef7,3,,Ring,1,Wax and brush,1,Bowtie,1,0,10,SousChef6
-,30124,SousChef8,3,,Flowers,3,,,,,0,10,SousChef7
-,30125,Chef9,3,,Spices,1,Cooking kit,1,Coffee from Starbucks,1,0,10,Chef8
-,30126,Manager9,3,,French bread,5,Pen,1,,,0,10,Manager8
-,30127,SousChef9,3,,Tailcoat,1,Flowers,5,Gift card,1,0,10,SousChef8
-,40101,Don1,4,217,Looking glass,1,Pen,1,Paper,1,0,10,
-,40102,Don2,4,218,Fastfood,1,,,,,0,10,Don1
-,40103,Don3,4,219,Paper,1,Invisible pen,1,Book,1,0,10,Don2
-,40104,BB1,4,220,Paper flowers,3,,,,,0,10,Don3
-,40105,BB2,4,221,Detox drink,1,,,,,0,10,BB1
-,40106,BB3,4,222,Fastfood,3,,,,,0,10,BB2
-,40107,Business1,4,223,Detox drink,1,Fastfood,1,,,0,10,Don3
-,40108,Business2,4,224,Jeans,1,Perfume,1,Pen,1,0,10,Business1
-,40109,Business3,4,225,Bottle,1,Perfume,1,Lemon,1,0,10,Business2
-,40110,Business4,4,226,Watch,1,Perfume,1,,,0,10,Business3
-,40111,Business5,4,227,Statuette,1,Bottle,1,Paper,1,0,10,Business4
-,40112,BB4,4,228,Looking glass,1,Paper,1,Jeans,1,0,10,BB3
-,40113,BB5,4,229,Stuffed toy,1,,,,,0,10,BB4
-,40114,BB6,4,230,Jeans,1,Tank top,1,,,0,10,BB5
-,40115,BB7,4,231,Lamp,1,Fastfood,2,,,0,10,BB6
-,40116,Don4,4,232,Watch,1,Book,5,,,0,10,Don3
-,40117,Don5,4,233,Lamp,1,Fastfood,2,,,0,10,Don4
-,40118,Don6,4,234,Invisible pen,1,Perfume,2,,,0,10,Don5
-,40119,Don7,4,235,Looking glass,1,Magazine,1,,,0,10,Don6
-,40120,Don8,4,236,Wrist pillow,1,Dinner,1,,,0,10,Don7
-,40121,Business6,4,237,Dinner,1,Detox drink,2,,,0,10,Business5
-,40122,Business7,4,238,White wine,2,Book,5,,,0,10,Business6
-,40123,ShadyGuy1,4,239,Statuette,1,Suitcase,1,,,0,10,BB7
-,40124,ShadyGuy2,4,240,Magazine,1,Dinner,1,,,0,10,ShadyGuy1
-,40125,BB8,4,241,Baggage,1,,,,,0,10,BB7
-,40126,Don9,4,242,Suitcase,1,Folder,1,Book,3,0,10,Don8
-,40127,Don10,4,243,Spy glasses,1,Recorder,1,,,0,10,Don9
-,40128,Don11,4,244,Diary,1,Fastfood,2,,,0,10,Don10
-,40129,Don12,4,245,Royal dinner,1,,,,,0,10,Don11
-,40130,Business8,4,246,Fancy dinner,1,Pen,1,Contract,1,0,10,Business7
+,20101,Organiser-1,2,,Wine,1,,,,,0,10,
+,20102,Organiser-2,2,,Fruits,1,,,,,0,10,Organiser-1
+,20201,Supplier-1,2,,Blanket,1,,,,,0,10,Organiser-2
+,20202,Supplier-2,2,,Medicine,1,,,,,0,10,Supplier-1
+,20301,ShadyGuy-1,2,,Basket,1,,,,,0,10,Organiser-2
+,20302,ShadyGuy-2,2,,Saw,1,,,,,0,10,ShadyGuy-1
+,20401,Organiser-3,2,,Sheets,1,,,,,0,10,Organiser-2
+,20402,Organiser-4,2,,Wine,1,Fruits,1,,,0,10,Organiser-3
+,20501,Supplier-3,2,,Fruits,1,Medicine,1,Lavender,1,0,10,Supplier-2
+,20502,Supplier-4,2,,Basket,1,,,,,0,10,Supplier-3
+,20601,ShadyGuy-3,2,,Cable,5,Knife,1,,,0,10,ShadyGuy-2
+,20602,ShadyGuy-4,2,,Fruits,2,,,,,0,10,ShadyGuy-3
+,20701,Organiser-5,2,,Plates,1,,,,,0,10,Organiser-4
+,20702,Organiser-6,2,,Flower wreath,1,,,,,0,10,Organiser-5
+,20801,Supplier-5,2,,Pig costume,1,,,,,0,10,Supplier-4
+,20802,Supplier-6,2,,Picnic basket,1,,,,,0,10,Supplier-5
+,20901,ShadyGuy-5,2,,Camera on tripod,1,,,,,0,10,ShadyGuy-4
+,20902,ShadyGuy-6,2,,Medicine,1,,,,,0,10,ShadyGuy-5
+,21001,Organiser-7,2,,Scene microphone,1,,,,,0,10,Organiser-6
+,21002,Organiser-8,2,,Cutlery,2,,,,,0,10,Organiser-7
+,21003,Organiser-9,2,,Special chair,1,,,,,0,10,Organiser-8
+,21101,ShadyGuy-7,2,,Shovel,1,,,,,0,10,Organiser-9
+,30101,Manager-1,3,,Moustache comb,1,,,,,0,10,
+,30102,Chef-1,3,,Toque,1,,,,,0,10,Manager-1
+,30103,SousChef-1,3,,Ring,1,,,,,0,10,Chef-1
+,30104,Manager-2,3,,Box,1,,,,,0,10,Manager-1
+,30105,Manager-3,3,,Flowers,5,,,,,0,10,Manager-2
+,30106,Chef-2,3,,Headphones,1,,,,,0,10,Chef-1
+,30107,Chef-3,3,,Soup kit,1,,,,,0,10,Chef-2
+,30108,SousChef-2,3,,Skillet,1,,,,,0,10,SousChef-1
+,30109,SousChef-3,3,,Wax and brush,1,,,,,0,10,SousChef-2
+,30110,Manager-4,3,,Fancy napkin,2,,,,,0,10,Manager-3
+,30111,Manager-5,3,,Broom,1,Puff,1,,,0,10,Manager-4
+,30112,Manager-6,3,,New phone,1,,,,,0,10,Manager-5
+,30113,Manager-7,3,,Tailcoat,1,,,,,0,10,Manager-6
+,30114,Manager-8,3,,Wax and brush,1,Moustache kit,1,,,0,10,Manager-7
+,30115,Chef-4,3,,Cooking kit,1,,,,,0,10,Chef-3
+,30116,Chef-5,3,,Gift card,1,,,,,0,10,Chef-4
+,30117,Chef-6,3,,Gift,1,,,,,0,10,Chef-5
+,30118,Chef-7,3,,Spices,1,,,,,0,10,Chef-6
+,30119,Chef-8,3,,Origami,1,,,,,0,10,Chef-7
+,30120,SousChef-4,3,,Toque,1,Apron,1,,,0,10,SousChef-3
+,30121,SousChef-5,3,,Spices,1,Soup kit,1,,,0,10,SousChef-4
+,30122,SousChef-6,3,,Champagne,5,,,,,0,10,SousChef-5
+,30123,SousChef-7,3,,Ring,1,Wax and brush,1,Bowtie,1,0,10,SousChef-6
+,30124,SousChef-8,3,,Flowers,3,,,,,0,10,SousChef-7
+,30125,Chef-9,3,,Spices,1,Cooking kit,1,Coffee from Starbucks,1,0,10,Chef-8
+,30126,Manager-9,3,,French bread,5,Pen,1,,,0,10,Manager-8
+,30127,SousChef-9,3,,Tailcoat,1,Flowers,5,Gift card,1,0,10,SousChef-8
+,40101,Don-1,4,217,Looking glass,1,Pen,1,Paper,1,0,10,
+,40102,Don-2,4,218,Fastfood,1,,,,,0,10,Don-1
+,40103,Don-3,4,219,Paper,1,Invisible pen,1,Book,1,0,10,Don-2
+,40104,BB-1,4,220,Paper flowers,3,,,,,0,10,Don-3
+,40105,BB-2,4,221,Detox drink,1,,,,,0,10,BB-1
+,40106,BB-3,4,222,Fastfood,3,,,,,0,10,BB-2
+,40107,Business-1,4,223,Detox drink,1,Fastfood,1,,,0,10,Don-3
+,40108,Business-2,4,224,Jeans,1,Perfume,1,Pen,1,0,10,Business-1
+,40109,Business-3,4,225,Bottle,1,Perfume,1,Lemon,1,0,10,Business-2
+,40110,Business-4,4,226,Watch,1,Perfume,1,,,0,10,Business-3
+,40111,Business-5,4,227,Statuette,1,Bottle,1,Paper,1,0,10,Business-4
+,40112,BB-4,4,228,Looking glass,1,Paper,1,Jeans,1,0,10,BB-3
+,40113,BB-5,4,229,Stuffed toy,1,,,,,0,10,BB-4
+,40114,BB-6,4,230,Jeans,1,Tank top,1,,,0,10,BB-5
+,40115,BB-7,4,231,Lamp,1,Fastfood,2,,,0,10,BB-6
+,40116,Don-4,4,232,Watch,1,Book,5,,,0,10,Don-3
+,40117,Don-5,4,233,Lamp,1,Fastfood,2,,,0,10,Don-4
+,40118,Don-6,4,234,Invisible pen,1,Perfume,2,,,0,10,Don-5
+,40119,Don-7,4,235,Looking glass,1,Magazine,1,,,0,10,Don-6
+,40120,Don-8,4,236,Wrist pillow,1,Dinner,1,,,0,10,Don-7
+,40121,Business-6,4,237,Dinner,1,Detox drink,2,,,0,10,Business-5
+,40122,Business-7,4,238,White wine,2,Book,5,,,0,10,Business-6
+,40123,ShadyGuy-1,4,239,Statuette,1,Suitcase,1,,,0,10,BB-7
+,40124,ShadyGuy-2,4,240,Magazine,1,Dinner,1,,,0,10,ShadyGuy-1
+,40125,BB-8,4,241,Baggage,1,,,,,0,10,BB-7
+,40126,Don-9,4,242,Suitcase,1,Folder,1,Book,3,0,10,Don-8
+,40127,Don-10,4,243,Spy glasses,1,Recorder,1,,,0,10,Don-9
+,40128,Don-11,4,244,Diary,1,Fastfood,2,,,0,10,Don-10
+,40129,Don-12,4,245,Royal dinner,1,,,,,0,10,Don-11
+,40130,Business-8,4,246,Fancy dinner,1,Pen,1,Contract,1,0,10,Business-7
 ,50101,Gao-1,5,1,Dragon,1,,,,,0,10,
 ,50102,Gao-2,5,1,Tome,2,,,,,0,10,Gao-1
 ,50103,Gao-3,5,1,Dictionary,1,,,,,0,10,Gao-2
@@ -140,62 +140,62 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,52301,Historian-18,5,22,Perfect tools,1,Wrapping paper,3,,,0,10,Jones-19
 ,52401,Jones-20,5,23,Erhu,1,,,,,0,10,Historian-18
 ,52501,Shadyguy-1,5,24,Chinese lantern,1,Baoding balls,1,,,0,10,Gao-19
-,60101,Souschef1,6,27,Coffee bag,1,,,,,0,10,
-,60102,Souschef2,6,27,Gold ingot,1,,,,,0,10,Souschef-1
-,60103,Souschef3,6,27,Shredder,1,,,,,0,10,Souschef-2
-,60201,Souschef4,6,27,Locator,1,,,,,0,10,Souschef-3
-,60202,Souschef5,6,27,Oil,2,,,,,0,10,Souschef-4
-,60203,Souschef6,6,27,Electric razor,1,,,,,0,10,Souschef-5
-,60301,Grandma1,6,27,Cup,1,,,,,0,10,
-,60302,Grandma2,6,27,Coffee bag,2,,,,,0,10,Grandma-1
-,60401,Grandma3,6,27,Oil,3,,,,,0,10,"Souschef-2,Grandma-2"
-,60501,Grandma4,6,27,Coffee grinder,1,,,,,0,10,Grandma-3
-,60502,Grandma5,6,27,Cup,10,,,,,0,10,Grandma-4
-,60503,Grandma6,6,27,Coffee machine,1,,,,,0,10,Grandma-5
-,60504,Grandma7,6,27,Gold,2,Motor,1,,,0,10,Grandma-6
-,60601,Agent1,6,27,Oil,10,,,,,0,10,Grandma-3
-,60602,Agent2,6,27,Gold ingot,1,,,,,0,10,Agent-1
-,60603,Agent3,6,27,Gold ingot,1,Coffee bag,3,,,0,10,Agent-2
-,60604,Agent4,6,27,Coffee bag,5,,,,,0,10,Agent-3
-,60701,Souschef7,6,27,Big cog,1,Motor,1,,,0,10,"Agent-4,Grandma-7,Souschef-6"
-,60702,Souschef8,6,27,Cable,1,Cog,5,Magnet,2,0,10,Souschef-7
-,60703,Souschef9,6,27,Transformer,1,,,,,0,10,Souschef-8
-,60801,Grandma8,6,27,Magnifying glass,1,Coffee cup,1,,,0,10,"Agent-4,Grandma-7,Souschef-6"
-,60802,Grandma9,6,27,Professional binoculars,1,,,,,0,10,Grandma-8
-,60901,Grandma10,6,27,Boiling water,1,Cup,1,,,0,10,Grandma-9
-,60902,Grandma11,6,27,Microscope,1,Blade,1,,,0,10,Grandma-10
-,61001,Agent5,6,27,Plastic cup,10,,,,,0,10,"Agent-4,Grandma-7,Souschef-6"
-,61002,Agent6,6,27,Water tank,5,,,,,0,10,Agent-5
-,61003,Agent7,6,27,Coffee scrub,1,Pin,5,,,0,10,Agent-6
-,61101,Souschef10,6,27,Professional binoculars,1,Locator,1,,,0,10,"Souschef-9,Grandma-11,Agent-7"
-,61102,Souschef11,6,27,Climbing rope,1,,,,,0,10,Souschef-10
-,61201,Grandma12,6,27,Plastic cup,5,Boiling water,2,Coffee,3,0,10,"Souschef-9,Grandma-11,Agent-7"
-,61202,Grandma13,6,27,Drone with cable,1,,,,,0,10,Grandma-12
-,61301,Agent8,6,27,Locator,1,Binoculars,1,,,0,10,"Souschef-9,Grandma-11,Agent-7"
-,61302,Agent9,6,27,Climbing rope,1,Magnet,2,,,0,10,Agent-8
-,61303,Agent10,6,27,Lockpick,3,,,,,0,10,Agent-9
-,61401,Agent11,6,27,Feather,10,Gold shavings,5,,,0,10,"Souschef-11,Grandma-13,Agent-10"
-,61402,Agent12,6,27,Feather crown,1,Gold shavings,1,Glitter,5,0,10,Agent-11
-,61403,Agent13,6,27,Oil,2,Glitter,5,,,0,10,Agent-12
-,61501,Souschef12,6,27,Credit card,1,Gold ingot,1,,,0,10,"Souschef-11,Grandma-13,Agent-10"
-,61502,Souschef13,6,27,Lockpick,1,Blade,1,,,0,10,Souschef-12
-,61503,Souschef14,6,27,Satellite phone,1,Locator,1,,,0,10,Souschef-13
-,61504,Souschef15,6,27,Woolen sweater,1,,,,,0,10,Souschef-14
-,61601,Grandma14,6,27,Boiling water,1,Steamer,1,Cup,5,0,10,"Souschef-11,Grandma-13,Agent-10"
-,61602,Grandma15,6,27,Gilded mirror,1,,,,,0,10,Grandma-14
-,61701,Grandma16,6,27,Special coffee machine,1,,,,,0,10,"Grandma-15,Souschef-15,Agent-13"
-,61702,Grandma17,6,27,Woolen thread,5,,,,,0,10,Grandma-16
-,61801,Agent14,6,27,Drone,1,,,,,0,10,"Grandma-15,Souschef-15,Agent-13"
-,61802,Agent15,6,27,Surveillance drone,1,,,,,0,10,Agent-14
-,61901,Agent16,6,27,Flag,10,Feather,10,,,0,10,Agent-15
-,61902,Agent17,6,27,Drone,1,,,,,0,10,Agent-16
-,61903,Agent18,6,27,Glitter cannon,1,,,,,0,10,Agent-17
-,62001,Grandma18,6,27,Net,1,Cable,1,,,0,10,"Agent-16,Grandma-17"
-,62002,Grandma19,6,27,Feather boa,1,,,,,0,10,Grandma-18
-,62101,Souschef16,6,27,Car engine,1,,,,,0,10,"Grandma-15,Souschef-15,Agent-13"
-,62102,Souschef17,6,27,Tempered mirror,3,,,,,0,10,Souschef-16
-,62103,Souschef18,6,27,Polish,5,,,,,0,10,Souschef-17
-,62201,Souschef19,6,27,Book box,1,,,,,0,10,Souschef-18
-,62301,Grandma19,6,27,Satellite phone,2,Locator,2,Pepper spray,2,0,10,Souschef-19
-,62302,Grandma20,6,27,Irish coffee,1,,,,,0,10,Grandma-19
-,62303,Grandma21,6,27,Net drone,1,,,,,0,10,Grandma-20
+,60101,Souschef-1,6,27,Coffee bag,1,,,,,0,10,
+,60102,Souschef-2,6,27,Gold ingot,1,,,,,0,10,Souschef-1
+,60103,Souschef-3,6,27,Shredder,1,,,,,0,10,Souschef-2
+,60201,Souschef-4,6,27,Locator,1,,,,,0,10,Souschef-3
+,60202,Souschef-5,6,27,Oil,2,,,,,0,10,Souschef-4
+,60203,Souschef-6,6,27,Electric razor,1,,,,,0,10,Souschef-5
+,60301,Grandma-1,6,27,Cup,1,,,,,0,10,
+,60302,Grandma-2,6,27,Coffee bag,2,,,,,0,10,Grandma-1
+,60401,Grandma-3,6,27,Oil,3,,,,,0,10,"Souschef-2,Grandma-2"
+,60501,Grandma-4,6,27,Coffee grinder,1,,,,,0,10,Grandma-3
+,60502,Grandma-5,6,27,Cup,10,,,,,0,10,Grandma-4
+,60503,Grandma-6,6,27,Coffee machine,1,,,,,0,10,Grandma-5
+,60504,Grandma-7,6,27,Gold,2,Motor,1,,,0,10,Grandma-6
+,60601,Agent-1,6,27,Oil,10,,,,,0,10,Grandma-3
+,60602,Agent-2,6,27,Gold ingot,1,,,,,0,10,Agent-1
+,60603,Agent-3,6,27,Gold ingot,1,Coffee bag,3,,,0,10,Agent-2
+,60604,Agent-4,6,27,Coffee bag,5,,,,,0,10,Agent-3
+,60701,Souschef-7,6,27,Big cog,1,Motor,1,,,0,10,"Agent-4,Grandma-7,Souschef-6"
+,60702,Souschef-8,6,27,Cable,1,Cog,5,Magnet,2,0,10,Souschef-7
+,60703,Souschef-9,6,27,Transformer,1,,,,,0,10,Souschef-8
+,60801,Grandma-8,6,27,Magnifying glass,1,Coffee cup,1,,,0,10,"Agent-4,Grandma-7,Souschef-6"
+,60802,Grandma-9,6,27,Professional binoculars,1,,,,,0,10,Grandma-8
+,60901,Grandma-10,6,27,Boiling water,1,Cup,1,,,0,10,Grandma-9
+,60902,Grandma-11,6,27,Microscope,1,Blade,1,,,0,10,Grandma-10
+,61001,Agent-5,6,27,Plastic cup,10,,,,,0,10,"Agent-4,Grandma-7,Souschef-6"
+,61002,Agent-6,6,27,Water tank,5,,,,,0,10,Agent-5
+,61003,Agent-7,6,27,Coffee scrub,1,Pin,5,,,0,10,Agent-6
+,61101,Souschef-10,6,27,Professional binoculars,1,Locator,1,,,0,10,"Souschef-9,Grandma-11,Agent-7"
+,61102,Souschef-11,6,27,Climbing rope,1,,,,,0,10,Souschef-10
+,61201,Grandma-12,6,27,Plastic cup,5,Boiling water,2,Coffee,3,0,10,"Souschef-9,Grandma-11,Agent-7"
+,61202,Grandma-13,6,27,Drone with cable,1,,,,,0,10,Grandma-12
+,61301,Agent-8,6,27,Locator,1,Binoculars,1,,,0,10,"Souschef-9,Grandma-11,Agent-7"
+,61302,Agent-9,6,27,Climbing rope,1,Magnet,2,,,0,10,Agent-8
+,61303,Agent-10,6,27,Lockpick,3,,,,,0,10,Agent-9
+,61401,Agent-11,6,27,Feather,10,Gold shavings,5,,,0,10,"Souschef-11,Grandma-13,Agent-10"
+,61402,Agent-12,6,27,Feather crown,1,Gold shavings,1,Glitter,5,0,10,Agent-11
+,61403,Agent-13,6,27,Oil,2,Glitter,5,,,0,10,Agent-12
+,61501,Souschef-12,6,27,Credit card,1,Gold ingot,1,,,0,10,"Souschef-11,Grandma-13,Agent-10"
+,61502,Souschef-13,6,27,Lockpick,1,Blade,1,,,0,10,Souschef-12
+,61503,Souschef-14,6,27,Satellite phone,1,Locator,1,,,0,10,Souschef-13
+,61504,Souschef-15,6,27,Woolen sweater,1,,,,,0,10,Souschef-14
+,61601,Grandma-14,6,27,Boiling water,1,Steamer,1,Cup,5,0,10,"Souschef-11,Grandma-13,Agent-10"
+,61602,Grandma-15,6,27,Gilded mirror,1,,,,,0,10,Grandma-14
+,61701,Grandma-16,6,27,Special coffee machine,1,,,,,0,10,"Grandma-15,Souschef-15,Agent-13"
+,61702,Grandma-17,6,27,Woolen thread,5,,,,,0,10,Grandma-16
+,61801,Agent-14,6,27,Drone,1,,,,,0,10,"Grandma-15,Souschef-15,Agent-13"
+,61802,Agent-15,6,27,Surveillance drone,1,,,,,0,10,Agent-14
+,61901,Agent-16,6,27,Flag,10,Feather,10,,,0,10,Agent-15
+,61902,Agent-17,6,27,Drone,1,,,,,0,10,Agent-16
+,61903,Agent-18,6,27,Glitter cannon,1,,,,,0,10,Agent-17
+,62001,Grandma-18,6,27,Net,1,Cable,1,,,0,10,"Agent-16,Grandma-17"
+,62002,Grandma-19,6,27,Feather boa,1,,,,,0,10,Grandma-18
+,62101,Souschef-16,6,27,Car engine,1,,,,,0,10,"Grandma-15,Souschef-15,Agent-13"
+,62102,Souschef-17,6,27,Tempered mirror,3,,,,,0,10,Souschef-16
+,62103,Souschef-18,6,27,Polish,5,,,,,0,10,Souschef-17
+,62201,Souschef-19,6,27,Book box,1,,,,,0,10,Souschef-18
+,62301,Grandma-20,6,27,Satellite phone,2,Locator,2,Pepper spray,2,0,10,Souschef-19
+,62302,Grandma-21,6,27,Irish coffee,1,,,,,0,10,Grandma-20
+,62303,Grandma-22,6,27,Net drone,1,,,,,0,10,Grandma-21

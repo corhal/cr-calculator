@@ -133,12 +133,12 @@ id,asset,readOnly,cost,config,_comment
 10004,,0,,,Ribs recipe
 10005,,0,,,Mushrooms recipe
 10006,,0,,,Chili recipe
-10007,,0,,,Graten recipe
+10007,,0,,,Truffles pasta recipe
 10008,,0,,,Lamb leg recipe
-10009,,0,,,Truffles pasta recipe
-10010,,0,,,Strawberry crepe recipe
-10011,,0,,,Onion soup recipe
-10012,,0,,,Snail recipe
+10009,,0,,,Graten recipe
+10010,,0,,,Onion soup recipe
+10011,,0,,,Snails recipe
+10012,,0,,,Strawberry crepe recipe
 122,,0,"{""item"":[{""id"": 1061, ""amount"": 3}], ""gold"": 100}",,Medicine
 123,,0,"{""item"":[{""id"": 1067, ""amount"": 5}], ""gold"": 100}",,Plates
 124,,0,"{""item"":[{""id"": 1062, ""amount"": 5}], ""gold"": 100}",,Flower wreath
