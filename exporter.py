@@ -35,7 +35,8 @@ def export_items():
                              '_comment': comment})
 
 def export_missions():
-    missions = load_missions(load_items(), load_recipes(load_items()))
+    quests = load_quests(load_items())
+    missions = load_missions(load_items(), load_recipes(load_items()), quests)
     with open('_export_missions.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'chapterId', 'main', 'requirements', 'recipes',
                       'fixedReward', 'garbageCoeff', 'possibleReward',
@@ -48,8 +49,8 @@ def export_missions():
             chapterId = mission.chapter
             main = ''
             requirements = ''
-            if mission.keys_cost != 0:
-                requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
+            #if mission.keys_cost != 0:
+                #requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
                 
             recipes = '['
             count = 0
@@ -97,8 +98,8 @@ def export_missions():
                 ident = mission.ident
                 chapter = mission.chapter
                 cost = ''
-                if mission.keys_cost != 0:
-                    cost = '{"item": [{"id": 4, "amount": ' + str(mission.keys_cost) + '}]}'
+                #if mission.keys_cost != 0:
+                    #cost = '{"item": [{"id": 4, "amount": ' + str(mission.keys_cost) + '}]}'
                 missionId = mission.ident
                 writer.writerow({'id': ident,
                                  'chapter': chapter,                             
@@ -150,10 +151,10 @@ def export_quests():
                 if q_reward.gold_reward != 0:
                     reward += ', '
                 reward += '"refillable": [{"id": 1, "amount": ' + str(q_reward.energy_reward) + '}]'
-            if q_reward.keys != 0:
-                if q_reward.gold_reward != 0 or q_reward.energy_reward != 0:
-                    reward += ', '
-                reward += '"item": [{"id": 4, "amount": ' + str(q_reward.keys) + '}]'
+            #if q_reward.keys != 0:
+                #if q_reward.gold_reward != 0 or q_reward.energy_reward != 0:
+                    #reward += ', '
+                #reward += '"item": [{"id": 4, "amount": ' + str(q_reward.keys) + '}]'
             reward += '}'
 
             comment = quest.name
@@ -194,8 +195,7 @@ def export_translation(last_id):
                 person_col = row.index("PERSON")
                 text_col = row.index("TEXT")
                 resp_col = row.index("RESPONSES")                
-                continue
-            
+                continue            
             if row[name_col] != "":
                 text_count = 0
                 quest = find_quest(row[name_col], quests)
