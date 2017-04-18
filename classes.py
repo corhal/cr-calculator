@@ -92,7 +92,27 @@ class Reward(object):
         self.item_chances = item_chances # dict {item: chance, reward} ?
         self.item_amounts = item_amounts
         self.gold_reward = gold_reward
-        self.energy_reward = energy_reward        
+        self.energy_reward = energy_reward
+
+    def give(self):
+        always_chance = False
+        if Game.first_mission_100_chance:
+            always_chance = True
+        if self.played:
+            always_chance = False
+        else:            
+            self.played = True
+        
+        reward_items = []
+        for item in reward.item_chances.keys():
+            amount = 1
+            if reward.item_amounts != None:
+                amount = reward.item_amounts[item]
+            if always_chance:
+                self.take_item(item, amount)
+            elif random.randrange(0, 100) * 0.01 < reward.item_chances[item]:
+                self.take_item(item, amount)
+        
 
 class Mission(object):
     def __init__(self, ident, name, chapter, reward,
