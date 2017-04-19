@@ -7,9 +7,9 @@ id,asset,readOnly,cost,config,_comment
 1056,obj_d4_lensfoto,0,,,Lens
 1057,obj_d4_foto_tripod,0,,,Tripod
 1058,obj_d4_basket_fruits,0,,,Fruits
-1166,,0,,,Cable
+1059,obj_d4_mic_wire,0,,,Wire
 1060,obj_d4_blanket,0,,,Blanket
-1061,obj_d4_tube_apkolesa,0,,,Medicine fragment
+1061,obj_d4_tube_apkolesa,0,,"{""isFragment"": ""item""}",Medicine fragment
 1062,obj_d4_lavander,0,,,Lavender
 1063,obj_d4_cloth,0,,,Cloth
 1064,obj_d4_cutlery_spoon,0,,,Spoon
@@ -114,6 +114,7 @@ id,asset,readOnly,cost,config,_comment
 1163,,0,,,Oil
 1164,,0,,,Motor
 1165,,0,,,Water tank
+1166,,0,,,Cable
 1167,,0,,,Magnet
 1168,,0,,,Pin
 1169,,0,,,Glitter
@@ -140,15 +141,15 @@ id,asset,readOnly,cost,config,_comment
 10011,obj_dish3_snail,0,,"{""isFragment"": ""recipe""}",Snails recipe
 10012,obj_dish3_crepes,0,,"{""isFragment"": ""recipe""}",Strawberry crepe recipe
 122,obj_d4_tube_apkolesa,0,"{""item"":[{""id"": 1061, ""amount"": 3}], ""gold"": 100}",,Medicine
-123,obj_d4_plateTableware,0,"{""item"":[{""id"": 1067, ""amount"": 5}], ""gold"": 100}",,Plates
-124,obj_d4_lavander_wreath,0,"{""item"":[{""id"": 1062, ""amount"": 5}], ""gold"": 100}",,Flower wreath
+123,obj_d4_plateTableware,0,"{""item"":[{""id"": 1067, ""amount"": 5}], ""gold"": 100}",,Service
+124,obj_d4_lavander_wreath,0,"{""item"":[{""id"": 1062, ""amount"": 5}], ""gold"": 100}",,Garland
 125,obj_d4_costume_piglet,0,"{""item"":[{""id"": 1063, ""amount"": 1}, {""id"": 1036, ""amount"": 4}], ""gold"": 150}",,Pig costume
 126,obj_d4_chair_saw,0,"{""item"":[{""id"": 1069, ""amount"": 1}, {""id"": 1055, ""amount"": 1}], ""gold"": 150}",,Special chair
-127,obj_d1_tablecloths,0,"{""item"":[{""id"": 1063, ""amount"": 2}, {""id"": 1036, ""amount"": 1}], ""gold"": 180}",,Sheets
-128,obj_d4_microphone_wire,0,"{""item"":[{""id"": 1068, ""amount"": 1}, {""id"": 1166, ""amount"": 5}], ""gold"": 200}",,Scene microphone
+127,obj_d1_tablecloths,0,"{""item"":[{""id"": 1063, ""amount"": 2}, {""id"": 1036, ""amount"": 1}], ""gold"": 180}",,Tablecloths
+128,obj_d4_microphone_wire,0,"{""item"":[{""id"": 1068, ""amount"": 1}, {""id"": 1059, ""amount"": 5}], ""gold"": 200}",,Stage microphone
 129,obj_d4_cutlery,0,"{""item"":[{""id"": 1064, ""amount"": 3}, {""id"": 1065, ""amount"": 3}, {""id"": 1066, ""amount"": 3}], ""gold"": 200}",,Cutlery
 130,obj_d4_basket_tableware,0,"{""item"":[{""id"": 129, ""amount"": 1}, {""id"": 1054, ""amount"": 1}, {""id"": 1060, ""amount"": 1}], ""gold"": 200}",,Picnic basket
-131,obj_d4_foto_lens_tripod,0,"{""item"":[{""id"": 1045, ""amount"": 1}, {""id"": 1056, ""amount"": 1}, {""id"": 1057, ""amount"": 1}], ""gold"": 200}",,Camera on tripod
+131,obj_d4_foto_lens_tripod,0,"{""item"":[{""id"": 1045, ""amount"": 1}, {""id"": 1056, ""amount"": 1}, {""id"": 1057, ""amount"": 1}], ""gold"": 200}",,Camera with tripod
 132,obj_d5_cardboard_origami,0,"{""item"":[{""id"": 1092, ""amount"": 5}], ""gold"": 300}",,Origami
 133,obj_d5_napkin_nitki,0,"{""item"":[{""id"": 1082, ""amount"": 2}, {""id"": 1083, ""amount"": 5}], ""gold"": 300}",,Fancy napkin
 134,obj_d5_mobile_headphones,0,"{""item"":[{""id"": 1087, ""amount"": 1}, {""id"": 1088, ""amount"": 1}, {""id"": 1077, ""amount"": 1}], ""gold"": 400}",,New phone

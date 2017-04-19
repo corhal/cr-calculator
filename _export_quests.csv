@@ -9,8 +9,8 @@ id,chapterId,questChain,requirements,cost,reward,_comment
 20402,2,8,"{""quest"": [{""id"": 20401, ""status"": 3}]}","{""item"" : [{""id"" : 1070, ""amount"" : 1}, {""id"" : 1058, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-4
 20501,2,9,"{""quest"": [{""id"": 20202, ""status"": 3}]}","{""item"" : [{""id"" : 1058, ""amount"" : 1}, {""id"" : 122, ""amount"" : 1}, {""id"" : 1062, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-3
 20502,2,10,"{""quest"": [{""id"": 20501, ""status"": 3}]}","{""item"" : [{""id"" : 1054, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-4
-20601,2,11,"{""quest"": [{""id"": 20302, ""status"": 3}]}","{""item"" : [{""id"" : 1166, ""amount"" : 5}, {""id"" : 1066, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-3
-20602,2,12,"{""quest"": [{""id"": 20601, ""status"": 3}]}","{""item"" : [{""id"" : 1058, ""amount"" : 2}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-4
+20601,2,11,"{""quest"": [{""id"": 20302, ""status"": 3}]}","{""item"" : [{""id"" : 1058, ""amount"" : 2}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-3
+20602,2,12,"{""quest"": [{""id"": 20601, ""status"": 3}]}","{""item"" : [{""id"" : 1059, ""amount"" : 5}, {""id"" : 1066, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-4
 20701,2,13,"{""quest"": [{""id"": 20402, ""status"": 3}]}","{""item"" : [{""id"" : 123, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-5
 20702,2,14,"{""quest"": [{""id"": 20701, ""status"": 3}]}","{""item"" : [{""id"" : 124, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-6
 20801,2,15,"{""quest"": [{""id"": 20502, ""status"": 3}]}","{""item"" : [{""id"" : 125, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Supplier-5
@@ -20,7 +20,7 @@ id,chapterId,questChain,requirements,cost,reward,_comment
 21001,2,19,"{""quest"": [{""id"": 20702, ""status"": 3}]}","{""item"" : [{""id"" : 128, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-7
 21002,2,20,"{""quest"": [{""id"": 21001, ""status"": 3}]}","{""item"" : [{""id"" : 129, ""amount"" : 2}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-8
 21003,2,21,"{""quest"": [{""id"": 21002, ""status"": 3}]}","{""item"" : [{""id"" : 126, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Organiser-9
-21101,2,22,"{""quest"": [{""id"": 21003, ""status"": 3}]}","{""item"" : [{""id"" : 1071, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-7
+21004,2,22,"{""quest"": [{""id"": 21003, ""status"": 3}]}","{""item"" : [{""id"" : 1071, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",ShadyGuy-7
 30101,3,23,{},"{""item"" : [{""id"" : 1072, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Manager-1
 30102,3,24,"{""quest"": [{""id"": 30101, ""status"": 3}]}","{""item"" : [{""id"" : 1073, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",Chef-1
 30103,3,25,"{""quest"": [{""id"": 30102, ""status"": 3}]}","{""item"" : [{""id"" : 1074, ""amount"" : 1}]}","{""refillable"": [{""id"": 1, ""amount"": 10}]}",SousChef-1
