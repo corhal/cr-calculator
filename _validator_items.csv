@@ -145,14 +145,14 @@ ID,NAME,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST
 10011,Snails recipe,,,,,,,
 10012,Strawberry crepe recipe,,,,,,,
 122,Medicine,Medicine fragment,3,,,,,100
-123,Plates,Plate,5,,,,,100
-124,Flower wreath,Lavender,5,,,,,100
-125,Pig costume,Cloth,1,Thread,4,,,150
-126,Special chair,Chair,1,Saw,1,,,150
-127,Sheets,Cloth,2,Thread,1,,,180
+123,Plates,Plate,5,,,,,150
+124,Flower wreath,Lavender,5,,,,,150
+125,Pig costume,Cloth,1,Thread,2,,,175
+126,Special chair,Chair,1,Saw,1,,,200
+127,Sheets,Cloth,2,Thread,1,,,100
 128,Scene microphone,Microphone,1,Cable,5,,,200
-129,Cutlery,Spoon,3,Fork,3,Knife,3,200
-130,Picnic basket,Cutlery,1,Basket,1,Blanket,1,200
+129,Cutlery,Spoon,3,Fork,3,Knife,3,175
+130,Picnic basket,Cutlery,1,Basket,1,Blanket,1,175
 131,Camera on tripod,Camera,1,Lens,1,Tripod,1,200
 132,Origami,Cardboard,5,,,,,300
 133,Fancy napkin,Napkin,2,Golden thread,5,,,300

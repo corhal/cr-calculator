@@ -20,15 +20,15 @@ RECIPE_ID,NAME,LEVEL,GOLD_REWARD,UPGRADE_FRAGMENTS,UPGRADE_GOLD
 7,Chili,1,200,5,300
 7,Chili,2,300,20,500
 7,Chili,3,400,50,1000
-8,Graten,1,200,5,300
-8,Graten,2,300,20,500
-8,Graten,3,400,50,1000
-9,Lamb leg,1,200,5,300
-9,Lamb leg,2,300,20,500
-9,Lamb leg,3,400,50,1000
-10,Truffles pasta,1,200,5,300
-10,Truffles pasta,2,300,20,500
-10,Truffles pasta,3,400,50,1000
+8,Graten,1,20,1,100
+8,Graten,2,50,5,300
+8,Graten,3,100,20,500
+9,Lamb leg,1,20,1,100
+9,Lamb leg,2,50,5,300
+9,Lamb leg,3,100,20,500
+10,Truffles pasta,1,20,1,100
+10,Truffles pasta,2,50,5,300
+10,Truffles pasta,3,100,20,500
 11,Strawberry crepe,1,200,5,300
 11,Strawberry crepe,2,300,20,500
 11,Strawberry crepe,3,400,50,1000

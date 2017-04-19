@@ -59,8 +59,7 @@ class Quest(object):
         return full_conditions
 
     def complete(self):
-        self.completed = True
-        print(self.name + " completed")
+        self.completed = True        
         return self.reward.give(True)
 
     @property
@@ -181,7 +180,7 @@ class Recipe(object):
 
     def generate_mission(self):
         self.mission = Mission(0, self.name + '_mission',
-                               0, Reward({}, self.gold_reward), 0, 0, {})
+                               0, Reward({}, gold_reward=self.gold_reward), 0, 0, {})
 
 class Order(object):
     def __init__(self, recipe):
@@ -216,56 +215,78 @@ class OrderBoard(object):
             order.in_cooldown = False
 
 class Requirement(object):
-    def __init__(self, quests=None, item_amounts=None):
+    def __init__(self, quests=[], item_amounts={}):
         self.quests = quests
         self.item_amounts = item_amounts
 
 class Player(object):
     def __init__(self, energy_cap, daily_sessions, mins_per_en,
                  time_between_sessions, gold, recipes, chest):
-        gold_id = Game.items["Soft currency"]
-        energy_id = Game.items["Energy"]
+        self.inventory = {}        
+        self.gold_item = Game.items["Soft currency"]
+        self.inventory[self.gold_item] = gold
+        self.energy_item = Game.items["Energy"]
+        self.energy_cap = energy_cap
+        self.inventory[self.energy_item] = self.energy_cap
         self.day = 1
         self.session = 0
         self.daily_sessions = daily_sessions
         self.missions_completed = 0
         self.chapter = None
-        self.inventory = {}
-        self.inventory[gold_id] = gold
-        self.gold = self.inventory[gold_id]        
-        self.energy_cap = energy_cap
-        self.inventory[energy_id] = self.energy_cap
-        self.energy = self.inventory[energy_id]
         self.recipes = recipes
         self.order_board = OrderBoard(self.recipes)
         self.mins_per_en = mins_per_en
-        self.time_between_sessions = time_between_sessions
-        recipe_items = []        
+        self.time_between_sessions = time_between_sessions       
         self.chest = chest
 
-    def check_requirement(self, requirement):        
-        if requirement.quests != None:
-            for quest in requirement.quests:
-                if not quest.completed:
-                    return False
-        if requirement.item_amounts != None:
-            for item in requirement.item_amounts.keys():
-                if self.inventory.get(item, 0) < requirements.item_amounts[item]:
-                    return False
+    @property
+    def gold(self):                      
+        return self.inventory[self.gold_item]
+
+    @gold.setter
+    def gold(self, value):
+        self.inventory[self.gold_item] = value
+
+    @property
+    def energy(self):                        
+        return self.inventory[self.energy_item]
+
+    @energy.setter
+    def energy(self, value): # нужно внимательно проверить, что все работает
+        if value < 0:
+            spend_value = self.inventory[self.energy_item] - value
+            self.skip_session()
+            self.energy -= spend_value
+        else:
+            self.inventory[self.energy_item] = value
+            
+    def check_requirement(self, requirement):
+        for quest in requirement.quests:
+            if not quest.completed:
+                return False        
+        for item in requirement.item_amounts.keys():
+            if self.inventory.get(item, 0) < requirements.item_amounts[item]:
+                return False
         return True
 
     def farm_orders(self):
         if self.order_board.plays_today == self.order_board.max_plays_daily:
             return
         self.order_board.plays_today += 1
-        self.order_board.generate_board()        
+        self.order_board.generate_board()
+        #print("farming orders")
         while True:
             count = 0
             for order in self.order_board.orders:
                 if order.in_cooldown or order.recipe.level == 0:
                     count += 1
                     continue
+                #print("had gold: " + str(self.gold))
+                #reward_items = order.recipe.mission.reward.give(True)
+                #for item in reward_items:
+                    #print(item.name + ": " + str(reward_items[item]))
                 self.play_mission(order.recipe.mission)
+                #print("now gold: " + str(self.gold))
                 order.in_cooldown = True
                 self.missions_completed -= 1 # :(
             if count == len(self.order_board.orders):                 
@@ -338,7 +359,7 @@ class Player(object):
     def complete_quest(self, quest):
         item_conditions = quest.item_conditions
         for item in item_conditions.keys():            
-            self.give_item(item, item_conditions[item])
+            self.change_amount(item, -item_conditions[item])
         self.receive_reward(quest.complete())
 
     def farm_item(self, item, amount):       
@@ -352,8 +373,7 @@ class Player(object):
         while self.inventory.get(item, 0) < amount:
             self.play_mission(farm_mission)
 
-    def farm_gold(self, amount):
-        print("farming gold")
+    def farm_gold(self, amount):       
         max_reward = 0
         for mission in self.chapter.missions:
             if mission.locked:
@@ -361,22 +381,9 @@ class Player(object):
             if mission.reward.gold_reward > max_reward:
                 max_reward = mission.reward.gold_reward
                 farm_mission = mission
-        while self.gold < amount:            
+        while self.gold < amount:
             self.play_mission(farm_mission)
-        
-    def spend_energy(self, amount):
-        energy = Game.items["Energy"]
-        if self.inventory[energy] >= amount:
-            self.give_item(energy, amount)
-            self.energy = self.inventory[energy]
-        else:
-            self.skip_session()
-
-    def receive_energy(self, amount):
-        energy = Game.items["Energy"]
-        self.take_item(energy, amount)
-        self.energy = self.inventory[energy]
-
+            
     def skip_session(self):
         self.session += 1
         self.order_board.generate_board()
@@ -384,20 +391,16 @@ class Player(object):
         if self.session == self.daily_sessions:
             self.skip_day()            
         else:
-            energy = Game.items["Energy"]
-            self.inventory[energy] = min(self.energy_cap, self.inventory[energy]
+            self.energy = min(self.energy_cap, self.energy
                               + (1 / self.mins_per_en) * 60
-                              * self.time_between_sessions)
-            self.energy = self.inventory[energy]
+                              * self.time_between_sessions)            
 
     def open_chest(self):
         reward = self.chest.open()        
         self.receive_reward(reward)
     
-    def skip_day(self):
-        energy = Game.items["Energy"]
-        self.inventory[energy] = self.energy_cap
-        self.energy = self.inventory[energy]
+    def skip_day(self):        
+        self.energy = self.energy_cap        
         self.session = 0
         self.day += 1
         self.open_chest()
@@ -409,13 +412,13 @@ class Player(object):
         if reward_items == None:
             return
         for item in reward_items.keys():            
-            self.take_item(item, reward_items[item])
+            self.change_amount(item, reward_items[item])
                 
     def unlock_mission(self, mission):
         mission.unlock()
 
     def play_mission(self, mission):
-        self.spend_energy(mission.energy_cost)
+        self.energy -= mission.energy_cost
         self.receive_reward(mission.complete())
         self.missions_completed += 1
 
@@ -433,45 +436,24 @@ class Player(object):
                 self.craft(item_component)                
             
         for item_component in item.recipe:
-            self.give_item(item_component, item.recipe[item_component])
+            self.change_amount(item_component, -item.recipe[item_component])
         if self.gold < item.gold_cost:
             self.farm_gold(item.gold_cost)
-        self.spend_gold(item.gold_cost)
-        self.take_item(item, 1)
-    
-    def receive_gold(self, amount):
-        gold = Game.items["Soft currency"]
-        self.take_item(gold, amount)        
-        self.gold = self.inventory[gold]
+        self.gold -= item.gold_cost
+        self.change_amount(item, 1)
 
-    def spend_gold(self, amount):
-        gold = Game.items["Soft currency"]        
-        self.give_item(gold, amount)
-        self.gold = self.inventory[gold]
-        
-    def take_item(self, item, amount):
-        gold = Game.items["Soft currency"]
-        energy = Game.items["Energy"]
-        self.inventory[item] = self.inventory.get(item, 0) + amount        
-        self.upgrade_recipes()
-        self.gold = self.inventory[gold]
-        self.energy = self.inventory[energy]
-
-    def give_item(self, item, amount):
-        gold = Game.items["Soft currency"]
-        energy = Game.items["Energy"]
-        self.inventory[item] = self.inventory.get(item, 0) - amount
-        self.gold = self.inventory[gold]
-        self.energy = self.inventory[energy]
+    def change_amount(self, item, amount):
+        self.inventory[item] = self.inventory.get(item, 0) + amount
+        self.upgrade_recipes() 
         if self.inventory[item] < 0:
-            raise ValueError(item.name + " amount < 0")
+            raise ValueError(item.name + " amount < 0") 
 
     def upgrade_recipes(self):
         for recipe in self.recipes:
             if recipe.can_upgrade(self.gold, self.inventory.get(recipe.frag_item, 0)):
                 recipe.upgrade()
-                self.spend_gold(recipe.up_gold_by_levels[recipe.level])
-                self.give_item(recipe.frag_item, recipe.up_frags_by_levels[recipe.level])
+                self.gold -= recipe.up_gold_by_levels[recipe.level]
+                self.change_amount(recipe.frag_item, -recipe.up_frags_by_levels[recipe.level])
                 
 
     def show_stats(self):
