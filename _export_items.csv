@@ -126,19 +126,19 @@ id,asset,readOnly,cost,config,_comment
 1176,,0,,,Credit card
 1177,,0,,,Pepper spray
 1178,,0,,,Whiskey
-10000,obj_dish2_shawarma,0,,,Burrito recipe
-10001,obj_dish2_chicken,0,,,Grilled chicken recipe
-10002,obj_dish2_pizza,0,,,Pizza recipe
-10003,obj_dish2_sandwiches,0,,,Sandwich recipe
-10004,obj_dish2_ribs,0,,,Ribs recipe
-10005,obj_dish2_julienne,0,,,Mushrooms recipe
-10006,obj_dish2_chile,0,,,Chili recipe
-10007,obj_dish2_pasta_truffles,0,,,Truffles pasta recipe
-10008,obj_dish2_lamb_leg,0,,,Lamb leg recipe
-10009,obj_dish2_graten,0,,,Graten recipe
-10010,obj_dish3_onion_soup,0,,,Onion soup recipe
-10011,obj_dish3_snail,0,,,Snails recipe
-10012,obj_dish3_crepes,0,,,Strawberry crepe recipe
+10000,obj_dish2_shawarma,0,,"{""isFragment"": ""recipe""}",Burrito recipe
+10001,obj_dish2_chicken,0,,"{""isFragment"": ""recipe""}",Grilled chicken recipe
+10002,obj_dish2_pizza,0,,"{""isFragment"": ""recipe""}",Pizza recipe
+10003,obj_dish2_sandwiches,0,,"{""isFragment"": ""recipe""}",Sandwich recipe
+10004,obj_dish2_ribs,0,,"{""isFragment"": ""recipe""}",Ribs recipe
+10005,obj_dish2_julienne,0,,"{""isFragment"": ""recipe""}",Mushrooms recipe
+10006,obj_dish2_chile,0,,"{""isFragment"": ""recipe""}",Chili recipe
+10007,obj_dish2_pasta_truffles,0,,"{""isFragment"": ""recipe""}",Truffles pasta recipe
+10008,obj_dish2_lamb_leg,0,,"{""isFragment"": ""recipe""}",Lamb leg recipe
+10009,obj_dish2_graten,0,,"{""isFragment"": ""recipe""}",Graten recipe
+10010,obj_dish3_onion_soup,0,,"{""isFragment"": ""recipe""}",Onion soup recipe
+10011,obj_dish3_snail,0,,"{""isFragment"": ""recipe""}",Snails recipe
+10012,obj_dish3_crepes,0,,"{""isFragment"": ""recipe""}",Strawberry crepe recipe
 122,obj_d4_tube_apkolesa,0,"{""item"":[{""id"": 1061, ""amount"": 3}], ""gold"": 100}",,Medicine
 123,obj_d4_plateTableware,0,"{""item"":[{""id"": 1067, ""amount"": 5}], ""gold"": 100}",,Plates
 124,obj_d4_lavander_wreath,0,"{""item"":[{""id"": 1062, ""amount"": 5}], ""gold"": 100}",,Flower wreath

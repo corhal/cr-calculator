@@ -14,6 +14,8 @@ def export_items():
             asset = item.asset
             readOnly = '0'
             config = ''
+            if item.is_fragment != '':
+                config = '{"isFragment": "' + item.is_fragment + '"}'
             item_str = ''
             cost = ''
             if item.recipe != None:

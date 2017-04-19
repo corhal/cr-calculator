@@ -18,7 +18,7 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,36,7,3,Napkin,0.3,Lamb leg recipe,0.5,Tailcoat,0.3,15,Manager-3,Onion soup,3,Strawberry crepe,4,Lamb leg,5
 ,37,8,3,Pot,0.3,Gift,0.3,Saute pan,0.3,15,Chef-3,Snails,4,Onion soup,5,Strawberry crepe,5
 ,38,9,3,Apron,0.3,Bowtie,0.4,Champagne,0.3,15,SousChef-3,Truffles pasta,4,Snails,5,Onion soup,5
-,39,10,3,Coffee from Starbucks,0.3,French bread,0.3,Vase,0.3,20,Chef-8,Mushrooms,5,Grilled chicken,5,Snails,5
+,39,10,3,Coffee from Starbucks,0.3,French bread,0.3,Pen,0.3,20,Chef-8,Mushrooms,5,Grilled chicken,5,Snails,5
 ,40,1,4,Sandwich recipe,0.5,Paper,0.2,Lemon,0.3,5,,Burrito,3,Grilled chicken,4,Pizza,5
 ,41,2,4,Plush,0.25,Pen,0.3,Book,0.3,5,,Sandwich,3,Ribs,4,Mushrooms,5
 ,42,3,4,Looking glass,0.3,Fastfood,0.25,Bottle,0.3,5,,Chili,3,Burrito,4,Grilled chicken,5
