@@ -23,7 +23,8 @@ def load_items():
                                           name=row["NAME"],
                                           recipe=recipe,
                                           gold_cost=gold_cost,
-                                          asset=row["ASSET"])
+                                          asset=row["ASSET"],
+                                          is_fragment=row["IS FRAGMENT"])
     return all_items
 
 def load_chest(all_items):

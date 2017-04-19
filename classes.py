@@ -1,7 +1,7 @@
 import random
 
 class Item(object):
-    def __init__(self, ident, name, recipe=None, gold_cost=0, asset=''):
+    def __init__(self, ident, name, recipe=None, gold_cost=0, asset='', is_fragment=''):
         self.ident = ident
         self.name = name
         self.recipe = recipe # dict of items and counts
@@ -9,6 +9,7 @@ class Item(object):
         self.full_gold_cost = gold_cost
         self.asset = asset
         self.full_recipe = {}
+        self.is_fragment = is_fragment
         self.__compile_full_recipe()
 
     def __compile_full_recipe(self):
