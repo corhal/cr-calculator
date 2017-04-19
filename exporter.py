@@ -194,12 +194,13 @@ def export_translation(last_id):
                 order_col = row.index("ORDER")
                 person_col = row.index("PERSON")
                 text_col = row.index("TEXT")
-                resp_col = row.index("RESPONSES")                
+                resp_col = row.index("RESPONSES")
+                brief_col = row.index("SUMMARY")
                 continue            
             if row[name_col] != "":
                 text_count = 0
                 quest = find_quest(row[name_col], quests)
-                orders[quest.name] = [0]
+                orders[quest.name] = [0]                
                 
             if row[order_col] == "before":
                 order = "before"
@@ -234,8 +235,9 @@ def export_translation(last_id):
 
             if 0 in orders[quest.name]:
                 d_id += 1
+                briefing = row[brief_col]
                 ident = 'QUEST_' + str(quest.ident) + '_DIALOG_000'
-                translations[ident] = "briefing"
+                translations[ident] = briefing
                 dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
                 del(orders[quest.name][orders[quest.name].index(0)])
             
