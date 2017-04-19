@@ -40,8 +40,8 @@ def export_missions():
     quests = load_quests(load_items())
     missions = load_missions(load_items(), load_recipes(load_items()), quests)
     with open('_export_missions.csv', 'wt', encoding="utf8", newline='') as csvfile:
-        fieldnames = ['id', 'chapterId', 'main', 'requirements', 'recipes',
-                      'fixedReward', 'garbageCoeff', 'possibleReward',
+        fieldnames = ['id', 'chapterId', 'main', 'requirements', 'recipes', 'garbage',
+                      'fixedReward', 'lifeBonus', 'possibleReward',
                       'cost', 'config', '_comment']
         writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
 
@@ -65,7 +65,7 @@ def export_missions():
             recipes += ']'
             
             fixedReward = '{"gold": ' + str(mission.reward.gold_reward) + '}'
-            garbageCoeff = '0.5'
+            garbage = '{"count": 5, "action": 1 }'
             possibleReward = '['  
             if mission.reward.item_chances != None:
                 count = 0
@@ -84,8 +84,9 @@ def export_missions():
                              'main': main,
                              'requirements': requirements,
                              'recipes': recipes,
+                             'garbage': garbage,
                              'fixedReward': fixedReward,
-                             'garbageCoeff': garbageCoeff,
+                             'lifeBonus': 35,
                              'possibleReward': possibleReward,
                              'cost': cost,
                              'config': config,
