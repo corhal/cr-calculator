@@ -11,7 +11,7 @@ def export_items():
         for key in items:
             item = items[key]
             ident = item.ident
-            asset = ''
+            asset = item.asset
             readOnly = '0'
             config = ''
             item_str = ''

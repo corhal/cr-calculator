@@ -1,13 +1,13 @@
 import random
 
 class Item(object):
-    def __init__(self, ident, name, recipe=None, gold_cost=0):
+    def __init__(self, ident, name, recipe=None, gold_cost=0, asset=''):
         self.ident = ident
         self.name = name
         self.recipe = recipe # dict of items and counts
         self.gold_cost = gold_cost
         self.full_gold_cost = gold_cost
-        
+        self.asset = asset
         self.full_recipe = {}
         self.__compile_full_recipe()
 

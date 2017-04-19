@@ -22,7 +22,8 @@ def load_items():
             all_items[row["NAME"]] = Item(ident=row["ID"],
                                           name=row["NAME"],
                                           recipe=recipe,
-                                          gold_cost=gold_cost)
+                                          gold_cost=gold_cost,
+                                          asset=row["ASSET"])
     return all_items
 
 def load_chest(all_items):
