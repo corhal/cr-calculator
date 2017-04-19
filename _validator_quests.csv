@@ -1,10 +1,10 @@
 HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT 3,GOLD_REWARD,ENERGY_REWARD,REQUIRED_QUESTS
 ,20101,Organiser-1,2,1,Wine,1,,,,,0,10,
 ,20102,Organiser-2,2,2,Fruits,1,,,,,0,10,Organiser-1
-,20201,Supplier-1,2,3,Blanket,1,,,,,0,10,Organiser-2
-,20202,Supplier-2,2,4,Medicine,1,,,,,0,10,Supplier-1
-,20301,ShadyGuy-1,2,5,Basket,1,,,,,0,10,Organiser-2
-,20302,ShadyGuy-2,2,6,Saw,1,,,,,0,10,ShadyGuy-1
+,20103,Supplier-1,2,3,Blanket,1,,,,,0,10,Organiser-2
+,20104,Supplier-2,2,4,Medicine,1,,,,,0,10,Supplier-1
+,20105,ShadyGuy-1,2,5,Basket,1,,,,,0,10,Organiser-2
+,20106,ShadyGuy-2,2,6,Saw,1,,,,,0,10,ShadyGuy-1
 ,20401,Organiser-3,2,7,Tablecloths,1,,,,,0,10,Organiser-2
 ,20402,Organiser-4,2,8,Wine,1,Fruits,1,,,0,10,Organiser-3
 ,20501,Supplier-3,2,9,Fruits,1,Medicine,1,Lavender,1,0,10,Supplier-2
@@ -24,30 +24,30 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,30101,Manager-1,3,23,Moustache comb,1,,,,,0,10,
 ,30102,Chef-1,3,24,Toque,1,,,,,0,10,Manager-1
 ,30103,SousChef-1,3,25,Ring,1,,,,,0,10,Chef-1
-,30104,Manager-2,3,26,Box,1,,,,,0,10,Manager-1
-,30105,Manager-3,3,27,Flowers,5,,,,,0,10,Manager-2
-,30106,Chef-2,3,28,Headphones,1,,,,,0,10,Chef-1
-,30107,Chef-3,3,29,Soup kit,1,,,,,0,10,Chef-2
-,30108,SousChef-2,3,30,Skillet,1,,,,,0,10,SousChef-1
-,30109,SousChef-3,3,31,Wax and brush,1,,,,,0,10,SousChef-2
-,30110,Manager-4,3,32,Fancy napkin,2,,,,,0,10,Manager-3
-,30111,Manager-5,3,33,Broom,1,Puff,1,,,0,10,Manager-4
-,30112,Manager-6,3,34,New phone,1,,,,,0,10,Manager-5
-,30113,Manager-7,3,35,Tailcoat,1,,,,,0,10,Manager-6
-,30114,Manager-8,3,36,Wax and brush,1,Moustache kit,1,,,0,10,Manager-7
-,30115,Chef-4,3,37,Cooking kit,1,,,,,0,10,Chef-3
-,30116,Chef-5,3,38,Gift card,1,,,,,0,10,Chef-4
-,30117,Chef-6,3,39,Gift,1,,,,,0,10,Chef-5
-,30118,Chef-7,3,40,Spices,1,,,,,0,10,Chef-6
-,30119,Chef-8,3,41,Origami,1,,,,,0,10,Chef-7
-,30120,SousChef-4,3,42,Toque,1,Apron,1,,,0,10,SousChef-3
-,30121,SousChef-5,3,43,Spices,1,Soup kit,1,,,0,10,SousChef-4
-,30122,SousChef-6,3,44,Champagne,5,,,,,0,10,SousChef-5
-,30123,SousChef-7,3,45,Ring,1,Wax and brush,1,Bowtie,1,0,10,SousChef-6
-,30124,SousChef-8,3,46,Flowers,3,,,,,0,10,SousChef-7
-,30125,Chef-9,3,47,Spices,1,Cooking kit,1,Coffee from Starbucks,1,0,10,Chef-8
-,30126,Manager-9,3,48,French bread,5,Pen,1,,,0,10,Manager-8
-,30127,SousChef-9,3,49,Tailcoat,1,Flowers,5,Gift card,1,0,10,SousChef-8
+,30401,Manager-2,3,26,Box,1,,,,,0,10,Manager-1
+,30402,Manager-3,3,27,Flowers,5,,,,,0,10,Manager-2
+,30501,Chef-2,3,28,Headphones,1,,,,,0,10,Chef-1
+,30502,Chef-3,3,29,Soup kit,1,,,,,0,10,Chef-2
+,30601,SousChef-2,3,30,Skillet,1,,,,,0,10,SousChef-1
+,30602,SousChef-3,3,31,Wax and brush,1,,,,,0,10,SousChef-2
+,30701,Manager-4,3,32,Fancy napkin,2,,,,,0,10,Manager-3
+,30702,Manager-5,3,33,Broom,1,Puff,1,,,0,10,Manager-4
+,30703,Manager-6,3,34,New phone,1,,,,,0,10,Manager-5
+,30704,Manager-7,3,35,Tailcoat,1,,,,,0,10,Manager-6
+,30705,Manager-8,3,36,Wax and brush,1,Moustache kit,1,,,0,10,Manager-7
+,30801,Chef-4,3,37,Cooking kit,1,,,,,0,10,Chef-3
+,30802,Chef-5,3,38,Gift card,1,,,,,0,10,Chef-4
+,30803,Chef-6,3,39,Gift,1,,,,,0,10,Chef-5
+,30804,Chef-7,3,40,Spices,1,,,,,0,10,Chef-6
+,30805,Chef-8,3,41,Origami,1,,,,,0,10,Chef-7
+,30901,SousChef-4,3,42,Toque,1,Apron,1,,,0,10,SousChef-3
+,30902,SousChef-5,3,43,Spices,1,Soup kit,1,,,0,10,SousChef-4
+,30903,SousChef-6,3,44,Champagne,5,,,,,0,10,SousChef-5
+,30904,SousChef-7,3,45,Ring,1,Wax and brush,1,Bowtie,1,0,10,SousChef-6
+,30905,SousChef-8,3,46,Flowers,3,,,,,0,10,SousChef-7
+,31001,Chef-9,3,47,Spices,1,Cooking kit,1,Coffee from Starbucks,1,0,10,Chef-8
+,31002,Manager-9,3,48,French bread,5,Pastry stand,1,,,0,10,Manager-8
+,31003,SousChef-9,3,49,Tailcoat,1,Flowers,5,Gift card,1,0,10,SousChef-8
 ,40101,Don-1,4,50,Looking glass,1,Pen,1,Paper,1,0,10,
 ,40102,Don-2,4,51,Fastfood,1,,,,,0,10,Don-1
 ,40103,Don-3,4,52,Paper,1,Invisible pen,1,Book,1,0,10,Don-2
