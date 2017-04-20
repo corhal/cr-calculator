@@ -154,10 +154,10 @@ def export_quests():
                 if q_reward.gold_reward != 0:
                     reward += ', '
                 reward += '"refillable": [{"id": 1, "amount": ' + str(q_reward.energy_reward) + '}]'
-            #if q_reward.keys != 0:
-                #if q_reward.gold_reward != 0 or q_reward.energy_reward != 0:
-                    #reward += ', '
-                #reward += '"item": [{"id": 4, "amount": ' + str(q_reward.keys) + '}]'
+            if q_reward.keys != 0:
+                if q_reward.gold_reward != 0 or q_reward.energy_reward != 0:
+                    reward += ', '
+                reward += '"item": [{"id": 4, "amount": ' + str(q_reward.keys) + '}]'
             reward += '}'
 
             comment = quest.name
@@ -202,7 +202,7 @@ def export_translation(last_id):
                 continue            
             if row[name_col] != "":
                 text_count = 0
-                quest = find_quest(row[name_col], quests)
+                quest = find_quest(row[name_col], quests)                
                 orders[quest.name] = [0]                
                 
             if row[order_col] == "before":

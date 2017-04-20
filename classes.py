@@ -89,11 +89,12 @@ class Quest(object):
 
 class Reward(object):
     def __init__(self, item_chances, item_amounts=None,
-                 gold_reward=0, energy_reward=0):
+                 gold_reward=0, energy_reward=0, keys=0):
         self.item_chances = item_chances # dict {item: chance, reward} ?
         self.item_amounts = item_amounts
         self.gold_reward = gold_reward
         self.energy_reward = energy_reward
+        self.keys = keys
 
     def give(self):
         always_chance = False

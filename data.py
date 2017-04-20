@@ -106,6 +106,11 @@ def load_quests(all_items):
                 for quest_name in quest_names:
                     if quest.name == quest_name:
                         required_quests.append(quest)
+            try:
+                keys=int(row["KEYS"])
+            except ValueError:
+                keys=0
+                
             all_quests.append(
                 Quest(ident=row["ID"],
                       name=row["NAME"],
@@ -114,7 +119,8 @@ def load_quests(all_items):
                       item_conditions=item_conditions,
                       reward=Reward({},
                                   gold_reward=int(row["GOLD_REWARD"]),
-                                  energy_reward=int(row["ENERGY_REWARD"])),                                  
+                                  energy_reward=int(row["ENERGY_REWARD"]),
+                                  keys=keys),                                  
                       required_quests=required_quests))
     return all_quests
 
