@@ -49,3 +49,13 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,67,8,6,Llama wool,0.3,Credit card,0.3,Satellite phone,0.3,5,,Grilled chicken,3,Sandwich,4,Mushrooms,5
 ,68,9,6,Mirror,0.3,Steamer,0.3,Remote,0.3,5,,Burrito,3,Pizza,4,Ribs,5
 ,69,10,6,Wooden box,0.3,Pepper spray,0.3,Whiskey,0.3,5,,Mushrooms,3,Grilled chicken,4,Sandwich,5
+,70,1,7,Chapter 7_1 recipe,0.5,Nail,0.3,Industrial oil,0.3,5,,Burrito,3,Grilled chicken,4,Pizza,5
+,71,2,7,Wood,0.3,Timer,0.3,Cylinder,0.3,5,,Sandwich,3,Ribs,4,Mushrooms,5
+,72,3,7,Thermometer,0.3,Coloring agent,0.3,Plastic,0.3,5,,Chili,3,Burrito,4,Grilled chicken,5
+,73,4,7,Spatula,0.3,Parchment,0.3,Bowl,0.3,5,Anais-3 ,Pizza,3,Sandwich,4,Ribs,5
+,74,5,7,Chapter 7_2 recipe,0.5,Bell,0.3,Collar,0.3,5,Farmer-7,Mushrooms,3,Chili,4,Burrito,5
+,75,6,7,Seeds fragment,0.3,Grindstone,0.3,Heating element,0.3,5,Philipp-3,Grilled chicken,3,Pizza,4,Sandwich,5
+,76,7,7,Chapter 7_3 recipe,0.3,Honeycomb fragment,0.3,Hand plane,0.3,5,Anais-9,Ribs,3,Mushrooms,4,Chili,5
+,77,8,7,Rope,0.3,Gas cylinder,0.3,Heart mold,0.3,5,Philipp-8,Grilled chicken,3,Sandwich,4,Mushrooms,5
+,78,9,7,Roof tile,0.3,Glass,0.3,Ruby,0.3,5,Farmer-12,Burrito,3,Pizza,4,Ribs,5
+,79,10,7,Shiny fabric,0.3,Basic brush,0.3,Edelweiss,0.3,5,"Anais-17,Philipp-17,Farmer-16",Mushrooms,3,Grilled chicken,4,Sandwich,5

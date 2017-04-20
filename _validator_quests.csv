@@ -199,3 +199,63 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,62301,Grandma-20,6,198,Satellite phone,2,Locator,2,Pepper spray,2,0,10,,Souschef-19
 ,62302,Grandma-21,6,199,Irish coffee,1,,,,,0,10,,Grandma-20
 ,62303,Grandma-22,6,200,Net drone,1,,,,,0,10,,Grandma-21
+,70101,Philipp-1,7,201,Industrial oil,2,,,,,0,10,,
+,70102,Philipp-2,7,202,Chocolate bar mold,3,,,,,0,10,,Philipp-1
+,70103,Philipp-3,7,203,Plastic,3,Nails,1,,,0,10,1,Philipp-2
+,70201,Anais-1,7,204,Chocolate truffle mold,3,,,,,0,10,,
+,70202,Anais-2,7,205,Industrial oil,3,,,,,0,10,,Anais-1
+,70203,Anais-3,7,206,Coloring agent,5,,,,,0,10,1,Anais-2
+,70301,Farmer-1,7,207,Wood,5,Nails,2,,,0,10,,Philipp-1
+,70302,Farmer-2,7,208,Wood protection oil,5,,,,,0,10,,Farmer-1
+,70303,Farmer-3,7,209,Paint,5,,,,,0,10,,Farmer-2
+,70401,Farmer-4,7,210,Doghouse,1,,,,,0,10,,Farmer-3
+,70402,Farmer-5,7,211,Birdhouse,1,,,,,0,10,,Farmer-4
+,70501,Farmer-6,7,212,Wood,3,Nails,2,Plastic,5,0,10,,Farmer-5
+,70502,Farmer-7,7,213,Thermometer,10,,,,,0,10,1,Farmer-6
+,70601,Philipp-4,7,214,Seeds,5,,,,,0,10,,Philipp-3
+,70602,Philipp-5,7,215,Knife sharpener,1,Seed oil,1,,,0,10,,Philipp-4
+,70701,Anais-4,7,216,Plastic,2,Wood,1,,,0,10,,Anais-3
+,70702,Anais-5,7,217,Thermometer,1,,,,,0,10,,Anais-4
+,70703,Anais-6,7,218,Drying rack,2,,,,,0,10,,Anais-5
+,70704,Anais-7,7,219,Spatula,2,Bowl,1,,,0,10,,Anais-6
+,70801,Farmer-8,7,220,Bell collar,10,,,,,0,10,,Farmer-7
+,70802,Farmer-9,7,221,Scarecrow,1,,,,,0,10,,Farmer-8
+,70803,Farmer-10,7,222,Dog collar,1,,,,,0,10,,Farmer-9
+,70901,Farmer-11,7,223,Seeds,10,,,,,0,10,,"Farmer-10,Anais-7,Philipp-5"
+,70902,Farmer-12,7,224,Industrial oil,2,Grindstone,2,,,0,10,1,Farmer-11
+,71001,Philipp-6,7,225,Spatula,5,Paint,2,,,0,10,,"Farmer-10,Anais-7,Philipp-5"
+,71002,Philipp-7,7,226,Oiled parchment,3,,,,,0,10,,Philipp-6
+,71003,Philipp-8,7,227,Ringing timer,1,,,,,0,10,1,Philipp-7
+,71101,Anais-8,7,228,Conch,1,,,,,0,10,,"Farmer-10,Anais-7,Philipp-5"
+,71102,Anais-9,7,229,Conch with timer,1,,,,,0,10,1,Anais-8
+,71201,Philipp-9,7,230,Snowshoes,1,,,,,0,10,,Philipp-8
+,71202,Philipp-10,7,231,Bird feeder,2,,,,,0,10,,Philipp-9
+,71203,Philipp-11,7,232,Portable stove,1,,,,,0,10,,Philipp-10
+,71204,Philipp-12,7,233,Rope,3,Bell,3,Seeds,3,0,10,,Philipp-11
+,71301,Anais-10,7,234,Snowboard,1,,,,,0,10,,Anais-9
+,71302,Anais-11,7,235,Paint,3,,,,,0,10,,Anais-10
+,71303,Anais-12,7,236,Wax,2,,,,,0,10,,Anais-11
+,71401,Farmer-13,7,237,Grinder,1,,,,,0,10,,Farmer-12
+,71501,Farmer-14,7,238,Roof tile,15,,,,,0,10,,"Anais-12,Philipp-12,Farmer-13"
+,71502,Farmer-15,7,239,Wax,1,Hand plane,1,Plastic,4,0,10,,Farmer-14
+,71601,Farmer-16,7,240,Wood,5,Rope,7,Bell,10,0,10,1,Farmer-15
+,71701,Philipp-13,7,241,Conch with timer,2,,,,,0,10,,"Anais-12,Philipp-12,Farmer-13"
+,71702,Philipp-14,7,242,Special spatula,3,,,,,0,10,,Philipp-13
+,71703,Philipp-15,7,243,Cocoa beans roaster,1,,,,,0,10,,Philipp-14
+,71704,Philipp-16,7,244,Colored chocolate bar mold,2,Colored chocolate truffle mold,2,Glass chocolate bar mold,1,0,10,,Philipp-15
+,71705,Philipp-17,7,245,Melting tank,3,,,,,0,10,1,Philipp-16
+,71801,Anais-13,7,246,Roof tile,10,Oiled wood,2,,,0,10,,"Anais-12,Philipp-12,Farmer-13"
+,71802,Anais-14,7,247,Paint,4,,,,,0,10,,Anais-13
+,71803,Anais-15,7,248,Window,2,,,,,0,10,,Anais-14
+,71804,Anais-16,7,249,Oiled wood,2,Paint,2,,,0,10,,Anais-15
+,71805,Anais-17,7,250,Kitchen table,1,,,,,0,10,1,Anais-16
+,71901,Anais-18,7,251,Chest,1,,,,,0,10,,"Anais-17,Philipp-17,Farmer-16"
+,72001,Philipp-18,7,252,Chocolate truffle mold,2,Spatula,1,,,0,10,,Anais-18
+,72002,Philipp-19,7,253,Honey,1,,,,,0,10,,Philipp-18
+,72003,Philipp-20,7,254,Coloring agent,2,Heart mold,5,,,0,10,,Philipp-19
+,72004,Philipp-21,7,255,Edelweiss,5,,,,,0,10,,Philipp-20
+,72101,Philipp-22,7,256,Shiny fabric,2,Wood,2,,,0,10,,Philipp-21
+,72201,Anais-19,7,257,Cloak,4,,,,,0,10,,Philipp-21
+,72202,Anais-20,7,258,Ceremonial bell,1,,,,,0,10,,Anais-19
+,72301,Farmer-17,7,259,Edelweiss,9,,,,,0,10,,Anais-18
+,72302,Farmer-18,7,260,Painted bowl,1,,,,,0,10,,Farmer-17
