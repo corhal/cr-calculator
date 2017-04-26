@@ -70,8 +70,8 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,40120,Don-8,4,69,Wrist pillow,1,Dinner,1,,,0,10,,Don-7
 ,40121,Business-6,4,70,Dinner,1,Detox drink,2,,,0,10,,Business-5
 ,40122,Business-7,4,71,White wine,2,Book,5,,,0,10,,Business-6
-,40123,ShadyGuy-1,4,72,Statuette,1,Suitcase,1,,,0,10,,BB-7
-,40124,ShadyGuy-2,4,73,Magazine,1,Dinner,1,,,0,10,,ShadyGuy-1
+,40123,ShadyGuy_4-1,4,72,Statuette,1,Suitcase,1,,,0,10,,BB-7
+,40124,ShadyGuy_4-2,4,73,Magazine,1,Dinner,1,,,0,10,,ShadyGuy_4-1
 ,40125,BB-8,4,74,Baggage,1,,,,,0,10,,BB-7
 ,40126,Don-9,4,75,Suitcase,1,Folder,1,Book,3,0,10,,Don-8
 ,40127,Don-10,4,76,Spy glasses,1,Recorder,1,,,0,10,,Don-9
@@ -146,24 +146,24 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,60201,Souschef-4,6,145,Locator,1,,,,,0,10,,Souschef-3
 ,60202,Souschef-5,6,146,Oil,2,,,,,0,10,,Souschef-4
 ,60203,Souschef-6,6,147,Electric razor,1,,,,,0,10,,Souschef-5
-,60301,Grandma-1,6,148,Cup,1,,,,,0,10,,
-,60302,Grandma-2,6,149,Coffee bag,2,,,,,0,10,,Grandma-1
-,60401,Grandma-3,6,150,Oil,3,,,,,0,10,,"Souschef-2,Grandma-2"
-,60501,Grandma-4,6,151,Coffee grinder,1,,,,,0,10,,Grandma-3
-,60502,Grandma-5,6,152,Cup,10,,,,,0,10,,Grandma-4
-,60503,Grandma-6,6,153,Coffee machine,1,,,,,0,10,,Grandma-5
-,60504,Grandma-7,6,154,Gold,2,Motor,1,,,0,10,,Grandma-6
-,60601,Agent-1,6,155,Oil,10,,,,,0,10,,Grandma-3
+,60301,Grandma_6-1,6,148,Cup,1,,,,,0,10,,
+,60302,Grandma_6-2,6,149,Coffee bag,2,,,,,0,10,,Grandma_6-1
+,60401,Grandma_6-3,6,150,Oil,3,,,,,0,10,,"Souschef-2,Grandma-2"
+,60501,Grandma_6-4,6,151,Coffee grinder,1,,,,,0,10,,Grandma_6-3
+,60502,Grandma_6-5,6,152,Cup,10,,,,,0,10,,Grandma_6-4
+,60503,Grandma_6-6,6,153,Coffee machine,1,,,,,0,10,,Grandma_6-5
+,60504,Grandma_6-7,6,154,Gold,2,Motor,1,,,0,10,,Grandma_6-6
+,60601,Agent-1,6,155,Oil,10,,,,,0,10,,Grandma_6-3
 ,60602,Agent-2,6,156,Gold ingot,1,,,,,0,10,,Agent-1
 ,60603,Agent-3,6,157,Gold ingot,1,Coffee bag,3,,,0,10,,Agent-2
 ,60604,Agent-4,6,158,Coffee bag,5,,,,,0,10,,Agent-3
-,60701,Souschef-7,6,159,Big cog,1,Motor,1,,,0,10,,"Agent-4,Grandma-7,Souschef-6"
+,60701,Souschef-7,6,159,Big cog,1,Motor,1,,,0,10,,"Agent-4,Grandma_6-7,Souschef-6"
 ,60702,Souschef-8,6,160,Cable,1,Cog,5,Magnet,2,0,10,,Souschef-7
 ,60703,Souschef-9,6,161,Transformer,1,,,,,0,10,,Souschef-8
-,60801,Grandma-8,6,162,Magnifying glass,1,Coffee cup,1,,,0,10,,"Agent-4,Grandma-7,Souschef-6"
-,60802,Grandma-9,6,163,Professional binoculars,1,,,,,0,10,,Grandma-8
-,60901,Grandma-10,6,164,Boiling water,1,Cup,1,,,0,10,,Grandma-9
-,60902,Grandma-11,6,165,Microscope,1,Blade,1,,,0,10,,Grandma-10
+,60801,Grandma_6-8,6,162,Magnifying glass,1,Coffee cup,1,,,0,10,,"Agent-4,Grandma_6-7,Souschef-6"
+,60802,Grandma_6-9,6,163,Professional binoculars,1,,,,,0,10,,Grandma_6-8
+,60901,Grandma_6-10,6,164,Boiling water,1,Cup,1,,,0,10,,Grandma_6-9
+,60902,Grandma_6-11,6,165,Microscope,1,Blade,1,,,0,10,,Grandma_6-10
 ,61001,Agent-5,6,166,Plastic cup,10,,,,,0,10,,"Agent-4,Grandma-7,Souschef-6"
 ,61002,Agent-6,6,167,Water tank,5,,,,,0,10,,Agent-5
 ,61003,Agent-7,6,168,Coffee scrub,1,Pin,5,,,0,10,,Agent-6
