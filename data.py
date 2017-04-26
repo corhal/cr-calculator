@@ -76,7 +76,12 @@ def load_missions(all_items, all_recipes, all_quests):
             quests = []
             for quest_name in quest_names:
                 if quest_name != "":
-                    quests.append(find_quest(quest_name, all_quests))
+                    req_quest = find_quest(quest_name, all_quests)
+                    if req_quest == None:
+                        raise ValueError("Mission " + row["ID"] + " is locked"
+                                         + " on quest " + quest_name + ","
+                                         + " but the quest does not exist")
+                    quests.append(req_quest)
             
             all_missions.append(
                 Mission(ident=row["ID"],
