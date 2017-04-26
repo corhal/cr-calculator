@@ -19,6 +19,9 @@ def load_items():
             gold_cost = 0
             if row["GOLD_COST"] != "":
                 gold_cost = int(row["GOLD_COST"])
+            if row["NAME"] in all_items.keys():
+                raise ValueError("Duplicate item " + row["NAME"] +
+                                 " in table 'items'!")
             all_items[row["NAME"]] = Item(ident=row["ID"],
                                           name=row["NAME"],
                                           recipe=recipe,
