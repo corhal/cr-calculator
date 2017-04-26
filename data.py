@@ -106,6 +106,9 @@ def load_quests(all_items):
             if row["NAME"] in quest_names:
                 raise ValueError(row["NAME"] + " is locked on itself")
             for quest in all_quests:
+                if quest.name == row["NAME"]:
+                    raise ValueError("Duplicate quest " + row["NAME"]
+                                     + " in table quests!")
                 for quest_name in quest_names:
                     if quest.name == quest_name:
                         required_quests.append(quest)
