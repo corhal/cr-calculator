@@ -62,10 +62,10 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,80,1,8,Chapter 8_1 recipe,0.5,Ladle,0.3,Bucket,0.3,5,,Burrito,3,Grilled chicken,4,Pizza,5
 ,81,2,8,Spoke,0.3,Work gloves,0.3,Watch battery,0.3,5,,Sandwich,3,Ribs,4,Mushrooms,5
 ,82,3,8,Plastic film,0.3,Sprayer,0.3,Clay,0.3,5,,Chili,3,Burrito,4,Grilled chicken,5
-,83,4,8,Clockface,0.3,Rivet fragment,0.3,Wrench,0.3,5,"Owner-7, ShadyGuy-7",Pizza,3,Sandwich,4,Ribs,5
-,84,5,8,Chapter 8_2 recipe,0.5,Round thermometer,0.3,Hose,0.3,5,Maestro-6,Mushrooms,3,Chili,4,Burrito,5
-,85,6,8,Leather,0.3,Secateurs,0.3,Flask,0.3,5,Owner-7,Grilled chicken,3,Pizza,4,Sandwich,5
-,86,7,8,Resin,0.3,Shell,0.3,Solution,0.3,5,"Scientist-12, Owner-20",Ribs,3,Mushrooms,4,Chili,5
-,87,8,8,Chapter 8_3 recipe,0.3,Trowel,0.3,Cork wood,0.3,5,Maestro-11,Grilled chicken,3,Sandwich,4,Mushrooms,5
-,88,9,8,Fan blade,0.3,Barrel,0.3,Polaroid cassette,0.3,5,Owner-20,Burrito,3,Pizza,4,Ribs,5
+,83,4,8,Clockface,0.3,Rivet fragment,0.3,Wrench,0.3,5,"Owner_8-7,ShadyGuy_8-7",Pizza,3,Sandwich,4,Ribs,5
+,84,5,8,Chapter 8_2 recipe,0.5,Round thermometer,0.3,Hose,0.3,5,Maestro_8-6,Mushrooms,3,Chili,4,Burrito,5
+,85,6,8,Leather,0.3,Secateurs,0.3,Flask,0.3,5,Owner_8-7,Grilled chicken,3,Pizza,4,Sandwich,5
+,86,7,8,Resin,0.3,Shell,0.3,Solution,0.3,5,"Scientist_8-12,Owner_8-20",Ribs,3,Mushrooms,4,Chili,5
+,87,8,8,Chapter 8_3 recipe,0.3,Trowel,0.3,Cork wood,0.3,5,Maestro_8-11,Grilled chicken,3,Sandwich,4,Mushrooms,5
+,88,9,8,Fan blade,0.3,Barrel,0.3,Polaroid cassette,0.3,5,Owner_8-20,Burrito,3,Pizza,4,Ribs,5
 ,89,10,8,Sunglasses,0.3,String fragment,0.3,Polaroid camera,0.3,5,Serpent-10,Mushrooms,3,Grilled chicken,4,Sandwich,5
