@@ -22,9 +22,9 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,40,1,4,Sandwich recipe,0.5,Paper,0.2,Lemon,0.3,10,,Pizza,2,Snails,3,Onion soup,4
 ,41,2,4,Plush,0.25,Pen,0.3,Book,0.3,10,,Sandwich,2,Ribs,3,Snails,4
 ,42,3,4,Looking glass,0.3,Fast-food,0.25,Bottle,0.3,10,,Strawberry crepe,3,Mushrooms,4,Graten,5
-,43,4,4,Jeans,0.25,Perfume,0.3,Watch,0.3,15,"Business-1,Celeb-3,Don-4",Onion soup,3,Strawberry crepe,4,Lamb leg,5
-,44,5,4,Pattern,0.25,Filling,0.3,Tank top,0.3,15,"Business-1,Celeb-3,Don-4",Snails,4,Onion soup,5,Strawberry crepe,5
-,45,6,4,Ribs recipe,0.5,Lamp,0.25,Statuette,0.3,15,"Business-1,Celeb-3,Don-4",Truffles pasta,4,Snails,5,Onion soup,5
+,43,4,4,Jeans,0.25,Perfume,0.3,Watch,0.3,15,Don-4,Onion soup,3,Strawberry crepe,4,Lamb leg,5
+,44,5,4,Pattern,0.25,Filling,0.3,Tank top,0.3,15,Celeb-3,Snails,4,Onion soup,5,Strawberry crepe,5
+,45,6,4,Ribs recipe,0.5,Lamp,0.25,Statuette,0.3,15,Business-4,Truffles pasta,4,Snails,5,Onion soup,5
 ,46,7,4,Suitcase,0.3,Mushrooms recipe,0.5,Magazine,0.25,15,Celeb-7,Mushrooms,5,Grilled chicken,5,Snails,5
 ,47,8,4,Dinner,0.25,Glasses,0.3,Microcamera,0.3,15,Don-7,Grilled chicken,3,Sandwich,4,Mushrooms,5
 ,48,9,4,Folder,0.3,White wine,0.2,Recorder,0.3,15,"Celeb-4,Business-6",Burrito,3,Pizza,4,Ribs,5

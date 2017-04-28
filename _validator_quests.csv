@@ -58,27 +58,27 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,40108,Business-1,4,57,Detox drink,1,Fast-food,1,,,0,10,,Don-3
 ,40109,Business-2,4,58,Jeans,1,Perfume,1,Pen,1,0,10,,Business-1
 ,40110,Business-3,4,59,Perfume,3,Bottle,1,,,0,10,,Business-2
-,40111,Business-4,4,60,Watch,1,Perfume,1,,,0,10,,Business-3
-,40112,Business-5,4,61,Statuette,1,Bottle,1,Paper,1,0,10,1,Business-4
+,40111,Business-4,4,60,Watch,1,Perfume,1,,,0,10,1,Business-3
+,40112,Business-5,4,61,Statuette,1,Bottle,1,Paper,1,0,10,,Business-4
 ,40113,Celeb-4,4,62,Looking glass,1,Paper,1,Jeans,1,0,10,,Celeb-3
-,40114,Celeb-5,4,63,Stuffed toy,1,,,,,0,10,,Business-1
-,40115,Celeb-6,4,64,Jeans,1,Tank top,1,,,0,10,,Business-2
-,40116,Celeb-7,4,65,Lamp,1,Fast-food,1,,,0,10,4,Business-3
+,40114,Celeb-5,4,63,Stuffed toy,1,,,,,0,10,,Celeb-4
+,40115,Celeb-6,4,64,Jeans,1,Tank top,1,,,0,10,,Celeb-5
+,40116,Celeb-7,4,65,Lamp,1,Fast-food,1,,,0,10,4,Celeb-6
 ,40117,Don-5,4,66,Watch,1,Book,5,,,0,10,,Don-4
 ,40118,Don-6,4,67,Lamp,1,Fast-food,1,,,0,10,,Don-5
 ,40119,Don-7,4,68,Invisible pen,1,Perfume,1,,,0,10,4,Don-6
 ,40120,Don-8,4,69,Looking glass,1,Dinner,1,,,0,10,,Don-7
 ,40121,Don-9,4,70,Wrist pillow,1,Glasses,1,,,0,10,,Don-8
 ,40122,Business-6,4,71,Dinner,1,Detox drink,1,,,0,10,4,Business-5
-,40123,Business-7,4,72,White wine,1,Book,5,,,0,10,,Celeb-4
+,40123,Business-7,4,72,White wine,1,Book,5,,,0,10,,"Celeb-4,Business-6"
 ,40126,Celeb-8,4,75,Baggage,1,,,,,0,10,5,Celeb-7
 ,40124,ShadyGuy_4-1,4,73,Statuette,1,Suitcase,1,,,0,10,,Celeb-8
 ,40125,ShadyGuy_4-2,4,74,Magazine,1,Dinner,1,,,0,10,5,ShadyGuy_4-1
-,40127,Don-10,4,76,Suitcase,1,Folder,1,Book,3,0,10,,"Celeb-8, Business-7"
+,40127,Don-10,4,76,Suitcase,1,Folder,1,Book,3,0,10,,"Celeb-8,Business-7,Don-9"
 ,40128,Don-11,4,77,Spy glasses,1,Recorder,1,,,0,10,5,Don-10
 ,40129,Don-12,4,78,Diary,1,Fast-food,1,,,0,10,,Don-11
 ,40130,Don-13,4,79,Royal dinner,1,,,,,0,10,,Don-12
-,40131,Business-8,4,80,Fancy dinner,1,Pen,1,Contract,1,0,10,,"Celeb-8, Don-9, Business-7"
+,40131,Business-8,4,80,Fancy dinner,1,Pen,1,Contract,1,0,10,,"Celeb-8,Don-9,Business-7"
 ,50101,Gao-1,5,81,Dragon,1,,,,,0,10,,
 ,50102,Gao-2,5,82,Tome,2,,,,,0,10,,Gao-1
 ,50103,Gao-3,5,83,Dictionary,1,,,,,0,10,,Gao-2
