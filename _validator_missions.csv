@@ -21,7 +21,7 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,39,10,3,Coffee from Starbucks,0.3,French bread,0.3,Pastry stand,0.3,20,Chef-8,Mushrooms,5,Grilled chicken,5,Snails,5
 ,40,1,4,Sandwich recipe,0.5,Paper,0.2,Lemon,0.3,5,,Burrito,3,Grilled chicken,4,Pizza,5
 ,41,2,4,Plush,0.25,Pen,0.3,Book,0.3,5,,Sandwich,3,Ribs,4,Mushrooms,5
-,42,3,4,Looking glass,0.3,Fastfood,0.25,Bottle,0.3,5,,Chili,3,Burrito,4,Grilled chicken,5
+,42,3,4,Looking glass,0.3,Fast-food,0.25,Bottle,0.3,5,,Chili,3,Burrito,4,Grilled chicken,5
 ,43,4,4,Jeans,0.25,Perfume,0.3,Watch,0.3,5,,Pizza,3,Sandwich,4,Ribs,5
 ,44,5,4,Pattern,0.25,Filling,0.3,Tank top,0.3,5,,Mushrooms,3,Chili,4,Burrito,5
 ,45,6,4,Ribs recipe,0.5,Lamp,0.25,Statuette,0.3,5,,Grilled chicken,3,Pizza,4,Sandwich,5
