@@ -60,8 +60,8 @@ class Quest(object):
         return full_conditions
 
     def complete(self):
-        self.completed = True
-        return (self.reward, False)
+        self.completed = True        
+        return self.reward.give(True)
 
     @property
     def full_gold_cost(self):
@@ -96,24 +96,21 @@ class Reward(object):
         self.energy_reward = energy_reward
         self.keys = keys
 
-    def give(self):
-        always_chance = False
-        if Game.first_mission_100_chance:
-            always_chance = True
-        if self.played:
-            always_chance = False
-        else:            
-            self.played = True
-        
-        reward_items = []
-        for item in reward.item_chances.keys():
+    def give(self, always_chance): 
+        reward_items = {} # item: amount
+        for item in self.item_chances.keys():
             amount = 1
-            if reward.item_amounts != None:
-                amount = reward.item_amounts[item]
+            if self.item_amounts != None:
+                amount = self.item_amounts[item]
             if always_chance:
-                self.take_item(item, amount)
-            elif random.randrange(0, 100) * 0.01 < reward.item_chances[item]:
-                self.take_item(item, amount)
+                reward_items[item] = amount
+            elif random.randrange(0, 100) * 0.01 < self.item_chances[item]:
+                reward_items[item] = amount
+        gold = Game.items["Soft currency"]
+        energy = Game.items["Energy"]
+        reward_items[gold] = self.gold_reward
+        reward_items[energy] = self.energy_reward
+        return reward_items
         
 
 class Mission(object):
@@ -145,7 +142,7 @@ class Mission(object):
     def unlock(self):
         self.locked = False
 
-    def complete(self):
+    def complete(self):        
         always_chance = False
         if Game.first_mission_100_chance:
             always_chance = True
@@ -153,7 +150,7 @@ class Mission(object):
             always_chance = False
         else:            
             self.played = True
-        return (self.reward, always_chance)
+        return self.reward.give(always_chance)
 
 class Recipe(object):    
     def __init__(self, recipe_id, name, gold_by_levels, frag_item,
@@ -185,7 +182,7 @@ class Recipe(object):
 
     def generate_mission(self):
         self.mission = Mission(0, self.name + '_mission',
-                               0, Reward({}, self.gold_reward), 0, 0, {})
+                               0, Reward({}, gold_reward=self.gold_reward), 0, 0, {})
 
 class Order(object):
     def __init__(self, recipe):
@@ -220,52 +217,78 @@ class OrderBoard(object):
             order.in_cooldown = False
 
 class Requirement(object):
-    def __init__(self, quests=None, item_amounts=None):
+    def __init__(self, quests=[], item_amounts={}):
         self.quests = quests
         self.item_amounts = item_amounts
 
 class Player(object):
     def __init__(self, energy_cap, daily_sessions, mins_per_en,
                  time_between_sessions, gold, recipes, chest):
+        self.inventory = {}        
+        self.gold_item = Game.items["Soft currency"]
+        self.inventory[self.gold_item] = gold
+        self.energy_item = Game.items["Energy"]
+        self.energy_cap = energy_cap
+        self.inventory[self.energy_item] = self.energy_cap
         self.day = 1
         self.session = 0
         self.daily_sessions = daily_sessions
         self.missions_completed = 0
-        self.chapter = None        
-        self.gold = gold
-        self.inventory = {}
-        self.energy_cap = energy_cap
-        self.energy = self.energy_cap
+        self.chapter = None
         self.recipes = recipes
         self.order_board = OrderBoard(self.recipes)
         self.mins_per_en = mins_per_en
-        self.time_between_sessions = time_between_sessions
-        recipe_items = []        
+        self.time_between_sessions = time_between_sessions       
         self.chest = chest
 
-    def check_requirement(self, requirement):        
-        if requirement.quests != None:
-            for quest in requirement.quests:
-                if not quest.completed:
-                    return False
-        if requirement.item_amounts != None:
-            for item in requirement.item_amounts.keys():
-                if self.inventory.get(item, 0) < requirements.item_amounts[item]:
-                    return False
+    @property
+    def gold(self):                      
+        return self.inventory[self.gold_item]
+
+    @gold.setter
+    def gold(self, value):
+        self.inventory[self.gold_item] = value
+
+    @property
+    def energy(self):                        
+        return self.inventory[self.energy_item]
+
+    @energy.setter
+    def energy(self, value): # нужно внимательно проверить, что все работает
+        if value < 0:
+            spend_value = self.inventory[self.energy_item] - value
+            self.skip_session()
+            self.energy -= spend_value
+        else:
+            self.inventory[self.energy_item] = value
+            
+    def check_requirement(self, requirement):
+        for quest in requirement.quests:
+            if not quest.completed:
+                return False        
+        for item in requirement.item_amounts.keys():
+            if self.inventory.get(item, 0) < requirements.item_amounts[item]:
+                return False
         return True
 
     def farm_orders(self):
         if self.order_board.plays_today == self.order_board.max_plays_daily:
             return
         self.order_board.plays_today += 1
-        self.order_board.generate_board()        
+        self.order_board.generate_board()
+        #print("farming orders")
         while True:
             count = 0
             for order in self.order_board.orders:
                 if order.in_cooldown or order.recipe.level == 0:
                     count += 1
                     continue
+                #print("had gold: " + str(self.gold))
+                #reward_items = order.recipe.mission.reward.give(True)
+                #for item in reward_items:
+                    #print(item.name + ": " + str(reward_items[item]))
                 self.play_mission(order.recipe.mission)
+                #print("now gold: " + str(self.gold))
                 order.in_cooldown = True
                 self.missions_completed -= 1 # :(
             if count == len(self.order_board.orders):                 
@@ -308,7 +331,7 @@ class Player(object):
                 if mission.locked and self.check_requirement(mission.requirement):
                     self.unlock_mission(mission)
                     
-            if loop_count == 1000:
+            if loop_count == 100:
                 print("Looks like you have a dead end")
                 print("-" * 30)
                 self.show_stats()
@@ -323,25 +346,25 @@ class Player(object):
                         print(quest)                
                 raise ValueError("Dead end!")
 
-    def play_quest(self, quest):
+    def play_quest(self, quest):        
         item_conditions = quest.item_conditions
         full_conditions = quest.full_conditions
         for item in full_conditions.keys():
             self.farm_item(item, full_conditions[item])        
         for item in item_conditions.keys():           
-            while self.inventory.get(item, 0) < item_conditions[item]:
-                if self.gold < quest.full_gold_cost:
-                    self.farm_gold(quest.full_gold_cost)
+            while self.inventory.get(item, 0) < item_conditions[item]:                
+                if self.gold < quest.full_gold_cost:                    
+                    self.farm_gold(quest.full_gold_cost)                
                 self.craft(item)            
         self.complete_quest(quest)
 
     def complete_quest(self, quest):
         item_conditions = quest.item_conditions
         for item in item_conditions.keys():            
-            self.give_item(item, item_conditions[item])
+            self.change_amount(item, -item_conditions[item])
         self.receive_reward(quest.complete())
 
-    def farm_item(self, item, amount):
+    def farm_item(self, item, amount):       
         farm_mission = None
         for mission in self.chapter.missions:
             if item in mission.reward.item_chances.keys():
@@ -352,7 +375,7 @@ class Player(object):
         while self.inventory.get(item, 0) < amount:
             self.play_mission(farm_mission)
 
-    def farm_gold(self, amount):
+    def farm_gold(self, amount):       
         max_reward = 0
         for mission in self.chapter.missions:
             if mission.locked:
@@ -362,16 +385,7 @@ class Player(object):
                 farm_mission = mission
         while self.gold < amount:
             self.play_mission(farm_mission)
-        
-    def spend_energy(self, amount):
-        if self.energy > amount:
-            self.energy -= amount
-        else:
-            self.skip_session()
-
-    def receive_energy(self, amount):
-        self.energy += amount
-
+            
     def skip_session(self):
         self.session += 1
         self.order_board.generate_board()
@@ -379,14 +393,16 @@ class Player(object):
         if self.session == self.daily_sessions:
             self.skip_day()            
         else:
-            self.energy = min(self.energy_cap, self.energy + (1 / self.mins_per_en) * 60 * self.time_between_sessions)
+            self.energy = min(self.energy_cap, self.energy
+                              + (1 / self.mins_per_en) * 60
+                              * self.time_between_sessions)            
 
     def open_chest(self):
         reward = self.chest.open()        
         self.receive_reward(reward)
     
-    def skip_day(self):
-        self.energy = self.energy_cap
+    def skip_day(self):        
+        self.energy = self.energy_cap        
         self.session = 0
         self.day += 1
         self.open_chest()
@@ -394,27 +410,17 @@ class Player(object):
         self.order_board.plays_today = 0
         self.farm_orders()
 
-    def receive_reward(self, reward_tuple):
-        if reward_tuple == None:
+    def receive_reward(self, reward_items):
+        if reward_items == None:
             return
-        reward = reward_tuple[0]
-        always_chance = reward_tuple[1]        
-        self.receive_gold(reward.gold_reward)
-        self.receive_energy(reward.energy_reward)
-        for item in reward.item_chances.keys():
-            amount = 1
-            if reward.item_amounts != None:
-                amount = reward.item_amounts[item]
-            if always_chance:
-                self.take_item(item, amount)
-            elif random.randrange(0, 100) * 0.01 < reward.item_chances[item]:
-                self.take_item(item, amount)
+        for item in reward_items.keys():            
+            self.change_amount(item, reward_items[item])
                 
     def unlock_mission(self, mission):
         mission.unlock()
 
     def play_mission(self, mission):
-        self.spend_energy(mission.energy_cost)
+        self.energy -= mission.energy_cost
         self.receive_reward(mission.complete())
         self.missions_completed += 1
 
@@ -432,35 +438,24 @@ class Player(object):
                 self.craft(item_component)                
             
         for item_component in item.recipe:
-            self.give_item(item_component, item.recipe[item_component])
+            self.change_amount(item_component, -item.recipe[item_component])
         if self.gold < item.gold_cost:
             self.farm_gold(item.gold_cost)
-        self.spend_gold(item.gold_cost)
-        self.take_item(item, 1)
-    
-    def receive_gold(self, amount):
-        self.gold += amount
+        self.gold -= item.gold_cost
+        self.change_amount(item, 1)
 
-    def spend_gold(self, amount):
-        self.gold -= amount
-        if self.gold < 0:
-            raise ValueError("Player has " + str(self.gold) + " gold, which is less than 0")
-
-    def take_item(self, item, amount):
-        self.inventory[item] = self.inventory.get(item, 0) + amount        
-        self.upgrade_recipes()
-
-    def give_item(self, item, amount):
-        self.inventory[item] = self.inventory.get(item, 0) - amount
+    def change_amount(self, item, amount):
+        self.inventory[item] = self.inventory.get(item, 0) + amount
+        self.upgrade_recipes() 
         if self.inventory[item] < 0:
-            raise ValueError(item.name + " amount < 0")
+            raise ValueError(item.name + " amount < 0") 
 
     def upgrade_recipes(self):
         for recipe in self.recipes:
             if recipe.can_upgrade(self.gold, self.inventory.get(recipe.frag_item, 0)):
                 recipe.upgrade()
-                self.spend_gold(recipe.up_gold_by_levels[recipe.level])
-                self.give_item(recipe.frag_item, recipe.up_frags_by_levels[recipe.level])
+                self.gold -= recipe.up_gold_by_levels[recipe.level]
+                self.change_amount(recipe.frag_item, -recipe.up_frags_by_levels[recipe.level])
                 
 
     def show_stats(self):
@@ -494,7 +489,7 @@ class Chest(object):
         roll_weight = random.randrange(0, self.max_weight)       
         for weight in sorted(self.drop_list.keys()):            
             if roll_weight < weight:                
-                return (self.drop_list[weight], 1)        
+                return self.drop_list[weight].give(True)        
 
 class Chapter(object):
     def __init__(self, name, items, missions, quests, recipes):
