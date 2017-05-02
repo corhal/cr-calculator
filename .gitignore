@@ -45,3 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Python cache files
+__pychache__
+
+# Exported tables
+_export*
+_export_items.csv
+_export_quests.csv
+__pycache__/classes.cpython-35.pyc
+*.pyc
+_export_dialogues.csv
+_export_translations.csv

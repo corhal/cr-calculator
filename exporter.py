@@ -11,9 +11,11 @@ def export_items():
         for key in items:
             item = items[key]
             ident = item.ident
-            asset = ''
+            asset = item.asset
             readOnly = '0'
             config = ''
+            if item.is_fragment != '':
+                config = '{"isFragment": "' + item.is_fragment + '"}'
             item_str = ''
             cost = ''
             if item.recipe != None:
@@ -35,10 +37,11 @@ def export_items():
                              '_comment': comment})
 
 def export_missions():
-    missions = load_missions(load_items(), load_recipes(load_items()))
+    quests = load_quests(load_items())
+    missions = load_missions(load_items(), load_recipes(load_items()), quests)
     with open('_export_missions.csv', 'wt', encoding="utf8", newline='') as csvfile:
-        fieldnames = ['id', 'chapterId', 'main', 'requirements', 'recipes',
-                      'fixedReward', 'garbageCoeff', 'possibleReward',
+        fieldnames = ['id', 'chapterId', 'main', 'requirements', 'recipes', 'garbage',
+                      'fixedReward', 'lifeBonus', 'possibleReward',
                       'cost', 'config', '_comment']
         writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
 
@@ -47,8 +50,8 @@ def export_missions():
             ident = mission.ident
             chapterId = mission.chapter
             main = ''
-            requirements = ''
-            if mission.keys_cost != 0:
+            requirements = ''            
+            if len(mission.requirement.quests) > 0:
                 requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
                 
             recipes = '['
@@ -62,7 +65,7 @@ def export_missions():
             recipes += ']'
             
             fixedReward = '{"gold": ' + str(mission.reward.gold_reward) + '}'
-            garbageCoeff = '0.5'
+            garbage = '{"count": 5, "action": 1 }'
             possibleReward = '['  
             if mission.reward.item_chances != None:
                 count = 0
@@ -81,8 +84,9 @@ def export_missions():
                              'main': main,
                              'requirements': requirements,
                              'recipes': recipes,
+                             'garbage': garbage,
                              'fixedReward': fixedReward,
-                             'garbageCoeff': garbageCoeff,
+                             'lifeBonus': 35,
                              'possibleReward': possibleReward,
                              'cost': cost,
                              'config': config,
@@ -97,8 +101,8 @@ def export_missions():
                 ident = mission.ident
                 chapter = mission.chapter
                 cost = ''
-                if mission.keys_cost != 0:
-                    cost = '{"item": [{"id": 4, "amount": ' + str(mission.keys_cost) + '}]}'
+                #if mission.keys_cost != 0:
+                    #cost = '{"item": [{"id": 4, "amount": ' + str(mission.keys_cost) + '}]}'
                 missionId = mission.ident
                 writer.writerow({'id': ident,
                                  'chapter': chapter,                             
@@ -193,13 +197,13 @@ def export_translation(last_id):
                 order_col = row.index("ORDER")
                 person_col = row.index("PERSON")
                 text_col = row.index("TEXT")
-                resp_col = row.index("RESPONSES")                
-                continue
-            
+                resp_col = row.index("RESPONSES")
+                brief_col = row.index("SUMMARY")
+                continue            
             if row[name_col] != "":
                 text_count = 0
-                quest = find_quest(row[name_col], quests)
-                orders[quest.name] = [0]
+                quest = find_quest(row[name_col], quests)                
+                orders[quest.name] = [0]                
                 
             if row[order_col] == "before":
                 order = "before"
@@ -234,8 +238,9 @@ def export_translation(last_id):
 
             if 0 in orders[quest.name]:
                 d_id += 1
+                briefing = row[brief_col]
                 ident = 'QUEST_' + str(quest.ident) + '_DIALOG_000'
-                translations[ident] = "briefing"
+                translations[ident] = briefing
                 dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
                 del(orders[quest.name][orders[quest.name].index(0)])
             

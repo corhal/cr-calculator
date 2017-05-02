@@ -1,14 +1,15 @@
 import random
 
 class Item(object):
-    def __init__(self, ident, name, recipe=None, gold_cost=0):
+    def __init__(self, ident, name, recipe=None, gold_cost=0, asset='', is_fragment=''):
         self.ident = ident
         self.name = name
         self.recipe = recipe # dict of items and counts
         self.gold_cost = gold_cost
         self.full_gold_cost = gold_cost
-        
+        self.asset = asset
         self.full_recipe = {}
+        self.is_fragment = is_fragment
         self.__compile_full_recipe()
 
     def __compile_full_recipe(self):
@@ -88,11 +89,12 @@ class Quest(object):
 
 class Reward(object):
     def __init__(self, item_chances, item_amounts=None,
-                 gold_reward=0, energy_reward=0):
+                 gold_reward=0, energy_reward=0, keys=0):
         self.item_chances = item_chances # dict {item: chance, reward} ?
         self.item_amounts = item_amounts
         self.gold_reward = gold_reward
         self.energy_reward = energy_reward
+        self.keys = keys
 
     def give(self, always_chance): 
         reward_items = {} # item: amount

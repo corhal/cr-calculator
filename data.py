@@ -19,10 +19,15 @@ def load_items():
             gold_cost = 0
             if row["GOLD_COST"] != "":
                 gold_cost = int(row["GOLD_COST"])
+            if row["NAME"] in all_items.keys():
+                raise ValueError("Duplicate item " + row["NAME"] +
+                                 " in table 'items'!")
             all_items[row["NAME"]] = Item(ident=row["ID"],
                                           name=row["NAME"],
                                           recipe=recipe,
-                                          gold_cost=gold_cost)
+                                          gold_cost=gold_cost,
+                                          asset=row["ASSET"],
+                                          is_fragment=row["IS FRAGMENT"])
     return all_items
 
 def load_chest(all_items):
@@ -71,7 +76,12 @@ def load_missions(all_items, all_recipes, all_quests):
             quests = []
             for quest_name in quest_names:
                 if quest_name != "":
-                    quests.append(find_quest(quest_name, all_quests))
+                    req_quest = find_quest(quest_name, all_quests)
+                    if req_quest == None:
+                        raise ValueError("Mission " + row["ID"] + " is locked"
+                                         + " on quest " + quest_name + ","
+                                         + " but the quest does not exist")
+                    quests.append(req_quest)
             
             all_missions.append(
                 Mission(ident=row["ID"],
@@ -101,9 +111,17 @@ def load_quests(all_items):
             if row["NAME"] in quest_names:
                 raise ValueError(row["NAME"] + " is locked on itself")
             for quest in all_quests:
+                if quest.name == row["NAME"]:
+                    raise ValueError("Duplicate quest " + row["NAME"]
+                                     + " in table quests!")
                 for quest_name in quest_names:
                     if quest.name == quest_name:
                         required_quests.append(quest)
+            try:
+                keys=int(row["KEYS"])
+            except ValueError:
+                keys=0
+                
             all_quests.append(
                 Quest(ident=row["ID"],
                       name=row["NAME"],
@@ -112,7 +130,8 @@ def load_quests(all_items):
                       item_conditions=item_conditions,
                       reward=Reward({},
                                   gold_reward=int(row["GOLD_REWARD"]),
-                                  energy_reward=int(row["ENERGY_REWARD"])),                                  
+                                  energy_reward=int(row["ENERGY_REWARD"]),
+                                  keys=keys),                                  
                       required_quests=required_quests))
     return all_quests
 
