@@ -1,4 +1,7 @@
 ID,NAME,ASSET,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST,IS FRAGMENT,USE CONFIRMED
+1,Soft currency,,,,,,,,,,
+2,Hard currency,,,,,,,,,,
+3,Energy,,,,,,,,,,
 1036,Thread,obj_d2_nitki,,,,,,,,,1
 1042,Pills,obj_d3_apkolesa,,,,,,,,,
 1045,Camera,obj_d3_lfoto,,,,,,,,,1
