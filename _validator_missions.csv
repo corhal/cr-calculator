@@ -69,3 +69,13 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,87,8,8,Chapter 8_3 recipe,0.3,Trowel,0.3,Cork wood,0.3,5,Maestro_8-11,Grilled chicken,3,Sandwich,4,Mushrooms,5
 ,88,9,8,Fan blade,0.3,Barrel,0.3,Polaroid cassette,0.3,5,Owner_8-20,Burrito,3,Pizza,4,Ribs,5
 ,89,10,8,Sunglasses,0.3,String fragment,0.3,Polaroid camera,0.3,5,Serpent-10,Mushrooms,3,Grilled chicken,4,Sandwich,5
+,90,1,9,Chapter 9_1 recipe,0.5,Newspaper,0.3,Knife blade,0.3,5,,Burrito,3,Grilled chicken,4,Pizza,5
+,91,2,9,Board,0.3,Starch,0.3,Computer key,0.3,5,,Sandwich,3,Ribs,4,Mushrooms,5
+,92,3,9,Poster paper,0.3,Tablet,0.3,Paraffin,0.3,5,,Chili,3,Burrito,4,Grilled chicken,5
+,93,4,9,Lock,0.3,Videocamera,0.3,Hard drive,0.3,5,Leader-8,Pizza,3,Sandwich,4,Ribs,5
+,94,5,9,Chapter 9_2 recipe,0.5,Can,0.3,Lavalier microphone,0.3,5,Grandma_9-5,Mushrooms,3,Chili,4,Burrito,5
+,95,6,9,Telephoto lens,0.3,Essential oil,0.3,Wheel,0.3,5,Serpent_9-2,Grilled chicken,3,Pizza,4,Sandwich,5
+,96,7,9,Aluminum pipe,0.3,Small speaker,0.3,Water glass,0.3,5,Leader-17,Ribs,3,Mushrooms,4,Chili,5
+,97,8,9,Chapter 9_3 recipe,0.3,Makeup brush,0.3,Rum,0.3,5,Celeb_9-9,Grilled chicken,3,Sandwich,4,Mushrooms,5
+,98,9,9,Greasepaint,0.3,Iron,0.3,Ink cartridge,0.3,5,Serpent_9-7,Burrito,3,Pizza,4,Ribs,5
+,99,10,9,Hair brush,0.3,Microantenna,0.3,Necktie clip,0.3,5,Leader-27,Mushrooms,3,Grilled chicken,4,Sandwich,5
