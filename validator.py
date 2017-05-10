@@ -3,7 +3,6 @@ from data import *
 import copy
 import traceback
 import sys
-import time
 
 def play(plays_count):
 
@@ -27,6 +26,7 @@ def play(plays_count):
             if chapter_index not in gold_results.keys():
                 gold_results[chapter_index] = []
             gold_results[chapter_index].append(player.gold)
+
     if len(mission_results) > 0 and len(day_results) > 0:
         for chapter_index in mission_results.keys():
             print("Chapter " + str(chapter_index) + ":")
@@ -44,6 +44,6 @@ while True:
     except Exception:
         s = traceback.format_exc()
         serr = "there were errors:\n%s\n" % (s)
-        sys.stderr.write(serr)
+        sys.stderr.write(serr) 
 
 input("Press Enter to close")

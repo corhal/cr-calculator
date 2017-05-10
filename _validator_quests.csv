@@ -1,3 +1,352 @@
 HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT 3,GOLD_REWARD,ENERGY_REWARD,KEYS,REQUIRED_QUESTS
 ,20101,Organiser-1,2,1,Wine,1,,,,,0,10,,
-,20102,SousChef-4,2,2,Bottle with spoon,5,,,,,0,10,,Organiser-1
+,20102,Organiser-2,2,2,Fruits,1,,,,,0,10,1,Organiser-1
+,20103,Supplier-1,2,3,Blanket,1,,,,,0,10,,Organiser-2
+,20104,Supplier-2,2,4,Medicine,1,,,,,0,10,1,Supplier-1
+,20105,ShadyGuy-1,2,5,Basket,1,,,,,0,10,,Organiser-2
+,20106,ShadyGuy-2,2,6,Saw,1,,,,,0,10,1,ShadyGuy-1
+,20401,Organiser-3,2,7,Tablecloths,1,,,,,0,10,,Organiser-2
+,20402,Organiser-4,2,8,Wine,1,Fruits,1,,,0,10,4,Organiser-3
+,20501,Supplier-3,2,9,Fruits,1,Medicine,1,Lavender,1,0,10,,Supplier-2
+,20502,Supplier-4,2,10,Basket,1,,,,,0,10,4,Supplier-3
+,20601,ShadyGuy-3,2,11,Fruits,2,,,,,0,10,,ShadyGuy-2
+,20602,ShadyGuy-4,2,12,Wire,5,Knife,1,,1,0,10,4,ShadyGuy-3
+,20701,Organiser-5,2,13,Service,1,,,,,0,10,,Organiser-4
+,20702,Organiser-6,2,14,Garland,1,,,,,0,10,5,Organiser-5
+,20801,Supplier-5,2,15,Pig costume,1,,,,,0,10,,Supplier-4
+,20802,Supplier-6,2,16,Picnic basket,1,,,,,0,10,5,Supplier-5
+,20901,ShadyGuy-5,2,17,Camera with tripod,1,,,,,0,10,,ShadyGuy-4
+,20902,ShadyGuy-6,2,18,Medicine,1,,,,,0,10,5,ShadyGuy-5
+,21001,Organiser-7,2,19,Stage microphone,1,,,,,0,10,,Organiser-6
+,21002,Organiser-8,2,20,Cutlery,2,,,,,0,10,,Organiser-7
+,21003,Organiser-9,2,21,Special chair,1,,,,,0,10,,Organiser-8
+,21004,ShadyGuy-7,2,22,Shovel,1,,,,,0,10,,Organiser-9
+,30101,Manager-1,3,23,Moustache comb,1,,,,,0,10,1,
+,30102,Chef-1,3,24,Toque,1,,,,,0,10,1,Manager-1
+,30103,SousChef-1,3,25,Ring,1,,,,,0,10,1,Chef-1
+,30401,Manager-2,3,26,Box,1,,,,,0,10,,Manager-1
+,30402,Manager-3,3,27,Flowers,5,,,,,0,10,4,Manager-2
+,30501,Chef-2,3,28,Headphones,1,,,,,0,10,,Chef-1
+,30502,Chef-3,3,29,Soup kit,1,,,,,0,10,4,Chef-2
+,30601,SousChef-2,3,30,Skillet,1,,,,,0,10,,SousChef-1
+,30602,SousChef-3,3,31,Wax and brush,1,,,,,0,10,4,SousChef-2
+,30701,Manager-4,3,32,Fancy napkin,2,,,,,0,10,,Manager-3
+,30702,Manager-5,3,33,Broom,1,Puff,1,,,0,10,,Manager-4
+,30703,Manager-6,3,34,New phone,1,,,,,0,10,,Manager-5
+,30704,Manager-7,3,35,Tailcoat,1,,,,,0,10,,Manager-6
+,30705,Manager-8,3,36,Wax and brush,1,Moustache kit,1,,,0,10,5,Manager-7
+,30801,Chef-4,3,37,Cooking kit,1,,,,,0,10,,Chef-3
+,30802,Chef-5,3,38,Gift card,1,,,,,0,10,,Chef-4
+,30803,Chef-6,3,39,Gift,1,,,,,0,10,,Chef-5
+,30804,Chef-7,3,40,Spices,1,,,,,0,10,,Chef-6
+,30805,Chef-8,3,41,Origami,1,,,,,0,10,5,Chef-7
+,30901,SousChef-4,3,42,Toque,1,Apron,1,,,0,10,,SousChef-3
+,30902,SousChef-5,3,43,Spices,1,Soup kit,1,,,0,10,,SousChef-4
+,30903,SousChef-6,3,44,Champagne,5,,,,,0,10,,SousChef-5
+,30904,SousChef-7,3,45,Ring,1,Wax and brush,1,Bowtie,1,0,10,,SousChef-6
+,30905,SousChef-8,3,46,Flowers,3,,,,,0,10,5,SousChef-7
+,31001,Chef-9,3,47,Spices,1,Cooking kit,1,Coffee from Starbucks,1,0,10,,Chef-8
+,31002,Manager-9,3,48,French bread,5,Pastry stand,1,,,0,10,,Manager-8
+,31003,SousChef-9,3,49,Tailcoat,1,Flowers,5,Gift card,1,0,10,,SousChef-8
+,40101,Don-1,4,50,Looking glass,1,Pen,1,Paper,1,0,10,,
+,40102,Don-2,4,51,Fast-food,1,,,,,0,10,,Don-1
+,40103,Don-3,4,52,Paper,1,Invisible pen,1,Book,1,0,10,,Don-2
+,40104,Don-4,4,53,Paper,1,Pen,1,,,0,10,1,Don-3
+,40105,Celeb-1,4,54,Paper flowers,3,,,,,0,10,,Don-3
+,40106,Celeb-2,4,55,Detox drink,1,,,,,0,10,,Celeb-1
+,40107,Celeb-3,4,56,Fast-food,3,,,,,0,10,1,Celeb-2
+,40108,Business-1,4,57,Detox drink,1,Fast-food,1,,,0,10,,Don-3
+,40109,Business-2,4,58,Jeans,1,Perfume,1,Pen,1,0,10,,Business-1
+,40110,Business-3,4,59,Perfume,3,Bottle,1,,,0,10,,Business-2
+,40111,Business-4,4,60,Watch,1,Perfume,1,,,0,10,1,Business-3
+,40112,Business-5,4,61,Statuette,1,Bottle,1,Paper,1,0,10,,Business-4
+,40113,Celeb-4,4,62,Looking glass,1,Paper,1,Jeans,1,0,10,,Celeb-3
+,40114,Celeb-5,4,63,Stuffed toy,1,,,,,0,10,,Celeb-4
+,40115,Celeb-6,4,64,Jeans,1,Tank top,1,,,0,10,,Celeb-5
+,40116,Celeb-7,4,65,Lamp,1,Fast-food,1,,,0,10,4,Celeb-6
+,40117,Don-5,4,66,Watch,1,Book,5,,,0,10,,Don-4
+,40118,Don-6,4,67,Lamp,1,Fast-food,1,,,0,10,,Don-5
+,40119,Don-7,4,68,Invisible pen,1,Perfume,1,,,0,10,4,Don-6
+,40120,Don-8,4,69,Looking glass,1,Dinner,1,,,0,10,,Don-7
+,40121,Don-9,4,70,Wrist pillow,1,Glasses,1,,,0,10,,Don-8
+,40122,Business-6,4,71,Dinner,1,Detox drink,1,,,0,10,4,Business-5
+,40123,Business-7,4,72,White wine,1,Book,5,,,0,10,,"Celeb-4,Business-6"
+,40126,Celeb-8,4,75,Baggage,1,,,,,0,10,5,Celeb-7
+,40124,ShadyGuy_4-1,4,73,Statuette,1,Suitcase,1,,,0,10,,Celeb-8
+,40125,ShadyGuy_4-2,4,74,Magazine,1,Dinner,1,,,0,10,5,ShadyGuy_4-1
+,40127,Don-10,4,76,Suitcase,1,Folder,1,Book,3,0,10,,"Celeb-8,Business-7,Don-9"
+,40128,Don-11,4,77,Spy glasses,1,Recorder,1,,,0,10,5,Don-10
+,40129,Don-12,4,78,Diary,1,Fast-food,1,,,0,10,,Don-11
+,40130,Don-13,4,79,Royal dinner,1,,,,,0,10,,Don-12
+,40131,Business-8,4,80,Fancy dinner,1,Pen,1,Contract,1,0,10,,"Celeb-8,Don-9,Business-7"
+,50101,Gao-1,5,81,Dragon,1,,,,,0,10,,
+,50102,Gao-2,5,82,Tome,2,,,,,0,10,,Gao-1
+,50103,Gao-3,5,83,Dictionary,1,,,,,0,10,,Gao-2
+,50201,Historian-1,5,84,Tome,1,,,,,0,10,,Gao-3
+,50202,Historian-2,5,85,Scroll,3,,,,,0,10,,Historian-1
+,50203,Historian-3,5,86,Dictionary,1,,,,,0,10,,Historian-2
+,50204,Historian-4,5,87,Scribe kit,1,,,,,0,10,,Historian-3
+,50301,Jones-1,5,88,Dragon,1,,,,,0,10,,Gao-3
+,50302,Jones-2,5,89,Scroll,3,Tome,1,,,0,10,,Jones-1
+,50303,Jones-3,5,90,Tome,1,,,,,0,10,,Jones-2
+,50304,Jones-4,5,91,Nephrite ring,1,,,,,0,10,,Jones-3
+,50305,Jones-5,5,92,Rose,9,,,,,0,10,,Jones-4
+,50401,Gao-4,5,93,Nephrite ring,1,,,,,0,10,,"Jones-2,Historian-2"
+,50402,Gao-5,5,94,Scribe kit,1,Scroll,1,,,0,10,,Gao-4
+,50403,Gao-6,5,95,Dragon,10,,,,,0,10,,Gao-5
+,50501,Historian-5,5,96,Scroll,1,Tome,1,,,0,10,,"Jones-5,Historian-4"
+,50601,Gao-7,5,97,Chip figurine,1,,,,,0,10,,Historian-5
+,50602,Gao-8,5,98,Jammer,1,,,,,0,10,,Gao-7
+,50603,Gao-9,5,99,Computer,1,,,,,0,10,,Gao-8
+,50701,Historian-6,5,100,Lotus,1,Ink,2,,,0,10,,Gao-9
+,50702,Historian-7,5,101,Chip,1,Dictionary,2,,,0,10,,Historian-6
+,50703,Historian-8,5,102,Computer upgrade,1,,,,,0,10,,Historian-7
+,50704,Historian-9,5,103,Dragon,5,Tools,1,,,0,10,,Historian-8
+,50801,Jones-6,5,104,Old map,5,,,,,0,10,,Gao-9
+,50802,Jones-7,5,105,Lantern,1,,,,,0,10,,Jones-6
+,50803,Jones-8,5,106,Metal,1,Wrapping paper,1,Rose,15,0,10,,Jones-7
+,50901,Historian-10,5,107,Upgraded computer,1,,,,,0,10,,"Jones-8,Historian-9"
+,50902,Historian-11,5,108,Scribe kit,1,Scroll,1,Lotus,1,0,10,,Historian-10
+,51001,Jones-9,5,109,Decoder,1,Old map,3,,,0,10,,Historian-11
+,51002,Jones-10,5,110,Upgraded decoder,1,,,,,0,10,,Jones-9
+,51003,Jones-11,5,111,Lotus,30,,,,,0,10,,Jones-10
+,51101,Historian-12,5,112,Dragon,1,Metal,5,Tools,1,0,10,,Jones-11
+,51102,Historian-13,5,113,Decoder,1,Tome,3,Scroll,3,0,10,,Historian-12
+,51201,Jones-12,5,114,Upgraded computer,1,Old map,1,Nephrite ring,1,0,10,,Historian-13
+,51202,Jones-13,5,115,Upgraded tools,1,Lantern,1,,,0,10,,Jones-12
+,51301,Gao-10,5,116,Nephrite ring with diamond,1,Plum wine,1,,,0,10,,Jones-13
+,51302,Gao-11,5,117,Lantern,1,Ink,3,Latex gloves,1,0,10,,Gao-10
+,51401,Historian-14,5,118,Lotus,1,Incense,2,Tome,1,0,10,,Jones-13
+,51402,Historian-15,5,119,Upgraded computer,1,,,,,0,10,,Historian-14
+,51501,Grandma-1,5,120,Chinese herbs,5,Rose,10,Lotus,1,0,10,,Jones-13
+,51502,Grandma-2,5,121,Nephrite ring,1,Dragon,1,Chinese herbs,1,0,10,,Grandma-1
+,51601,Grandma-3,5,122,Wrapping paper,1,Incense,2,,,0,10,,"Grandma-2,Historian-15,Gao-11"
+,51701,Gao-12,5,123,Ultracomputer,1,,,,,0,10,,"Grandma-2,Historian-15,Gao-11"
+,51702,Gao-13,5,124,Tracking device,1,,,,,0,10,,Gao-12
+,51703,Gao-14,5,125,Handcuffs,2,Latex gloves,2,,,0,10,,Gao-13
+,51801,Jones-14,5,126,Special dragon figurine,1,,,,,0,10,,Gao-14
+,51901,Jones-15,5,127,Perfect tools,1,,,,,0,10,,Jones-14
+,51902,Jones-16,5,128,Nephrite ring with diamond,1,,,,,0,10,,Jones-15
+,51903,Jones-17,5,129,Tracking device,1,,,,,0,10,,Jones-16
+,51904,Jones-18,5,130,Nephrite ring with many diamonds,1,,,,,0,10,,Jones-17
+,51905,Jones-19,5,131,Flower bouquet,1,,,,,0,10,,Jones-18
+,52001,Historian-16,5,132,Scribe kit,1,Scroll,1,Plum wine,1,0,10,,Jones-14
+,52002,Historian-17,5,133,Upgraded decoder,1,Latex gloves,1,,,0,10,,Historian-16
+,52101,Gao-15,5,134,Diamond dust,3,Truth serum,1,,,0,10,,Jones-14
+,52102,Gao-16,5,135,Tracking device,2,,,,,0,10,,Gao-15
+,52103,Gao-17,5,136,Computer with antenna,1,,,,,0,10,,Gao-16
+,52104,Gao-18,5,137,Upgraded decoder,1,Dictionary,5,,,0,10,,Gao-17
+,52201,Gao-19,5,138,Encryptor,1,Antenna,2,,,0,10,,Jones-19
+,52202,Gao-20,5,139,Erhu,5,,,,,0,10,,Gao-19
+,52301,Historian-18,5,140,Perfect tools,1,Wrapping paper,3,,,0,10,,Jones-19
+,52401,Jones-20,5,141,Erhu,1,,,,,0,10,,Historian-18
+,52501,Shadyguy-1,5,142,Chinese lantern,1,Baoding balls,1,,,0,10,,Gao-19
+,60101,Souschef-1,6,143,Coffee bag,1,,,,,0,10,,
+,60102,Souschef-2,6,144,Gold ingot,1,,,,,0,10,,Souschef-1
+,60103,Souschef-3,6,145,Shredder,1,,,,,0,10,,Souschef-2
+,60201,Souschef-4,6,146,Locator,1,,,,,0,10,,Souschef-3
+,60202,Souschef-5,6,147,Oil,2,,,,,0,10,,Souschef-4
+,60203,Souschef-6,6,148,Electric razor,1,,,,,0,10,,Souschef-5
+,60301,Grandma_6-1,6,149,Cup,1,,,,,0,10,,
+,60302,Grandma_6-2,6,150,Coffee bag,2,,,,,0,10,,Grandma_6-1
+,60401,Grandma_6-3,6,151,Oil,3,,,,,0,10,,"Souschef-2,Grandma-2"
+,60501,Grandma_6-4,6,152,Coffee grinder,1,,,,,0,10,,Grandma_6-3
+,60502,Grandma_6-5,6,153,Cup,10,,,,,0,10,,Grandma_6-4
+,60503,Grandma_6-6,6,154,Coffee machine,1,,,,,0,10,,Grandma_6-5
+,60504,Grandma_6-7,6,155,Gold,2,Motor,1,,,0,10,,Grandma_6-6
+,60601,Agent-1,6,156,Oil,10,,,,,0,10,,Grandma_6-3
+,60602,Agent-2,6,157,Gold ingot,1,,,,,0,10,,Agent-1
+,60603,Agent-3,6,158,Gold ingot,1,Coffee bag,3,,,0,10,,Agent-2
+,60604,Agent-4,6,159,Coffee bag,5,,,,,0,10,,Agent-3
+,60701,Souschef-7,6,160,Big cog,1,Motor,1,,,0,10,,"Agent-4,Grandma_6-7,Souschef-6"
+,60702,Souschef-8,6,161,Cable,1,Cog,5,Magnet,2,0,10,,Souschef-7
+,60703,Souschef-9,6,162,Transformer,1,,,,,0,10,,Souschef-8
+,60801,Grandma_6-8,6,163,Magnifying glass,1,Coffee cup,1,,,0,10,,"Agent-4,Grandma_6-7,Souschef-6"
+,60802,Grandma_6-9,6,164,Professional binoculars,1,,,,,0,10,,Grandma_6-8
+,60901,Grandma_6-10,6,165,Boiling water,1,Cup,1,,,0,10,,Grandma_6-9
+,60902,Grandma_6-11,6,166,Microscope,1,Blade,1,,,0,10,,Grandma_6-10
+,61001,Agent-5,6,167,Plastic cup,10,,,,,0,10,,"Agent-4,Grandma-7,Souschef-6"
+,61002,Agent-6,6,168,Water tank,5,,,,,0,10,,Agent-5
+,61003,Agent-7,6,169,Coffee scrub,1,Pin,5,,,0,10,,Agent-6
+,61101,Souschef-10,6,170,Professional binoculars,1,Locator,1,,,0,10,,"Souschef-9,Grandma-11,Agent-7"
+,61102,Souschef-11,6,171,Climbing rope,1,,,,,0,10,,Souschef-10
+,61201,Grandma-12,6,172,Plastic cup,5,Boiling water,2,Coffee,3,0,10,,"Souschef-9,Grandma-11,Agent-7"
+,61202,Grandma-13,6,173,Drone with cable,1,,,,,0,10,,Grandma-12
+,61301,Agent-8,6,174,Locator,1,Binoculars,1,,,0,10,,"Souschef-9,Grandma-11,Agent-7"
+,61302,Agent-9,6,175,Climbing rope,1,Magnet,2,,,0,10,,Agent-8
+,61303,Agent-10,6,176,Lockpick,3,,,,,0,10,,Agent-9
+,61401,Agent-11,6,177,Feather,10,Gold shavings,5,,,0,10,,"Souschef-11,Grandma-13,Agent-10"
+,61402,Agent-12,6,178,Feather crown,1,Gold shavings,1,Glitter,5,0,10,,Agent-11
+,61403,Agent-13,6,179,Oil,2,Glitter,5,,,0,10,,Agent-12
+,61501,Souschef-12,6,180,Credit card,1,Gold ingot,1,,,0,10,,"Souschef-11,Grandma-13,Agent-10"
+,61502,Souschef-13,6,181,Lockpick,1,Blade,1,,,0,10,,Souschef-12
+,61503,Souschef-14,6,182,Satellite phone,1,Locator,1,,,0,10,,Souschef-13
+,61504,Souschef-15,6,183,Woolen sweater,1,,,,,0,10,,Souschef-14
+,61601,Grandma-14,6,184,Boiling water,1,Steamer,1,Cup,5,0,10,,"Souschef-11,Grandma-13,Agent-10"
+,61602,Grandma-15,6,185,Gilded mirror,1,,,,,0,10,,Grandma-14
+,61701,Grandma-16,6,186,Special coffee machine,1,,,,,0,10,,"Grandma-15,Souschef-15,Agent-13"
+,61702,Grandma-17,6,187,Woolen thread,5,,,,,0,10,,Grandma-16
+,61801,Agent-14,6,188,Drone,1,,,,,0,10,,"Grandma-15,Souschef-15,Agent-13"
+,61802,Agent-15,6,189,Surveillance drone,1,,,,,0,10,,Agent-14
+,61901,Agent-16,6,190,Flag,10,Feather,10,,,0,10,,Agent-15
+,61902,Agent-17,6,191,Drone,1,,,,,0,10,,Agent-16
+,61903,Agent-18,6,192,Glitter cannon,1,,,,,0,10,,Agent-17
+,62001,Grandma-18,6,193,Net,1,Cable,1,,,0,10,,"Agent-16,Grandma-17"
+,62002,Grandma-19,6,194,Feather boa,1,,,,,0,10,,Grandma-18
+,62101,Souschef-16,6,195,Car engine,1,,,,,0,10,,"Grandma-15,Souschef-15,Agent-13"
+,62102,Souschef-17,6,196,Tempered mirror,3,,,,,0,10,,Souschef-16
+,62103,Souschef-18,6,197,Polish,5,,,,,0,10,,Souschef-17
+,62201,Souschef-19,6,198,Book box,1,,,,,0,10,,Souschef-18
+,62301,Grandma-20,6,199,Satellite phone,2,Locator,2,Pepper spray,2,0,10,,Souschef-19
+,62302,Grandma-21,6,200,Irish coffee,1,,,,,0,10,,Grandma-20
+,62303,Grandma-22,6,201,Net drone,1,,,,,0,10,,Grandma-21
+,70101,Philipp-1,7,202,Industrial oil,2,,,,,0,10,,
+,70102,Philipp-2,7,203,Chocolate bar mold,3,,,,,0,10,,Philipp-1
+,70103,Philipp-3,7,204,Plastic,3,Nails,1,,,0,10,1,Philipp-2
+,70201,Anais-1,7,205,Chocolate truffle mold,3,,,,,0,10,,
+,70202,Anais-2,7,206,Industrial oil,3,,,,,0,10,,Anais-1
+,70203,Anais-3,7,207,Coloring agent,5,,,,,0,10,1,Anais-2
+,70301,Farmer-1,7,208,Wood,5,Nails,2,,,0,10,,Philipp-1
+,70302,Farmer-2,7,209,Wood protection oil,5,,,,,0,10,,Farmer-1
+,70303,Farmer-3,7,210,Paint,5,,,,,0,10,,Farmer-2
+,70401,Farmer-4,7,211,Doghouse,1,,,,,0,10,,Farmer-3
+,70402,Farmer-5,7,212,Birdhouse,1,,,,,0,10,,Farmer-4
+,70501,Farmer-6,7,213,Wood,3,Nails,2,Plastic,5,0,10,,Farmer-5
+,70502,Farmer-7,7,214,Thermometer,10,,,,,0,10,1,Farmer-6
+,70601,Philipp-4,7,215,Seeds,5,,,,,0,10,,Philipp-3
+,70602,Philipp-5,7,216,Knife sharpener,1,Seed oil,1,,,0,10,,Philipp-4
+,70701,Anais-4,7,217,Plastic,2,Wood,1,,,0,10,,Anais-3
+,70702,Anais-5,7,218,Thermometer,1,,,,,0,10,,Anais-4
+,70703,Anais-6,7,219,Drying rack,2,,,,,0,10,,Anais-5
+,70704,Anais-7,7,220,Spatula,2,Bowl,1,,,0,10,,Anais-6
+,70801,Farmer-8,7,221,Bell collar,10,,,,,0,10,,Farmer-7
+,70802,Farmer-9,7,222,Scarecrow,1,,,,,0,10,,Farmer-8
+,70803,Farmer-10,7,223,Dog collar,1,,,,,0,10,,Farmer-9
+,70901,Farmer-11,7,224,Seeds,10,,,,,0,10,,"Farmer-10,Anais-7,Philipp-5"
+,70902,Farmer-12,7,225,Industrial oil,2,Grindstone,2,,,0,10,1,Farmer-11
+,71001,Philipp-6,7,226,Spatula,5,Paint,2,,,0,10,,"Farmer-10,Anais-7,Philipp-5"
+,71002,Philipp-7,7,227,Oiled parchment,3,,,,,0,10,,Philipp-6
+,71003,Philipp-8,7,228,Ringing timer,1,,,,,0,10,1,Philipp-7
+,71101,Anais-8,7,229,Conch,1,,,,,0,10,,"Farmer-10,Anais-7,Philipp-5"
+,71102,Anais-9,7,230,Conch with timer,1,,,,,0,10,1,Anais-8
+,71201,Philipp-9,7,231,Snowshoes,1,,,,,0,10,,Philipp-8
+,71202,Philipp-10,7,232,Bird feeder,2,,,,,0,10,,Philipp-9
+,71203,Philipp-11,7,233,Portable stove,1,,,,,0,10,,Philipp-10
+,71204,Philipp-12,7,234,Rope,3,Bell,3,Seeds,3,0,10,,Philipp-11
+,71301,Anais-10,7,235,Snowboard,1,,,,,0,10,,Anais-9
+,71302,Anais-11,7,236,Paint,3,,,,,0,10,,Anais-10
+,71303,Anais-12,7,237,Wax,2,,,,,0,10,,Anais-11
+,71401,Farmer-13,7,238,Grinder,1,,,,,0,10,,Farmer-12
+,71501,Farmer-14,7,239,Roof tile,15,,,,,0,10,,"Anais-12,Philipp-12,Farmer-13"
+,71502,Farmer-15,7,240,Wax,1,Hand plane,1,Plastic,4,0,10,,Farmer-14
+,71601,Farmer-16,7,241,Wood,5,Rope,7,Bell,10,0,10,1,Farmer-15
+,71701,Philipp-13,7,242,Conch with timer,2,,,,,0,10,,"Anais-12,Philipp-12,Farmer-13"
+,71702,Philipp-14,7,243,Special spatula,3,,,,,0,10,,Philipp-13
+,71703,Philipp-15,7,244,Cocoa beans roaster,1,,,,,0,10,,Philipp-14
+,71704,Philipp-16,7,245,Colored chocolate bar mold,2,Colored chocolate truffle mold,2,Glass chocolate bar mold,1,0,10,,Philipp-15
+,71705,Philipp-17,7,246,Melting tank,3,,,,,0,10,1,Philipp-16
+,71801,Anais-13,7,247,Roof tile,10,Oiled wood,2,,,0,10,,"Anais-12,Philipp-12,Farmer-13"
+,71802,Anais-14,7,248,Paint,4,,,,,0,10,,Anais-13
+,71803,Anais-15,7,249,Window,2,,,,,0,10,,Anais-14
+,71804,Anais-16,7,250,Oiled wood,2,Paint,2,,,0,10,,Anais-15
+,71805,Anais-17,7,251,Kitchen table,1,,,,,0,10,1,Anais-16
+,71901,Anais-18,7,252,Chest,1,,,,,0,10,,"Anais-17,Philipp-17,Farmer-16"
+,72001,Philipp-18,7,253,Chocolate truffle mold,2,Spatula,1,,,0,10,,Anais-18
+,72002,Philipp-19,7,254,Honey,1,,,,,0,10,,Philipp-18
+,72003,Philipp-20,7,255,Coloring agent,2,Heart mold,5,,,0,10,,Philipp-19
+,72004,Philipp-21,7,256,Edelweiss,5,,,,,0,10,,Philipp-20
+,72101,Philipp-22,7,257,Shiny fabric,2,Wood,2,,,0,10,,Philipp-21
+,72201,Anais-19,7,258,Cloak,4,,,,,0,10,,Philipp-21
+,72202,Anais-20,7,259,Ceremonial bell,1,,,,,0,10,,Anais-19
+,72301,Farmer-17,7,260,Edelweiss,9,,,,,0,10,,Anais-18
+,72302,Farmer-18,7,261,Painted bowl,1,,,,,0,10,,Farmer-17
+,80101,Maestro_8-1,8,262,Ladle,1,,,,,0,10,,
+,80102,Maestro_8-2,8,263,Clay plate,1,,,,,0,10,,Maestro_8-1
+,80201,Maestro_8-3,8,264,Sprayer,1,Clay plate,2,,,0,10,,Maestro_8-2
+,80202,Maestro_8-4,8,265,Clay pot,3,Ladle,1,,,0,10,,Maestro_8-3
+,80203,Maestro_8-5,8,266,Skewer,5,,,,,0,10,,Maestro_8-4
+,80204,Maestro_8-6,8,267,Plastic film,3,Watch battery,5,,,0,10,,Maestro_8-5
+,80301,ShadyGuy_8-1,8,268,Sun umbrella,1,,,,,0,10,,
+,80302,ShadyGuy_8-2,8,269,Work gloves,6,Plastic film,2,,,0,10,,ShadyGuy_8-1
+,80303,ShadyGuy_8-3,8,270,Clay pot,1,,,,,0,10,,ShadyGuy_8-2
+,80304,ShadyGuy_8-4,8,271,Ladle,1,Clay plate,6,,,0,10,,ShadyGuy_8-3
+,80305,ShadyGuy_8-5,8,272,Bucket of clay,1,,,,,0,10,,ShadyGuy_8-4
+,80306,ShadyGuy_8-6,8,273,Clay beads,1,,,,,0,10,,ShadyGuy_8-5
+,80307,ShadyGuy_8-7,8,274,Ladle,1,Clay plate,5,Plastic film,2,0,10,,ShadyGuy_8-6
+,80401,Owner_8-1,8,275,Bucket of clay,2,,,,,0,10,,Maestro_8-2
+,80402,Owner_8-2,8,276,Sun umbrella,1,Work gloves,1,,,0,10,,Owner_8-1
+,80403,Owner_8-3,8,277,Amphora,1,,,,,0,10,,Owner_8-2
+,80404,Owner_8-4,8,278,Knitting needles,2,,,,,0,10,,Owner_8-3
+,80405,Owner_8-5,8,279,Watch battery,5,,,,,0,10,,Owner_8-4
+,80406,Owner_8-6,8,280,Plastic film,2,Bucket,1,Work gloves,1,0,10,,Owner_8-5
+,80407,Owner_8-7,8,281,Clay beads,1,,,,,0,10,,Owner_8-6
+,80501,Maestro_8-7,8,282,Meat thermometer,2,,,,,0,10,,Maestro_8-6
+,80502,Maestro_8-8,8,283,Baking bag,5,,,,,0,10,,Maestro_8-7
+,80601,Owner_8-8,8,284,Secateurs,1,Bucket,2,,,0,10,,Owner_8-7
+,80602,Owner_8-9,8,285,Bottle sprayer,2,,,,,0,10,,Owner_8-8
+,80603,Owner_8-10,8,286,Leather strap,10,Work gloves,1,,,0,10,,Owner_8-9
+,80701,Scientist_8-1,8,287,Sun umbrella,1,,,,,0,10,,"Owner_8-7, ShadyGuy_8-7"
+,80702,Scientist_8-2,8,288,Ph-meter,1,,,,,0,10,,Scientist_8-1
+,80801,Scientist_8-3,8,289,Barometer,1,,,,,0,10,,Scientist_8-2
+,80802,Scientist_8-4,8,290,Secateurs,1,Flask,1,Ph-meter,1,0,10,,Scientist_8-3
+,80803,Scientist_8-5,8,291,Bottle sprayer,4,,,,,0,10,,Scientist_8-4
+,80804,Scientist_8-6,8,292,Sundial,1,,,,,0,10,,Scientist_8-5
+,80805,Scientist_8-7,8,293,Wrist watch,1,,,,,0,10,,Scientist_8-6
+,80806,Scientist_8-8,8,294,Large secateurs,1,Flower pot,1,,,0,10,,Scientist_8-7
+,80807,Scientist_8-9,8,295,Leather apron,1,Work gloves,1,,,0,10,,Scientist_8-8
+,80808,Scientist_8-10,8,296,Flask,1,Round thermometer,1,Spoke,3,0,10,,Scientist_8-9
+,80809,Scientist_8-11,8,297,Ph-meter,1,,,,,0,10,,Scientist_8-10
+,80810,Scientist_8-12,8,298,Mug,1,Sun umbrella,1,,,0,10,,Scientist_8-11
+,80901,Maestro_8-9,8,299,Leather apron,1,Protective leather gloves,1,,,0,10,,Maestro_8-8
+,80902,Maestro_8-10,8,300,Wrist watch,1,,,,,0,10,,Maestro_8-9
+,80903,Maestro_8-11,8,301,Secateurs,1,Bucket,1,Work gloves,1,0,10,,Maestro_8-10
+,81001,Owner_8-11,8,302,Bucket,1,Round thermometer,1,,,0,10,,Owner_8-10
+,81002,Owner_8-12,8,303,Large secateurs,1,Trash bag,5,,,0,10,,Owner_8-11
+,81003,Owner_8-13,8,304,Leather apron,1,Work gloves,1,,,0,10,,Owner_8-12
+,81004,Owner_8-14,8,305,Clay pot,1,Ladle,1,,,0,10,,Owner_8-13
+,81005,Owner_8-15,8,306,Protective leather gloves,1,,,,,0,10,,Owner_8-14
+,81006,Owner_8-16,8,307,Large secateurs,3,,,,,0,10,,Owner_8-15
+,81007,Owner_8-17,8,308,Amphora,3,Leather strap,6,,,0,10,,Owner_8-16
+,81008,Owner_8-18,8,309,Brick,10,Bucket,1,,,0,10,,Owner_8-17
+,81009,Owner_8-19,8,310,Gumboots,1,Water analyzer,1,,,0,10,,Owner_8-18
+,81010,Owner_8-20,8,311,Wrench,5,Work gloves,1,,,0,10,,Owner_8-19
+,81101,Owner_8-21,8,312,Fan blade,10,Wrench,1,,,0,10,,Owner_8-20
+,81102,Owner_8-22,8,313,Propeller,1,Hose,3,Wrench,1,0,10,,Owner_8-21
+,81103,Owner_8-23,8,314,Sprinkler,5,,,,,0,10,,Owner_8-22
+,81104,Owner_8-24,8,315,Water filter,1,,,,,0,10,,Owner_8-23
+,81201,Scientist_8-13,8,316,Flask,5,Plastic film,5,Sealing wax,2,0,10,,"Scientist_8-12, Owner_8-20"
+,81202,Scientist_8-14,8,317,Solution,5,Shell,1,Flask,1,0,10,,Scientist_8-13
+,81301,Serpent-1,8,318,Bobber,1,Fishing hook,3,,,0,10,,Maestro_8-11
+,81302,Serpent-2,8,319,Cork helmet,1,,,,,0,10,,Serpent-1
+,81303,Serpent-3,8,320,Black paint,1,,,,,0,10,,Serpent-2
+,81304,Serpent-4,8,321,Gumboots,1,,,,,0,10,,Serpent-3
+,81305,Serpent-5,8,322,Insole,2,,,,,0,10,,Serpent-4
+,81306,Serpent-6,8,323,Swimming board,1,Sun umbrella,1,,,0,10,,Serpent-5
+,81307,Serpent-7,8,324,Slippers,1,,,,,0,10,,Serpent-6
+,81308,Serpent-8,8,325,Trowel,1,Flower pot,1,,,0,10,,Serpent-7
+,81401,Serpent-9,8,326,Signed shell,1,,,,,0,10,,"Serpent-8, Scientist_8-18, Owner_8-25"
+,81402,Serpent-10,8,327,Wine amphora,1,,,,,0,10,,Serpent-9
+,81501,Scientist_8-15,8,328,Pitched barrel,2,Hose,4,,,0,10,,Scientist_8-14
+,81502,Scientist_8-16,8,329,Sprinkler,3,,,,,0,10,,Scientist_8-15
+,81503,Scientist_8-17,8,330,Mug,1,Solution,1,,,0,10,,Scientist_8-16
+,81504,Scientist_8-18,8,331,Secateurs,2,Trowel,1,Work gloves,1,0,10,,Scientist_8-17
+,81505,Scientist_8-19,8,332,Fan,1,,,,,0,10,,Scientist_8-18
+,81506,Scientist_8-20,8,333,Wine amphora,1,,,,,0,10,,Scientist_8-19
+,81507,Scientist_8-21,8,334,Shell beads,1,,,,,0,10,,Scientist_8-20
+,81508,Scientist_8-22,8,335,Nacre hair pin,1,,,,,0,10,,Scientist_8-21
+,81601,Owner_8-25,8,336,Wine barrel,5,,,,,0,10,,"Owner_8-24, Scientist_8-18"
+,81602,Owner_8-26,8,337,Wine amphora,3,,,,,0,10,,Owner_8-25
+,81603,Owner_8-27,8,338,Cork sheet,1,Wrench,1,Work gloves,1,0,10,,Owner_8-26
+,81604,Owner_8-28,8,339,Linoleum,2,,,,,0,10,,Owner_8-27
+,81605,Owner_8-29,8,340,Insole,2,,,,,0,10,,Owner_8-28
+,81606,Owner_8-30,8,341,Cork shavings,2,Bucket,1,Plastic film,5,0,10,,Owner_8-29
+,81701,Serpent-11,8,342,Work-ready polaroid,1,,,,,0,10,,Serpent-10
+,81702,Serpent-12,8,343,Sunglasses,1,Fan,1,,,0,10,,Serpent-11
+,81703,Serpent-13,8,344,Clay plate,5,,,,,0,10,,Serpent-12
+,81704,Serpent-14,8,345,String,6,,,,,0,10,,Serpent-13
+,81801,Maestro_8-12,8,346,Cheese cutter,1,,,,,0,10,,Owner_8-30
+,81802,Maestro_8-13,8,347,Inlaid trivet,2,,,,,0,10,,Maestro_8-12
+,81803,Maestro_8-14,8,348,Wine amphora,1,,,,,0,10,,Maestro_8-13
+,81804,Maestro_8-15,8,349,Work-ready polaroid,1,,,,,0,10,,Maestro_8-14
+,81901,ShadyGuy_8-8,8,350,Sunglasses,1,Wrist watch,1,,,0,10,,Scientist_8-22
+,81902,ShadyGuy_8-9,8,351,Signed shell,1,,,,,0,10,,ShadyGuy_8-8
