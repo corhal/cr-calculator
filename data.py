@@ -74,10 +74,12 @@ def load_missions(all_items, all_recipes):
                         reward=Reward(item_chances=item_chances,
                                 gold_reward=int(row["GOLD_REWARD"])),
                         energy_cost=ENERGY_COST,
-                        recipe_levels=recipe_levels))
+                        recipe_levels=recipe_levels,
+                        lifebonus=row["LIFEBONUS"],
+                        win_config=row["WINCONFIG"]))
     return all_missions
 
-def load_regions(all_missions, all_quests):
+def load_regions(all_missions):
     all_regions = []
 
     def find_quest(name, quests):
@@ -94,28 +96,33 @@ def load_regions(all_missions, all_quests):
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
             quest_names = row["REQUIREMENT"].split(',')
-            quests = []
-            for quest_name in quest_names:
-                if quest_name != "":
-                    req_quest = find_quest(quest_name, all_quests)
-                    if req_quest == None:
-                        raise ValueError("Mission " + row["ID"] + " is locked"
-                                         + " on quest " + quest_name + ","
-                                         + " but the quest does not exist")
-                    quests.append(req_quest)
+            #quests = []
+            #for quest_name in quest_names:
+                #if quest_name != "":
+                    #req_quest = find_quest(quest_name, all_quests)
+                    #if req_quest == None:
+                        #raise ValueError("Mission " + row["ID"] + " is locked"
+                                         #+ " on quest " + quest_name + ","
+                                         #+ " but the quest does not exist")
+                    #quests.append(req_quest)
             ident = row["MISSION_ID"]
             mission = find_mission(ident, all_missions)
             #if mission == None:
                 #continue
             all_regions.append(Region(ident=int(row["IDENT"]),
-                                      requirement=Requirement(quests=quests),
+                                      quest_names=quest_names,
                                       mission=mission,
                                       chapter=int(row["CHAPTER"])))
 
     return all_regions
 
-def load_quests(all_items):
+def load_quests(all_items, all_regions):
     all_quests = []
+
+    def find_region(ident, regions):
+        for region in regions:
+            if int(region.ident) == int(ident):
+                return region
 
     with open('_validator_quests.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -137,7 +144,10 @@ def load_quests(all_items):
                 for quest_name in quest_names:
                     if quest.name == quest_name:
                         required_quests.append(quest)
-
+            region_ident = row["REQUIRED_REGION"]
+            regions = []
+            if region_ident != '':
+                regions.append(find_region(region_ident, all_regions))
             all_quests.append(
                 Quest(ident=row["ID"],
                       name=row["NAME"],
@@ -147,10 +157,13 @@ def load_quests(all_items):
                       reward=Reward({},
                                   gold_reward=int(row["GOLD_REWARD"]),
                                   energy_reward=int(row["ENERGY_REWARD"])),
-                      required_quests=required_quests))
+                      requirement=Requirement(quests=required_quests,
+                                              regions=regions)))
+    for region in all_regions:
+        region.reinit(all_quests)
     return all_quests
 
-def load_chapters(items, missions, quests, recipes):
+def load_chapters(items, missions, quests, recipes, regions):
     all_chapters = {}
     with open('_validator_chapters.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -161,7 +174,7 @@ def load_chapters(items, missions, quests, recipes):
                                                         missions=missions,
                                                         quests=quests,
                                                         recipes=recipes,
-                                                        regions=load_regions(missions, quests))
+                                                        regions=regions)
     return all_chapters
 
 def load_recipes(all_items):
@@ -231,9 +244,10 @@ def load_player(recipes, all_items):
 def load_game():
     items = load_items()
     recipes = load_recipes(items)
-    quests = load_quests(items)
     missions = load_missions(items, recipes)
-    chapters = load_chapters(items, missions, quests, recipes)
+    regions = load_regions(missions)
+    quests = load_quests(items, regions)
+    chapters = load_chapters(items, missions, quests, recipes, regions)
     with open('_validator_player.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in reader:

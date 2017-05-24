@@ -27,7 +27,7 @@ class Item(object):
 
 class Quest(object):
     def __init__(self, ident, name, chapter, quest_chain,
-                 item_conditions, reward, required_quests):
+                 item_conditions, reward, requirement):
         self.ident = ident
         self.name = name
         self.chapter = chapter
@@ -35,7 +35,7 @@ class Quest(object):
         self.item_conditions = item_conditions # dict
         self.completed = False
         self.reward = reward
-        self.required_quests = required_quests # list
+        self.requirement = requirement # list
         self.locked = True
 
     def __str__(self):
@@ -71,8 +71,11 @@ class Quest(object):
         return full_gold_cost
 
     def is_available(self):
-        for quest in self.required_quests:
+        for quest in self.requirement.quests:
             if not quest.completed:
+                return False
+        for region in self.requirement.regions:
+            if region.locked:
                 return False
         self.locked = False
         return True
@@ -117,18 +120,27 @@ class Reward(object):
         return reward_items
 
 class Region(object):
-    def __init__(self, ident, requirement, mission, chapter):
+    def __init__(self, ident, quest_names, mission, chapter):
         self.ident = ident
-        self.requirement = requirement
+        self.quest_names = quest_names
         self.mission = mission
         self.locked = False
         if self.mission != None:
+            mission.region = self
             self.mission.locked = False
+        self.chapter = chapter
+        self.requirement = None
+
+    def reinit(self, quests):
+        required_quests = []
+        for quest in quests:
+            if quest.name in self.quest_names:
+                required_quests.append(quest)
+        self.requirement = Requirement(quests=required_quests)
         if len(self.requirement.quests) > 0:
             self.locked = True
             if self.mission != None:
-                mission.locked = True
-        self.chapter = chapter
+                self.mission.locked = True
 
     def unlock(self):
         self.locked = False
@@ -137,15 +149,18 @@ class Region(object):
 
 class Mission(object):
     def __init__(self, ident, name, chapter, reward,
-                 energy_cost, recipe_levels):
+                 energy_cost, recipe_levels, lifebonus, win_config):
         self.recipe_levels = recipe_levels # {recipe: level}
         self.ident = ident
         self.name = name
         self.chapter = chapter
         self.reward = reward
         self.energy_cost = energy_cost
-        self.locked = True
+        self.locked = None
         self.played = False
+        self.lifebonus = lifebonus
+        self.win_config = win_config
+        self.region = None
 
     def __str__(self):
         tostring = str(self.name) + " ["
@@ -201,7 +216,7 @@ class Recipe(object):
 
     def generate_mission(self):
         self.mission = Mission(0, self.name + '_mission',
-                               0, Reward({}, gold_reward=self.gold_reward), 0, {})
+                               0, Reward({}, gold_reward=self.gold_reward), 0, {}, 10, [])
 
 class Order(object):
     def __init__(self, recipe):
@@ -236,9 +251,10 @@ class OrderBoard(object):
             order.in_cooldown = False
 
 class Requirement(object):
-    def __init__(self, quests=[], quest_chains=[], item_amounts={}):
+    def __init__(self, quests=[], quest_chains=[], regions=[], item_amounts={}):
         self.quests = quests
         self.quest_chains = quest_chains
+        self.regions = regions
         self.item_amounts = item_amounts
 
 class Player(object):
@@ -289,6 +305,9 @@ class Player(object):
                 return False
         for quest_chain in requirement.quest_chains:
             if not quest_chain.completed:
+                return False
+        for region in requirement.regions:
+            if region.locked:
                 return False
         for item in requirement.item_amounts.keys():
             if self.inventory.get(item, 0) < requirements.item_amounts[item]:
