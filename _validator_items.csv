@@ -1,7 +1,7 @@
 ID,NAME,ASSET,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOLD_COST,IS FRAGMENT,USE CONFIRMED
-1,Soft currency,,,,,,,,,,
-2,Hard currency,,,,,,,,,,
-3,Energy,,,,,,,,,,
+1,Hard currency,,,,,,,,,,
+3,Soft currency,gold,,,,,,,,,
+66,Energy,,,,,,,,,,
 1036,Thread,obj_d2_nitki,,,,,,,,,1
 1042,Pills,obj_d3_apkolesa,,,,,,,,,
 1045,Camera,obj_d3_lfoto,,,,,,,,,1
@@ -12,7 +12,7 @@ ID,NAME,ASSET,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOL
 1058,Fruits,obj_d4_basket_fruits,,,,,,,,,1
 1059,Wire,obj_d4_mic_wire,,,,,,,,,1
 1060,Blanket,obj_d4_blanket,,,,,,,,,1
-1061,Medicine fragment,obj_d4_tube_apkolesa,,,,,,,,item,1
+1061,Medicine fragment,obj_d3_apkolesa,,,,,,,,,1
 1062,Lavender,obj_d4_lavander,,,,,,,,,1
 1063,Cloth,obj_d4_cloth,,,,,,,,,1
 1064,Spoon,obj_d4_cutlery_spoon,,,,,,,,,1
@@ -44,7 +44,7 @@ ID,NAME,ASSET,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOL
 1091,Saute pan,obj_d5_posuda_soteynik,,,,,,,,,1
 1092,Cardboard,obj_d5_cardboard,,,,,,,,,1
 1093,Soup kit,obj_d5_soup_nabor,,,,,,,,,1
-1094,Spices fragment,obj_d5_spices,,,,,,,,item,1
+1094,Spices fragment,obj_d5_specii_fragment,,,,,,,,,1
 1095,French bread,obj_d5_kruassan,,,,,,,,,1
 1096,Coffee from Starbucks,obj_d5_coffee_glass,,,,,,,,,1
 1097,Champagne,obj_d5_bottle_shampain,,,,,,,,,1
@@ -225,12 +225,12 @@ ID,NAME,ASSET,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOL
 10010,Onion soup recipe,obj_dish3_onion_soup,,,,,,,,recipe,
 10011,Snails recipe,obj_dish3_snail,,,,,,,,recipe,
 10012,Strawberry crepe recipe,obj_dish3_crepes,,,,,,,,recipe,
-10013,Gabour recipe,,,,,,,,,recipe,
-10014,Croissant recipe,,,,,,,,,recipe,
-10015,Salad Nicose recipe,,,,,,,,,recipe,
-10016,Beef stew recipe,,,,,,,,,recipe,
-10017,Scallops recipe,,,,,,,,,recipe,
-10018,Mussels recipe,,,,,,,,,recipe,
+10013,Gabour recipe,obj_dish2-3_bean_soup_meat,,,,,,,,recipe,
+10014,Croissant recipe,obj_dish2-3_croissants,,,,,,,,recipe,
+10015,Salad Nicose recipe,obj_dish4_2_tunaSalad,,,,,,,,recipe,
+10016,Beef stew recipe,obj_dish2-3_beef_stew,,,,,,,,recipe,
+10017,Scallops recipe,obj_dish2-3_scallops,,,,,,,,recipe,
+10018,Mussels recipe,obj_dish2-3_soup_mussels,,,,,,,,recipe,
 10019,Chapter 7_1 recipe,,,,,,,,,recipe,
 10020,Chapter 7_2 recipe,,,,,,,,,recipe,
 10021,Chapter 7_3 recipe,,,,,,,,,recipe,
