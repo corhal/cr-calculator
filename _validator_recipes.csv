@@ -20,48 +20,66 @@ RECIPE_ID,NAME,LEVEL,GOLD_REWARD,UPGRADE_FRAGMENTS,UPGRADE_GOLD
 7,Chili,1,200,5,300
 7,Chili,2,300,20,500
 7,Chili,3,400,50,1000
-8,Graten,1,150,1,100
-8,Graten,2,300,10,400
-8,Graten,3,450,50,1000
+8,Truffles pasta,1,150,1,100
+8,Truffles pasta,2,300,10,400
+8,Truffles pasta,3,450,50,1000
 9,Lamb leg,1,150,1,100
 9,Lamb leg,2,300,10,400
 9,Lamb leg,3,450,50,1000
-10,Truffles pasta,1,150,1,100
-10,Truffles pasta,2,300,10,400
-10,Truffles pasta,3,450,50,1000
-11,Strawberry crepe,1,200,5,300
-11,Strawberry crepe,2,300,20,500
-11,Strawberry crepe,3,400,50,1000
-12,Onion soup,1,200,5,300
-12,Onion soup,2,300,20,500
-12,Onion soup,3,400,50,1000
-13,Snails,1,200,5,300
-13,Snails,2,300,20,500
-13,Snails,3,400,50,1000
-14,Chapter 7_1,1,200,5,300
-14,Chapter 7_1,2,300,20,500
-14,Chapter 7_1,3,400,50,1000
-15,Chapter 7_2,1,200,5,300
-15,Chapter 7_2,2,300,20,500
-15,Chapter 7_2,3,400,50,1000
-16,Chapter 7_3,1,200,5,300
-16,Chapter 7_3,2,300,20,500
-16,Chapter 7_3,3,400,50,1000
-17,Chapter 8_1,1,200,5,300
-17,Chapter 8_1,2,300,20,500
-17,Chapter 8_1,3,400,50,1000
-18,Chapter 8_2,1,200,5,300
-18,Chapter 8_2,2,300,20,500
-18,Chapter 8_2,3,400,50,1000
-19,Chapter 8_3,1,200,5,300
-19,Chapter 8_3,2,300,20,500
-19,Chapter 8_3,3,400,50,1000
-20,Chapter 9_1,1,200,5,300
-20,Chapter 9_1,2,300,20,500
-20,Chapter 9_1,3,400,50,1000
-21,Chapter 9_2,1,200,5,300
-21,Chapter 9_2,2,300,20,500
-21,Chapter 9_2,3,400,50,1000
-22,Chapter 9_3,1,200,5,300
-22,Chapter 9_3,2,300,20,500
-22,Chapter 9_3,3,400,50,1000
+10,Graten,1,150,1,100
+10,Graten,2,300,10,400
+10,Graten,3,450,50,1000
+11,Onion soup,1,200,5,300
+11,Onion soup,2,300,20,500
+11,Onion soup,3,400,50,1000
+12,Snails,1,200,5,300
+12,Snails,2,300,20,500
+12,Snails,3,400,50,1000
+13,Strawberry crepe,1,200,5,300
+13,Strawberry crepe,2,300,20,500
+13,Strawberry crepe,3,400,50,1000
+14,Gabour,1,200,5,300
+14,Gabour,2,300,20,500
+14,Gabour,3,400,50,1000
+15,Croissant,1,200,5,300
+15,Croissant,2,300,20,500
+15,Croissant,3,400,50,1000
+16,Salad Nicose,1,200,5,300
+16,Salad Nicose,2,300,20,500
+16,Salad Nicose,3,400,50,1000
+17,Beef stew,1,200,5,300
+17,Beef stew,2,300,20,500
+17,Beef stew,3,400,50,1000
+18,Scallops,1,200,5,300
+18,Scallops,2,300,20,500
+18,Scallops,3,400,50,1000
+19,Mussels,1,200,5,300
+19,Mussels,2,300,20,500
+19,Mussels,3,400,50,1000
+20,Chapter 7_1,1,200,5,300
+20,Chapter 7_1,2,300,20,500
+20,Chapter 7_1,3,400,50,1000
+21,Chapter 7_2,1,200,5,300
+21,Chapter 7_2,2,300,20,500
+21,Chapter 7_2,3,400,50,1000
+22,Chapter 7_3,1,200,5,300
+22,Chapter 7_3,2,300,20,500
+22,Chapter 7_3,3,400,50,1000
+23,Chapter 8_1,1,200,5,300
+23,Chapter 8_1,2,300,20,500
+23,Chapter 8_1,3,400,50,1000
+24,Chapter 8_2,1,200,5,300
+24,Chapter 8_2,2,300,20,500
+24,Chapter 8_2,3,400,50,1000
+25,Chapter 8_3,1,200,5,300
+25,Chapter 8_3,2,300,20,500
+25,Chapter 8_3,3,400,50,1000
+26,Chapter 9_1,1,200,5,300
+26,Chapter 9_1,2,300,20,500
+26,Chapter 9_1,3,400,50,1000
+27,Chapter 9_2,1,200,5,300
+27,Chapter 9_2,2,300,20,500
+27,Chapter 9_2,3,400,50,1000
+28,Chapter 9_3,1,200,5,300
+28,Chapter 9_3,2,300,20,500
+28,Chapter 9_3,3,400,50,1000

@@ -36,9 +36,40 @@ def export_items():
                              'config': config,
                              '_comment': comment})
 
-def export_missions():
+def export_regions():
     quests = load_quests(load_items())
-    missions = load_missions(load_items(), load_recipes(load_items()), quests)
+    missions = load_missions(load_items(), load_recipes(load_items()))
+    regions = load_regions(missions, quests)
+    with open('_export_regions.csv', 'wt', encoding="utf8", newline='') as csvfile:
+        fieldnames = ['id', 'chapter', 'cost', 'unlockRequirements', 'missionId']
+        writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
+
+        writer.writeheader()
+        for region in regions:
+            ident = region.ident
+            chapter = region.chapter
+            cost = ""
+            quest_id = ''
+            if len(region.requirement.quests) > 0:
+                quest_id = region.requirement.quests[0].ident
+
+            if quest_id == '':
+                unlockRequirements = ''
+            else:
+                unlockRequirements = '{"quest": [{"id": ' + quest_id + ', "status": 3}]}'
+
+            try:
+                missionId = region.mission.ident
+            except:
+                missionId = 0
+            writer.writerow({'id': ident,
+                             'chapter': chapter,
+                             'cost': cost,
+                             'unlockRequirements': unlockRequirements,
+                             'missionId': missionId})
+
+def export_missions():
+    missions = load_missions(load_items(), load_recipes(load_items()))
     with open('_export_missions.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'chapterId', 'main', 'requirements', 'recipes', 'garbage',
                       'fixedReward', 'lifeBonus', 'possibleReward',
@@ -51,8 +82,8 @@ def export_missions():
             chapterId = mission.chapter
             main = ''
             requirements = ''
-            if len(mission.requirement.quests) > 0:
-                requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
+            #if len(mission.requirement.quests) > 0:
+                #requirements = '{"region": [{"id": ' + str(mission.ident) + ', "status": 1}]}'
 
             recipes = '['
             count = 0
@@ -91,23 +122,6 @@ def export_missions():
                              'cost': cost,
                              'config': config,
                              '_comment': comment})
-
-        with open('_export_regions.csv', 'wt', encoding="utf8", newline='') as csvfile:
-            fieldnames = ['id', 'chapter', 'cost', 'missionId']
-            writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
-
-            writer.writeheader()
-            for mission in missions:
-                ident = mission.ident
-                chapter = mission.chapter
-                cost = ''
-                #if mission.keys_cost != 0:
-                    #cost = '{"item": [{"id": 4, "amount": ' + str(mission.keys_cost) + '}]}'
-                missionId = mission.ident
-                writer.writerow({'id': ident,
-                                 'chapter': chapter,
-                                 'cost': cost,
-                                 'missionId': missionId})
 
 def export_quests():
     quests = load_quests(load_items())
@@ -154,10 +168,6 @@ def export_quests():
                 if q_reward.gold_reward != 0:
                     reward += ', '
                 reward += '"refillable": [{"id": 1, "amount": ' + str(q_reward.energy_reward) + '}]'
-            if q_reward.keys != 0:
-                if q_reward.gold_reward != 0 or q_reward.energy_reward != 0:
-                    reward += ', '
-                reward += '"item": [{"id": 4, "amount": ' + str(q_reward.keys) + '}]'
             reward += '}'
 
             comment = quest.name
@@ -341,6 +351,7 @@ def export_data():
     export_items()
     export_quests()
     export_missions()
+    export_regions()
     export_translation(last_id)
 
 export_data()
