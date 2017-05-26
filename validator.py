@@ -4,7 +4,7 @@ import copy
 import traceback
 import sys
 
-def play(plays_count, max_chapter):
+def play(plays_count, start_chapter, max_chapter):
 
     mission_results = {} # chapter_index: [missions, missions]
     day_results = {} # chapter_index: [day, day]
@@ -16,6 +16,8 @@ def play(plays_count, max_chapter):
         sorted_keys = sorted(game.chapters.keys())
         player = load_player(game.chapters[sorted_keys[0]].recipes, game.items)
         for chapter_index in sorted(game.chapters.keys()):
+            if chapter_index < start_chapter:
+                continue
             if chapter_index == max_chapter + 1:
                 break
             chapter_results = player.play_chapter(chapter_index)
@@ -42,8 +44,9 @@ while True:
         if choice == "n":
             break
         plays_count = int(input("How many times? "))
+        start_chapter = int(input("From which chapter? "))
         max_chapter = int(input("Till what chapter? "))
-        play(plays_count, max_chapter)
+        play(plays_count, start_chapter, max_chapter)
     except Exception:
         s = traceback.format_exc()
         serr = "there were errors:\n%s\n" % (s)
