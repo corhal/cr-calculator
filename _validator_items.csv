@@ -512,7 +512,7 @@ ID,NAME,ASSET,COMPONENT 1,AMOUNT 1,COMPONENT 2,AMOUNT 2,COMPONENT 3,AMOUNT 3,GOL
 361,Rum (gift),,Rum,1,Water glass,5,Poster paper,1,0,,
 362,Concealed earphone,,Small speaker,1,Microantenna,1,Swiss knife,1,0,,
 363,Speaker,,Small speaker,10,Can,1,Glue,1,0,,
-364,Range mic,,Lavalier microphone,1,Can,2,Microantenna,1,0,,
+364,Range mic,,Lavalier microphone,1,Can,2,,,0,,
 365,Bug finder (part),,Aluminum pipe,1,Can,2,Tablet,1,0,,
 366,Bug finder,,Bug finder (part),1,Concealed earphone,1,Range mic,1,0,,
 367,Server,,Microcomputer,5,Plug,1,,,0,,
