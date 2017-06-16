@@ -194,11 +194,13 @@ def find_quest(quest_name, quests):
         if quest_name == quest.name:
             return quest
 
-def export_translation(last_id):
+def export_translation(last_id, start_chapter, end_chapter):
     items = load_items()
     missions = load_missions(items, load_recipes(items))
+    missions = [mission for mission in missions if ((int(mission.chapter) >= start_chapter) and (int(mission.chapter) <= end_chapter))]
     regions = load_regions(missions)
     quests = load_quests(items, regions)
+    quests = [quest for quest in quests if ((int(quest.chapter) >= start_chapter) and (int(quest.chapter) <= end_chapter))]
 
     name_col = 0
     order_col = 0
@@ -226,7 +228,10 @@ def export_translation(last_id):
             if row[name_col] != "":
                 text_count = 0
                 quest = find_quest(row[name_col], quests)
-                orders[quest.name] = [0]
+                try:
+                    orders[quest.name] = [0]
+                except AttributeError:
+                    raise ValueError(row[name_col] + ' is in _validator_dialogues, but not in _validator_quests')
 
             if row[order_col] == "before":
                 order = "before"
@@ -360,11 +365,13 @@ def export_translation(last_id):
 
 def export_data():
     last_id = int(input("enter current last dialogue id, pls "))
+    start_chapter = int(input("now start chapter, pls "))
+    end_chapter = int(input("now end chapter, pls "))
     export_items()
     export_quests()
     export_missions()
     export_regions()
-    export_translation(last_id)
+    export_translation(last_id, start_chapter, end_chapter)
 
 export_data()
 
