@@ -194,14 +194,13 @@ def find_quest(quest_name, quests):
         if quest_name == quest.name:
             return quest
 
-def export_translation(last_id, start_chapter, end_chapter):
+def export_translation(last_id):
     items = load_items()
     missions = load_missions(items, load_recipes(items))
-    missions = [mission for mission in missions if ((int(mission.chapter) >= start_chapter) and (int(mission.chapter) <= end_chapter))]
+    #missions = [mission for mission in missions if ((int(mission.chapter) >= start_chapter) and (int(mission.chapter) <= end_chapter))]
     regions = load_regions(missions)
     quests = load_quests(items, regions)
-    quests = [quest for quest in quests if ((int(quest.chapter) >= start_chapter) and (int(quest.chapter) <= end_chapter))]
-
+    #quests = [quest for quest in quests if ((int(quest.chapter) >= start_chapter) and (int(quest.chapter) <= end_chapter))]
     name_col = 0
     order_col = 0
     person_col = 0
@@ -365,13 +364,11 @@ def export_translation(last_id, start_chapter, end_chapter):
 
 def export_data():
     last_id = int(input("enter current last dialogue id, pls "))
-    start_chapter = int(input("now start chapter, pls "))
-    end_chapter = int(input("now end chapter, pls "))
     export_items()
     export_quests()
     export_missions()
     export_regions()
-    export_translation(last_id, start_chapter, end_chapter)
+    export_translation(last_id)
 
 export_data()
 
