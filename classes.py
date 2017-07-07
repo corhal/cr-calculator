@@ -272,7 +272,7 @@ class Player(object):
         self.missions_completed = 0
         self.chapter = None
         self.recipes = recipes
-        self.order_board = OrderBoard(self.recipes)
+        #self.order_board = OrderBoard(self.recipes)
         self.mins_per_en = mins_per_en
         self.time_between_sessions = time_between_sessions
         self.chest = chest
@@ -315,6 +315,7 @@ class Player(object):
         return True
 
     def farm_orders(self):
+        return # dirty hax
         if self.order_board.plays_today == self.order_board.max_plays_daily:
             return
         self.order_board.plays_today += 1
@@ -426,7 +427,7 @@ class Player(object):
 
     def skip_session(self):
         self.session += 1
-        self.order_board.generate_board()
+        #self.order_board.generate_board()
         self.farm_orders()
         if self.session == self.daily_sessions:
             self.skip_day()
@@ -445,8 +446,8 @@ class Player(object):
         self.day += 1
         if self.use_chest:
             self.open_chest()
-        self.order_board.generate_board()
-        self.order_board.plays_today = 0
+        #self.order_board.generate_board()
+        #self.order_board.plays_today = 0
         self.farm_orders()
 
     def receive_reward(self, reward_items):
