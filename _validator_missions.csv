@@ -9,3 +9,13 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,27,8,2,Ribbon,0.3,Iphone pin,0.3,Shovel,0.3,10,Truffles pasta,4,Mushrooms,4,Lamb leg,4,12,"[0.3, 0.6, 0.94]"
 ,28,9,2,Knitting needles,0.3,Microphone handle,0.3,Wire,0.3,10,Lamb leg,5,Sandwich,5,Salad Nicose,5,12,"[0.3, 0.6, 0.97]"
 ,29,10,2,Microphone top,0.3,Mortar,0.3,Pestle,0.3,15,Graten,5,Mushrooms,5,Lamb leg,5,12,"[0.3, 0.6, 0.97]"
+,30,1,3,Skillet,0.3,Moustache comb,0.3,Apron,0.3,5,Truffles pasta,1,,,,,4,"[0.25, 0.5, 0.75]"
+,31,2,3,Flower,0.3,Soup kit,0.3,Saute pan,0.3,5,Lamb leg,1,Gabour,1,,,10,"[0.2, 0.5, 0.8]"
+,32,3,3,Pan,0.3,Scissors,0.3,Cutting board,0.3,5,Grilled chicken,2,Truffles pasta,2,,,12,
+,33,4,3,Toque,0.3,Spice,0.3,Puff,0.3,10,Graten,2,Sandwich,2,Salad Nicose,2,10,"[0.3, 0.6, 0.9]"
+,34,5,3,Phone,0.3,Broom,0.3,Wax and brush,0.3,10,Croissant,3,Sandwich,3,Lamb leg,3,12,"[0.3, 0.6, 0.88]"
+,35,6,3,Accumulator,0.3,Bowtie,0.3,Headphones,0.3,10,Mushrooms,3,Truffles pasta,3,Gabour,3,12,"[0.3, 0.6, 0.88]"
+,36,7,3,Cardboard,0.3,Tailcoat,0.3,Golden thread,0.3,10,Burrito,4,Graten,4,Pizza,4,12,"[0.3, 0.6, 0.94]"
+,37,8,3,Pastry stand,0.3,Napkin,0.3,Champagne,0.3,10,Truffles pasta,4,Mushrooms,4,Lamb leg,4,12,"[0.3, 0.6, 0.94]"
+,38,9,3,French bread,0.3,Eiffel tower,0.3,First-aid kit,0.3,10,Lamb leg,5,Sandwich,5,Salad Nicose,5,12,"[0.3, 0.6, 0.97]"
+,39,10,3,Ice,0.3,Champagne bucket,0.3,French flag,0.3,15,Graten,5,Mushrooms,5,Lamb leg,5,12,"[0.3, 0.6, 0.97]"
