@@ -49,3 +49,13 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,67,8,6,Bowl,0.3,Wiskey,0.3,Gas burner,0.3,10,Truffles pasta,4,Mushrooms,4,Lamb leg,4,12,"[0.3, 0.6, 0.94]"
 ,68,9,6,Llama wool,0.3,Pepper spray,0.3,Ball pen,0.3,10,Lamb leg,5,Sandwich,5,Salad Nicose,5,12,"[0.3, 0.6, 0.97]"
 ,69,10,6,Dog food,0.3,Ball,0.3,Notebook,0.3,15,Graten,5,Mushrooms,5,Lamb leg,5,12,"[0.3, 0.6, 0.97]"
+,70,1,7,Industrial oil,0.3,Spatula,0.3,Nail,0.3,5,Truffles pasta,1,,,,,4,"[0.25, 0.5, 0.75]"
+,71,2,7,Plastic,0.3,Wood,0.3,Cylinder,0.3,5,Lamb leg,1,Gabour,1,,,10,"[0.2, 0.5, 0.8]"
+,72,3,7,Coloring agent,0.3,Seed,0.3,Thermometer,0.3,5,Grilled chicken,2,Truffles pasta,2,,,12,
+,73,4,7,Bell,0.3,Glass,0.3,Grindstone,0.3,10,Graten,2,Sandwich,2,Salad Nicose,2,10,"[0.3, 0.6, 0.9]"
+,74,5,7,Heating element,0.3,Timer,0.3,Diode,0.3,10,Croissant,3,Sandwich,3,Lamb leg,3,12,"[0.3, 0.6, 0.88]"
+,75,6,7,Collar,0.3,Edelweiss,0.3,Gas cylinder,0.3,10,Mushrooms,3,Truffles pasta,3,Gabour,3,12,"[0.3, 0.6, 0.88]"
+,76,7,7,Rope,0.3,Shiny fabric,0.3,Directional microphone,0.3,10,Burrito,4,Graten,4,Pizza,4,12,"[0.3, 0.6, 0.94]"
+,77,8,7,Hand plane,0.3,Honwycomb fragment,0.3,Heart mold,0.3,10,Truffles pasta,4,Mushrooms,4,Lamb leg,4,12,"[0.3, 0.6, 0.94]"
+,78,9,7,Roof tile,0.3,Jar,0.3,Metal grid,0.3,10,Lamb leg,5,Sandwich,5,Salad Nicose,5,12,"[0.3, 0.6, 0.97]"
+,79,10,7,Teapot,0.3,Mug,0.3,Parchment,0.3,15,Graten,5,Mushrooms,5,Lamb leg,5,12,"[0.3, 0.6, 0.97]"
