@@ -219,8 +219,10 @@ def export_translation(last_id):
                 name_col = row.index("QUEST")
                 order_col = row.index("ORDER")
                 person_col = row.index("PERSON")
+                p_emo_col = row.index("PERSON_EMOTION")
                 text_col = row.index("TEXT")
-                emo_col = row.index("EMOTION")
+                emo_col = row.index("PLAYER_EMOTION")
+                corr_col = row.index("CORRECTNESS")
                 resp_col = row.index("RESPONSES")
                 brief_col = row.index("SUMMARY")
                 continue
@@ -271,6 +273,7 @@ def export_translation(last_id):
                 dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
                 del(orders[quest.name][orders[quest.name].index(0)])
                 dialogues[d_id].append([])
+                dialogues[d_id].append([])
 
             if len(orders[quest.name]) > 0 and row[text_col] != "":
                 order_count = orders[quest.name][0]
@@ -294,13 +297,15 @@ def export_translation(last_id):
                 dialogues[d_id].append('left')
                 dialogues[d_id].append([])
                 dialogues[d_id].append([])
+                dialogues[d_id].append([])
 
             if row[resp_col] != "":
                 resp_count += 1
                 resp_ident = ident + '_A' + str(resp_count)
                 translations[resp_ident] = row[resp_col]
-                dialogues[d_id][-1].append(resp_ident)
-                dialogues[d_id][-2].append(row[emo_col])
+                dialogues[d_id][-1].append(row[corr_col])
+                dialogues[d_id][-2].append(resp_ident)
+                dialogues[d_id][-3].append(row[emo_col])
 
     with open('_export_translations.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['ident', 'lang', 'text',
@@ -344,11 +349,13 @@ def export_translation(last_id):
             responces = '['
             responces_ls = dialogues[d_id][6]
             emotions_ls = dialogues[d_id][5]
+            correctness_ls = dialogues[d_id][7]
+
             for i in range(len(responces_ls)):
                 emotion = ""
                 if emotions_ls[i] != "":
                     emotion = emotions[emotions_ls[i]]
-                responces += '{"text": "' + responces_ls[i] + '", "smile": "' + emotion + '"}'
+                responces += '{"text": "' + responces_ls[i] + '", "smile": "' + emotion + '", "feedback": "' + correctness_ls[i] + '"}'
                 if i != len(responces_ls) - 1:
                     responces += ', '
             responces += ']'
