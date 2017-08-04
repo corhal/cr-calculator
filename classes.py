@@ -218,38 +218,6 @@ class Recipe(object):
         self.mission = Mission(0, self.name + '_mission',
                                0, Reward({}, gold_reward=self.gold_reward), 0, {}, 10, [])
 
-class Order(object):
-    def __init__(self, recipe):
-        self.recipe = recipe
-        self.in_cooldown = False
-
-class OrderBoard(object):
-    def __init__(self, recipes, max_orders=9, max_plays_daily=3):
-        self.recipes = recipes # в теории, указывает на список рецептов игрока
-        self.max_plays_daily = max_plays_daily
-        self.plays_today = 0
-        self.max_orders = max_orders
-        self.orders = []
-
-        for i in range(self.max_orders):
-            self.orders.append(Order(random.choice(self.recipes)))
-
-    def complete_order(self, order):
-        if order.in_cooldown:
-            return
-        order.in_cooldown = True
-        return order.recipe.mission.reward
-
-    def discard_order(self, order):
-        if order.in_cooldown:
-            return
-        order.in_cooldown = True
-
-    def generate_board(self):
-        for order in self.orders:
-            order.recipe = random.choice(self.recipes)
-            order.in_cooldown = False
-
 class Requirement(object):
     def __init__(self, quests=[], quest_chains=[], regions=[], item_amounts={}):
         self.quests = quests
@@ -259,7 +227,7 @@ class Requirement(object):
 
 class Player(object):
     def __init__(self, energy_cap, daily_sessions, mins_per_en,
-                 time_between_sessions, gold, recipes, chest, use_chest):
+                 time_between_sessions, gold, recipes):
         self.inventory = {}
         self.gold_item = Game.items["Soft currency"]
         self.inventory[self.gold_item] = gold
@@ -272,11 +240,8 @@ class Player(object):
         self.missions_completed = 0
         self.chapter = None
         self.recipes = recipes
-        #self.order_board = OrderBoard(self.recipes)
         self.mins_per_en = mins_per_en
         self.time_between_sessions = time_between_sessions
-        self.chest = chest
-        self.use_chest = use_chest
 
     @property
     def gold(self):
@@ -314,24 +279,6 @@ class Player(object):
                 return False
         return True
 
-    def farm_orders(self):
-        return # dirty hax
-        if self.order_board.plays_today == self.order_board.max_plays_daily:
-            return
-        self.order_board.plays_today += 1
-        self.order_board.generate_board()
-        while True:
-            count = 0
-            for order in self.order_board.orders:
-                if order.in_cooldown or order.recipe.level == 0:
-                    count += 1
-                    continue
-                self.play_mission(order.recipe.mission)
-                order.in_cooldown = True
-                self.missions_completed -= 1 # :(
-            if count == len(self.order_board.orders):
-                 break
-
     def get_available_quests(self):
         available_quests = []
         for quest in self.chapter.quests:
@@ -346,7 +293,6 @@ class Player(object):
         self.session = 0 # ?..
         self.missions_completed = 0
         self.chapter = Game.chapters[chapter_index]
-        self.chest.update_drop_list(chapter_index)
         self.recipes.extend(self.chapter.recipes)
         return self.choose_quest()
 
@@ -427,8 +373,6 @@ class Player(object):
 
     def skip_session(self):
         self.session += 1
-        #self.order_board.generate_board()
-        self.farm_orders()
         if self.session == self.daily_sessions:
             self.skip_day()
         else:
@@ -436,19 +380,10 @@ class Player(object):
                               + (1 / self.mins_per_en) * 60
                               * self.time_between_sessions)
 
-    def open_chest(self):
-        reward = self.chest.open()
-        self.receive_reward(reward)
-
     def skip_day(self):
         self.energy = self.energy_cap
         self.session = 0
         self.day += 1
-        if self.use_chest:
-            self.open_chest()
-        #self.order_board.generate_board()
-        #self.order_board.plays_today = 0
-        self.farm_orders()
 
     def receive_reward(self, reward_items):
         if reward_items == None:
@@ -508,29 +443,6 @@ class Player(object):
         for item in self.inventory.keys():
             if self.inventory[item] > 0:
                 print(item.name + ": " + str(self.inventory[item]))
-
-class Chest(object):
-    def __init__(self, full_drop_list):
-        self.full_drop_list = full_drop_list # {Reward: (chapter, weight)}
-        self.drop_list = None # {abs_weight: Reward}
-        self.max_weight = 0
-
-    def update_drop_list(self, chapter_id):
-        self.drop_list = {}
-        total_weight = 0
-        for reward in self.full_drop_list.keys():
-            if self.full_drop_list[reward][0] <= chapter_id:
-                total_weight += self.full_drop_list[reward][1]
-                self.drop_list[total_weight] = reward
-        self.max_weight = total_weight
-
-    def open(self):
-        if self.max_weight == 0:
-            return None
-        roll_weight = random.randrange(0, self.max_weight)
-        for weight in sorted(self.drop_list.keys()):
-            if roll_weight < weight:
-                return self.drop_list[weight].give(True)
 
 class Chapter(object):
     def __init__(self, name, items, missions, quests, recipes, regions):

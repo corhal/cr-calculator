@@ -30,20 +30,6 @@ def load_items():
                                           is_fragment=row["IS FRAGMENT"])
     return all_items
 
-def load_chest(all_items):
-    full_drop_list = {} # Reward: (chapter, weight)
-    with open('_validator_chest.csv', 'rt', encoding="utf8") as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-        for row in reader:
-            reward = Reward({all_items[row["ITEM"]]: 1},
-                            item_amounts = {all_items[row["ITEM"]]: int(row["AMOUNT"])},
-                            gold_reward=int(row["GOLD_REWARD"]),
-                            energy_reward=int(row["ENERGY_REWARD"]))
-            chapter_id = int(row["CHAPTER"])
-            weight = int(row["WEIGHT"])
-            full_drop_list[reward] = (chapter_id, weight)
-    return Chest(full_drop_list)
-
 def load_missions(all_items, all_recipes):
     all_missions = []
     def find_recipe(name, recipes):
@@ -228,17 +214,13 @@ def load_player(recipes, all_items):
                 mins_per_en = int(row[1])
             if row[0] == "TIME_BETWEEN_SESSIONS":
                 time_between_sessions = int(row[1])
-            if row[0] == "USE_CHEST":
-                use_chest = bool(row[1])
 
         player = Player(energy_cap=energy_cap,
                         daily_sessions=daily_sessions,
                         mins_per_en=mins_per_en,
                         time_between_sessions=time_between_sessions,
                         gold=gold,
-                        recipes=recipes,
-                        chest=load_chest(all_items),
-                        use_chest=use_chest)
+                        recipes=recipes)
     return player
 
 def load_game():
