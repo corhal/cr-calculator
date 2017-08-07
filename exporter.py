@@ -152,12 +152,16 @@ def export_quests():
                     requirements += '"quest": [{"id": ' + str(r_quest.ident) + ', "status": 3}]'
                     if count < goal_count:
                         requirements += ', '
-            if quest.requirement != None and len(quest.requirement.regions) > 0 and quest.requirement.regions[0] != None:
-                requirements += '"region": [{"id": ' + str(quest.requirement.regions[0].ident) + ', "status": 1}]'
-            if quest.ident == '20101':
-                print(quest.requirement.missions)
+            flag = False
             if quest.requirement != None and len(quest.requirement.missions) > 0 and quest.requirement.missions[0] != None:
                 requirements += '"mission": [{"id": ' + str(quest.requirement.missions[0].ident) + ', "stars": 1}]'
+                flag = True
+
+            if quest.requirement != None and len(quest.requirement.regions) > 0 and quest.requirement.regions[0] != None:
+                if flag == True:
+                    requirements += ', '
+                requirements += '"region": [{"id": ' + str(quest.requirement.regions[0].ident) + ', "status": 1}]'
+
             requirements += '}'
 
             cost = '{'

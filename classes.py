@@ -77,6 +77,9 @@ class Quest(object):
         for region in self.requirement.regions:
             if region.locked:
                 return False
+        for mission in self.requirement.missions:
+            if mission.locked:
+                return False
         self.locked = False
         return True
 
