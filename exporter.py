@@ -225,12 +225,13 @@ def export_translation(last_id):
                 corr_col = row.index("CORRECTNESS")
                 resp_col = row.index("RESPONSES")
                 brief_col = row.index("SUMMARY")
+                debrief_col = row.index("DEBRIEFING")
                 continue
             if row[name_col] != "":
                 text_count = 0
                 quest = find_quest(row[name_col], quests)
                 try:
-                    orders[quest.name] = [0]
+                    orders[quest.name] = [0, 1]
                 except AttributeError:
                     raise ValueError(row[name_col] + ' is in _validator_dialogues, but not in _validator_quests')
 
@@ -239,7 +240,7 @@ def export_translation(last_id):
 
             if row[order_col] == "after":
                 order = "after"
-                text_count = 0
+                text_count = 1
 
             if row[person_col] != "":
                 if order == "before":
@@ -265,6 +266,10 @@ def export_translation(last_id):
                 quest = find_quest(row[name_col], quests)
                 ord_list = orders[quest.name]
 
+                # fokken debug
+                if quest.name == 'Organiser-201':
+                    print(ord_list)
+
             if 0 in orders[quest.name]:
                 d_id += 1
                 briefing = row[brief_col]
@@ -272,6 +277,16 @@ def export_translation(last_id):
                 translations[ident] = briefing
                 dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
                 del(orders[quest.name][orders[quest.name].index(0)])
+                dialogues[d_id].append([])
+                dialogues[d_id].append([])
+
+            if 1 in orders[quest.name]:
+                d_id += 1
+                debriefing = row[debrief_col]
+                ident = 'QUEST_' + str(quest.ident) + '_DIALOG_111'
+                translations[ident] = debriefing
+                dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(1), "left", []]
+                del(orders[quest.name][orders[quest.name].index(1)])
                 dialogues[d_id].append([])
                 dialogues[d_id].append([])
 
