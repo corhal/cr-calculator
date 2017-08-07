@@ -39,7 +39,7 @@ def export_items():
 def export_regions():
     missions = load_missions(load_items(), load_recipes(load_items()))
     regions = load_regions(missions)
-    quests = load_quests(load_items(), regions)
+    quests = load_quests(load_items(), regions, missions)
     with open('_export_regions.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'chapter', 'cost', 'unlockRequirements', 'missionId']
         writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
@@ -72,7 +72,7 @@ def export_missions():
     items = load_items()
     missions = load_missions(items, load_recipes(items))
     regions = load_regions(missions)
-    quests = load_quests(items, regions)
+    quests = load_quests(items, regions, missions)
     with open('_export_missions.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'chapterId', 'requirements', 'recipes', 'garbage',
                       'fixedReward', 'lifeBonus', 'possibleReward',
@@ -131,7 +131,7 @@ def export_quests():
     items = load_items()
     missions = load_missions(items, load_recipes(items))
     regions = load_regions(missions)
-    quests = load_quests(items, regions)
+    quests = load_quests(items, regions, missions)
     with open('_export_quests.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'chapterId', 'questChain',
                       'requirements', 'cost', 'reward', '_comment']
@@ -154,6 +154,10 @@ def export_quests():
                         requirements += ', '
             if quest.requirement != None and len(quest.requirement.regions) > 0 and quest.requirement.regions[0] != None:
                 requirements += '"region": [{"id": ' + str(quest.requirement.regions[0].ident) + ', "status": 1}]'
+            if quest.ident == '20101':
+                print(quest.requirement.missions)
+            if quest.requirement != None and len(quest.requirement.missions) > 0 and quest.requirement.missions[0] != None:
+                requirements += '"mission": [{"id": ' + str(quest.requirement.missions[0].ident) + ', "stars": 1}]'
             requirements += '}'
 
             cost = '{'
@@ -199,7 +203,7 @@ def export_translation(last_id):
     missions = load_missions(items, load_recipes(items))
     #missions = [mission for mission in missions if ((int(mission.chapter) >= start_chapter) and (int(mission.chapter) <= end_chapter))]
     regions = load_regions(missions)
-    quests = load_quests(items, regions)
+    quests = load_quests(items, regions, missions)
     #quests = [quest for quest in quests if ((int(quest.chapter) >= start_chapter) and (int(quest.chapter) <= end_chapter))]
     name_col = 0
     order_col = 0
@@ -265,10 +269,6 @@ def export_translation(last_id):
                 abs_count = 0
                 quest = find_quest(row[name_col], quests)
                 ord_list = orders[quest.name]
-
-                # fokken debug
-                if quest.name == 'Organiser-201':
-                    print(ord_list)
 
             if 0 in orders[quest.name]:
                 d_id += 1

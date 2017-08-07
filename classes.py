@@ -219,10 +219,11 @@ class Recipe(object):
                                0, Reward({}, gold_reward=self.gold_reward), 0, {}, 10, [])
 
 class Requirement(object):
-    def __init__(self, quests=[], quest_chains=[], regions=[], item_amounts={}):
+    def __init__(self, quests=[], quest_chains=[], regions=[], missions=[], item_amounts={}):
         self.quests = quests
         self.quest_chains = quest_chains
         self.regions = regions
+        self.missions = missions
         self.item_amounts = item_amounts
 
 class Player(object):
@@ -273,6 +274,9 @@ class Player(object):
                 return False
         for region in requirement.regions:
             if region.locked:
+                return False
+        for mission in requirement.missions:
+            if mission.locked: # фактически стоило бы проверять played, но стремно
                 return False
         for item in requirement.item_amounts.keys():
             if self.inventory.get(item, 0) < requirements.item_amounts[item]:

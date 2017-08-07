@@ -102,13 +102,18 @@ def load_regions(all_missions):
 
     return all_regions
 
-def load_quests(all_items, all_regions):
+def load_quests(all_items, all_regions, all_missions):
     all_quests = []
 
     def find_region(ident, regions):
         for region in regions:
             if int(region.ident) == int(ident):
                 return region
+
+    def find_mission(ident, missions):
+        for mission in missions:
+            if int(mission.ident) == int(ident):
+                return mission
 
     with open('_validator_quests.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -134,6 +139,12 @@ def load_quests(all_items, all_regions):
             regions = []
             if region_ident != '':
                 regions.append(find_region(region_ident, all_regions))
+
+            mission_ident = row["REQUIRED_MISSION"]
+            missions = []
+            if mission_ident != '':
+                missions.append(find_mission(mission_ident, all_missions))
+
             all_quests.append(
                 Quest(ident=row["ID"],
                       name=row["NAME"],
@@ -144,7 +155,8 @@ def load_quests(all_items, all_regions):
                                   gold_reward=int(row["GOLD_REWARD"]),
                                   energy_reward=int(row["ENERGY_REWARD"])),
                       requirement=Requirement(quests=required_quests,
-                                              regions=regions)))
+                                              regions=regions,
+                                              missions=missions)))
     for region in all_regions:
         region.reinit(all_quests)
     return all_quests
@@ -228,7 +240,7 @@ def load_game():
     recipes = load_recipes(items)
     missions = load_missions(items, recipes)
     regions = load_regions(missions)
-    quests = load_quests(items, regions)
+    quests = load_quests(items, regions, missions)
     chapters = load_chapters(items, missions, quests, recipes, regions)
     with open('_validator_player.csv', 'rt', encoding="utf8") as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
