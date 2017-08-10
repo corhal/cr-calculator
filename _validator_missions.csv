@@ -59,3 +59,13 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,77,8,7,Hand plane,0.3,Honwycomb fragment,0.3,Heart mold,0.3,10,Truffles pasta,4,Mushrooms,4,Lamb leg,4,12,"[0.3, 0.6, 0.94]"
 ,78,9,7,Roof tile,0.3,Jar,0.3,Metal grid,0.3,10,Lamb leg,5,Sandwich,5,Salad Nicose,5,12,"[0.3, 0.6, 0.97]"
 ,79,10,7,Teapot,0.3,Mug,0.3,Parchment,0.3,15,Graten,5,Mushrooms,5,Lamb leg,5,12,"[0.3, 0.6, 0.97]"
+,80,1,8,Clay,0.3,Sunglasses,0.3,Clockface,0.3,5,Truffles pasta,1,,,,,4,"[0.25, 0.5, 0.75]"
+,81,2,8,Cork wood,0.3,Polaroid,0.3,Shell,0.3,5,Lamb leg,1,Gabour,1,,,10,"[0.2, 0.5, 0.8]"
+,82,3,8,Watch battery,0.3,Plastic film,0.3,Leather,0.3,5,Grilled chicken,2,Truffles pasta,2,,,12,
+,83,4,8,Ladle,0.3,Work gloves,0.3,Polaroid cassette,0.3,10,Graten,2,Sandwich,2,Salad Nicose,2,10,"[0.3, 0.6, 0.9]"
+,84,5,8,Bucket,0.3,Flask,0.3,Secateurs,0.3,10,Croissant,3,Sandwich,3,Lamb leg,3,12,"[0.3, 0.6, 0.88]"
+,85,6,8,Sprayer,0.3,Fan blade,0.3,Spoke,0.3,10,Mushrooms,3,Truffles pasta,3,Gabour,3,12,"[0.3, 0.6, 0.88]"
+,86,7,8,Resin,0.3,Wrench,0.3,Sunscreen,0.3,10,Burrito,4,Graten,4,Pizza,4,12,"[0.3, 0.6, 0.94]"
+,87,8,8,Hose,0.3,Round thermometer,0.3,Barrel,0.3,10,Truffles pasta,4,Mushrooms,4,Lamb leg,4,12,"[0.3, 0.6, 0.94]"
+,88,9,8,Rivet fragment,0.3,Trowel,0.3,String,0.3,10,Lamb leg,5,Sandwich,5,Salad Nicose,5,12,"[0.3, 0.6, 0.97]"
+,89,10,8,Hook,0.3,Cable tie,0.3,Photopaper,0.3,15,Graten,5,Mushrooms,5,Lamb leg,5,12,"[0.3, 0.6, 0.97]"
