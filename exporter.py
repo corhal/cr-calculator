@@ -333,12 +333,15 @@ def export_translation(last_id):
 
         writer.writeheader()
 
-        keys = sorted(translations.keys())
+        keys = sorted(translations.keys())       
 
         for ident in keys:
+            text = translations[ident]
+            text = text.replace('{', '<font color="ffffff" oline="2" olcolor="92633a">')
+            text = text.replace('}', '</font>')
             writer.writerow({'ident': ident,
                              'lang': 'ru',
-                             'text': translations[ident],
+                             'text': text,
                              'lastUpdateDate': '2017-02-07 12:04:05',
                              'description': ''})
 

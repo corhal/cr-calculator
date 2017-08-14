@@ -314,6 +314,7 @@ class Player(object):
                     if count == len(self.chapter.quests):
                         return (self.missions_completed, self.day)
             available_quests = self.get_available_quests()
+            print(available_quests[0].name)
             if len(available_quests) > 0:
                 quest = random.choice(available_quests)
                 self.play_quest(quest)
