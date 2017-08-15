@@ -1,4 +1,4 @@
-﻿HEADER,QUEST,ORDER,PERSON,PERSON_EMOTION,TEXT,RESPONSES,,PLAYER_EMOTION,CORRECTNESS,items,,,,TEXT SZE,,SUMMARY,DEBRIEFING
+HEADER,QUEST,ORDER,PERSON,PERSON_EMOTION,TEXT,RESPONSES,,PLAYER_EMOTION,CORRECTNESS,items,,,,TEXT SZE,,SUMMARY,DEBRIEFING
 ,Mother-101,before,mother,smiling,"Доброе утро, *имя*. С самого утра {трудишься} как пчелка, да? Чем {сегодня} занимаешься?",Я завела блог,,:D,like,garden gnome,,,,88,13,С гномами все будет смотреться иначе,Какие чудесные гномы!
 ,,,,,,Ничего особенного,,:(,,,,,,0,17,,
 ,,,mother,happy,Отлично. А я планирую заняться {оформлением двора}.,Отличная идея,,:D,like,,,:),,51,13,,
