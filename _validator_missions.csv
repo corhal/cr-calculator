@@ -24,3 +24,13 @@ HEADER,ID,NAME,CHAPTER,ITEM 1,CHANCE 1,ITEM 2,CHANCE 2,ITEM 3,CHANCE 3,GOLD_REWA
 ,37,8,3,Pastry stand,0.3,Napkin,0.3,Champagne,0.3,15,Beef stew,9,Mussels,9,Onion soup,9,12,"[0.3, 0.6, 0.94] "
 ,38,9,3,French bread,0.3,Eiffel tower,0.3,First-aid kit,0.3,15,Snails,10,Strawberry crepe,10,Graten,10,12,"[0.3, 0.6, 0.97] "
 ,39,10,3,Ice,0.3,Champagne bucket,0.3,French flag,0.3,20,Mussels,10,Gabour,10,Mushrooms,10,12,"[0.3, 0.6, 0.97]"
+,40,1,4,Tank top,0.3,Lemon,0.3,Dinner,0.3,10,Pizza,2,Snails,3,Onion soup,4,12,
+,41,2,4,Fast-food,0.3,Book,0.3,Paper knife,0.3,10,Sandwich,2,Ribs,3,Snails,4,12,
+,42,3,4,Jeans,0.3,Bottle,0.3,Plush,0.3,10,Strawberry crepe,3,Mushrooms,4,Graten,5,12,
+,43,4,4,Pen,0.3,Paint,0.3,Filling,0.3,15,Onion soup,3,Strawberry crepe,4,Lamb leg,5,12,
+,44,5,4,Paper,0.3,White wine,0.3,Pattern,0.3,15,Snails,4,Onion soup,5,Strawberry crepe,5,12,
+,45,6,4,Watch,0.3,Folder,0.3,Lamp,0.3,15,Truffles pasta,4,Snails,5,Onion soup,5,12,
+,46,7,4,Lipstick,0.3,Candles,0.3,Glasses,0.3,15,Mushrooms,5,Grilled chicken,5,Snails,5,12,
+,47,8,4,Ring,0.3,Vase,0.3,Magazine,0.3,15,Grilled chicken,3,Sandwich,4,Mushrooms,5,12,
+,48,9,4,Perfume,0.3,Mascara,0.3,Chocolate,0.3,15,Burrito,3,Pizza,4,Ribs,5,12,
+,49,10,4,Recorder,0.3,Statuette,0.3,Mask,0.3,20,Mushrooms,3,Grilled chicken,4,Sandwich,5,12,
