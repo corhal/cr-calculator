@@ -233,7 +233,9 @@ def export_translation(last_id):
                 corr_col = row.index("CORRECTNESS")
                 resp_col = row.index("RESPONSES")
                 brief_col = row.index("SUMMARY")
+                sum_person_col = row.index("SUMMARY_PERSON")
                 debrief_col = row.index("DEBRIEFING")
+                debrief_person_col = row.index("DEBRIEFING_PERSON")
                 continue
             if row[name_col] != "":
                 text_count = 0
@@ -279,7 +281,10 @@ def export_translation(last_id):
                 briefing = row[brief_col]
                 ident = 'QUEST_' + str(quest.ident) + '_DIALOG_000'
                 translations[ident] = briefing
-                dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
+                if row[sum_person_col] != None and row[sum_person_col] != '':
+                    dialogues[d_id] = [str(quest.ident), row[sum_person_col], ident, str(0), "left", []]
+                else:
+                    dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
                 del(orders[quest.name][orders[quest.name].index(0)])
                 dialogues[d_id].append([])
                 dialogues[d_id].append([])
@@ -289,7 +294,10 @@ def export_translation(last_id):
                 debriefing = row[debrief_col]
                 ident = 'QUEST_' + str(quest.ident) + '_DIALOG_111'
                 translations[ident] = debriefing
-                dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(1), "left", []]
+                if row[sum_person_col] != None and row[sum_person_col] != '':
+                    dialogues[d_id] = [str(quest.ident), row[debrief_person_col], ident, str(1), "left", []]
+                else:
+                    dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(1), "left", []]                
                 del(orders[quest.name][orders[quest.name].index(1)])
                 dialogues[d_id].append([])
                 dialogues[d_id].append([])
@@ -333,7 +341,7 @@ def export_translation(last_id):
 
         writer.writeheader()
 
-        keys = sorted(translations.keys())       
+        keys = sorted(translations.keys())
 
         for ident in keys:
             text = translations[ident]

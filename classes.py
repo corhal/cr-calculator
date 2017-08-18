@@ -88,6 +88,8 @@ class Quest(object):
             return False
         full_conditions = self.full_conditions
         for item in full_conditions.keys():
+            if self.name == 'Leader-902':
+                print(item.name)
             for mission in chapter.missions:
                 if item in mission.reward.item_chances.keys() and mission.locked:
                     return False
@@ -289,9 +291,11 @@ class Player(object):
     def get_available_quests(self):
         available_quests = []
         for quest in self.chapter.quests:
+            #print(quest.name)
             if quest.completed:
                 continue
             if quest.is_farmable(self.chapter):
+                #print(quest.name)
                 available_quests.append(quest)
         return available_quests
 
@@ -314,7 +318,8 @@ class Player(object):
                     if count == len(self.chapter.quests):
                         return (self.missions_completed, self.day)
             available_quests = self.get_available_quests()
-            print(available_quests[0].name)
+            #print(available_quests)
+            #print(available_quests[0].name)
             if len(available_quests) > 0:
                 quest = random.choice(available_quests)
                 self.play_quest(quest)
