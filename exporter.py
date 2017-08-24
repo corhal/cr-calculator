@@ -297,7 +297,7 @@ def export_translation(last_id):
                 if row[sum_person_col] != None and row[sum_person_col] != '':
                     dialogues[d_id] = [str(quest.ident), row[debrief_person_col], ident, str(1), "left", []]
                 else:
-                    dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(1), "left", []]                
+                    dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(1), "left", []]
                 del(orders[quest.name][orders[quest.name].index(1)])
                 dialogues[d_id].append([])
                 dialogues[d_id].append([])
@@ -343,11 +343,15 @@ def export_translation(last_id):
 
         keys = sorted(translations.keys())
 
+        temp_emotions_list = ['', '_HAPPY_1', '_HAPPY_2', '_ANGRY_1', '_ANGRY_2', '_SAD_1', '_SAD_2']
+
         for ident in keys:
-            text = translations[ident]
-            text = text.replace('{', '<font color="ffffff" oline="2" olcolor="92633a">')
-            text = text.replace('}', '</font>')
-            writer.writerow({'ident': ident,
+            for emotion in temp_emotions_list:
+                new_ident = ident + emotion
+                text = translations[ident]
+                text = text.replace('{', '<font color="ffffff" oline="2" olcolor="92633a">')
+                text = text.replace('}', '</font>')
+                writer.writerow({'ident': new_ident,
                              'lang': 'ru',
                              'text': text,
                              'lastUpdateDate': '2017-02-07 12:04:05',
