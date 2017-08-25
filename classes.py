@@ -27,7 +27,7 @@ class Item(object):
 
 class Quest(object):
     def __init__(self, ident, name, chapter, quest_chain,
-                 item_conditions, reward, requirement):
+                 item_conditions, reward, requirement, temp_reward):
         self.ident = ident
         self.name = name
         self.chapter = chapter
@@ -37,6 +37,7 @@ class Quest(object):
         self.reward = reward
         self.requirement = requirement # list
         self.locked = True
+        self.temp_reward = temp_reward
 
     def __str__(self):
         tostring = self.name + " ["

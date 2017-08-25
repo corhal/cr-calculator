@@ -177,15 +177,16 @@ def export_quests():
                 cost += ']'
             cost += '}'
 
-            reward = '{'
-            q_reward = quest.reward
-            if q_reward.gold_reward != 0:
-                reward += '"gold": ' + str(q_reward.gold_reward)
-            if q_reward.energy_reward != 0:
-                if q_reward.gold_reward != 0:
-                    reward += ', '
-                reward += '"refillable": [{"id": 1, "amount": ' + str(q_reward.energy_reward) + '}]'
-            reward += '}'
+            reward = quest.temp_reward
+            # reward = '{'
+            # q_reward = quest.reward
+            # if q_reward.gold_reward != 0:
+                # reward += '"gold": ' + str(q_reward.gold_reward)
+            # if q_reward.energy_reward != 0:
+                # if q_reward.gold_reward != 0:
+                    # reward += ', '
+                # reward += '"refillable": [{"id": 1, "amount": ' + str(q_reward.energy_reward) + '}]'
+            # reward += '}'
 
             comment = quest.name
 

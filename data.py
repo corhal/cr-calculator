@@ -156,7 +156,8 @@ def load_quests(all_items, all_regions, all_missions):
                                   energy_reward=int(row["ENERGY_REWARD"])),
                       requirement=Requirement(quests=required_quests,
                                               regions=regions,
-                                              missions=missions)))
+                                              missions=missions),
+                      temp_reward=row['TEMP_REWARD']))
     for region in all_regions:
         region.reinit(all_quests)
     return all_quests
