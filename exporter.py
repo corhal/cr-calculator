@@ -134,7 +134,7 @@ def export_quests():
     regions = load_regions(missions)
     quests = load_quests(items, regions, missions)
     with open('_export_quests.csv', 'wt', encoding="utf8", newline='') as csvfile:
-        fieldnames = ['id', 'chapterId', 'questChain',
+        fieldnames = ['id', 'chapterId', 'questChain', 'questEmotion',
                       'requirements', 'cost', 'reward', '_comment']
         writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
 
@@ -190,10 +190,15 @@ def export_quests():
             # reward += '}'
 
             comment = quest.name
-
+            try:
+                emotion = quest_emotions[quest.name]
+            except KeyError:
+                emotion = 'sad'
+            
             writer.writerow({'id': ident,
                              'chapterId': chapterId,
                              'questChain': questChain,
+                             'questEmotion': emotion,
                              'requirements': requirements,
                              'cost': cost,
                              'reward': reward,
@@ -204,7 +209,9 @@ def find_quest(quest_name, quests):
         if quest_name == quest.name:
             return quest
 
+quest_emotions = {}
 def export_dialogues_from_json(last_id):
+    global quest_emotions
     items = load_items()
     missions = load_missions(items, load_recipes(items))
     regions = load_regions(missions)
@@ -218,7 +225,7 @@ def export_dialogues_from_json(last_id):
     dialogues_by_ident = {}
     translations = []
     dialogue_ident = 1
-    with open('CR.json', 'rt', encoding="utf8") as data_file:
+    with open('_validator_dialogues.json', 'rt', encoding="utf8") as data_file:
         data = json.load(data_file)
         speakers = {} # ident: string
         chapter_ids = []
@@ -283,6 +290,9 @@ def export_dialogues_from_json(last_id):
                                 unique = False
                         if emotion in npc_emo_dict:
                             postfix = npc_emo_dict[emotion]
+                            if quest.name not in quest_emotions.keys() and 'angry' in emotion or 'sad' in emotion:
+                                quest_emotions[quest.name] = emotion.split('-')[0]
+                                #print(emotion.strip('-'))
                         if (prefix + str(depth).zfill(2)) not in dialogues_by_ident:
                             dialogue_ident += 1
                             # [КОСТЫЛЬ!!!!!111!!1!адин]
@@ -291,7 +301,7 @@ def export_dialogues_from_json(last_id):
                                 order = 1
                             elif order > 0:
                                 order += 1                            
-                            # [/КОСТЫЛЬ!!!!!111!!1!адин]
+                            # [/КОСТЫЛЬ!!!!!111!!1!адин]                            
                             dialogues_by_ident[(prefix + str(depth).zfill(2))] = {                            
                                 'id': dialogue_ident,
                                 'quest_ident': quest.ident,
@@ -311,6 +321,8 @@ def export_dialogues_from_json(last_id):
                                     'smile': player_emo_dict[emotion],
                                     'feedback': feedback
                                 })
+                            elif dialogues_by_ident[(prefix + str(depth).zfill(2))]['character'] == 'player':
+                                dialogues_by_ident[(prefix + str(depth).zfill(2))]['character'] = speakers[dialogue_fragments[s_key]['Properties']['Speaker']]
                             translations.append({      
                                 'ident': prefix + str(depth).zfill(2) + postfix,
                                 'text': dialogue_fragments[s_key]['Properties']['Text'],
@@ -607,10 +619,10 @@ def recursive(fragmentsByIds, ident, end_target, speakers):
 def export_data():
     last_id = int(input("enter current last dialogue id, pls "))
     export_items()
+    export_dialogues_from_json(last_id)
     export_quests()
     export_missions()
-    export_regions()
-    export_dialogues_from_json(last_id)
+    export_regions()    
     #export_translation(last_id)
 
 export_data()
