@@ -1,5 +1,6 @@
 from data import *
 import csv
+import json
 
 def export_items():
     items = load_items()
@@ -203,160 +204,140 @@ def find_quest(quest_name, quests):
         if quest_name == quest.name:
             return quest
 
-def export_translation(last_id):
+def export_dialogues_from_json(last_id):
     items = load_items()
     missions = load_missions(items, load_recipes(items))
-    #missions = [mission for mission in missions if ((int(mission.chapter) >= start_chapter) and (int(mission.chapter) <= end_chapter))]
     regions = load_regions(missions)
     quests = load_quests(items, regions, missions)
-    #quests = [quest for quest in quests if ((int(quest.chapter) >= start_chapter) and (int(quest.chapter) <= end_chapter))]
     name_col = 0
     order_col = 0
     person_col = 0
     text_col = 0
     resp_col = 0
 
-    translations = {} # ident : text
-    orders = {} # name : [ord, ord, ord]
-    dialogues = {} # ident: [q_id, char, message, order, orientation, responces]
+    dialogues_by_ident = {}
+    translations = []
+    dialogue_ident = 1
+    with open('CR.json', 'rt', encoding="utf8") as data_file:
+        data = json.load(data_file)
+        speakers = {} # ident: string
+        chapter_ids = []
+        chapters = {}
+        for smth in data['Packages'][0]['Models']:
+            if smth['Type'] == 'FlowFragment':
+                chapters[smth['Properties']['Id']] = smth
+        
+        for chapter_id in chapters.keys():
+            chapter_strings = chapters[chapter_id]['Properties']['DisplayName'].split()
+            lang = chapter_strings[-1].strip(')(').lower()
+            chapter_number = int(chapter_strings[-2])
+            quest_ids = []
 
-    with open('_validator_dialogues.csv', 'rt', encoding="utf8") as csvfile:
-        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+            dialogue_nodes = {}
 
-        for row in reader:
-            if row[0] == "HEADER":
-                name_col = row.index("QUEST")
-                order_col = row.index("ORDER")
-                person_col = row.index("PERSON")
-                p_emo_col = row.index("PERSON_EMOTION")
-                text_col = row.index("TEXT")
-                emo_col = row.index("PLAYER_EMOTION")
-                corr_col = row.index("CORRECTNESS")
-                resp_col = row.index("RESPONSES")
-                brief_col = row.index("SUMMARY")
-                sum_person_col = row.index("SUMMARY_PERSON")
-                debrief_col = row.index("DEBRIEFING")
-                debrief_person_col = row.index("DEBRIEFING_PERSON")
-                continue
-            if row[name_col] != "":
-                text_count = 0
-                quest = find_quest(row[name_col], quests)
-                try:
-                    orders[quest.name] = [0, 1]
-                except AttributeError:
-                    raise ValueError(row[name_col] + ' is in _validator_dialogues, but not in _validator_quests')
-
-            if row[order_col] == "before":
-                order = "before"
-
-            if row[order_col] == "after":
-                order = "after"
-                text_count = 1
-
-            if row[person_col] != "":
-                if order == "before":
-                    text_count -= 1
-                if order == "after":
-                    text_count += 1
-                orders[quest.name].append(text_count)
-
-        csvfile.seek(0)
-        for key in orders.keys():
-            orders[key].sort()
-
-        for row in reader:
-            if row[0] == "HEADER":
-                d_id = last_id
-                continue
-
-            if row[resp_col] == "":
-                continue
-
-            if row[name_col] != "":
-                abs_count = 0
-                quest = find_quest(row[name_col], quests)
-                ord_list = orders[quest.name]
-
-            if 0 in orders[quest.name]:
-                d_id += 1
-                briefing = row[brief_col]
-                ident = 'QUEST_' + str(quest.ident) + '_DIALOG_000'
-                translations[ident] = briefing
-                if row[sum_person_col] != None and row[sum_person_col] != '':
-                    dialogues[d_id] = [str(quest.ident), row[sum_person_col], ident, str(0), "left", []]
-                else:
-                    dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
-                del(orders[quest.name][orders[quest.name].index(0)])
-                dialogues[d_id].append([])
-                dialogues[d_id].append([])
-
-            if 1 in orders[quest.name]:
-                d_id += 1
-                debriefing = row[debrief_col]
-                ident = 'QUEST_' + str(quest.ident) + '_DIALOG_111'
-                translations[ident] = debriefing
-                if row[sum_person_col] != None and row[sum_person_col] != '':
-                    dialogues[d_id] = [str(quest.ident), row[debrief_person_col], ident, str(1), "left", []]
-                else:
-                    dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(1), "left", []]
-                del(orders[quest.name][orders[quest.name].index(1)])
-                dialogues[d_id].append([])
-                dialogues[d_id].append([])
-
-            if len(orders[quest.name]) > 0 and row[text_col] != "":
-                order_count = orders[quest.name][0]
-                del(orders[quest.name][0])
-
-            if row[person_col] != "": # ident: [q_id, char, message, order, orientation, responces]
-                d_id += 1
-                pers = row[person_col]
-                dialogues[d_id] = [str(quest.ident), row[person_col]]
-
-            if row[text_col] != "":
-                resp_count = 0
-                abs_count += 1
-                str_count = str(abs_count)
-                if abs_count < 10:
-                    str_count = '0' + str(abs_count)
-                ident = 'QUEST_' + str(quest.ident) + '_DIALOG_' + str_count
-                translations[ident] = row[text_col]
-                dialogues[d_id].append(ident)
-                dialogues[d_id].append(str(order_count))
-                dialogues[d_id].append('left')
-                dialogues[d_id].append([])
-                dialogues[d_id].append([])
-                dialogues[d_id].append([])
-
-            if row[resp_col] != "":
-                resp_count += 1
-                resp_ident = ident + '_A' + str(resp_count)
-                translations[resp_ident] = row[resp_col]
-                dialogues[d_id][-1].append(row[corr_col])
-                dialogues[d_id][-2].append(resp_ident)
-                dialogues[d_id][-3].append(row[emo_col])
-
+            for smth in data['Packages'][0]['Models']:
+                if smth['Properties']['Parent'] == chapter_id and smth['Type'] == 'Dialogue':
+                    dialogue_nodes[smth['Properties']['Id']] = smth
+                if smth['Type'] == 'Entity' or smth['Type'] == 'DefaultSupportingCharacterTemplate':
+                    speakers[smth['Properties']['Id']] = smth['Properties']['ExternalId'].lower()
+                
+            dialogue_fragments = {}
+            
+            for smth in data['Packages'][0]['Models']:
+                if smth['Properties']['Parent'] in dialogue_nodes.keys():
+                    dialogue_fragments[smth['Properties']['Id']] = smth
+                
+            for key in sorted(dialogue_nodes.keys()):
+                for s_key in sorted(dialogue_fragments.keys()):
+                    if dialogue_fragments[s_key]['Type'] =='Hub' and dialogue_fragments[s_key]['Properties']['DisplayName'].lower() == 'quest start' and dialogue_fragments[s_key]['Properties']['Parent'] == key:
+                        briefing_depth = recursive(dialogue_fragments, s_key, key, speakers)
+                        dialogue_nodes[key]['Properties']['BriefingDepth'] = briefing_depth
+            npc_emo_dict = {'neutral': '', 'happy-1': '_HAPPY_1', 'happy-2': '_HAPPY_2',
+                            'sad-1': '_SAD_1', 'sad-2': '_SAD_2',
+                            'angry-1': '_ANGRY_1', 'angry-2': '_ANGRY_2'}
+            player_emo_dict = {':)' : 'good_ImReady', '^^': 'good_willGood', ':D': 'good_wow', '*_*': 'good_wow',
+                               ':(': 'bad_hmm', ':/': 'bad_hmm', ":'(": 'bad_cry', '><': 'bad_damn',
+                               'O_O': 'bad_ohNo', '@_@': 'bad_cry'}
+            
+            for key in sorted(dialogue_nodes.keys()):
+                quest_name = dialogue_nodes[key]['Properties']['DisplayName']
+                quest = find_quest(quest_name, quests)
+                start_index = 0
+                prefix = 'QUEST_' + str(quest.ident) + '_DIALOG_'
+                player_emotions_by_depth = {}            
+                for s_key in sorted(dialogue_fragments.keys()):                
+                    if dialogue_fragments[s_key]['Type'] == 'DialogueFragment' \
+                        and dialogue_fragments[s_key]['Properties']['Parent'] == key:
+                        emotion = dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[0]
+                        postfix = ''
+                        depth = dialogue_fragments[s_key]['Properties']['Depth']
+                        unique = True
+                        if 'Speaker' in dialogue_fragments[s_key]['Properties'] \
+                            and speakers[dialogue_fragments[s_key]['Properties']['Speaker']] == 'player':
+                            if depth not in player_emotions_by_depth.keys():
+                                player_emotions_by_depth[depth] = []
+                            if emotion not in player_emotions_by_depth[depth]:
+                                player_emotions_by_depth[depth].append(emotion)
+                                postfix = '_A' + str(player_emotions_by_depth[depth].index(emotion) + 1)
+                            else:
+                                unique = False
+                        if emotion in npc_emo_dict:
+                            postfix = npc_emo_dict[emotion]
+                        if (prefix + str(depth).zfill(2)) not in dialogues_by_ident:
+                            dialogue_ident += 1
+                            # [КОСТЫЛЬ!!!!!111!!1!адин]
+                            order = depth - dialogue_nodes[key]['Properties']['BriefingDepth']
+                            if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1] == 'debriefing':
+                                order = 1
+                            elif order > 0:
+                                order += 1                            
+                            # [/КОСТЫЛЬ!!!!!111!!1!адин]
+                            dialogues_by_ident[(prefix + str(depth).zfill(2))] = {                            
+                                'id': dialogue_ident,
+                                'quest_ident': quest.ident,
+                                'character': speakers[dialogue_fragments[s_key]['Properties']['Speaker']],
+                                'message': prefix + str(depth).zfill(2),
+                                'order': order,
+                                'orientation': 'left',
+                                'responces': [],
+                            }
+                        if unique:  
+                            if speakers[dialogue_fragments[s_key]['Properties']['Speaker']] == 'player':
+                                feedback = ''
+                                if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1] != 'neutral':
+                                    feedback = dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1]
+                                dialogues_by_ident[(prefix + str(depth).zfill(2))]['responces'].append({
+                                    'text': prefix + str(depth).zfill(2) + postfix,
+                                    'smile': player_emo_dict[emotion],
+                                    'feedback': feedback
+                                })
+                            translations.append({      
+                                'ident': prefix + str(depth).zfill(2) + postfix,
+                                'text': dialogue_fragments[s_key]['Properties']['Text'],
+                                'lang': lang,
+                                'lastUpdateDate': '2017-04-10 09:57:08',
+                                'description': '',
+                            })
+                
+    write_dialogues(translations, dialogues_by_ident)
+                
+def write_dialogues(translations, dialogues_by_ident):
     with open('_export_translations.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['ident', 'lang', 'text',
                       'lastUpdateDate', 'description']
         writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
 
         writer.writeheader()
-
-        keys = sorted(translations.keys())
-
-        temp_emotions_list = ['', '_HAPPY_1', '_HAPPY_2', '_ANGRY_1', '_ANGRY_2', '_SAD_1', '_SAD_2']
-
-        for ident in keys:
-            for emotion in temp_emotions_list:
-                new_ident = ident + emotion
-                text = translations[ident]
-                text = text.replace('{', '<font color="ffffff" oline="2" olcolor="92633a">')
-                text = text.replace('}', '</font>')
-                writer.writerow({'ident': new_ident,
-                             'lang': 'ru',
-                             'text': text,
-                             'lastUpdateDate': '2017-02-07 12:04:05',
-                             'description': ''})
+        
+        for translation in translations:
+            text = translation['text']
+            text = text.replace('{', '<font color="ffffff" oline="2" olcolor="92633a">')
+            text = text.replace('}', '</font>')
+            writer.writerow({'ident': translation['ident'],
+                            'lang': translation['lang'],
+                            'text': text,
+                            'lastUpdateDate': translation['lastUpdateDate'],
+                            'description': translation['description']})
 
     with open('_export_dialogues.csv', 'wt', encoding="utf8", newline='') as csvfile:
         fieldnames = ['id', 'questId', 'character', 'message',
@@ -365,43 +346,262 @@ def export_translation(last_id):
 
         writer.writeheader()
 
-        keys = sorted(dialogues.keys())
-
-        emotions = {":)": "good_ImReady",
-                    ":D": "good_wow",
-                    "^^": "good_willGood",
-                    ":(": "bad_damn",
-                    ":/": "bad_hmm",
-                    ":'(": "bad_cry"}
-
-        for d_id in keys: # ident: [q_id, char, message, order, orientation, responces]
-            questId = dialogues[d_id][0]
-            character = dialogues[d_id][1]
-            message = dialogues[d_id][2]
-            order = dialogues[d_id][3]
-            orientation = dialogues[d_id][4]
-            # {"text" : "QUEST_20101_DIALOG_01_A1", "smile" : "good_wow"}
+        for dialogue_ident in sorted(dialogues_by_ident.keys()):
+            ident = dialogues_by_ident[dialogue_ident]['id']
+            questId = dialogues_by_ident[dialogue_ident]['quest_ident']
+            character = dialogues_by_ident[dialogue_ident]['character']
+            message = dialogues_by_ident[dialogue_ident]['message']
+            order = dialogues_by_ident[dialogue_ident]['order']
+            orientation = dialogues_by_ident[dialogue_ident]['orientation']
             responces = '['
-            responces_ls = dialogues[d_id][6]
-            emotions_ls = dialogues[d_id][5]
-            correctness_ls = dialogues[d_id][7]
+            responces_ls = dialogues_by_ident[dialogue_ident]['responces']
 
             for i in range(len(responces_ls)):
-                emotion = ""
-                if emotions_ls[i] != "":
-                    emotion = emotions[emotions_ls[i]]
-                responces += '{"text": "' + responces_ls[i] + '", "smile": "' + emotion + '", "feedback": "' + correctness_ls[i] + '"}'
+                responces += '{"text": "' + responces_ls[i]['text'] + '", "smile": "' \
+                            + responces_ls[i]['smile'] + '", "feedback": "' \
+                            + responces_ls[i]['feedback'] + '"}'
                 if i != len(responces_ls) - 1:
                     responces += ', '
             responces += ']'
 
-            writer.writerow({'id': str(d_id),
+            writer.writerow({'id': ident,
                              'questId': questId,
                              'character': character,
                              'message': message,
                              'order': order,
                              'orientation': orientation,
-                             'responces': responces})
+                             'responces': responces})        
+
+def recursive(fragmentsByIds, ident, end_target, speakers):
+    speakers = speakers
+    briefing_depth = 0
+    def realRecursive(fragmentsByIds, ident, end_target, depth):    
+        nonlocal speakers
+        nonlocal briefing_depth
+        if ident in fragmentsByIds.keys() and 'Depth' in fragmentsByIds[ident]['Properties'].keys():
+            return
+        if ident not in fragmentsByIds.keys():
+            return
+        if fragmentsByIds[ident]['Type'] == 'Hub':
+            depth = 1
+        fragmentsByIds[ident]['Properties']['Depth'] = depth
+        if 'StageDirections' in fragmentsByIds[ident]['Properties'] and \
+            fragmentsByIds[ident]['Properties']['StageDirections'].split('|')[1] == 'briefing':
+            briefing_depth = depth
+        sub_index = 0
+        for connection in fragmentsByIds[ident]['Properties']['OutputPins'][0]['Connections']:
+            if sub_index == 0 and 'Speaker' in fragmentsByIds[ident]['Properties'] \
+                and speakers[fragmentsByIds[ident]['Properties']['Speaker']] == 'player':
+                depth = depth + 1
+            sub_index += 1
+            if 'StageDirections' in fragmentsByIds[ident]['Properties'] and \
+                fragmentsByIds[ident]['Properties']['StageDirections'].split('|')[1] == 'briefing':
+                depth += 1 
+            realRecursive(fragmentsByIds, connection['Target'], end_target, depth)
+    depth = 1    
+    realRecursive(fragmentsByIds, ident, end_target, depth)
+    return briefing_depth
+        
+
+#def export_translation(last_id):
+    #items = load_items()
+    #missions = load_missions(items, load_recipes(items))
+    #missions = [mission for mission in missions if ((int(mission.chapter) >= start_chapter) and (int(mission.chapter) <= end_chapter))]
+    #regions = load_regions(missions)
+    #quests = load_quests(items, regions, missions)
+    #quests = [quest for quest in quests if ((int(quest.chapter) >= start_chapter) and (int(quest.chapter) <= end_chapter))]
+    #name_col = 0
+    #order_col = 0
+    #person_col = 0
+    #text_col = 0
+    #resp_col = 0
+
+    #translations = {} # ident : text
+    #orders = {} # name : [ord, ord, ord]
+    #dialogues = {} # ident: [q_id, char, message, order, orientation, responces]
+
+    #with open('_validator_dialogues.csv', 'rt', encoding="utf8") as csvfile:
+        #reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+
+        #for row in reader:
+            #if row[0] == "HEADER":
+                #name_col = row.index("QUEST")
+                #order_col = row.index("ORDER")
+                #person_col = row.index("PERSON")
+                #p_emo_col = row.index("PERSON_EMOTION")
+                #text_col = row.index("TEXT")
+                #emo_col = row.index("PLAYER_EMOTION")
+                #corr_col = row.index("CORRECTNESS")
+                #resp_col = row.index("RESPONSES")
+                #brief_col = row.index("SUMMARY")
+                #sum_person_col = row.index("SUMMARY_PERSON")
+                #debrief_col = row.index("DEBRIEFING")
+                #debrief_person_col = row.index("DEBRIEFING_PERSON")
+                #continue
+            #if row[name_col] != "":
+                #text_count = 0
+                #quest = find_quest(row[name_col], quests)
+                #try:
+                    #orders[quest.name] = [0, 1]
+                #except AttributeError:
+                    #raise ValueError(row[name_col] + ' is in _validator_dialogues, but not in _validator_quests')
+
+            #if row[order_col] == "before":
+                #order = "before"
+
+            #if row[order_col] == "after":
+                #order = "after"
+                #text_count = 1
+
+            #if row[person_col] != "":
+                #if order == "before":
+                    #text_count -= 1
+                #if order == "after":
+                    #text_count += 1
+                #orders[quest.name].append(text_count)
+
+        #csvfile.seek(0)
+        #for key in orders.keys():
+            #orders[key].sort()
+
+        #for row in reader:
+            #if row[0] == "HEADER":
+                #d_id = last_id
+                #continue
+
+            #if row[resp_col] == "":
+                #continue
+
+            #if row[name_col] != "":
+                #abs_count = 0
+                #quest = find_quest(row[name_col], quests)
+                #ord_list = orders[quest.name]
+
+            #if 0 in orders[quest.name]:
+                #d_id += 1
+                #briefing = row[brief_col]
+                #ident = 'QUEST_' + str(quest.ident) + '_DIALOG_000'
+                #translations[ident] = briefing
+                #if row[sum_person_col] != None and row[sum_person_col] != '':
+                    #dialogues[d_id] = [str(quest.ident), row[sum_person_col], ident, str(0), "left", []]
+                #else:
+                    #dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(0), "left", []]
+                #del(orders[quest.name][orders[quest.name].index(0)])
+                #dialogues[d_id].append([])
+                #dialogues[d_id].append([])
+
+            #if 1 in orders[quest.name]:
+                #d_id += 1
+                #debriefing = row[debrief_col]
+                #ident = 'QUEST_' + str(quest.ident) + '_DIALOG_111'
+                #translations[ident] = debriefing
+                #if row[sum_person_col] != None and row[sum_person_col] != '':
+                    #dialogues[d_id] = [str(quest.ident), row[debrief_person_col], ident, str(1), "left", []]
+                #else:
+                    #dialogues[d_id] = [str(quest.ident), row[person_col], ident, str(1), "left", []]
+                #del(orders[quest.name][orders[quest.name].index(1)])
+                #dialogues[d_id].append([])
+                #dialogues[d_id].append([])
+
+            #if len(orders[quest.name]) > 0 and row[text_col] != "":
+                #order_count = orders[quest.name][0]
+                #del(orders[quest.name][0])
+
+            #if row[person_col] != "": # ident: [q_id, char, message, order, orientation, responces]
+                #d_id += 1
+                #pers = row[person_col]
+                #dialogues[d_id] = [str(quest.ident), row[person_col]]
+
+            #if row[text_col] != "":
+                #resp_count = 0
+                #abs_count += 1
+                #str_count = str(abs_count)
+                #if abs_count < 10:
+                    #str_count = '0' + str(abs_count)
+                #ident = 'QUEST_' + str(quest.ident) + '_DIALOG_' + str_count
+                #translations[ident] = row[text_col]
+                #dialogues[d_id].append(ident)
+                #dialogues[d_id].append(str(order_count))
+                #dialogues[d_id].append('left')
+                #dialogues[d_id].append([])
+                #dialogues[d_id].append([])
+                #dialogues[d_id].append([])
+
+            #if row[resp_col] != "":
+                #resp_count += 1
+                #resp_ident = ident + '_A' + str(resp_count)
+                #translations[resp_ident] = row[resp_col]
+                #dialogues[d_id][-1].append(row[corr_col])
+                #dialogues[d_id][-2].append(resp_ident)
+                #dialogues[d_id][-3].append(row[emo_col])
+
+    #with open('_export_translations.csv', 'wt', encoding="utf8", newline='') as csvfile:
+        #fieldnames = ['ident', 'lang', 'text',
+                      #'lastUpdateDate', 'description']
+        #writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
+
+        #writer.writeheader()
+
+        #keys = sorted(translations.keys())
+
+        #temp_emotions_list = ['', '_HAPPY_1', '_HAPPY_2', '_ANGRY_1', '_ANGRY_2', '_SAD_1', '_SAD_2']
+
+        #for ident in keys:
+            #for emotion in temp_emotions_list:
+                #new_ident = ident + emotion
+                #text = translations[ident]
+                #text = text.replace('{', '<font color="ffffff" oline="2" olcolor="92633a">')
+                #text = text.replace('}', '</font>')
+                #writer.writerow({'ident': new_ident,
+                             #'lang': 'ru',
+                             #'text': text,
+                             #'lastUpdateDate': '2017-02-07 12:04:05',
+                             #'description': ''})
+
+    #with open('_export_dialogues.csv', 'wt', encoding="utf8", newline='') as csvfile:
+        #fieldnames = ['id', 'questId', 'character', 'message',
+                      #'order', 'orientation', 'responces']
+        #writer = csv.DictWriter(csvfile, delimiter=',', quotechar='"', fieldnames=fieldnames)
+
+        #writer.writeheader()
+
+        #keys = sorted(dialogues.keys())
+
+        #emotions = {":)": "good_ImReady",
+                    #":D": "good_wow",
+                    #"^^": "good_willGood",
+                    #":(": "bad_damn",
+                    #":/": "bad_hmm",
+                    #":'(": "bad_cry"}
+
+        #for d_id in keys: # ident: [q_id, char, message, order, orientation, responces]
+            #questId = dialogues[d_id][0]
+            #character = dialogues[d_id][1]
+            #message = dialogues[d_id][2]
+            #order = dialogues[d_id][3]
+            #orientation = dialogues[d_id][4]
+            # {"text" : "QUEST_20101_DIALOG_01_A1", "smile" : "good_wow"}
+            #responces = '['
+            #responces_ls = dialogues[d_id][6]
+            #emotions_ls = dialogues[d_id][5]
+            #correctness_ls = dialogues[d_id][7]
+
+            #for i in range(len(responces_ls)):
+                #emotion = ""
+                #if emotions_ls[i] != "":
+                    #emotion = emotions[emotions_ls[i]]
+                #responces += '{"text": "' + responces_ls[i] + '", "smile": "' + emotion + '", "feedback": "' + correctness_ls[i] + '"}'
+                #if i != len(responces_ls) - 1:
+                    #responces += ', '
+            #responces += ']'
+
+            #writer.writerow({'id': str(d_id),
+                             #'questId': questId,
+                             #'character': character,
+                             #'message': message,
+                             #'order': order,
+                             #'orientation': orientation,
+                             #'responces': responces})
 
 
 def export_data():
@@ -410,7 +610,8 @@ def export_data():
     export_quests()
     export_missions()
     export_regions()
-    export_translation(last_id)
+    export_dialogues_from_json(last_id)
+    #export_translation(last_id)
 
 export_data()
 
