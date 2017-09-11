@@ -262,9 +262,9 @@ def export_dialogues_from_json(last_id):
             npc_emo_dict = {'neutral': '', 'happy-1': '_HAPPY_1', 'happy-2': '_HAPPY_2',
                             'sad-1': '_SAD_1', 'sad-2': '_SAD_2',
                             'angry-1': '_ANGRY_1', 'angry-2': '_ANGRY_2'}
-            player_emo_dict = {':)' : 'good_ImReady', '^^': 'good_willGood', ':D': 'good_wow', '*_*': 'good_wow',
-                               ':(': 'bad_hmm', ':/': 'bad_hmm', ":'(": 'bad_cry', '><': 'bad_damn',
-                               'O_O': 'bad_ohNo', '@_@': 'bad_cry'}
+            player_emo_dict = {':)' : 'good_ImReady', '^^': 'good_willGood', ':D': 'good_laugh', '*_*': 'good_delight',
+                               ':(': 'bad_damn', ':/': 'bad_hmm', ":'(": 'bad_cry', '><': 'bad_angry',
+                               'O_O': 'bad_fear', '@_@': 'bad_shame'}
             
             for key in sorted(dialogue_nodes.keys()):
                 quest_name = dialogue_nodes[key]['Properties']['DisplayName']
