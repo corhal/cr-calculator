@@ -1,0 +1,374 @@
+﻿id,type,bonusPoints,pointsPerAction,duration,config,_comment
+1,collect,,1,1200,,просто собрать ингридиент
+2,choice,,5,1800,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 3,
+    ""shapeProb"": 0.0,
+    ""colorProb"": 0.0,
+    ""uniqueProb"": 0.5
+  }
+}",выбор
+3,tap,10,10,3000,"{
+  ""k"": 0.5,
+  ""m"": 1.5,
+  ""stars"": 3,
+  ""disappear"": 0.2
+}",тапать по мишеням
+4,swipe,10,10,5000,"{
+  ""stars"": 3,
+  ""angle"": 45.0,
+  ""swipes"": 40
+}",свайпать
+5,swipe,10,10,5000,"{
+  ""stars"": 4,
+  ""angle"": -90.0,
+  ""swipes"": 40
+}",свайпать горизонтально
+6,swipe,10,10,5000,"{
+  ""stars"": 4,
+  ""angle"": 0.0,
+  ""swipes"": 40
+}",свайпать вертикально
+7,collect,,2,2000,,медленный сбор ингредиента (обучение)
+8,collect,,2,1400,,просто собрать ингредиент 1
+9,collect,,2,1300,,просто собрать ингредиент 2
+10,collect,,2,1200,,просто собрать ингредиент 3
+11,collect,,2,1100,,просто собрать ингредиент 4
+12,collect,,5,1000,,просто собрать ингредиент 5
+13,choice,,5,1400,"{
+  ""dishes"": {
+    ""count"": 3,
+    ""shapeProb"": 0.0,
+    ""colorProb"": 0.0,
+    ""uniqueProb"": 1.0
+  },
+  ""speed"": 0.0
+}",выбор 1
+14,choice,,5,1300,"{
+  ""dishes"": {
+    ""count"": 3,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 1.0
+  },
+  ""speed"": 100.0
+}",выбор 2
+15,choice,,5,1600,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 4,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.0,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 3
+16,choice,,5,1400,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 5,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.0,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 4
+17,choice,,5,2000,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 2,
+    ""shapeProb"": 0.0,
+    ""colorProb"": 0.0,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 5
+20,radar,10,10,6000,"{
+  ""speed"": 100.0,
+  ""threshold"": 0.8
+}",radar lvl 1
+21,grow,10,10,3000,"{
+   ""n"": 5.0,
+   ""ds"": 0.7,
+    ""threshold"": 0.9,
+    ""minSize"": 0.5
+}",grow lvl 1
+22,choice,,5,1200,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 6,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 6
+23,radar,10,10,6000,"{
+  ""speed"": 350.0,
+  ""threshold"": 0.9
+}",radar lvl 2
+24,radar,10,10,6000,"{
+  ""speed"": 360.0
+}",radar lvl 3
+25,radar,10,10,6000,"{
+  ""speed"": 380.0
+}",radar lvl 4
+26,radar,10,10,6000,"{
+  ""speed"": 400.0
+}",radar lvl 5
+27,tap,10,10,2500,"{
+  ""k"": 0.5,
+  ""m"": 1.0,
+  ""stars"": 4,
+  ""mintap"": 0.3,
+  ""disappear"": 0.2
+}",мишени lv 1
+28,tap,10,10,2500,"{
+  ""k"": 0.5,
+  ""m"": 1.0,
+  ""stars"": 6,
+  ""mintap"": 0.3,
+  ""disappear"": 0.2,
+  ""mintap"": 0.5
+}",мишени lv 2
+29,tap,10,10,2300,"{
+  ""k"": 0.5,
+  ""m"": 1.0,
+  ""stars"": 8,
+  ""mintap"": 0.3,
+  ""disappear"": 0.2
+}",мишени lv 3
+30,tap,10,10,2200,"{
+  ""k"": 0.5,
+  ""m"": 1.0,
+  ""stars"": 9,
+  ""mintap"": 0.3,
+  ""disappear"": 0.2
+}",мишени lv 4
+31,tap,10,10,2000,"{
+  ""k"": 0.5,
+  ""m"": 1.0,
+  ""stars"": 10,
+  ""mintap"": 0.3,
+  ""disappear"": 0.2
+}",мишени lv 5
+32,grow,10,10,3000,"{
+   ""n"": 5.5,
+   ""ds"": 0.6,
+    ""threshold"": 0.9,
+    ""minSize"": 0.5
+}",grow lvl 2
+33,grow,10,10,3000,"{
+   ""n"": 6.0,
+   ""ds"": 0.6,
+    ""threshold"": 0.9,
+    ""minSize"": 0.5
+}",grow lvl 3
+34,grow,10,10,3000,"{
+   ""n"": 6.5,
+   ""ds"": 0.6,
+    ""threshold"": 0.9,
+    ""minSize"": 0.5
+}",grow lvl 4
+35,grow,10,10,3000,"{
+   ""n"": 7.0,
+   ""ds"": 0.6,
+    ""threshold"": 0.9,
+    ""minSize"": 0.5
+}",grow lvl 5
+36,choice,,5,2000,"{
+  ""dishes"": {
+    ""count"": 2,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 1.0
+  },
+  ""speed"": 0.0
+}",медленный выбор из 2
+37,choice,,5,2000,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 4,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 4 вращающихся
+38,choice,,5,1800,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 5,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 5 вращающихся
+39,choice,,5,1600,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 6,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 6 вращающихся
+40,choice,,5,1400,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 6,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 6 вращающихся в другую сторону
+41,choice,,5,1200,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 6,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 6 вращающихся рандомно
+42,swipe,10,10,3000,"{
+  ""stars"": 4,
+  ""angle"": -45.0,
+  ""swipes"": 40
+}",свайпать ур.1
+43,swipe,10,10,3000,"{
+  ""stars"": 4,
+  ""angle"": -45.0,
+  ""swipes"": 45
+}",свайпать ур.2
+44,swipe,10,10,3000,"{
+  ""stars"": 4,
+  ""angle"": 0.0,
+  ""swipes"": 50
+}",свайпать ур.3
+45,swipe,10,10,3000,"{
+  ""stars"": 4,
+  ""angle"": 0.0,
+  ""swipes"": 55
+}",свайпать ур.4
+46,swipe,10,10,3000,"{
+  ""stars"": 4,
+  ""angle"": 45.0,
+  ""swipes"": 60
+}",свайпать ур.5
+52,moveup,10,10,3000,"{
+   ""n"": 1,
+   ""speed"": 0.4,
+    ""threshold"": 0.8
+}",moveup level 1
+53,moveup,10,10,3000,"{
+   ""n"": 1,
+   ""speed"": 0.6,
+    ""threshold"": 0.8
+}",moveup level 2
+54,moveup,10,10,3000,"{
+   ""n"": 1.2,
+   ""speed"": 0.8,
+    ""threshold"": 0.8
+}",moveup level 3
+55,moveup,10,10,3000,"{
+   ""n"": 1.2,
+   ""speed"": 1.0,
+    ""threshold"": 0.9
+}",moveup level 4
+56,moveup,10,10,3000,"{
+   ""n"": 1.5,
+   ""speed"": 1.0,
+    ""threshold"": 0.95
+}",moveup level 5
+57,collect,,2,4000,,ОЧЕНЬ медленный сбор ингредиента (обучение)
+58,choice,,5,4000,"{
+  ""dishes"": {
+    ""count"": 2,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 1.0
+  },
+  ""speed"": 0.0
+}",очень медленный выбор из 2
+59,choice,,5,4000,"{
+  ""dishes"": {
+    ""count"": 3,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 1.0
+  },
+  ""speed"": 0.0
+}",очень медленный выбор из 3
+60,collect,,1,4000,,медленный мусор
+377,choice,,5,60000,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 4,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 4 вращающихся
+388,choice,,5,60000,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 5,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 5 вращающихся
+399,choice,,5,60000,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 6,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 6 вращающихся
+400,choice,,5,60000,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 6,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 6 вращающихся в другую сторону
+411,choice,,5,60000,"{
+  ""speed"": 0.0,
+  ""dishes"": {
+    ""count"": 6,
+    ""shapeProb"": 0.5,
+    ""colorProb"": 0.5,
+    ""uniqueProb"": 0.5
+  }
+}",выбор 6 вращающихся рандомно
+412,radar,1,2,10000,"{
+  ""speed"": 100.0,
+  ""threshold"": 0.5
+}",tutorial radar 1
+413,swipe,1,2,10000,"{
+  ""stars"": 4,
+  ""angle"": -45.0,
+  ""swipes"": 30
+}",tutorial swipe 1
+414,grow,1,2,3000,"{
+   ""n"": 4.0,
+   ""ds"": 0.9,
+    ""threshold"": 0.5,
+    ""minSize"": 0.5
+}",tutorial grow 1
+415,grow,1,4,3000,"{
+   ""n"": 3.0,
+   ""ds"": 1.0,
+    ""threshold"": 0.5,
+    ""minSize"": 0.5
+}",tutorial grow 2
+416,radar,1,4,10000,"{
+  ""speed"": 100.0,
+  ""threshold"": 0.5
+}",tutorial radar 2
+417,swipe,1,4,10000,"{
+  ""stars"": 4,
+  ""angle"": -45.0,
+  ""swipes"": 30
+}",tutorial swipe 2

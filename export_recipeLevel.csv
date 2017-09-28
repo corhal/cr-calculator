@@ -1,0 +1,3993 @@
+﻿id,recipeId,level,actions,config,_comment
+1,1,1,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 17,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 9}]}]","",Буррито
+2,1,2,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 2,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 9}]}]","",Буррито
+3,1,3,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 15,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 9}]}]","",Буррито
+4,1,4,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 16,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 9}]}]","",Буррито
+5,1,5,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 22,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 9}]}]","",Буррито
+6,1,6,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 9}]}]","",Буррито
+7,1,7,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 9}]}]","",Буррито
+8,1,8,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 9}]}]","",Буррито
+9,1,9,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 9}]}]","",Буррито
+10,1,10,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 9}]}]","",Буррито
+11,2,1,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 17,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 17,""dish"": 4}]}]","",Курица гриль
+12,2,2,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 2,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 2,""dish"": 4}]}]","",Курица гриль
+13,2,3,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 15,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 15,""dish"": 4}]}]","",Курица гриль
+14,2,4,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 16,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 16,""dish"": 4}]}]","",Курица гриль
+15,2,5,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 22,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 22,""dish"": 4}]}]","",Курица гриль
+16,2,6,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 37,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 4}]}]","",Курица гриль
+17,2,7,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 38,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 4}]}]","",Курица гриль
+18,2,8,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 39,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 4}]}]","",Курица гриль
+19,2,9,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 40,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 4}]}]","",Курица гриль
+20,2,10,"[{""ingridient"": 6,""count"": 1,""steps"": [{""id"": 8},{""id"": 41,""dish"": 10}]},{""ingridient"": 7,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 1}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 7}]},{""ingridient"": 5,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 4}]}]","",Курица гриль
+21,3,1,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+22,3,2,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+23,3,3,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+24,3,4,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+25,3,5,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+26,3,6,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+27,3,7,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+28,3,8,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+29,3,9,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+30,3,10,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Пицца
+31,4,1,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 17,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 17,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 7}]}]","",Завтрак чемпиона
+32,4,2,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 2,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 2,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 7}]}]","",Завтрак чемпиона
+33,4,3,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 15,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 15,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 7}]}]","",Завтрак чемпиона
+34,4,4,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 16,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 16,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 7}]}]","",Завтрак чемпиона
+35,4,5,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 22,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 22,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 7}]}]","",Завтрак чемпиона
+36,4,6,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 37,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 7}]}]","",Завтрак чемпиона
+37,4,7,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 38,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 7}]}]","",Завтрак чемпиона
+38,4,8,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 39,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 7}]}]","",Завтрак чемпиона
+39,4,9,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 40,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 7}]}]","",Завтрак чемпиона
+40,4,10,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 41,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 7}]}]","",Завтрак чемпиона
+41,5,1,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 17,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 17,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 17,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+42,5,2,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 2,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 2,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 2,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+43,5,3,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 15,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 15,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 15,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+44,5,4,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 16,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 16,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 16,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+45,5,5,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 22,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 22,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 22,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+46,5,6,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 37,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 37,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 37,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+47,5,7,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 38,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 38,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 38,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+48,5,8,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 39,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 39,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 39,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+49,5,9,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 40,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 40,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 40,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+50,5,10,"[{
+		""ingridient"": 5,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 16,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 41,
+			""dish"": 1
+		}]
+	},
+	{
+		""ingridient"": 15,
+		""count"": 2,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 41,
+			""dish"": 5
+		}]
+	},
+	{
+		""ingridient"": 14,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 41,
+			""dish"": 7
+		}]
+	}
+]","",Ребрышки по-ковбойски
+51,6,1,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 17,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 17,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+52,6,2,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 2,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 2,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+53,6,3,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 15,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 15,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+54,6,4,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 16,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 16,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+55,6,5,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 22,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 22,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+56,6,6,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+57,6,7,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+58,6,8,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+59,6,9,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+60,6,10,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","",Жульен
+61,7,1,"[{""ingridient"": 8, ""steps"": [{""id"": 8}]}, {""ingridient"": 2,""count"": 2,""steps"": [{""id"": 8},{""id"": 13,""dish"": 4}]}]","",Чили: лук + мясо (жарить)
+62,7,2,"[{""ingridient"": 8, ""steps"": [{""id"": 9},{""id"": 3}]}, {""ingridient"": 2,""count"": 2,""steps"": [{""id"": 9},{""id"": 14, ""dish"": 4}]}]","",Лук (шинковать) + мясо (жарить)
+63,7,3,"[{""ingridient"": 8, ""steps"": [{""id"": 10}]}, {""ingridient"": 2, ""count"":2,""steps"": [{""id"": 10},{""id"": 15, ""dish"": 4}]}, {""ingridient"": 11, ""count"":2,""steps"": [{""id"": 10},{""id"": 15, ""dish"": 5}]}]","",Лук (шинковать) + мясо (жарить) + фасоль (тушить)
+64,7,4,"[{""ingridient"": 8, ""steps"": [{""id"": 11},{""id"": 3}]}, {""ingridient"": 2, ""count"":2,""steps"": [{""id"": 11},{""id"": 16, ""dish"": 4}]}, {""ingridient"":11, ""count"":2,""steps"": [{""id"": 11},{""id"": 16, ""dish"": 5}]},{""ingridient"": 5, ""steps"": [{""id"": 11}]}]","",Лук (шинковать) + мясо (жарить) + фасоль (тушить) + перец чили
+65,7,5,"[{""ingridient"": 8, ""steps"": [{""id"": 12},{""id"": 3}]}, {""ingridient"": 2, ""count"":2,""steps"": [{""id"": 12},{""id"": 17, ""dish"": 4}]}, {""ingridient"": 11, ""count"":2,""steps"": [{""id"": 12},{""id"": 17, ""dish"": 5}]},{""ingridient"": 5,""steps"": [{""id"": 12},{""id"": 5}]}]","",Лук (шинковать) + мясо (жарить) + фасоль (тушить) + перец чили (резать)
+66,7,6,"[{""ingridient"": 8, ""steps"": [{""id"": 8}]}, {""ingridient"": 2,""count"": 2,""steps"": [{""id"": 8},{""id"": 13,""dish"": 4}]}]","",Чили: лук + мясо (жарить)
+67,7,7,"[{""ingridient"": 8, ""steps"": [{""id"": 9},{""id"": 3}]}, {""ingridient"": 2,""count"": 2,""steps"": [{""id"": 9},{""id"": 14, ""dish"": 4}]}]","",Лук (шинковать) + мясо (жарить)
+68,7,8,"[{""ingridient"": 8, ""steps"": [{""id"": 10}]}, {""ingridient"": 2, ""count"":2,""steps"": [{""id"": 10},{""id"": 15, ""dish"": 4}]}, {""ingridient"": 11, ""count"":2,""steps"": [{""id"": 10},{""id"": 15, ""dish"": 5}]}]","",Лук (шинковать) + мясо (жарить) + фасоль (тушить)
+69,7,9,"[{""ingridient"": 8, ""steps"": [{""id"": 11},{""id"": 3}]}, {""ingridient"": 2, ""count"":2,""steps"": [{""id"": 11},{""id"": 16, ""dish"": 4}]}, {""ingridient"":11, ""count"":2,""steps"": [{""id"": 11},{""id"": 16, ""dish"": 5}]},{""ingridient"": 5, ""steps"": [{""id"": 11}]}]","",Лук (шинковать) + мясо (жарить) + фасоль (тушить) + перец чили
+70,7,10,"[{""ingridient"": 8, ""steps"": [{""id"": 12},{""id"": 3}]}, {""ingridient"": 2, ""count"":2,""steps"": [{""id"": 12},{""id"": 17, ""dish"": 4}]}, {""ingridient"": 11, ""count"":2,""steps"": [{""id"": 12},{""id"": 17, ""dish"": 5}]},{""ingridient"": 5,""steps"": [{""id"": 12},{""id"": 5}]}]","",Лук (шинковать) + мясо (жарить) + фасоль (тушить) + перец чили (резать)
+71,8,1,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 17,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 17,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 17,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели
+72,8,2,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 2,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 2,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 2,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+73,8,3,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 15,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 15,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 15,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+74,8,4,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 16,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 16,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 16,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+75,8,5,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 22,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 22,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 22,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+76,8,6,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 37,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели
+77,8,7,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 38,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+78,8,8,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 39,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+79,8,9,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 40,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+80,8,10,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 41,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+                ""dish"": 3
+	}]
+}]","",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+81,9,1,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 17,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 17,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 17,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 17,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+82,9,2,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 2,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 2,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 2,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 2,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+83,9,3,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 15,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 15,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 15,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 15,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+84,9,4,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 16,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 16,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 16,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 16,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+85,9,5,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 22,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 22,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 22,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 22,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+86,9,6,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+87,9,7,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+88,9,8,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+89,9,9,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+90,9,10,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 35
+	}]
+}]","",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+91,10,1,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 17,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 17,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 17,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+92,10,2,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 2,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 2,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 2,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+93,10,3,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 15,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 15,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 15,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+94,10,4,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 16,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 16,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 16,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+95,10,5,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 22,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 22,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 22,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+96,10,6,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 37,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 37,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 37,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+97,10,7,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 38,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 38,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 38,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+98,10,8,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 39,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 39,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 39,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+99,10,9,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 40,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 40,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 40,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+100,10,10,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 41,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 41,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 41,
+		""dish"": 3
+	}]
+}]","",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+101,11,1,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 17,""dish"": 25}]}]","",луковый суп
+102,11,2,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 2,""dish"": 25}]}]","",луковый суп
+103,11,3,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 15,""dish"": 25}]}]","",луковый суп
+104,11,4,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 16,""dish"": 25}]}]","",луковый суп
+105,11,5,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 22,""dish"": 25}]}]","",луковый суп
+106,11,6,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 25}]}]","",луковый суп
+107,11,7,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 25}]}]","",луковый суп
+108,11,8,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 25}]}]","",луковый суп
+109,11,9,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 25}]}]","",луковый суп
+110,11,10,"[{""ingridient"": 32,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 9}]},{""ingridient"": 46,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 25}]}]","",луковый суп
+111,12,1,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 17,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]}]","",улитки
+112,12,2,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 2,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]}]","",улитки
+113,12,3,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 15,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]}]","",улитки
+114,12,4,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 16,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]}]","",улитки
+115,12,5,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 22,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]}]","",улитки
+116,12,6,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 37,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]}]","",улитки
+117,12,7,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 38,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]}]","",улитки
+118,12,8,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 39,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]}]","",улитки
+119,12,9,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 40,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]}]","",улитки
+120,12,10,"[{""ingridient"": 63,""count"": 3,""steps"": [{""id"": 10},{""id"": 41,""dish"": 25}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 39,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]}]","",улитки
+121,13,1,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 17,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+122,13,2,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 2,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+123,13,3,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 15,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+124,13,4,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 16,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+125,13,5,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 22,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+126,13,6,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+127,13,7,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+128,13,8,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+129,13,9,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+130,13,10,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 16}]},{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 14}]},{""ingridient"": 58,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 64,""count"": 3,""steps"": [{""id"": 10}]}]","",блинцы
+131,16,1,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 17,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 7}]}]","",Салат с тунцом
+132,16,2,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 2,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 7}]}]","",Салат с тунцом
+133,16,3,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 15,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 7}]}]","",Салат с тунцом
+134,16,4,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 16,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 7}]}]","",Салат с тунцом
+135,16,5,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 22,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 7}]}]","",Салат с тунцом
+136,16,6,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 7}]}]","",Салат с тунцом
+137,16,7,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 7}]}]","",Салат с тунцом
+138,16,8,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 7}]}]","",Салат с тунцом
+139,16,9,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 7}]}]","",Салат с тунцом
+140,16,10,"[{""ingridient"": 81,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 10}]},{""ingridient"": 80,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 2}]},{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 5}]},{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 7}]}]","",Салат с тунцом
+141,14,1,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 17,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 17,""dish"": 6}]}]","",Бобовый суп
+142,14,2,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 2,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 2,""dish"": 6}]}]","",Бобовый суп
+143,14,3,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 15,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 15,""dish"": 6}]}]","",Бобовый суп
+144,14,4,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 16,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 16,""dish"": 6}]}]","",Бобовый суп
+145,14,5,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 22,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 22,""dish"": 6}]}]","",Бобовый суп
+146,14,6,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 37,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 6}]}]","",Бобовый суп
+147,14,7,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 38,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 6}]}]","",Бобовый суп
+148,14,8,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 39,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 6}]}]","",Бобовый суп
+149,14,9,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 40,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 6}]}]","",Бобовый суп
+150,14,10,"[{""ingridient"": 50,""count"": 1,""steps"": [{""id"": 8},{""id"": 41,""dish"": 10}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 5}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 7}]},{""ingridient"": 19,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 6}]}]","",Бобовый суп
+151,15,1,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+152,15,2,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+153,15,3,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+154,15,4,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+155,15,5,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+156,15,6,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+157,15,7,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+158,15,8,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+159,15,9,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+160,15,10,"[{
+	""ingridient"": 10,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 79,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 35
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",Круассан
+161,17,1,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 17,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]}]","",говяжье рагу
+162,17,2,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 2,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]}]","",говяжье рагу
+163,17,3,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 15,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]}]","",говяжье рагу
+164,17,4,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 16,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]}]","",говяжье рагу
+165,17,5,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 22,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]}]","",говяжье рагу
+166,17,6,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 37,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]}]","",говяжье рагу
+167,17,7,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 38,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]}]","",говяжье рагу
+168,17,8,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 39,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]}]","",говяжье рагу
+169,17,9,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 40,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]}]","",говяжье рагу
+170,17,10,"[{""ingridient"": 69,""count"": 3,""steps"": [{""id"": 10},{""id"": 41,""dish"": 5}]},{""ingridient"": 85,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 50,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]}]","",говяжье рагу
+171,18,1,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 17,""dish"": 5}]}]","",гребешки
+172,18,2,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 2,""dish"": 5}]}]","",гребешки
+173,18,3,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 15,""dish"": 5}]}]","",гребешки
+174,18,4,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 16,""dish"": 5}]}]","",гребешки
+175,18,5,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 22,""dish"": 5}]}]","",гребешки
+176,18,6,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 5}]}]","",гребешки
+177,18,7,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 5}]}]","",гребешки
+178,18,8,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 5}]}]","",гребешки
+179,18,9,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 5}]}]","",гребешки
+180,18,10,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 9,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 4}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 9}]},{""ingridient"": 84,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 5}]}]","",гребешки
+181,19,1,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 17,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+182,19,2,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 2,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+183,19,3,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 15,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+184,19,4,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 16,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+185,19,5,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 22,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+186,19,6,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+187,19,7,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+188,19,8,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+189,19,9,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+190,19,10,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","",суп с мидиями
+191,20,1,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 17,""dish"": 4}]}]","",Спагетти с помидорами 
+192,20,2,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 2,""dish"": 4}]}]","",Спагетти с помидорами 
+193,20,3,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 15,""dish"": 4}]}]","",Спагетти с помидорами 
+194,20,4,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 16,""dish"": 4}]}]","",Спагетти с помидорами 
+195,20,5,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 22,""dish"": 4}]}]","",Спагетти с помидорами 
+196,20,6,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 4}]}]","",Спагетти с помидорами 
+197,20,7,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 4}]}]","",Спагетти с помидорами 
+198,20,8,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 4}]}]","",Спагетти с помидорами 
+199,20,9,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 4}]}]","",Спагетти с помидорами 
+200,20,10,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 4}]}]","",Спагетти с помидорами 
+201,20,11,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 4}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}",Спагетти с помидорами 
+202,20,12,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 4}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}",Спагетти с помидорами 
+203,20,13,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 4}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}",Спагетти с помидорами 
+204,20,14,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 4}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}",Спагетти с помидорами 
+205,20,15,"[{""ingridient"": 48,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 41,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 9}]},{""ingridient"": 75,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 4}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}",Спагетти с помидорами 
+206,21,1,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 17,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]}]","",канеллони
+207,21,2,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 2,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]}]","",канеллони
+208,21,3,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 15,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]}]","",канеллони
+209,21,4,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 16,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]}]","",канеллони
+210,21,5,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 22,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]}]","",канеллони
+211,21,6,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 37,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]}]","",канеллони
+212,21,7,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 38,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]}]","",канеллони
+213,21,8,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 39,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]}]","",канеллони
+214,21,9,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 40,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]}]","",канеллони
+215,21,10,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 41,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]}]","",канеллони
+216,21,11,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 37,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}",канеллони
+217,21,12,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 38,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}",канеллони
+218,21,13,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 39,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}",канеллони
+219,21,14,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 40,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}",канеллони
+220,21,15,"[{""ingridient"": 86,""count"": 3,""steps"": [{""id"": 10},{""id"": 41,""dish"": 6}]},{""ingridient"": 4,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 87,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}",канеллони
+221,22,1,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 17,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+222,22,2,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 2,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+223,22,3,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 15,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+224,22,4,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 16,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+225,22,5,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 22,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+226,22,6,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+227,22,7,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+228,22,8,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+229,22,9,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+230,22,10,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","",паннакота
+231,22,11,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}",паннакота
+232,22,12,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}",паннакота
+233,22,13,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}",паннакота
+234,22,14,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}",паннакота
+235,22,15,"[{""ingridient"": 31,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 16}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 25}]},{""ingridient"": 76,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 62,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}",паннакота
+236,23,1,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 17,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 17,""dish"": 35}]}]","",гноччи
+237,23,2,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 2,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 2,""dish"": 35}]}]","",гноччи
+238,23,3,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 15,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 15,""dish"": 35}]}]","",гноччи
+239,23,4,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 16,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 16,""dish"": 35}]}]","",гноччи
+240,23,5,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 22,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 22,""dish"": 35}]}]","",гноччи
+241,23,6,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 37,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 35}]}]","",гноччи
+242,23,7,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 38,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 35}]}]","",гноччи
+243,23,8,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 39,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 35}]}]","",гноччи
+244,23,9,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 40,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 35}]}]","",гноччи
+245,23,10,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 41,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 35}]}]","",гноччи
+246,23,11,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 37,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 35}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}",гноччи
+247,23,12,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 38,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 35}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}",гноччи
+248,23,13,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 39,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 35}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}",гноччи
+249,23,14,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 40,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 35}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}",гноччи
+250,23,15,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 8},{""id"": 41,""dish"": 8}]},{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 23}]},{""ingridient"": 75,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 7}]},{""ingridient"": 10,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 35}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}",гноччи
+251,24,1,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		 ""dish"": 7
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 17,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+252,24,2,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 2,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+253,24,3,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 15,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+254,24,4,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 16,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+255,24,5,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 22,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+256,24,6,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+257,24,7,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+258,24,8,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+259,24,9,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+260,24,10,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","",тирамису
+261,24,11,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}",тирамису
+262,24,12,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}",тирамису
+263,24,13,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}",тирамису
+264,24,14,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}",тирамису
+265,24,15,"[{
+	""ingridient"": 79,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		 ""dish"": 9
+	}]
+}, {
+	""ingridient"": 53,
+	""count"": 1,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 54,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 88,
+	""count"": 2,
+	""steps"": [{
+		""id"": 8
+	}]
+}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}",тирамису
+266,25,1,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 17,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 9}]}]","",Спагетти карбонара
+267,25,2,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 2,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 2,""dish"": 9}]}]","",Спагетти карбонара
+268,25,3,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 15,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 15,""dish"": 9}]}]","",Спагетти карбонара
+269,25,4,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 16,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 16,""dish"": 9}]}]","",Спагетти карбонара
+270,25,5,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 22,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 22,""dish"": 9}]}]","",Спагетти карбонара
+271,25,6,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 9}]}]","",Спагетти карбонара
+272,25,7,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 9}]}]","",Спагетти карбонара
+273,25,8,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 9}]}]","",Спагетти карбонара
+274,25,9,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 9}]}]","",Спагетти карбонара
+275,25,10,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 9}]}]","",Спагетти карбонара
+276,25,11,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 9}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}",Спагетти карбонара
+277,25,12,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 9}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}",Спагетти карбонара
+278,25,13,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 9}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}",Спагетти карбонара
+279,25,14,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 9}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}",Спагетти карбонара
+280,25,15,"[{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 8}]},{""ingridient"": 87,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 3}]},{""ingridient"": 41,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 6}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 9}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}",Спагетти карбонара
+281,26,1,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 17,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]}]","",равиоли
+282,26,2,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 2,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]}]","",равиоли
+283,26,3,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 15,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]}]","",равиоли
+284,26,4,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 16,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]}]","",равиоли
+285,26,5,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 22,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]}]","",равиоли
+286,26,6,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 37,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]}]","",равиоли
+287,26,7,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 38,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]}]","",равиоли
+288,26,8,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 39,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]}]","",равиоли
+289,26,9,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 40,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]}]","",равиоли
+290,26,10,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 41,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]}]","",равиоли
+291,26,11,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 37,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}",равиоли
+292,26,12,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 38,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}",равиоли
+293,26,13,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 39,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}",равиоли
+294,26,14,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 40,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}",равиоли
+295,26,15,"[{""ingridient"": 48,""count"": 3,""steps"": [{""id"": 10},{""id"": 41,""dish"": 16}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 54,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}",равиоли
+296,27,1,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 17,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 17,""dish"": 5}]}]","",лазанья
+297,27,2,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 2,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 2,""dish"": 5}]}]","",лазанья
+298,27,3,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 15,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 15,""dish"": 5}]}]","",лазанья
+299,27,4,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 16,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 16,""dish"": 5}]}]","",лазанья
+300,27,5,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 22,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 22,""dish"": 5}]}]","",лазанья
+301,27,6,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 5}]}]","",лазанья
+302,27,7,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 5}]}]","",лазанья
+303,27,8,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 5}]}]","",лазанья
+304,27,9,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 5}]}]","",лазанья
+305,27,10,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 5}]}]","",лазанья
+306,27,11,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 5}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}",лазанья
+307,27,12,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 5}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}",лазанья
+308,27,13,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 5}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}",лазанья
+309,27,14,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 5}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}",лазанья
+310,27,15,"[{""ingridient"": 53,""count"": 2,""steps"": [{""id"": 10}]},{""ingridient"": 74,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 23}]},{""ingridient"": 69,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 71,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 5}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}",лазанья
+1000,666,1,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 7}]},{""ingridient"": 2,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 4}]},{""ingridient"": 4,""count"": 2,""steps"": [{""id"": 7},{""id"": 17,""dish"": 5}]},{""ingridient"": 3,""count"": 1,""steps"": [{""id"": 7},{""id"": 17,""dish"": 9}]}]","",Тестовый
+1002,666,2,"[{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 7}]}]","",Тестовый
+10003,4,11,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 37,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 37,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 37,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}
+",Завтрак чемпиона
+10004,4,12,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 38,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 38,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 38,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}
+",Завтрак чемпиона
+10005,4,13,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 39,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 39,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 39,""dish"": 7}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}
+",Завтрак чемпиона
+10006,4,14,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 40,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 40,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 40,""dish"": 7}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}
+",Завтрак чемпиона
+10007,4,15,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 7},{""id"": 41,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 8},{""id"": 41,""dish"": 1}]},{""ingridient"": 18,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 5}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 7},{""id"": 41,""dish"": 7}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}
+",Завтрак чемпиона
+10010,6,11,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 37,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}
+",Жульен
+10011,6,12,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 38,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}
+",Жульен
+10012,6,13,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 39,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}
+",Жульен
+10013,6,14,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 40,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}
+",Жульен
+10014,6,15,"[{
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 9,
+	""count"": 3,
+	""steps"": [{
+		""id"": 8
+	}, {
+		""id"": 41,
+		""dish"": 17
+	}]
+}, {
+	""ingridient"": 7,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 3
+	}]
+}, {
+	""ingridient"": 8,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}
+",Жульен
+10017,8,11,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 37,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+                ""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}
+",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели
+10018,8,12,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 38,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+                ""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}
+",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+10019,8,13,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 39,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+                ""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}
+",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+10020,8,14,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 40,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+                ""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}
+",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+10021,8,15,"[{
+	""ingridient"": 38,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 5
+	}]
+}, {
+	""ingridient"": 43,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	},{
+		""id"": 41,
+                ""dish"": 7
+	}]
+}, {
+	""ingridient"": 40,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+                ""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}
+",паста с трюфелЯми: паста (кастрюля без крышки) + трюфели (радар)
+10024,9,11,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 37,
+		""dish"": 35
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}
+",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+10025,9,12,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 38,
+		""dish"": 35
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}
+",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+10026,9,13,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 39,
+		""dish"": 35
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}
+",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+10027,9,14,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 40,
+		""dish"": 35
+	}]
+}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}
+",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+10028,9,15,"[{
+	""ingridient"": 27,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 25
+	}]
+}, {
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 37
+	}]
+}, {
+	""ingridient"": 25,
+	""count"": 1,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 8
+	}]
+}, {
+	""ingridient"": 10,
+	""count"": 2,
+	""steps"": [{
+		""id"": 7
+	}, {
+		""id"": 41,
+		""dish"": 35
+	}]
+}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}
+",нога ягненка: нога ягненка (противень) + картошка (горшочек) + чеснок
+10031,10,11,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 37,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 37,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 37,
+		""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}
+",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+10032,10,12,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 38,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 38,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 38,
+		""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}
+",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+10033,10,13,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 39,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 39,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 39,
+		""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}
+",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+10034,10,14,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 40,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 40,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 40,
+		""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}
+",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+10035,10,15,"[{
+	""ingridient"": 37,
+	""count"": 3,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 41,
+		""dish"": 19
+	}]
+}, {
+	""ingridient"": 3,
+	""count"": 1,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 41,
+		""dish"": 9
+	}]
+}, {
+	""ingridient"": 31,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}]
+}, {
+	""ingridient"": 33,
+	""count"": 2,
+	""steps"": [{
+		""id"": 12
+	}, {
+		""id"": 41,
+		""dish"": 3
+	}]
+}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}
+",картофельный гратен: картошка (плошка) + молоко + лук (сковородка( + сыр (grow)
+10038,19,11,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 37,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 37,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": false, ""dish"": true }}
+",суп с мидиями
+10039,19,12,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 38,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 38,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": false }}
+",суп с мидиями
+10040,19,13,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 39,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 39,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 3, ""ingrie"": true, ""dish"": true }}
+",суп с мидиями
+10041,19,14,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 40,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 40,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 2, ""ingrie"": true, ""dish"": true }}
+",суп с мидиями
+10042,19,15,"[{""ingridient"": 68,""count"": 2,""steps"": [{""id"": 10},{""id"": 41,""dish"": 5}]},{""ingridient"": 82,""count"": 1,""steps"": [{""id"": 10},{""id"": 41,""dish"": 7}]},{""ingridient"": 39,""count"": 1,""steps"": [{""id"": 10}]},{""ingridient"": 60,""count"": 3,""steps"": [{""id"": 10}]}]","{""shadow"" : {""countdown"": 1, ""ingrie"": true, ""dish"": true }}
+",суп с мидиями
+10045,1000,1,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 57}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 57}]}]","",Завтрак чемпиона
+10046,1000,2,"[{""ingridient"": 12,""count"": 2,""steps"": [{""id"": 57},{""id"": 58,""dish"": 33}]},{""ingridient"": 13,""count"": 1,""steps"": [{""id"": 57}]}]","",Завтрак чемпиона
+10047,1001,1,"[{""ingridient"": 16,""count"": 1,""steps"": [{""id"": 57}, {""id"": 58, ""dish"": 2}]},
+{""ingridient"": 8,""count"": 1,""steps"": [{""id"": 57}, {""id"": 58, ""dish"": 7}]},
+{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 57}]}]","",Ребрышки
+10048,28,1,"[{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 57}]},{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 57}]},{""ingridient"": 10,""count"": 1,""steps"": [{""id"": 57},{""id"": 58,""dish"": 14}]}]","",Оладьи
+10049,29,1,"[{""ingridient"": 37,""count"": 2,""steps"": [{""id"": 10},{""id"": 59,""dish"": 4}]},
+{""ingridient"": 95,""count"": 1,""steps"": [{""id"": 10},{""id"": 59,""dish"": 3}]},
+{""ingridient"": 97,""count"": 1,""steps"": [{""id"": 10},{""id"": 59,""dish"": 9}]}]","",Картоха с сыром
+10050,30,1,"[{""ingridient"": 96,""count"": 2,""steps"": [{""id"": 10},{""id"": 59,""dish"": 5}]},
+{""ingridient"": 53,""count"": 1,""steps"": [{""id"": 10},{""id"": 59,""dish"": 23}]},
+{""ingridient"": 97,""count"": 1,""steps"": [{""id"": 10},{""id"": 59,""dish"": 9}]}]","",Макароны с сыром
+10051,31,1,"[{""ingridient"": 79,""count"": 1,""steps"": [{""id"": 57},{""id"": 58,""dish"": 35}]},
+{""ingridient"": 54,""count"": 1,""steps"": [{""id"": 57},{""id"": 58,""dish"": 25}]},
+{""ingridient"": 100,""count"": 1,""steps"": [{""id"": 57}]},
+{""ingridient"": 31,""count"": 1,""steps"": [{""id"": 57},{""id"": 58,""dish"": 40}]}]","",Шоколадный кекс
+10053,32,1,"[{""ingridient"": 89,""count"": 2,""steps"": [{""id"": 7}, {""id"": 58,""dish"": 7}]},{""ingridient"": 70,""count"": 1,""steps"": [{""id"": 7}]},{""ingridient"": 65,""count"": 1,""steps"": [{""id"": 7}]},{""ingridient"": 90,""count"": 1,""steps"": [{""id"": 7},{""id"": 58,""dish"": 31}]}]","",Яблочный пирог
+10054,33,1,"[{""ingridient"": 91,""count"": 1,""steps"": [{""id"": 7}, {""id"": 17, ""dish"": 27}]},{""ingridient"": 92,""count"": 1,""steps"": [{""id"": 7}]}, 
+{""ingridient"": 25,""count"": 1,""steps"": [{""id"": 7}]},
+{""ingridient"": 37,""count"": 1,""steps"": [{""id"": 7}, {""id"": 17, ""dish"": 15}]}]","",Стейк ти-бон
+10055,34,1,"[{
+		""ingridient"": 69,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 59,
+			""dish"": 39
+		}]
+	},
+	{
+		""ingridient"": 8,
+		""count"": 1,
+		""steps"": [{
+				""id"": 7
+			},
+			{
+				""id"": 59,
+				""dish"": 3
+			}
+		]
+	},
+	{
+		""ingridient"": 98,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 59,
+			""dish"": 25
+		}]
+	},
+	{
+		""ingridient"": 99,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}]
+	}
+]","",Бургер
+10056,35,1,"[{
+		""ingridient"": 81,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 93,
+		""count"": 1,
+		""steps"": [{
+				""id"": 7
+			},
+			{
+				""id"": 58,
+				""dish"": 5
+			}
+		]
+	},
+	{
+		""ingridient"": 94,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}]
+	},
+	{
+		""ingridient"": 95,
+		""count"": 1,
+		""steps"": [{
+			""id"": 7
+		}, {
+			""id"": 58,
+			""dish"": 3
+		}]
+	}
+]","",Салат Кобб
+10057,1001,2,"[{""ingridient"": 16,""count"": 1,""steps"": [{""id"": 57}]},
+{""ingridient"": 8,""count"": 1,""steps"": [{""id"": 57}]},
+{""ingridient"": 1,""count"": 1,""steps"": [{""id"": 57}]}]","",Ребрышки

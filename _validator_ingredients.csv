@@ -1,0 +1,98 @@
+id,asset,name,shapeSimilarityCluster,colorSimilarityCluster,_comment
+1,in_tomato,INGR_TOMATO,4,1,помидор
+2,in_meat,INGR_RAW_MEAT,,1,мясо
+3,in_cheese,INGR_CHEESE,10,3,сыр
+4,in_pepper,INGR_SWEET_PEPPER,,4,сладкий перец
+5,in_pepper_red,INGR_CHILI_PEPPER,,1,перец чили
+6,in_cabbage,INGR_CABBAGE,,4,капуста
+7,in_chicken,INGR_CHICKEN,3,9,курица
+8,in_onion,INGR_ONION,4,7,лук
+9,in_mushroom,INGR_MUSHROOM,4,10,грибы
+10,in_butter,INGR_BUTTER,,3,масло
+12,in_bread_dark,INGR_BLACK_BREAD,2,8,черный хлеб
+13,in_cheese_goat,INGR_GOAT_CHEESE,10,10,козий сыр
+14,in_cucumber,INGR_CUCUMBER,11,4,огурец
+15,in_eggplant,INGR_EGGPLANT,11,7,баклажан
+16,in_ribs,INGR_PORK_RIBS,,12,ребрышки
+17,in_bread_white,INGR_BREAD,2,9,хлеб
+18,in2_beans_black,INGR_BEANS_BLACK,1,11,бобы черные
+19,in2_beans_mottled,INGR_BEANS_MOTTLED,1,9,бобы пестрые
+20,in2_beans_red,INGR_BEANS_RED,1,1,бобы красные
+21,in2_beans_white,INGR_BEANS_WHITE,1,10,бобы белые
+22,in2_beans_yellow,INGR_BEANS_YELLOW,1,3,бобы желтые
+23,in2_farfalle,INGR_FARFALLE,,3,паста-фарфалле
+24,in2_fusilli,INGR_FUSILLI,,3,паста-фузилли
+25,in2_garlic,INGR_GARLIC,4,10,чеснок
+26,in2_ginger,INGR_GINGER,,3,имбирь
+27,in2_lamb_leg,INGR_LAMB_LEG,13,12,баранья нога
+28,in2_mayonnaise,INGR_MAYONNAISE,6,3,майонез
+29,in_asparagus,INGR_ASPA,,4,спаржа
+30,in_chicken_fried,INGR_FRIED_CHICKEN,3,2,жареная курица
+31,in2_milk,INGR_MILK,,4,молоко
+32,in2_onion_white,INGR_ONION_WHITE,4,10,белый лук
+33,in2_onion_yellow,INGR_ONION_YELLOW,4,3,желтый лук
+34,in2_penne,INGR_PENNE,,3,паста-пенне
+35,in2_pipette,INGR_PIPETTE,,3,паста-пипетте
+36,in2_pork_leg,INGR_PORK_LEG,13,1,свиной окорок
+37,in2_potato,INGR_POTATO,12,3,картошка
+38,in2_reginette,INGR_REGINETTE,,3,паста-регинетте 
+39,in2_shallot,INGR_SHALLOT,,3,лук-шалот
+40,in2_sour_cream,INGR_SOUR_CREAM,6,10,сметана
+41,in2_spaghetti,INGR_SPAGHETTI,,3,спагетти
+42,in2_sweet_potato,INGR_SWEET_POTATO,,2,батат
+43,in2_truffle_black,INGR_TRUFFLE_BLACK,5,8,трюфели черные
+44,in2_truffle_white,INGR_TRUFFLE_WHITE,5,9,трюфели белые
+45,in3_arugula,IN3_ARUGULA,,4,руккола
+46,in3_baguette,IN3_BAGUETTE,,9,багет
+47,in3_banana,IN3_BANANA,,3,банан
+48,in3_basil_green,IN3_BASIL_GREEN,7,4,базилик зеленый
+49,in3_basil_purple,IN3_BASIL_PURPLE,7,7,базилик фиолетовый
+50,in3_celery,IN3_CELERY,,4,сельдерей 
+51,in3_ciabatta,IN3_CIABATTA,,9,чиабатта
+52,in3_dill,IN3_DILL,,4,укроп
+53,in3_egg,IN3_EGG,12,10,яйцо
+54,in3_flour,IN3_FLOUR,,10,мука
+55,in3_honey,IN3_HONEY,,3,мед
+56,in3_jam_orange,IN3_JAM_ORANGE,6,3,грушевый джем
+57,in3_jam_purple,IN3_JAM_PURPLE,6,7,черничный джем
+58,in3_jam_red,IN3_JAM_RED,6,1,клубничный джем
+59,in3_onion_lancet,IN3_ONION_LANCET,,4,зеленый лук (ростки)
+60,in3_parsley,IN3_PARSLEY,,4,петрушка
+61,in3_quail_egg,IN3_QUAIL_EGG,,3,перепелиные яйца
+62,in3_raspberry,IN3_RASPBERRY,,1,малина
+63,in3_snail,IN3_SNAIL,,9,улитка
+64,in3_strawberry,IN3_STRAWBERRY,,1,клубника
+65,in3_sugar,IN3_SUGAR,,10,сахар
+66,in3_whole_grain_bread,IN3_WHOLE_GRAIN_BREAD,,9,батон
+67,in3_wine_red,IN3_WINE_RED,9,7,красное вино
+68,in3_wine_white,IN3_WINE_WHITE,9,4,белое вино
+69,in4_beef_meat,IN4_BEEF_MEAT,,12,говядина
+70,in4_cinnamon,IN4_CINNAMON,,8,корица
+71,in4_lasagna,IN4_LASAGNA,,3,лазанья
+72,in4_mozzarella,IN4_MOZZARELLA,,10,моцарелла
+73,in4_pork_meat,IN4_PORK_MEAT,,12,свинина
+74,in4_ricotta,IN4_RICOTTA,,10,рикотта
+75,in4_tomato_cherry,IN4_TOMATO_CHERRY,,1,помидоры черри
+76,in4_vanilla,IN4_VANILLA,,8,ваниль
+79,in2-3_dark_chocolate,IN2-3_DARK_CHOCOLATE,,8,темный шоколад
+80,in2-3_tuna,IN2-3_TUNA,,1,тунец
+81,in2-3_lettuce,IN2-3_LETTUCE,,4,салат
+82,in2-3_mussel,IN2-3_MUSSEL,,11,мидия
+83,in2-3_oyster,IN2-3_OYSTER,,9,устрица
+84,in2-3_scallop,IN2-3_SCALLOP,,9,гребешок
+85,in2-3_carrot,IN2-3_CARROT,,2,морковь
+86,in4_cannelloni,IN4_CANNELLONI,,3,каннеллони
+87,in4_pancetta,IN4_PANCETTA,,1,панчетта
+88,in4_cream_cheese,IN4_CREAM_CHEESE,,10,маскарпоне
+89,in9_apple,IN9_APPLE,,1,яблоко
+90,in5_pastry,IN5_PASTRY,,3,тесто
+91,in9_t_bone_steak,IN9_T_BONE_STEAK,,1,стейк
+92,in9_thyme,IN9_THYME,,4,тимьян
+93,in5_chicken_breast,IN5_CHICKEN_BREAST,,9,куриная грудка
+94,in9_avocado,IN9_AVOCADO,,4,авокадо
+95,in9_bacon2,IN9_BACON2,,1,бекон
+96,in1_pasta_horns,IN1_PASTA_HORNS,1,3,макароны-рожки
+97,in1_cheddar,IN1_CHEDDAR,,3,сыр чеддер
+98,in9_bun_sesame,IN9_BUN_SESAME,,9,Булочка с кунжутом
+99,in9_roquefort,IN9_ROQUEFORT,,10,Сыр рокфор
+100,in4_cocoa_powder,IN4_COCOA_POWDER,,8,Какао-порошок

@@ -62,7 +62,7 @@ class Quest(object):
 
     def complete(self):
         self.completed = True
-        return self.reward.give(True)
+        return self.reward.give(True, False)
 
     @property
     def full_gold_cost(self):
@@ -109,19 +109,39 @@ class Reward(object):
         self.gold_reward = gold_reward
         self.energy_reward = energy_reward
 
-    def give(self, always_chance):
-        reward_items = {} # item: amount
-        for item in self.item_chances.keys():
-            amount = 1
-            if self.item_amounts != None:
-                amount = self.item_amounts[item]
-            if always_chance:
-                reward_items[item] = amount
-            elif random.randrange(0, 100) * 0.01 < self.item_chances[item]:
-                reward_items[item] = amount
+    def give(self, always_chance, is_mission):
         gold = Game.items["Soft currency"]
         energy = Game.items["Energy"]
-        reward_items[gold] = self.gold_reward
+        
+        reward_items = {} # item: amount
+        item_chances = self.item_chances.copy()
+        full_prob = 0.0
+        for item in item_chances.keys():
+            full_prob += item_chances[item]
+            item_chances[item] = full_prob
+        gold_prob = full_prob + 0.001
+        
+        if gold_prob < 0:
+            raise ValueError("Gold probability < 0 in some mission!")
+        if is_mission:
+            reward_items[gold] = 0
+            for item in item_chances.keys():
+                reward_items[item] = 0
+            for i in range(0, 3):
+                roll = random.randrange(0, 100)
+                roll *= 0.01
+                if roll >= gold_prob:
+                    reward_items[gold] += self.gold_reward                    
+                else:
+                    for item in item_chances.keys():
+                        amount = 1
+                        if self.item_amounts != None:
+                            amount = self.item_amounts[item]
+                        if roll <= item_chances[item]:                          
+                            reward_items[item] += amount
+                            break
+        else:
+            reward_items[gold] = self.gold_reward
         reward_items[energy] = self.energy_reward
         return reward_items
 
@@ -190,7 +210,7 @@ class Mission(object):
             always_chance = False
         else:
             self.played = True
-        return self.reward.give(always_chance)
+        return self.reward.give(always_chance, True)
 
 class Recipe(object):
     def __init__(self, recipe_id, name, gold_by_levels, frag_item,
