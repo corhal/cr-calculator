@@ -270,7 +270,10 @@ def export_dialogues_from_json(last_id):
                 quest_name = dialogue_nodes[key]['Properties']['DisplayName']
                 quest = find_quest(quest_name, quests)
                 start_index = 0
-                prefix = 'QUEST_' + str(quest.ident) + '_DIALOG_'
+                try:
+                    prefix = 'QUEST_' + str(quest.ident) + '_DIALOG_'
+                except AttributeError:
+                    raise ValueError("Some problems with quest " + quest_name)
                 player_emotions_by_depth = {}            
                 for s_key in sorted(dialogue_fragments.keys()):                
                     if dialogue_fragments[s_key]['Type'] == 'DialogueFragment' \

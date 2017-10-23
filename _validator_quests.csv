@@ -4,14 +4,14 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,10301,Brother-101,1,,Gaming console,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 5}],""item"" : [{""id"" :  10003, ""amount"" : 5}]}",,103,13
 ,10401,Brother-102,1,,Camera on tripod,1,HDMI,1,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 5}],""item"" : [{""id"" :  10004, ""amount"" : 5}]}",,104,14
 ,10402,Brother-103,1,,Dice,5,Notepad,1,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 5}],""item"" : [{""id"" :  10004, ""amount"" : 4}]}",Brother-102,,
-,20101,Organiser-201,2,1,Wine,1,Wine glass,2,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",,,22
-,20102,Organiser-202,2,2,Sun umbrella,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",Organiser-201,,
-,20103,Organiser-203,2,3,Medicine,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",Organiser-202,,
+,20101,Producer-201,2,1,Wine,1,Wine glass,2,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",,,22
+,20102,Producer-202,2,2,Sun umbrella,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",Producer-201,,
+,20103,Producer-203,2,3,Medicine,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",Producer-202,,
 ,20201,Supplier-201,2,4,Pillow,2,Blanket,1,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",,203,23
 ,20202,Supplier-202,2,5,Medicine,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",Supplier-201,,
 ,20203,Supplier-203,2,6,Fruits,2,Lavander,2,Medicine,1,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 2}]}",Supplier-202,,
-,20301,Organiser-204,2,7,Mosquito spray,2,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 1}]}",,204,24
-,20302,Organiser-205,2,8,Picnic basket,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 1}]}",Organiser-204,,
+,20301,Producer-204,2,7,Mosquito spray,2,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 1}]}",,204,24
+,20302,Producer-205,2,8,Picnic basket,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10007, ""amount"" : 1}]}",Producer-204,,
 ,20401,Shadyguy-201,2,9,Tablecloth,2,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10008, ""amount"" : 2}]}",,205,25
 ,20402,Shadyguy-202,2,10,Cutlery,2,Service,1,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10008, ""amount"" : 2}]}",Shadyguy-201,,
 ,20403,Shadyguy-203,2,11,Wine glass,2,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10008, ""amount"" : 2}]}",Shadyguy-202,,
@@ -24,8 +24,8 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,20604,Shadyguy-207,2,18,Comfortable chair,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10009, ""amount"" : 2}]}",Shadyguy-206,,
 ,20701,Supplier-207,2,19,Knitting needles,2,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10009, ""amount"" : 2}]}",,208,28
 ,20702,Supplier-208,2,20,Hat,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10009, ""amount"" : 2}]}",Supplier-207,,
-,20801,Organiser-206,2,21,Stage microphone,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10009, ""amount"" : 2}]}",,209,29
-,20802,Organiser-207,2,22,Mortar and pestle,1,Plate,1,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10009, ""amount"" : 2}]}",Organiser-206,,
+,20801,Producer-206,2,21,Stage microphone,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10009, ""amount"" : 2}]}",,209,29
+,20802,Producer-207,2,22,Mortar and pestle,1,Plate,1,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10009, ""amount"" : 2}]}",Producer-206,,
 ,30101,Manager-301,3,23,Cooking kit,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10010, ""amount"" : 2}]}",,,32
 ,30102,Manager-302,3,24,Moustache kit,1,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10010, ""amount"" : 2}]}",Manager-301,,
 ,30103,Manager-303,3,25,Flower,10,,,,,0,0,"{""refillable"": [{""id"": 1, ""amount"": 10}],""item"" : [{""id"" :  10010, ""amount"" : 2}]}",Manager-302,,
@@ -216,21 +216,21 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,10406,Sportsman-1006,10,210,Floodlight,2,,,,,0,0,,Sportsman-1005,,
 ,10407,Sportsman-1007,10,211,Wide-angle lens,1,,,,,0,0,,Sportsman-1006,,
 ,10408,Sportsman-1008,10,212,Backdrop,1,,,,,0,0,,Sportsman-1007,,
-,10501,Organiser-1001,10,213,Projector,1,,,,,0,0,,Sportsman-1008,,
-,10502,Organiser-1002,10,214,Extension cord,1,,,,,0,0,,Organiser-1001,,
-,10503,Organiser-1003,10,215,Colored floodlight,2,,,,,0,0,,Organiser-1002,,
-,10504,Organiser-1004,10,216,Laser machine,1,,,,,0,0,,Organiser-1003,,
-,10505,Organiser-1005,10,217,Stage controls,1,,,,,0,0,,Organiser-1004,,
-,10506,Organiser-1006,10,218,Stage loudspeaker,3,,,,,0,0,,Organiser-1005,,
-,10507,Organiser-1007,10,219,Banner,1,,,,,0,0,,Organiser-1006,,
-,10508,Organiser-1008,10,220,LED ball,1,,,,,0,0,,Organiser-1007,,
-,10509,Organiser-1009,10,221,Stage loudspeaker,2,,,,,0,0,,Organiser-1008,,
-,10510,Organiser-1010,10,222,Synthesizer,1,,,,,0,0,,Organiser-1009,,
-,10511,Organiser-1011,10,223,Drum set,1,,,,,0,0,,Organiser-1010,,
-,10512,Organiser-1012,10,224,Electric violin,1,,,,,0,0,,Organiser-1011,,
-,10513,Organiser-1013,10,225,Tambourine,1,,,,,0,0,,Organiser-1012,,
-,10514,Organiser-1014,10,226,Loud-hailer,1,,,,,0,0,,Organiser-1013,,
-,10601,Blogger-1022,10,227,Street light,3,,,,,0,0,,Organiser-1014,,
+,10501,Producer-1001,10,213,Projector,1,,,,,0,0,,Sportsman-1008,,
+,10502,Producer-1002,10,214,Extension cord,1,,,,,0,0,,Producer-1001,,
+,10503,Producer-1003,10,215,Colored floodlight,2,,,,,0,0,,Producer-1002,,
+,10504,Producer-1004,10,216,Laser machine,1,,,,,0,0,,Producer-1003,,
+,10505,Producer-1005,10,217,Stage controls,1,,,,,0,0,,Producer-1004,,
+,10506,Producer-1006,10,218,Stage loudspeaker,3,,,,,0,0,,Producer-1005,,
+,10507,Producer-1007,10,219,Banner,1,,,,,0,0,,Producer-1006,,
+,10508,Producer-1008,10,220,LED ball,1,,,,,0,0,,Producer-1007,,
+,10509,Producer-1009,10,221,Stage loudspeaker,2,,,,,0,0,,Producer-1008,,
+,10510,Producer-1010,10,222,Synthesizer,1,,,,,0,0,,Producer-1009,,
+,10511,Producer-1011,10,223,Drum set,1,,,,,0,0,,Producer-1010,,
+,10512,Producer-1012,10,224,Electric violin,1,,,,,0,0,,Producer-1011,,
+,10513,Producer-1013,10,225,Tambourine,1,,,,,0,0,,Producer-1012,,
+,10514,Producer-1014,10,226,Loud-hailer,1,,,,,0,0,,Producer-1013,,
+,10601,Blogger-1022,10,227,Street light,3,,,,,0,0,,Producer-1014,,
 ,10602,Blogger-1023,10,228,Folding table,1,Folding chair,1,,,0,0,,Blogger-1022,,
 ,10603,Blogger-1024,10,229,Stage loudspeaker,3,,,,,0,0,,Blogger-1023,,
 ,10604,Blogger-1025,10,230,Marker board,1,Marker,2,,,0,0,,Blogger-1024,,
