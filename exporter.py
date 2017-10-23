@@ -319,11 +319,14 @@ def export_dialogues_from_json(last_id):
                                 feedback = ''
                                 if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1] != 'neutral':
                                     feedback = dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1]
-                                dialogues_by_ident[(prefix + str(depth).zfill(2))]['responces'].append({
-                                    'text': prefix + str(depth).zfill(2) + postfix,
-                                    'smile': player_emo_dict[emotion],
-                                    'feedback': feedback
-                                })
+                                try:
+                                    dialogues_by_ident[(prefix + str(depth).zfill(2))]['responces'].append({
+                                        'text': prefix + str(depth).zfill(2) + postfix,
+                                        'smile': player_emo_dict[emotion],
+                                        'feedback': feedback
+                                        })
+                                except KeyError:
+                                    raise ValueError("id " + s_key + " dialogue key: " + prefix + str(depth).zfill(2) + postfix + " emotion: " + emotion + " feedback: " + feedback)
                             elif dialogues_by_ident[(prefix + str(depth).zfill(2))]['character'] == 'player':
                                 dialogues_by_ident[(prefix + str(depth).zfill(2))]['character'] = speakers[dialogue_fragments[s_key]['Properties']['Speaker']]
                             translations.append({      
