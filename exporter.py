@@ -400,9 +400,12 @@ def recursive(fragmentsByIds, ident, end_target, speakers):
         if fragmentsByIds[ident]['Type'] == 'Hub':
             depth = 1
         fragmentsByIds[ident]['Properties']['Depth'] = depth
-        if 'StageDirections' in fragmentsByIds[ident]['Properties'] and \
-            fragmentsByIds[ident]['Properties']['StageDirections'].split('|')[1] == 'briefing':
-            briefing_depth = depth
+        try:
+            if 'StageDirections' in fragmentsByIds[ident]['Properties'] and \
+                fragmentsByIds[ident][ 'Properties']['StageDirections'].split('|')[1] == 'briefing':
+                briefing_depth = depth
+        except IndexError:
+            raise ValueError('id' + str(ident) + ': ' + '"'+ fragmentsByIds[ident][ 'Properties']['StageDirections'] + '"')
         sub_index = 0
         for connection in fragmentsByIds[ident]['Properties']['OutputPins'][0]['Connections']:
             if sub_index == 0 and 'Speaker' in fragmentsByIds[ident]['Properties'] \
