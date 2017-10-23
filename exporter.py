@@ -410,15 +410,18 @@ def recursive(fragmentsByIds, ident, end_target, speakers):
         except IndexError:
             raise ValueError('id' + str(ident) + ': ' + '"'+ fragmentsByIds[ident][ 'Properties']['StageDirections'] + '"')
         sub_index = 0
-        for connection in fragmentsByIds[ident]['Properties']['OutputPins'][0]['Connections']:
-            if sub_index == 0 and 'Speaker' in fragmentsByIds[ident]['Properties'] \
-                and speakers[fragmentsByIds[ident]['Properties']['Speaker']] == 'player':
-                depth = depth + 1
-            sub_index += 1
-            if 'StageDirections' in fragmentsByIds[ident]['Properties'] and \
-                fragmentsByIds[ident]['Properties']['StageDirections'].split('|')[1] == 'briefing':
-                depth += 1 
-            realRecursive(fragmentsByIds, connection['Target'], end_target, depth)
+        try:
+            for connection in fragmentsByIds[ident]['Properties']['OutputPins'][0]['Connections']:
+                if sub_index == 0 and 'Speaker' in fragmentsByIds[ident]['Properties'] \
+                    and speakers[fragmentsByIds[ident]['Properties']['Speaker']] == 'player':
+                    depth = depth + 1
+                sub_index += 1
+                if 'StageDirections' in fragmentsByIds[ident]['Properties'] and \
+                    fragmentsByIds[ident]['Properties']['StageDirections'].split('|')[1] == 'briefing':
+                    depth += 1 
+                realRecursive(fragmentsByIds, connection['Target'], end_target, depth)
+        except KeyError:
+            raise ValueError("broken id: " + ident)
     depth = 1    
     realRecursive(fragmentsByIds, ident, end_target, depth)
     return briefing_depth
