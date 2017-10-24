@@ -381,11 +381,12 @@ def write_dialogues(translations, dialogues_by_ident):
             responces_ls = dialogues_by_ident[dialogue_ident]['responces']
 
             for i in range(len(responces_ls)):
-                responces += '{"text": "' + responces_ls[i]['text'] + '", "smile": "' \
-                            + responces_ls[i]['smile'] + '", "feedback": "' \
-                            + responces_ls[i]['feedback'] + '"}'
-                if i != len(responces_ls) - 1:
-                    responces += ', '
+                if responces_ls[i]['text'] not in responces:
+                    responces += '{"text": "' + responces_ls[i]['text'] + '", "smile": "' \
+                                + responces_ls[i]['smile'] + '", "feedback": "' \
+                                + responces_ls[i]['feedback'] + '"}'
+                    if i != len(responces_ls) - 1:
+                        responces += ', '
             responces += ']'
 
             writer.writerow({'id': ident,
