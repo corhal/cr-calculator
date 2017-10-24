@@ -210,7 +210,7 @@ def find_quest(quest_name, quests):
             return quest
 
 quest_emotions = {}
-def export_dialogues_from_json(last_id):
+def export_dialogues_from_json(last_id, first_chapter, last_chapter):
     global quest_emotions
     items = load_items()
     missions = load_missions(items, load_recipes(items))
@@ -234,10 +234,14 @@ def export_dialogues_from_json(last_id):
             if smth['Type'] == 'FlowFragment':
                 chapters[smth['Properties']['Id']] = smth
         
-        for chapter_id in chapters.keys():
+        for chapter_id in chapters.keys():            
             chapter_strings = chapters[chapter_id]['Properties']['DisplayName'].split()
             lang = chapter_strings[-1].strip(')(').lower()
             chapter_number = int(chapter_strings[-2])
+            
+            if chapter_number < first_chapter or chapter_number > last_chapter:
+                continue
+            
             quest_ids = []
 
             dialogue_nodes = {}
@@ -630,8 +634,10 @@ def recursive(fragmentsByIds, ident, end_target, speakers):
 
 def export_data():
     last_id = int(input("enter current last dialogue id, pls "))
+    first_chapter = int(input("from which chapter? "))
+    last_chapter = int(input("till which chapter? "))
     export_items()
-    export_dialogues_from_json(last_id)
+    export_dialogues_from_json(last_id, first_chapter, last_chapter)
     export_quests()
     export_missions()
     export_regions()    
