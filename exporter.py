@@ -155,6 +155,8 @@ def export_quests():
                         requirements += ', '
             flag = False
             if quest.requirement != None and len(quest.requirement.missions) > 0 and quest.requirement.missions[0] != None:
+                if len(quest.requirement.quests) > 0:
+                    requirements += ', '
                 requirements += '"mission": [{"id": ' + str(quest.requirement.missions[0].ident) + ', "stars": 1}]'
                 flag = True
 
