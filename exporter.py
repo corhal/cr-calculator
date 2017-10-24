@@ -388,7 +388,11 @@ def write_dialogues(translations, dialogues_by_ident):
                     if i != len(responces_ls) - 1:
                         responces += ', '
             responces += ']'
-
+            
+            if len(responces) > 3 and responces[-3] == ',': # адовейший костыль
+                responces = responces[:-3]
+                responces += ']'
+            
             writer.writerow({'id': ident,
                              'questId': questId,
                              'character': character,
