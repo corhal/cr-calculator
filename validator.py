@@ -6,7 +6,8 @@ import sys
 
 def play(plays_count, start_chapter, max_chapter):
 
-    mission_results = {} # chapter_index: [missions, missions]
+    mission_results = {} # mission ident: [count, count]
+    total_mission_results = {} # chapter_index: [missions, missions]
     day_results = {} # chapter_index: [day, day]
     gold_results = {} # chapter_index: [gold, gold]
 
@@ -21,9 +22,13 @@ def play(plays_count, start_chapter, max_chapter):
             if chapter_index == max_chapter + 1:
                 break
             chapter_results = player.play_chapter(chapter_index)
-            if chapter_index not in mission_results.keys():
-                mission_results[chapter_index] = []
-            mission_results[chapter_index].append(chapter_results[0])
+            if chapter_index not in total_mission_results.keys():
+                total_mission_results[chapter_index] = []
+            total_mission_results[chapter_index].append(chapter_results[1])
+            for mission in chapter_results[0].keys():
+                if mission.ident not in mission_results:
+                    mission_results[mission.ident] = []
+                mission_results[mission.ident].append(chapter_results[0][mission])
             if chapter_index not in day_results.keys():
                 day_results[chapter_index] = []
             day_results[chapter_index].append(player.day)
@@ -31,10 +36,15 @@ def play(plays_count, start_chapter, max_chapter):
                 gold_results[chapter_index] = []
             gold_results[chapter_index].append(player.gold)
 
-    if len(mission_results) > 0 and len(day_results) > 0:
-        for chapter_index in mission_results.keys():
+    if len(total_mission_results) > 0 and len(day_results) > 0:
+        for chapter_index in total_mission_results.keys():
             print("Chapter " + str(chapter_index) + ":")
-            print("Missions, on average: " + str(sum(mission_results[chapter_index])/float(len(mission_results[chapter_index]))))
+            print("Missions, on average: " + str(sum(total_mission_results[chapter_index])/float(len(total_mission_results[chapter_index]))))
+            print("-" * 10)
+            for mission_ident in mission_results.keys():
+                if str(mission_ident)[0] == str(chapter_index):
+                    print(str(mission_ident) + ": " + str(sum(mission_results[mission_ident])/float(len(mission_results[mission_ident]))))                   
+            print("-" * 10)
             print("Days, on average: " + str(sum(day_results[chapter_index])/float(len(day_results[chapter_index]))))
             print("Gold, on average: " + str(sum(gold_results[chapter_index])/float(len(gold_results[chapter_index]))))
 

@@ -264,7 +264,8 @@ class Player(object):
         self.day = 1
         self.session = 0
         self.daily_sessions = daily_sessions
-        self.missions_completed = 0
+        self.total_missions_completed = 0
+        self.missions_completed = {} # mission: count
         self.chapter = None
         self.recipes = recipes
         self.mins_per_en = mins_per_en
@@ -323,12 +324,12 @@ class Player(object):
     def play_chapter(self, chapter_index):
         self.day = 1
         self.session = 0 # ?..
-        self.missions_completed = 0
+        self.total_missions_completed = 0
         self.chapter = Game.chapters[chapter_index]
         self.recipes.extend(self.chapter.recipes)
         return self.choose_quest()
 
-    def choose_quest(self): # returns tuple (missions_completed, day)
+    def choose_quest(self): # returns tuple (missions_completed, total_missions_completed, day)
         loop_count = 0
         while True:
             loop_count += 1
@@ -337,7 +338,7 @@ class Player(object):
                 if quest.completed:
                     count += 1
                     if count == len(self.chapter.quests):
-                        return (self.missions_completed, self.day)
+                        return (self.missions_completed, self.total_missions_completed, self.day)
             available_quests = self.get_available_quests()
             #print(available_quests)
             #print(available_quests[0].name)
@@ -433,7 +434,11 @@ class Player(object):
     def play_mission(self, mission):
         self.energy -= mission.energy_cost
         self.receive_reward(mission.complete())
-        self.missions_completed += 1
+        self.total_missions_completed += 1
+        
+        if mission not in self.missions_completed.keys():
+            self.missions_completed[mission] = 0
+        self.missions_completed[mission] += 1        
 
     def craft(self, item):
         if item.recipe == None:
@@ -471,7 +476,7 @@ class Player(object):
     def show_stats(self):
         print("-" * 30)
         print("Day: " + str(self.day))
-        print("Missions completed: " + str(self.missions_completed))
+        print("Missions completed: " + str(self.total_missions_completed))
         print("Gold: " + str(self.gold))
         print("Energy: " + str(self.energy))
         for item in self.inventory.keys():
