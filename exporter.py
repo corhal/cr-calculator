@@ -355,7 +355,7 @@ def write_dialogues(translations, dialogues_by_ident):
         
         for translation in translations:
             text = translation['text']
-            text = text.replace('{', '<font color="ffffff" oline="2" olcolor="92633a">')
+            text = text.replace('{', '<font color="674a3a" oline="0" olcolor="92633a">')
             text = text.replace('}', '</font>')
             writer.writerow({'ident': translation['ident'],
                             'lang': translation['lang'],
