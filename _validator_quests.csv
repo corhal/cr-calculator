@@ -4,28 +4,31 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,10301,Brother-101,1,,Gaming console,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,103,13
 ,10401,Brother-102,1,,Camera on tripod,1,HDMI,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,104,14
 ,10402,Brother-103,1,,Dice,5,Notepad,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-102,,
-,20101,Producer-201,2,1,Wine,1,Wine glass,2,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,22
-,20102,Producer-202,2,2,Sun umbrella,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-201,,
-,20201,Supplier-201,2,3,Medicine,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-202,,
-,20202,Supplier-202,2,4,Pillow,2,Blanket,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-201,203,23
-,20203,Supplier-203,2,5,Medicine,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-202,,
-,20301,Producer-203,2,6,Fruits,2,Lavander,2,Medicine,1,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-203,,
-,20301,Producer-204,2,7,Mosquito spray,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-203,204,24
-,20301,Producer-205,2,8,Picnic basket,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-204,,
-,20501,Supplier-204,2,9,Tablecloth,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-205,205,25
-,20502,Supplier-205,2,10,Cutlery,2,Service,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-204,,
-,20503,Supplier-206,2,11,Wine glass,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-205,,
-,20401,Shadyguy-201,2,12,Pig costume,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-206,206,26
-,20402,Shadyguy-202,2,13,Bow,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-201,,
-,20403,Shadyguy-203,2,14,DSLR,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-202,,
-,20701,Supplier-207,2,15,Iphone pin,1,Wine,1,Wine glass,1,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-203,207,27
-,20702,Supplier-208,2,16,Saw,2,Shovel,2,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-207,,
-,20601,Shadyguy-204,2,17,Garland,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-208,,
-,20602,Shadyguy-205,2,18,Comfortable chair,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-204,,
-,20603,Shadyguy-206,2,19,Knitting needles,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-205,208,28
-,20604,Shadyguy-207,2,20,Hat,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-206,,
-,20801,Producer-206,2,21,Stage microphone,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-207,209,29
-,20802,Producer-207,2,22,Mortar and pestle,1,Plate,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-206,,
+,20101,Producer-201,2,,Wine,1,Wine glass,2,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,
+,20102,Producer-202,2,,Sun umbrella,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-201,,
+,20103,Producer-203,2,,Medicine,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-202,,
+,20201,Shadyguy-201,2,,Shovel,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-203,,
+,20202,Shadyguy-202,2,,Medicine,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-201,,
+,20203,Shadyguy-203,2,,Fruits,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-202,,
+,20301,Supplier-201,2,,Blanket,1,Pillow,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-203,,
+,20302,Supplier-202,2,,Medicine,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-201,,
+,20303,Supplier-203,2,,Fruits,2,Lavander,3,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-202,,
+,20401,Producer-204,2,,Mosquito spray,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-203,,
+,20402,Producer-205,2,,Iphone pin,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-204,,
+,20403,Producer-206,2,,Picnic basket,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-205,,
+,20501,Shadyguy-204,2,,Shovel,5,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-206,,
+,20502,Shadyguy-205,2,,Saw,5,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-204,,
+,20503,Shadyguy-206,2,,DSLR,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-205,,
+,20601,Supplier-204,2,,Pig costume,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-206,,
+,20602,Supplier-205,2,,Bow,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-204,,
+,20603,Supplier-206,2,,Hat,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-205,,
+,20701,Shadyguy-207,2,,Garland,3,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Supplier-206,,
+,20702,Shadyguy-208,2,,Comfortable chair,3,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-207,,
+,20703,Shadyguy-209,2,,Cutlery,1,Service,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-208,,
+,20704,Shadyguy-210,2,,Wine,5,Wine glass,10,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-209,,
+,20705,Shadyguy-211,2,,Mortar and pestle,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-210,,
+,20801,Producer-207,2,,Stage microphone,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-211,,
+,20802,Producer-208,2,,Knitting needles,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-207,,
 ,30101,Manager-301,3,23,Cooking kit,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,32
 ,30102,Manager-302,3,24,Moustache kit,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-301,,
 ,30103,Manager-303,3,25,Flower,10,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-302,,
