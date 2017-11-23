@@ -288,11 +288,16 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter):
                     prefix = 'QUEST_' + str(quest.ident) + '_DIALOG_'
                 except AttributeError:
                     raise ValueError("Some problems with quest " + quest_name)
-                player_emotions_by_depth = {}                         
+                player_emotions_by_depth = {}      
+                try: 
+                    for s_key in sorted(dialogue_fragments.keys()):               
+                        a = dialogue_fragments[s_key]['Properties']['Depth']
+                except KeyError:
+                    raise ValueError(dialogue_fragments[s_key]['Properties']['TechnicalName']) 
                 for s_key in sorted(dialogue_fragments.keys(), key=lambda k: dialogue_fragments[k]['Properties']['Depth']):       
                     if dialogue_fragments[s_key]['Type'] == 'DialogueFragment' \
                         and dialogue_fragments[s_key]['Properties']['Parent'] == key:
-                        emotion = dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[0]
+                        emotion = dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[0].lstrip()
                         postfix = ''
                         depth = dialogue_fragments[s_key]['Properties']['Depth']
                         unique = True
@@ -304,17 +309,23 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter):
                                 player_emotions_by_depth[depth].append(emotion)
                                 postfix = '_A' + str(player_emotions_by_depth[depth].index(emotion) + 1)
                             else:
-                                unique = False
-                                
+                                unique = False                               
+                        
                         if emotion in npc_emo_dict:
                             postfix = npc_emo_dict[emotion]
                             if quest.name not in quest_emotions.keys() and 'angry' in emotion or 'sad' in emotion:
-                                quest_emotions[quest.name] = emotion.split('-')[0]
+                                quest_emotions[quest.name] = emotion.split('-')[0].lstrip()
                             
-                        if emotion in override_emotions:
+                            
+                        if emotion in override_emotions or emotion[1:] in override_emotions:
                             override_emotion = ''   
-                            if depth == 1 or emotion[0] == '*':
+                            if depth == 1:
                                 override_emotion = override_emotions[emotion]
+                            if emotion[0] == '*':
+                                override_emotion = override_emotions[emotion[1:]]
+                                postfix = npc_emo_dict[emotion[1:]]
+                                if quest.name not in quest_emotions.keys() and 'angry' in emotion[1:] or 'sad' in emotion[1:]:
+                                    quest_emotions[quest.name] = emotion[1:].split('-')[0].lstrip()
                                 #print(emotion.strip('-'))
                                 
                         if (prefix + str(depth).zfill(2)) not in dialogues_by_ident:
@@ -322,9 +333,10 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter):
                             order = depth - dialogue_nodes[key]['Properties']['BriefingDepth']
                             
                             # [КОСТЫЛЬ!!!!!111!!1!адин]                            
-                            if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1] == 'debriefing':
-                                order = 1
-                            elif order > 0:
+                            #if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1] == 'debriefing':
+                                #order = 1
+                            #elif order > 0:
+                            if order > 0:
                                 order += 1                            
                             # [/КОСТЫЛЬ!!!!!111!!1!адин]       
                                              
@@ -344,14 +356,15 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter):
                         if unique:  
                             if speakers[dialogue_fragments[s_key]['Properties']['Speaker']] == 'player':
                                 feedback = ''
-                                if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1] != 'neutral':
-                                    feedback = dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1]
+                                if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1].lstrip() != 'neutral':
+                                    feedback = dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1].lstrip()
                                 try:
-                                    dialogues_by_ident[(prefix + str(depth).zfill(2))]['responces'].append({
-                                        'text': prefix + str(depth).zfill(2) + postfix,
-                                        'smile': player_emo_dict[emotion],
-                                        'feedback': feedback
-                                        })
+                                    if dialogue_fragments[s_key]['Properties']['Text'] != "...":
+                                        dialogues_by_ident[(prefix + str(depth).zfill(2))]['responces'].append({
+                                            'text': prefix + str(depth).zfill(2) + postfix,
+                                            'smile': player_emo_dict[emotion],
+                                            'feedback': feedback
+                                            })
                                 except KeyError:
                                     raise ValueError("id " + s_key + " dialogue key: " + prefix + str(depth).zfill(2) + postfix + " emotion: " + emotion + " feedback: " + feedback)
                             elif dialogues_by_ident[(prefix + str(depth).zfill(2))]['character'] == 'player':
@@ -439,7 +452,7 @@ def recursive(fragmentsByIds, ident, end_target, speakers):
         fragmentsByIds[ident]['Properties']['Depth'] = depth
         try:
             if 'StageDirections' in fragmentsByIds[ident]['Properties'] and \
-                fragmentsByIds[ident][ 'Properties']['StageDirections'].split('|')[1] == 'briefing':
+                fragmentsByIds[ident][ 'Properties']['StageDirections'].split('|')[1].lstrip() == 'briefing':
                 briefing_depth = depth
         except IndexError:
             raise ValueError('id' + str(ident) + ': ' + '"'+ fragmentsByIds[ident][ 'Properties']['StageDirections'] + '"')
@@ -451,7 +464,7 @@ def recursive(fragmentsByIds, ident, end_target, speakers):
                     depth = depth + 1
                 sub_index += 1
                 if 'StageDirections' in fragmentsByIds[ident]['Properties'] and \
-                    fragmentsByIds[ident]['Properties']['StageDirections'].split('|')[1] == 'briefing':
+                    fragmentsByIds[ident]['Properties']['StageDirections'].split('|')[1].lstrip() == 'briefing':
                     depth += 1 
                 realRecursive(fragmentsByIds, connection['Target'], end_target, depth)
         except KeyError:
