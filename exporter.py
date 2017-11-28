@@ -279,7 +279,7 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter):
                             'angry-1': '_ANGRY_1', 'angry-2': '_ANGRY_2'}
             player_emo_dict = {':)' : 'good_ImReady', '^^': 'good_willGood', ':D': 'good_laugh', '*_*': 'good_delight',
                                ':(': 'bad_damn', ':/': 'bad_hmm', ":'(": 'bad_cry', '><': 'bad_angry',
-                               'O_O': 'bad_fear', '@_@': 'bad_shame'}
+                               'O_O': 'bad_fear', '@_@': 'bad_shame', '>_<': 'good_embarrassment'}
             override_emotions = {'neutral': '0', 'happy-1': '1', 'happy-2': '2',
                             'sad-1': '-1', 'sad-2': '-2',
                             'angry-1': '-1', 'angry-2': '-2'}
