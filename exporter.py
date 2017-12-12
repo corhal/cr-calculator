@@ -343,8 +343,8 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter):
                             #if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1] == 'debriefing':
                                 #order = 1
                             #elif order > 0:
-                            if order > 0:
-                                order += 1
+                            #if order > 0:
+                                #order += 1
                             # [/КОСТЫЛЬ!!!!!111!!1!адин]
 
                             dialogues_by_ident[(prefix + str(depth).zfill(2))] = {
