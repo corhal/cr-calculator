@@ -35,35 +35,35 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,20705,Shadyguy-211,2,,Mortar and pestle,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-210,,
 ,20801,Producer-207,2,,Stage microphone,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Shadyguy-211,,
 ,20802,Producer-208,2,,Knitting needles,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-207,,
-,30101,Manager-301,3,23,Cooking kit,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,32
+,30101,Manager-301,3,23,Skillet,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,32
 ,30102,Manager-302,3,24,Moustache kit,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-301,,
 ,30103,Manager-303,3,25,Flower,10,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-302,,
 ,30201,Chef-301,3,26,Cutting board,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-303,303,33
 ,30202,Chef-302,3,27,Toque,1,Apron,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-301,,
 ,30203,Chef-303,3,28,Spices,2,Soup kit,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-302,,
 ,30301,Manager-304,3,29,Puff,2,Broom,2,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-303,304,34
-,30302,Manager-305,3,30,Wax and brush,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-304,,
+,30302,Manager-305,3,30,Wax and brush,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-304,,
 ,30303,Manager-306,3,31,Apron,6,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-305,,
 ,30401,Chef-304,3,32,Hot sauce,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-306,305,35
 ,30402,Chef-305,3,33,Cooking kit,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-304,,
-,30403,Chef-306,3,34,Scissors,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-305,,
-,30404,Chef-307,3,35,Headphones,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-306,,
+,30403,Chef-306,3,34,Scissors,1,Cutting board,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-305,,
+,30404,Chef-307,3,35,Spices,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-306,,
 ,30501,Manager-307,3,36,Box,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-307,306,36
-,30504,Manager-308,3,37,New phone,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-307,,
-,30505,Manager-309,3,38,Tailcoat,1,Bowtie,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-308,,
-,30601,Souschef-301,3,39,Guest card,3,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-309,,
-,30602,Souschef-302,3,40,Cooking kit,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-301,307,37
-,30603,Souschef-303,3,41,Pastry stand,5,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-302,,
-,30604,Souschef-304,3,42,Fancy napkin,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-303,,
-,30701,Chef-308,3,43,Spices,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-304,,
-,30702,Chef-309,3,44,Champagne,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-308,308,38
-,30703,Chef-310,3,45,Pastry stand,1,French bread,5,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-309,,
-,30704,Chef-311,3,46,Napkin,5,Broom,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-310,,
-,30801,Souschef-305,3,47,First-aid kit,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-311,,
-,30802,Souschef-306,3,48,Apron,2,Toque,2,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-305,309,39
-,30803,Souschef-307,3,49,Eiffel tower,3,French flag,3,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-306,,
-,30804,Souschef-308,3,50,New phone,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-307,,
-,30805,Souschef-309,3,51,Tailcoat,1,Bowtie,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-308,,
+,30504,Manager-308,3,37,Tailcoat,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-307,,
+,30505,Manager-309,3,38,Guest card,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-308,,
+,30601,Souschef-301,3,39,Accumulator,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-309,,
+,30602,Souschef-302,3,40,New phone,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-301,307,37
+,30603,Souschef-303,3,41,Moustache comb,1,Wax and brush,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-302,,
+,30604,Souschef-304,3,42,Hot sauce,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-303,,
+,30701,Chef-308,3,43,First-aid kit,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-304,,
+,30702,Chef-309,3,44,Ice,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-308,308,38
+,30703,Chef-310,3,45,Champagne kit,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-309,,
+,30704,Chef-311,3,46,Pastry stand,2,French bread,5,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-310,,
+,30705,Chef-312,3,47,Fancy napkin,5,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-311,,
+,30801,Souschef-305,3,48,Eiffel tower,3,French flag,3,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-312,,
+,30802,Souschef-306,3,49,Tailcoat,1,Bowtie,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-305,309,39
+,30803,Souschef-307,3,50,Flower,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-306,,
+,30804,Souschef-308,3,51,Guest card,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-307,,
 ,40101,Celeb-401,4,52,Tank top,1,Jeans,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,42
 ,40102,Celeb-402,4,53,Lemon juice,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Celeb-401,,
 ,40103,Celeb-403,4,54,Fast-food,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Celeb-402,,
