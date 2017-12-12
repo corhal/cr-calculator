@@ -1,9 +1,15 @@
 HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT 3,GOLD_REWARD,ENERGY_REWARD,TEMP_REWARD,REQUIRED_QUESTS,REQUIRED_REGION,REQUIRED_MISSION
 ,10101,Mother-101,1,,Garden gnome,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,11
-,10201,Mother-102,1,,Dishrag,2,Strainer,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,102,12
-,10301,Brother-101,1,,Gaming console,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,103,13
-,10401,Brother-102,1,,Camera on tripod,1,HDMI,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,104,14
-,10402,Brother-103,1,,Dice,5,Notepad,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-102,,
+,10201,Mother-102,1,,Dishrag,2,Strainer,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Mother-101,102,12
+,10301,Brother-101,1,,Gaming console,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Mother-102,103,13
+,10401,Brother-102,1,,Camera on tripod,1,HDMI,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-101,104,14
+,10501,Brother-103,1,,Dice,5,Notepad,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-102,,
+,10601,Brother-104,1,,Oven glove,2,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-103,,
+,10601,Brother-105,1,,LED ring,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-104,,
+,10701,Producer-101,1,,Mixer,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-105,,
+,10701,Producer-102,1,,Painted bowl,3,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-101,,
+,10801,Mother-103,1,,Baggage,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-102,,
+,10801,Mother-104,1,,Makeup pouch,1,Hair brush,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Mother-103,,
 ,20101,Producer-201,2,,Wine,1,Wine glass,2,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,
 ,20102,Producer-202,2,,Sun umbrella,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-201,,
 ,20103,Producer-203,2,,Medicine,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-202,,
