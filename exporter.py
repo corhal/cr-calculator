@@ -212,7 +212,7 @@ def find_quest(quest_name, quests):
             return quest
 
 quest_emotions = {}
-def export_dialogues_from_json(last_id, first_chapter, last_chapter):
+def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lang):
     global quest_emotions
     items = load_items()
     missions = load_missions(items, load_recipes(items))
@@ -245,7 +245,7 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter):
                 print('Skipping ' + chapters[chapter_id]['Properties']['DisplayName'])
                 continue
 
-            if lang == 'en':
+            if lang != kostyll_lang:
                 print('KOSTYLL: skipping ' + chapters[chapter_id]['Properties']['DisplayName'])
                 continue
 
@@ -685,11 +685,12 @@ def recursive(fragmentsByIds, ident, end_target, speakers):
 
 
 def export_data():
+    kostyll_lang = input("KOSTYLL: what language are we exporting? ")
     last_id = int(input("enter current last dialogue id, pls "))
     first_chapter = int(input("from which chapter? "))
     last_chapter = int(input("till which chapter? "))
     export_items()
-    export_dialogues_from_json(last_id, first_chapter, last_chapter)
+    export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lang)
     export_quests()
     export_missions()
     export_regions()
