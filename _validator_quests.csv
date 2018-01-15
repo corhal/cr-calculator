@@ -5,10 +5,11 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,10401,Brother-101,1,,Gaming console,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Mother-103,104,14
 ,10501,Brother-102,1,,Camera on tripod,1,HDMI,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-101,,
 ,10601,Brother-103,1,,Dice,5,Notepad,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-102,,
+,10602,Brother-104,1,,Dice,3,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-103,,
 ,10701,Producer-101,1,,LED ring,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Brother-103,,
 ,10801,Producer-102,1,,Painted bowl,3,Mixer,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-101,,
-,10901,Mother-104,1,,Baggage,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-102,,
-,10902,Mother-105,1,,Makeup pouch,1,Hair brush,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Mother-104,,
+,10901,Producer-103,1,,Baggage,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-102,,
+,10902,Producer-104,1,,Makeup pouch,1,Hair brush,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-103,,
 ,20101,Producer-201,2,,Wine,1,Wine glass,2,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",,,
 ,20102,Producer-202,2,,Sun umbrella,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-201,,
 ,20103,Producer-203,2,,Medicine,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Producer-202,,
@@ -48,8 +49,8 @@ HEADER,ID,NAME,CHAPTER,QUEST_CHAIN,ITEM 1,AMOUNT 1,ITEM 2,AMOUNT 2,ITEM 3,AMOUNT
 ,30403,Chef-306,3,34,Scissors,1,Cutting board,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-305,,
 ,30404,Chef-307,3,35,Spices,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-306,,
 ,30501,Manager-307,3,36,Box,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Chef-307,306,36
-,30504,Manager-308,3,37,Tailcoat,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-307,,
-,30505,Manager-309,3,38,Guest card,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-308,,
+,30502,Manager-308,3,37,Tailcoat,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-307,,
+,30503,Manager-309,3,38,Guest card,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-308,,
 ,30601,Souschef-301,3,39,Accumulator,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Manager-309,,
 ,30602,Souschef-302,3,40,New phone,1,,,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-301,307,37
 ,30603,Souschef-303,3,41,Moustache comb,1,Wax and brush,1,,,0,0,"{""item"" : [{""id"" : 50002, ""amount"" : 1}]}",Souschef-302,,
