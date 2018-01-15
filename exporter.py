@@ -211,6 +211,17 @@ def find_quest(quest_name, quests):
         if quest_name == quest.name:
             return quest
 
+def load_player_responces (chapter_id, lang):
+    player_responces = []
+    with open('_validator_player_responces.csv', 'rt', encoding="utf8") as csvfile:
+        reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+        for row in reader:
+            if row["CHAPTER"] != "" and int(row["CHAPTER"]) == chapter_id:
+                if row["RESPONCE_" + lang.upper()] != "":
+                    player_responces.append(row["RESPONCE_" + lang.upper()])
+    return player_responces
+
+
 quest_emotions = {}
 def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lang):
     global quest_emotions
@@ -251,7 +262,9 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lan
 
             if chapter_number < first_chapter or chapter_number > last_chapter:
                 continue
-
+            
+            player_responces = load_player_responces(chapter_number, lang)
+            
             quest_ids = []
 
             dialogue_nodes = {}
@@ -291,7 +304,9 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lan
                 try:
                     prefix = 'QUEST_' + str(quest.ident) + '_DIALOG_'
                 except AttributeError:
-                    raise ValueError("Some problems with quest " + quest_name)
+                    print("Some problems with quest " + quest_name)
+                    continue
+                    #raise ValueError("Some problems with quest " + quest_name)
                 player_emotions_by_depth = {}
                 try:
                     for s_key in sorted(dialogue_fragments.keys()):
@@ -361,6 +376,19 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lan
                             and speakers[dialogue_fragments[s_key]['Properties']['Speaker']] != 'player':
                             dialogues_by_ident[(prefix + str(depth).zfill(2))]['emotion'] = override_emotion
                         if unique:
+                            if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1] == 'debriefing':
+                                dialogues_by_ident[(prefix + str(depth).zfill(2))]['responces'].append({
+                                    'text': prefix + str(depth).zfill(2) + '_A1',
+                                    'smile': '',
+                                    'feedback': ''
+                                    })
+                                translations.append({
+                                    'ident': prefix + str(depth).zfill(2) + '_A1',
+                                    'text': random.choice(player_responces),
+                                    'lang': lang,
+                                    'lastUpdateDate': '2017-04-10 09:57:08',
+                                    'description': '',
+                                })
                             if speakers[dialogue_fragments[s_key]['Properties']['Speaker']] == 'player':
                                 feedback = ''
                                 if dialogue_fragments[s_key]['Properties']['StageDirections'].split('|')[1].strip() != 'neutral':
