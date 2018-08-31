@@ -513,10 +513,10 @@ def recursive(fragmentsByIds, ident, end_target, speakers):
 # new
 def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lang):
     global quest_emotions
-    items = load_items()
-    missions = load_missions(items, load_recipes(items))
-    regions = load_regions(missions)
-    quests = load_quests(items, regions, missions)
+    #items = load_items()
+    #missions = load_missions(items, load_recipes(items))
+    #regions = load_regions(missions)
+    #quests = load_quests(items, regions, missions)
     name_col = 0
     order_col = 0
     person_col = 0
@@ -535,6 +535,7 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lan
         chapters = {}
         for smth in data['Packages'][0]['Models']:
             if smth['Type'] == 'FlowFragment':
+                print(smth['Properties']['DisplayName'])
                 chapters[smth['Properties']['Id']] = smth
 
         for chapter_id in chapters.keys():
@@ -582,7 +583,7 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lan
                             'angry-1': '_ANGRY_1', 'angry-2': '_ANGRY_2'}
             player_emo_dict = {':)' : 'good_ImReady', '^^': 'good_willGood', ':D': 'good_laugh', '*_*': 'good_delight',
                                ':(': 'bad_damn', ':/': 'bad_hmm', ":'(": 'bad_cry', '><': 'bad_angry',
-                               'O_O': 'bad_fear', '@_@': 'bad_shame', '>_<': 'good_embarrassment', '': 'empty'}
+                               'O_O': 'bad_fear', '@_@': 'bad_shame', '>_<': 'good_embarrassment', '': 'empty', 'neutral': 'empty', '>:D': 'ВСТАВИТЬ НАЗВАНИЕ'}
             override_emotions = {'neutral': '0', 'happy-1': '1', 'happy-2': '2',
                             'sad-1': '-1', 'sad-2': '-2',
                             'angry-1': '-1', 'angry-2': '-2'}
@@ -595,10 +596,10 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lan
             
             for key in sorted(dialogue_nodes.keys()):
                 quest_name = dialogue_nodes[key]['Properties']['DisplayName']
-                quest = find_quest(quest_name, quests)
+                #quest = find_quest(quest_name, quests)
                 start_index = 0
                 try:
-                    prefix = 'QUEST_' + str(quest.ident) + '_DIALOG_' 
+                    prefix = 'QUEST_' + str(quest_name) + '_DIALOG_' 
                 except AttributeError:
                     print("Some problems with quest " + quest_name)
                     continue
@@ -621,7 +622,7 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lan
                                     for ident in sorted(dialogue_fragments.keys()):
                                         if dialogue_fragments[ident]['Properties']['OutputPins'][0]["Id"] == connection["TargetPin"]:
                                             target_pin_target = dialogue_fragments[ident]['Properties']['OutputPins'][0]["Connections"][0]["Target"]
-                                        if dialogue_fragments[ident]['Properties']['OutputPins'][1]["Id"] == connection["TargetPin"]:
+                                        if len(dialogue_fragments[ident]['Properties']['OutputPins']) > 1 and dialogue_fragments[ident]['Properties']['OutputPins'][1]["Id"] == connection["TargetPin"]:
                                              target_pin_target = dialogue_fragments[ident]['Properties']['OutputPins'][1]["Connections"][0]["Target"]
                                     for ident in sorted(dialogue_fragments.keys()):
                                         if dialogue_fragments[s_key]['Type'] =='Hub' and dialogue_fragments[s_key]['Properties']['DisplayName'].lower() == 'quest start' \
@@ -656,7 +657,7 @@ def export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lan
                             
                             questDialog["id"] = int(dialogue_fragments[s_key]['Properties']['Id'], 16) 
                             
-                            questDialog["questId"] = quest.ident
+                            questDialog["questId"] = quest_name
                             
                             questDialog["character"] = speakers[dialogue_fragments[s_key]['Properties']['Speaker']]
                             
@@ -1056,11 +1057,11 @@ def export_data():
     last_id = int(input("enter current last dialogue id, pls "))
     first_chapter = int(input("from which chapter? "))
     last_chapter = int(input("till which chapter? "))
-    export_items()
+    #export_items()
     export_dialogues_from_json(last_id, first_chapter, last_chapter, kostyll_lang)
-    export_quests()
-    export_missions()
-    export_regions()
+    #export_quests()
+    #export_missions()
+    #export_regions()
     #export_translation(last_id)
 
 export_data()
